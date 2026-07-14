@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rajnanig22.github.io/widi-seo-growth-services/sitemap.xml
