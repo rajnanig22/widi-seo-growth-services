@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#2F6F5E">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
 
 <title>Widi Ginanjar | SEO & Growth Services</title>
 <meta name="description" content="SEO, technical audits, and organic growth for NGOs, hospitality brands, B2B firms, and AI startups. Anonymised real audit case studies. Free 30-minute site review.">
@@ -113,13 +120,24 @@
   }
 
   .contact-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 16px;
     font-size: 13.5px;
     color: var(--ink-soft);
     margin-bottom: 24px;
-    word-break: break-word;
   }
-  .contact-line a { color: var(--ink); }
-  .contact-line a:hover { color: var(--accent); }
+  .contact-line .divider { color: var(--rule); }
+  .contact-line .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .contact-line .contact-link:hover { color: var(--accent); text-decoration: underline; }
+  .contact-line svg { flex-shrink: 0; }
 
   blockquote.framing {
     margin: 0;
@@ -170,6 +188,11 @@
     text-decoration: none;
   }
   .card:active { transform: translateY(0); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card, .go-arrow { transition: none !important; }
+    .card:hover, .card:focus-visible { transform: none; }
+  }
 
   .card .icon-row {
     display: flex;
@@ -236,18 +259,36 @@
   }
 
   footer {
-    padding: 22px 0 48px;
-    border-top: 1px solid var(--rule);
+    padding: 24px 0 48px;
   }
 
-  footer .meta-note {
+  .meta-card {
+    border-top: 1px solid var(--rule);
+    padding-top: 20px;
+  }
+
+  .meta-card .meta-label {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    text-transform: lowercase;
+    color: var(--ink-soft);
+    margin: 0 0 10px;
+  }
+
+  .meta-card .meta-note {
     font-family: var(--mono);
     font-size: 11px;
     color: var(--ink-soft);
-    line-height: 1.7;
+    line-height: 1.8;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 12px 14px;
+    margin: 0;
   }
 
-  footer .meta-note .k { color: var(--accent); }
+  .meta-card .meta-note .k { color: var(--accent); }
 </style>
 </head>
 <body>
@@ -259,9 +300,17 @@
     <h1>Widi Ginanjar<br>SEO &amp; Growth Services</h1>
     <p class="subhead">SEO, technical audits, and organic growth, tailored to how each industry actually gets found.</p>
     <p class="contact-line">
-      Bali, Indonesia ·
-      <a href="mailto:rajnanig22@gmail.com">rajnanig22@gmail.com</a> ·
-      <a href="http://linkedin.com/in/widiginanjar" target="_blank" rel="noopener">linkedin.com/in/widiginanjar</a>
+      <span>Bali, Indonesia</span>
+      <span class="divider">·</span>
+      <a class="contact-link" href="mailto:rajnanig22@gmail.com">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+        rajnanig22@gmail.com
+      </a>
+      <span class="divider">·</span>
+      <a class="contact-link" href="http://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        linkedin.com/in/widiginanjar
+      </a>
     </p>
     <blockquote class="framing">
       Pick the one closest to what you do. Each one has real, <strong>anonymised examples</strong> of what I actually found and fixed.
@@ -273,7 +322,7 @@
   <section class="grid">
     <div class="cards">
 
-      <a class="card" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">
+      <a class="card" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-for-Mission-Driven-Teams-397e8511280781e3996fd34ae0aec6dd" target="_blank" rel="noopener noreferrer">
         <div class="icon-row">
           <span class="icon">🌱</span>
           <span class="go-arrow">→</span>
@@ -283,7 +332,7 @@
         <p class="quote-line">Checking a website is a standard step in how grantmakers vet a potential grantee, before a cent is committed.</p>
       </a>
 
-      <a class="card" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">
+      <a class="card" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-for-B2B-Professional-Services-397e851128078141a83ae7bd333e6947" target="_blank" rel="noopener noreferrer">
         <div class="icon-row">
           <span class="icon">💼</span>
           <span class="go-arrow">→</span>
@@ -293,7 +342,7 @@
         <p class="quote-line">Most buyers Google a vendor's name before a serious conversation starts. What they find in that moment quietly decides a lot.</p>
       </a>
 
-      <a class="card" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">
+      <a class="card" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-for-Hospitality-F-B-Brands-397e8511280781298a0ed830c0db22b9" target="_blank" rel="noopener noreferrer">
         <div class="icon-row">
           <span class="icon">🍽️</span>
           <span class="go-arrow">→</span>
@@ -303,7 +352,7 @@
         <p class="quote-line">Unlike a social following built one post at a time, search visibility compounds, and keeps bringing people in long after the work is done.</p>
       </a>
 
-      <a class="card" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">
+      <a class="card" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-for-AI-Tech-Startups-39ae85112807813cbdb4e0a048aebf06" target="_blank" rel="noopener noreferrer">
         <div class="icon-row">
           <span class="icon">🚀</span>
           <span class="go-arrow">→</span>
@@ -313,7 +362,7 @@
         <p class="quote-line">Grew a product's own search authority score from 5-6 to 38 in under two months, entirely through relationship-based outreach, zero paid links.</p>
       </a>
 
-      <a class="card wide" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">
+      <a class="card wide" href="https://ballistic-liver-8cd.notion.site/SEO-Growth-for-the-AI-Search-Era-39ce85112807815f8a8fe371ccf6a8b8" target="_blank" rel="noopener noreferrer">
         <div class="icon-row">
           <span class="icon">🔍</span>
           <span class="go-arrow">→</span>
@@ -335,10 +384,13 @@
   </section>
 
   <footer>
-    <p class="meta-note">
-      <span class="k">&lt;title&gt;</span> Widi Ginanjar | SEO &amp; Growth Services<br>
-      <span class="k">&lt;meta name="description"&gt;</span> written for humans and machines alike, not left to a platform default
-    </p>
+    <div class="meta-card">
+      <p class="meta-label">// why this page loads fast and reads clean to search engines</p>
+      <p class="meta-note">
+        <span class="k">&lt;title&gt;</span> Widi Ginanjar | SEO &amp; Growth Services<br>
+        <span class="k">&lt;meta name="description"&gt;</span> written for humans and machines alike, not left to a platform default
+      </p>
+    </div>
   </footer>
 
 </div>
