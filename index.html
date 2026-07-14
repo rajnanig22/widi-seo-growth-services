@@ -4,13 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ============================================================
-     REAL, CONTROLLABLE SEO METADATA
-     This is the whole point of this file: unlike the Notion share
-     link, every tag below is written by hand and will actually be
-     what a crawler (Google, Bing, an AI system, a link preview)
-     sees in the raw HTML, no JavaScript required.
-     ============================================================ -->
 <title>Widi Ginanjar | SEO & Growth Services</title>
 <meta name="description" content="SEO, technical audits, and organic growth for NGOs, hospitality brands, B2B firms, and AI startups. Anonymised real audit case studies. Free 30-minute site review.">
 <link rel="canonical" href="https://widiginanjar.com/">
@@ -26,9 +19,6 @@
 <meta name="twitter:title" content="Widi Ginanjar | SEO & Growth Services">
 <meta name="twitter:description" content="SEO, technical audits, and organic growth, tailored to how each industry actually gets found.">
 
-<!-- Structured data: makes the person, the service, and the offer
-     machine-readable, exactly the "AI-citability" argument made on
-     the AI Search Era page, applied to this page itself. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -66,7 +56,6 @@
   }
 
   * { box-sizing: border-box; }
-
   html { scroll-behavior: smooth; }
 
   body {
@@ -92,13 +81,11 @@
     padding: 0 24px;
   }
 
-  header.hero {
-    padding: 88px 0 56px;
-  }
+  header.hero { padding: 72px 0 44px; }
 
   .eyebrow {
     font-family: var(--mono);
-    font-size: 12.5px;
+    font-size: 12px;
     letter-spacing: 0.06em;
     text-transform: lowercase;
     color: var(--accent);
@@ -106,38 +93,39 @@
     display: inline-block;
     padding: 4px 10px;
     border-radius: 4px;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
   }
 
   h1 {
     font-family: var(--serif);
     font-weight: 600;
-    font-size: clamp(32px, 5.5vw, 46px);
+    font-size: clamp(28px, 6vw, 46px);
     line-height: 1.15;
     letter-spacing: -0.01em;
-    margin: 0 0 18px;
+    margin: 0 0 16px;
   }
 
   .subhead {
-    font-size: 18px;
+    font-size: clamp(15px, 4vw, 18px);
     color: var(--ink-soft);
     max-width: 56ch;
-    margin: 0 0 28px;
+    margin: 0 0 22px;
   }
 
   .contact-line {
-    font-size: 14.5px;
+    font-size: 13.5px;
     color: var(--ink-soft);
-    margin-bottom: 28px;
+    margin-bottom: 24px;
+    word-break: break-word;
   }
   .contact-line a { color: var(--ink); }
   .contact-line a:hover { color: var(--accent); }
 
   blockquote.framing {
     margin: 0;
-    padding-left: 18px;
+    padding-left: 16px;
     border-left: 2px solid var(--accent);
-    font-size: 16px;
+    font-size: 15px;
     color: var(--ink-soft);
   }
   blockquote.framing strong { color: var(--ink); }
@@ -148,102 +136,113 @@
     margin: 0;
   }
 
-  section.grid {
-    padding: 56px 0;
-  }
+  section.grid { padding: 40px 0; }
 
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 16px;
   }
 
   @media (max-width: 620px) {
-    .cards { grid-template-columns: 1fr; }
-    header.hero { padding: 56px 0 40px; }
+    .cards { grid-template-columns: 1fr; gap: 12px; }
+    header.hero { padding: 44px 0 28px; }
+    section.grid { padding: 28px 0; }
+    .wrap { padding: 0 18px; }
   }
 
   .card {
     background: var(--paper);
     border: 1px solid var(--rule);
     border-radius: 8px;
-    padding: 26px;
+    padding: 18px 20px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    transition: border-color 0.15s ease, transform 0.15s ease;
+    gap: 8px;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
   }
-  .card:hover {
+  .card:hover, .card:focus-visible {
     border-color: var(--accent);
     transform: translateY(-1px);
+    box-shadow: 0 4px 14px rgba(47, 111, 94, 0.08);
+    text-decoration: none;
+  }
+  .card:active { transform: translateY(0); }
+
+  .card .icon-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .card .icon { font-size: 22px; line-height: 1; }
+  .card .icon { font-size: 20px; line-height: 1; }
+
+  .card .go-arrow {
+    font-family: var(--mono);
+    font-size: 15px;
+    color: var(--rule);
+    transition: color 0.15s ease, transform 0.15s ease;
+  }
+  .card:hover .go-arrow, .card:focus-visible .go-arrow {
+    color: var(--accent);
+    transform: translateX(2px);
+  }
 
   .card h2 {
     font-family: var(--serif);
-    font-size: 19px;
+    font-size: 17px;
+    line-height: 1.3;
     font-weight: 600;
     margin: 0;
-  }
-  .card h2 a { color: var(--ink); }
-  .card h2 a:hover { color: var(--accent); text-decoration: none; }
-
-  .card .for-line {
-    font-size: 14.5px;
     color: var(--ink);
-    margin: 0;
   }
+
+  .card .for-line { font-size: 13.5px; color: var(--ink); margin: 0; }
 
   .card .quote-line {
-    font-size: 13.5px;
+    font-size: 12.5px;
     color: var(--ink-soft);
     font-style: italic;
     margin: 0;
   }
 
-  .card.wide {
-    grid-column: 1 / -1;
-  }
+  .card.wide { grid-column: 1 / -1; }
 
   .card .tag {
     font-family: var(--mono);
-    font-size: 11px;
+    font-size: 10.5px;
     color: var(--accent);
     text-transform: lowercase;
     letter-spacing: 0.02em;
   }
 
-  section.cta {
-    padding: 8px 0 72px;
-  }
+  section.cta { padding: 4px 0 56px; }
 
   .cta-box {
     background: var(--accent-soft);
     border-radius: 10px;
-    padding: 32px 28px;
+    padding: 24px 22px;
     text-align: left;
   }
 
-  .cta-box p {
-    margin: 0;
-    font-size: 16px;
-  }
+  .cta-box p { margin: 0; font-size: 15.5px; }
 
   .cta-box .cta-detail {
-    font-size: 14px;
+    font-size: 13.5px;
     color: var(--ink-soft);
     margin-top: 8px;
   }
 
   footer {
-    padding: 28px 0 60px;
+    padding: 22px 0 48px;
     border-top: 1px solid var(--rule);
   }
 
   footer .meta-note {
     font-family: var(--mono);
-    font-size: 11.5px;
+    font-size: 11px;
     color: var(--ink-soft);
     line-height: 1.7;
   }
@@ -274,41 +273,56 @@
   <section class="grid">
     <div class="cards">
 
-      <div class="card">
-        <span class="icon">🌱</span>
-        <h2><a href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">SEO for NGOs &amp; Mission-Driven Teams</a></h2>
+      <a class="card" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">
+        <div class="icon-row">
+          <span class="icon">🌱</span>
+          <span class="go-arrow">→</span>
+        </div>
+        <h2>SEO for NGOs &amp; Mission-Driven Teams</h2>
         <p class="for-line"><strong>For NGOs, nonprofits, and impact-driven startups</strong> who need funders and partners to find real proof of their work.</p>
         <p class="quote-line">Checking a website is a standard step in how grantmakers vet a potential grantee, before a cent is committed.</p>
-      </div>
+      </a>
 
-      <div class="card">
-        <span class="icon">💼</span>
-        <h2><a href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">SEO for B2B &amp; Professional Services</a></h2>
+      <a class="card" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">
+        <div class="icon-row">
+          <span class="icon">💼</span>
+          <span class="go-arrow">→</span>
+        </div>
+        <h2>SEO for B2B &amp; Professional Services</h2>
         <p class="for-line"><strong>For consulting, research, and B2B firms</strong> whose website gets checked before a deal ever gets discussed.</p>
         <p class="quote-line">Most buyers Google a vendor's name before a serious conversation starts. What they find in that moment quietly decides a lot.</p>
-      </div>
+      </a>
 
-      <div class="card">
-        <span class="icon">🍽️</span>
-        <h2><a href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">SEO for Hospitality &amp; F&amp;B Brands</a></h2>
+      <a class="card" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">
+        <div class="icon-row">
+          <span class="icon">🍽️</span>
+          <span class="go-arrow">→</span>
+        </div>
+        <h2>SEO for Hospitality &amp; F&amp;B Brands</h2>
         <p class="for-line"><strong>For restaurants, bars, and hospitality groups</strong> competing for the exact moment someone decides where to eat.</p>
         <p class="quote-line">Unlike a social following built one post at a time, search visibility compounds, and keeps bringing people in long after the work is done.</p>
-      </div>
+      </a>
 
-      <div class="card">
-        <span class="icon">🚀</span>
-        <h2><a href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">SEO for AI &amp; Tech Startups</a></h2>
+      <a class="card" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">
+        <div class="icon-row">
+          <span class="icon">🚀</span>
+          <span class="go-arrow">→</span>
+        </div>
+        <h2>SEO for AI &amp; Tech Startups</h2>
         <p class="for-line"><strong>For AI products and early-stage tech startups</strong> whose paid ads budget can't run forever and need organic that compounds.</p>
         <p class="quote-line">Grew a product's own search authority score from 5-6 to 38 in under two months, entirely through relationship-based outreach, zero paid links.</p>
-      </div>
+      </a>
 
-      <div class="card wide">
-        <span class="icon">🔍</span>
+      <a class="card wide" href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">
+        <div class="icon-row">
+          <span class="icon">🔍</span>
+          <span class="go-arrow">→</span>
+        </div>
         <span class="tag">cross-industry</span>
-        <h2><a href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-Services-397e8511280781699004f3e207d224f4" target="_blank" rel="noopener">SEO &amp; Growth for the AI Search Era</a></h2>
+        <h2>SEO &amp; Growth for the AI Search Era</h2>
         <p class="for-line"><strong>For any organisation, across industries</strong>, thinking about how AI tools like ChatGPT and Perplexity find and cite sources, not just Google.</p>
         <p class="quote-line">An AI doesn't rank your page, it decides whether to mention you at all, and whether it trusts what it finds enough to repeat it.</p>
-      </div>
+      </a>
 
     </div>
   </section>
