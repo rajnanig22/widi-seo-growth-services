@@ -264,6 +264,10 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   .article-card .tag {{ font-family: var(--mono); font-size: 10.5px; color: var(--accent); text-transform: lowercase; letter-spacing: 0.02em; }}
   .article-card h2 {{ font-family: var(--serif); font-size: 18px; font-weight: 600; margin: 8px 0 6px; color: var(--ink); }}
   .article-card p {{ font-size: 13.5px; color: var(--ink-soft); margin: 0; }}
+  .article-card .card-meta {{
+    font-family: var(--mono); font-size: 11px; color: var(--ink-soft);
+    margin-top: 10px; opacity: 0.8;
+  }}
   @media (prefers-reduced-motion: reduce) {{ .article-card {{ transition: none !important; }} .article-card:hover {{ transform: none; }} }}
 </style>
 </head>
@@ -287,6 +291,7 @@ CARD_TEMPLATE = """    <a class="article-card" href="/notes/{slug}.html">
       <span class="tag">{tag}</span>
       <h2>{title}</h2>
       <p>{description}</p>
+      <p class="card-meta">{date_display}</p>
     </a>
 """
 
@@ -362,6 +367,7 @@ def build_article(post):
     )
     read_time = reading_time(post["body_md"])
     date_display = f"{date_display} &middot; {read_time}"
+    post["_date_display"] = date_display
 
     html_out = ARTICLE_TEMPLATE.format(
         ga_id=GA_ID,
@@ -390,6 +396,7 @@ def build_index(posts):
             tag=html.escape(p.get("tag", "seo")),
             title=html.escape(p.get("title", ""), quote=True),
             description=html.escape(p.get("description", ""), quote=True),
+            date_display=p.get("_date_display", ""),
         )
         for p in posts
     )
