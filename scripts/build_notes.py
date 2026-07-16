@@ -30,6 +30,8 @@ import re
 import glob
 import json
 import html
+import math
+import datetime
 import yaml
 import markdown
 
@@ -277,6 +279,25 @@ def load_posts():
     return posts
 
 
+def format_date(date_str):
+    """'2026-07-16' -> 'July 16, 2026'. Falls back to raw string if unparseable."""
+    for fmt in ("%Y-%m-%d", "%Y-%m-%dT%H:%M:%S"):
+        try:
+            d = datetime.datetime.strptime(date_str, fmt)
+            return d.strftime("%B %-d, %Y") if os.name != "nt" else d.strftime("%B %d, %Y")
+        except ValueError:
+            continue
+    return date_str
+
+
+def reading_time(text):
+    """Rough estimate: 200 words per minute, minimum 1 minute. Strips HTML tags first."""
+    plain = re.sub(r"<[^>]+>", " ", text)
+    words = re.findall(r"\w+", plain)
+    minutes = max(1, math.ceil(len(words) / 200))
+    return f"{minutes} min read"
+
+
 def render_sources(sources):
     if not sources:
         return ""
@@ -301,13 +322,15 @@ def build_article(post):
     description = html.escape(description_raw, quote=True)
     tag = html.escape(tag_raw)
     date = str(post.get("date", ""))
-    date_display = date
+    date_display = format_date(date)
     slug = post["slug"]
     canonical = f"{SITE_URL}/notes/{slug}.html"
 
     body_html = markdown.markdown(
         post["body_md"], extensions=["extra", "sane_lists"]
     )
+    read_time = reading_time(post["body_md"])
+    date_display = f"{date_display} &middot; {read_time}"
 
     html_out = ARTICLE_TEMPLATE.format(
         ga_id=GA_ID,
