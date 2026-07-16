@@ -81,7 +81,13 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": {title_json},
-  "author": {{ "@type": "Person", "name": "Widi Ginanjar" }},
+  "author": {{
+    "@type": "Person",
+    "name": "Widi Ginanjar",
+    "url": "https://widiginanjar.com",
+    "sameAs": ["https://linkedin.com/in/widiginanjar"],
+    "jobTitle": "SEO & Growth Consultant"
+  }},
   "publisher": {{ "@type": "Person", "name": "Widi Ginanjar" }},
   "mainEntityOfPage": "{canonical}",
   "datePublished": "{date}",
@@ -113,7 +119,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   }}
   a {{ color: var(--accent); }}
   a:hover {{ text-decoration: underline; }}
-  .wrap {{ max-width: 680px; margin: 0 auto; padding: 56px 24px 80px; }}
+  .wrap {{ max-width: 760px; margin: 0 auto; padding: 56px 32px 80px; }}
   .back-link {{
     font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft);
     text-decoration: none; display: inline-block; margin-bottom: 32px;
@@ -150,6 +156,23 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   .sources h2 {{ font-size: 14px; margin: 0 0 12px; }}
   .sources ol {{ font-size: 13px; color: var(--ink-soft); padding-left: 20px; margin: 0; }}
   .sources li {{ margin-bottom: 6px; }}
+  .author-box {{
+    margin-top: 48px; padding: 22px 24px; background: var(--paper);
+    border: 1px solid var(--rule); border-radius: 10px;
+    display: flex; gap: 16px; align-items: flex-start;
+  }}
+  .author-box .avatar {{
+    width: 40px; height: 40px; border-radius: 50%; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif); font-weight: 600; font-size: 16px; color: var(--accent);
+    flex-shrink: 0;
+  }}
+  .author-box .author-label {{
+    font-family: var(--mono); font-size: 10.5px; text-transform: lowercase;
+    color: var(--ink-soft); letter-spacing: 0.04em; margin: 0 0 4px;
+  }}
+  .author-box p {{ font-size: 13.5px; color: var(--ink-soft); margin: 0; }}
+  .author-box strong {{ color: var(--ink); }}
 </style>
 </head>
 <body>
@@ -166,6 +189,14 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   <article>
 {content}
   </article>
+
+  <div class="author-box">
+    <div class="avatar">WG</div>
+    <div>
+      <p class="author-label">written by</p>
+      <p><strong>Widi Ginanjar</strong> works at the intersection of SEO, growth operations, and community engagement. Background as a linguistic reviewer for AI model evaluation, with prior work across US-based SaaS companies and McKinsey-affiliated NGOs. Based in Bali, Indonesia. <a href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a></p>
+    </div>
+  </div>
 
 {sources_block}
 </div>
@@ -217,7 +248,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   body {{ margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }}
   a {{ color: var(--accent); text-decoration: none; }}
   a:hover {{ text-decoration: underline; }}
-  .wrap {{ max-width: 680px; margin: 0 auto; padding: 56px 24px 80px; }}
+  .wrap {{ max-width: 760px; margin: 0 auto; padding: 56px 32px 80px; }}
   .back-link {{ font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: inline-block; margin-bottom: 32px; }}
   .back-link:hover {{ color: var(--accent); }}
   .eyebrow {{ font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 20px; }}
