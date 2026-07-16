@@ -15,7 +15,7 @@ sources:
 
 Your own name is supposed to be the easiest keyword there is. No real competitor, nothing to out-optimize, no ambiguity about who "means" what. So a few days after this site went live, I did the obvious thing and just googled myself.
 
-**widiginanjar.com sits at position #2**, right under my LinkedIn profile. For a domain that's a few days old, I'll take it. Genuinely pleased about that one.
+[**widiginanjar.com sits at position #2**](https://widiginanjar.com/), right under my LinkedIn profile. For a domain that's a few days old, I'll take it. Genuinely pleased about that one.
 
 Then I scrolled up to the AI Overview sitting above those results, for the exact same search. It got my role right, my background right, what I'm currently working on, all correct. And it cited exactly one source to get there: LinkedIn. My own site, sitting two spots below in the actual results, didn't get a mention. Not even a "some sources suggest."
 
