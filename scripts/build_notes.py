@@ -157,9 +157,11 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   .sources ol {{ font-size: 13px; color: var(--ink-soft); padding-left: 20px; margin: 0; }}
   .sources li {{ margin-bottom: 6px; }}
   .author-box {{
-    margin-top: 48px; padding: 22px 24px; background: var(--paper);
+    margin-top: 48px; padding: 24px 26px; background: var(--paper);
     border: 1px solid var(--rule); border-radius: 10px;
-    display: flex; gap: 16px; align-items: flex-start;
+  }}
+  .author-box .author-header {{
+    display: flex; align-items: center; gap: 12px; margin-bottom: 14px;
   }}
   .author-box .avatar {{
     width: 40px; height: 40px; border-radius: 50%; background: var(--accent-soft);
@@ -167,12 +169,21 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
     font-family: var(--serif); font-weight: 600; font-size: 16px; color: var(--accent);
     flex-shrink: 0;
   }}
+  .author-box .author-name {{ font-weight: 600; font-size: 14.5px; color: var(--ink); }}
   .author-box .author-label {{
-    font-family: var(--mono); font-size: 10.5px; text-transform: lowercase;
-    color: var(--ink-soft); letter-spacing: 0.04em; margin: 0 0 4px;
+    font-family: var(--mono); font-size: 10px; text-transform: lowercase;
+    color: var(--ink-soft); letter-spacing: 0.04em;
   }}
-  .author-box p {{ font-size: 13.5px; color: var(--ink-soft); margin: 0; }}
-  .author-box strong {{ color: var(--ink); }}
+  .author-box p {{
+    font-size: 13.5px; color: var(--ink-soft); line-height: 1.6;
+    max-width: 60ch; margin: 0 0 14px;
+  }}
+  .author-box .linkedin-link {{
+    display: inline-flex; align-items: center; gap: 4px;
+    font-family: var(--mono); font-size: 12px; color: var(--accent);
+    background: var(--accent-soft); padding: 6px 12px; border-radius: 6px;
+    text-decoration: none;
+  }}
 </style>
 </head>
 <body>
@@ -191,11 +202,15 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   </article>
 
   <div class="author-box">
-    <div class="avatar">WG</div>
-    <div>
-      <p class="author-label">written by</p>
-      <p><strong>Widi Ginanjar</strong> is an SEO, growth marketing, and content strategist based in Bali, Indonesia. He currently helps SaaS companies earn organic visibility through SEO and outreach, audits websites for freelance clients across hospitality, B2B, and NGO sectors, and researches how local supply chains create sustainable value on the ground. He previously spent nearly four years in community development and sustainability work with Delterra/McKinsey.org. <a href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a></p>
+    <div class="author-header">
+      <div class="avatar">WG</div>
+      <div>
+        <div class="author-name">Widi Ginanjar</div>
+        <div class="author-label">written by</div>
+      </div>
     </div>
+    <p>Widi Ginanjar is an SEO, growth marketing, and content strategist based in Bali, Indonesia. He currently helps SaaS companies earn organic visibility through SEO and outreach, audits websites for freelance clients across hospitality, B2B, and NGO sectors, and researches how local supply chains create sustainable value on the ground. He previously spent nearly four years in community development and sustainability work with Delterra/McKinsey.org.</p>
+    <a class="linkedin-link" href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a>
   </div>
 
 {sources_block}
