@@ -194,7 +194,8 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
     <div class="avatar">WG</div>
     <div>
       <p class="author-label">written by</p>
-      <p><strong>Widi Ginanjar</strong> works at the intersection of SEO, growth operations, and community engagement. Background as a linguistic reviewer for AI model evaluation, with prior work across US-based SaaS companies and McKinsey-affiliated NGOs. Based in Bali, Indonesia. <a href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a></p>
+      <p style="font-style: italic; margin-bottom: 8px;">"Banking taught me risk. Village development taught me trust. Growth ops taught me speed."</p>
+      <p><strong>Widi Ginanjar</strong> is an SEO, growth marketing, and content strategist based in Bali, Indonesia. He currently helps SaaS companies earn organic visibility through SEO and outreach, audits websites for freelance clients across hospitality, B2B, and NGO sectors, and researches how local supply chains create sustainable value on the ground. He previously spent nearly four years in community development and sustainability work with Delterra/McKinsey.org. <a href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a></p>
     </div>
   </div>
 
