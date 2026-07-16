@@ -1,0 +1,33 @@
+name: Build notes from markdown
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'notes/posts/**.md'
+      - 'scripts/build_notes.py'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install markdown pyyaml
+
+      - name: Build notes
+        run: python3 scripts/build_notes.py
+
+      - name: Commit generated HTML
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-build notes from markdown"
+          file_pattern: 'notes/*.html'
