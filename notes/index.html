@@ -15,10 +15,6 @@
 <meta name="robots" content="index, follow">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127793;</text></svg>">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
-
 <title>Notes | Widi Ginanjar</title>
 <meta name="description" content="Short notes on SEO, technical audits, and what real audits actually find, from Widi Ginanjar.">
 <link rel="canonical" href="https://widiginanjar.com/notes/">
@@ -33,9 +29,9 @@
   :root {
     --bg: #FAFAF7; --paper: #FFFFFF; --ink: #1C1F1B; --ink-soft: #565B54;
     --accent: #2F6F5E; --accent-soft: #E7F0EB; --rule: #E1DED4;
-    --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
-    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
-    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
@@ -62,6 +58,16 @@
     margin-top: 10px; opacity: 0.8;
   }
   @media (prefers-reduced-motion: reduce) { .article-card { transition: none !important; } .article-card:hover { transform: none; } }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 40px 20px 60px; }
+    h1 { font-size: clamp(24px, 7vw, 30px); }
+    .subhead { font-size: 13px; margin-bottom: 28px; }
+    .article-card { padding: 16px 18px; }
+    .article-card h2 { font-size: 16px; }
+    .article-card p { font-size: 12.5px; }
+    .article-card .card-meta { font-size: 10px; }
+  }
 </style>
 </head>
 <body>
