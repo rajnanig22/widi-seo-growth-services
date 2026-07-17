@@ -58,10 +58,6 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 <meta name="robots" content="index, follow">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127793;</text></svg>">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
-
 <title>{title} | Widi Ginanjar</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
@@ -104,9 +100,9 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
     --accent: #2F6F5E;
     --accent-soft: #E7F0EB;
     --rule: #E1DED4;
-    --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
-    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
-    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   }}
   * {{ box-sizing: border-box; }}
   body {{
@@ -157,12 +153,9 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   .sources ol {{ font-size: 13px; color: var(--ink-soft); padding-left: 20px; margin: 0; }}
   .sources li {{ margin-bottom: 6px; }}
   .author-box {{
-    margin-top: 48px; padding: 24px 26px; background: var(--paper);
+    margin-top: 48px; padding: 22px 24px; background: var(--paper);
     border: 1px solid var(--rule); border-radius: 10px;
-    max-width: 620px;
-  }}
-  .author-box .author-header {{
-    display: flex; align-items: center; gap: 12px; margin-bottom: 14px;
+    display: flex; gap: 16px; align-items: flex-start;
   }}
   .author-box .avatar {{
     width: 40px; height: 40px; border-radius: 50%; background: var(--accent-soft);
@@ -170,20 +163,24 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
     font-family: var(--serif); font-weight: 600; font-size: 16px; color: var(--accent);
     flex-shrink: 0;
   }}
-  .author-box .author-name {{ font-weight: 600; font-size: 14.5px; color: var(--ink); }}
   .author-box .author-label {{
-    font-family: var(--mono); font-size: 10px; text-transform: lowercase;
-    color: var(--ink-soft); letter-spacing: 0.04em;
+    font-family: var(--mono); font-size: 10.5px; text-transform: lowercase;
+    color: var(--ink-soft); letter-spacing: 0.04em; margin: 0 0 4px;
   }}
-  .author-box p {{
-    font-size: 13.5px; color: var(--ink-soft); line-height: 1.6;
-    max-width: 60ch; margin: 0 0 14px;
-  }}
-  .author-box .linkedin-link {{
-    display: inline-flex; align-items: center; gap: 4px;
-    font-family: var(--mono); font-size: 12px; color: var(--accent);
-    background: var(--accent-soft); padding: 6px 12px; border-radius: 6px;
-    text-decoration: none;
+  .author-box p {{ font-size: 13.5px; color: var(--ink-soft); margin: 0; }}
+  .author-box strong {{ color: var(--ink); }}
+
+  @media (max-width: 640px) {{
+    .wrap {{ padding: 40px 20px 60px; }}
+    h1 {{ font-size: clamp(22px, 7vw, 30px); line-height: 1.25; }}
+    .meta {{ font-size: 12px; margin-bottom: 28px; }}
+    article p {{ font-size: 15px; margin: 0 0 18px; }}
+    article h2 {{ font-size: 19px; margin: 32px 0 12px; }}
+    article ul, article ol {{ font-size: 15px; }}
+    blockquote {{ font-size: 14px; margin: 22px 0; }}
+    .cta-box p {{ font-size: 14px; }}
+    .cta-box .cta-detail {{ font-size: 12.5px; }}
+    figcaption {{ font-size: 10px; }}
   }}
 </style>
 </head>
@@ -203,15 +200,11 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   </article>
 
   <div class="author-box">
-    <div class="author-header">
-      <div class="avatar">WG</div>
-      <div>
-        <div class="author-name">Widi Ginanjar</div>
-        <div class="author-label">written by</div>
-      </div>
+    <div class="avatar">WG</div>
+    <div>
+      <p class="author-label">written by</p>
+      <p><strong>Widi Ginanjar</strong> works at the intersection of SEO, growth operations, and community engagement. Background as a linguistic reviewer for AI model evaluation, with prior work across US-based SaaS companies and McKinsey-affiliated NGOs. Based in Bali, Indonesia. <a href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a></p>
     </div>
-    <p>An SEO, growth marketing, and content strategist based in Bali, Indonesia. He currently helps SaaS companies earn organic visibility through SEO and outreach, audits websites for freelance clients across hospitality, B2B, and NGO sectors, and researches how local supply chains create sustainable value on the ground. He previously spent nearly four years in community development and sustainability work with Delterra/McKinsey.org.</p>
-    <a class="linkedin-link" href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a>
   </div>
 
 {sources_block}
@@ -238,10 +231,6 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <meta name="robots" content="index, follow">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127793;</text></svg>">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
-
 <title>Notes | Widi Ginanjar</title>
 <meta name="description" content="Short notes on SEO, technical audits, and what real audits actually find, from Widi Ginanjar.">
 <link rel="canonical" href="{site_url}/notes/">
@@ -256,9 +245,9 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   :root {{
     --bg: #FAFAF7; --paper: #FFFFFF; --ink: #1C1F1B; --ink-soft: #565B54;
     --accent: #2F6F5E; --accent-soft: #E7F0EB; --rule: #E1DED4;
-    --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
-    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
-    --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   }}
   * {{ box-sizing: border-box; }}
   body {{ margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }}
@@ -285,6 +274,16 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
     margin-top: 10px; opacity: 0.8;
   }}
   @media (prefers-reduced-motion: reduce) {{ .article-card {{ transition: none !important; }} .article-card:hover {{ transform: none; }} }}
+
+  @media (max-width: 640px) {{
+    .wrap {{ padding: 40px 20px 60px; }}
+    h1 {{ font-size: clamp(24px, 7vw, 30px); }}
+    .subhead {{ font-size: 13px; margin-bottom: 28px; }}
+    .article-card {{ padding: 16px 18px; }}
+    .article-card h2 {{ font-size: 16px; }}
+    .article-card p {{ font-size: 12.5px; }}
+    .article-card .card-meta {{ font-size: 10px; }}
+  }}
 </style>
 </head>
 <body>
