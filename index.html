@@ -79,12 +79,18 @@
 
   body {
     margin: 0;
-    background: var(--bg);
+    background: var(--paper);
     color: var(--ink);
     font-family: var(--sans);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
+
+  .band { width: 100%; }
+  .band-hero { background: var(--bg); }
+  .band-cards { background: var(--paper); }
+  .band-cta { background: var(--accent-soft); }
+  .band-footer { background: var(--bg); border-top: 1px solid var(--rule); }
 
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
@@ -100,13 +106,38 @@
     padding: 0 32px;
   }
 
-  header.hero { padding: 44px 0 28px; }
+  header.hero {
+    padding: 32px 0 28px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  .hero-left { flex: 1.4; }
+  .hero-right {
+    flex: 1;
+    border-left: 1px solid var(--rule);
+    padding-left: 28px;
+  }
+
+  @media (max-width: 720px) {
+    header.hero { flex-direction: column; gap: 20px; }
+    .hero-right { border-left: none; padding-left: 0; padding-top: 16px; border-top: 1px solid var(--rule); }
+  }
 
   .notes-nav {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
     padding-top: 24px;
   }
+  .nav-mark {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .nav-mark:hover { text-decoration: none; color: var(--accent); }
   .notes-btn {
     display: inline-flex;
     align-items: center;
@@ -137,16 +168,16 @@
   }
 
   h1 {
-  font-family: var(--serif);
-  font-weight: 600;
-  font-size: clamp(26px, 4vw, 38px);
-  line-height: 1.15;
-  letter-spacing: -0.01em;
-  margin: 0 0 12px;
-}
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(24px, 3.4vw, 34px);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin: 0 0 12px;
+  }
 
   .subhead {
-    font-size: clamp(15px, 4vw, 18px);
+    font-size: clamp(14px, 4vw, 16px);
     color: var(--ink-soft);
     max-width: 56ch;
     margin: 0 0 16px;
@@ -157,7 +188,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 6px 16px;
-    font-size: 13.5px;
+    font-size: 13px;
     color: var(--ink-soft);
     margin-bottom: 18px;
   }
@@ -176,34 +207,26 @@
     margin: 0;
     padding-left: 16px;
     border-left: 2px solid var(--accent);
-    font-size: 15px;
+    font-size: 14px;
     color: var(--ink-soft);
   }
   blockquote.framing strong { color: var(--ink); }
 
-  .rule {
-    border: none;
-    border-top: 1px solid var(--rule);
-    margin: 0;
-  }
-
-  section.grid { padding: 40px 0; }
+  section.grid { padding: 28px 0; }
 
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 16px;
     align-items: stretch;
   }
 
   @media (max-width: 620px) {
     .cards { grid-template-columns: 1fr; }
-    header.hero { padding: 44px 0 28px; }
 
-    .notes-nav { justify-content: flex-start; padding-top: 16px; }
-    .notes-btn { font-size: 12.5px; padding: 7px 14px; }
+    .notes-btn { font-size: 12px; padding: 7px 14px; }
 
-    h1 { font-size: clamp(24px, 8vw, 32px); line-height: 1.2; }
+    h1 { font-size: clamp(22px, 8vw, 30px); line-height: 1.2; }
     .subhead { font-size: 14px; }
     .contact-line {
       flex-direction: column;
@@ -216,8 +239,8 @@
   .card {
     background: var(--paper);
     border: 1px solid var(--rule);
-    border-radius: 12px;
-    padding: 24px 20px;
+    border-radius: 10px;
+    padding: 18px 18px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -248,7 +271,7 @@
 
   .card .go-arrow {
     font-family: var(--mono);
-    font-size: 15px;
+    font-size: 14px;
     color: var(--rule);
     transition: color 0.15s ease, transform 0.15s ease;
   }
@@ -259,51 +282,61 @@
 
   .card h2 {
     font-family: var(--serif);
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.3;
     font-weight: 600;
     margin: 0;
     color: var(--ink);
   }
 
-  .card .for-line { font-size: 13.5px; color: var(--ink); margin: 0; }
-
-  .card .quote-line {
-    font-size: 12.5px;
+  .card .desc {
+    font-size: 13px;
+    line-height: 1.5;
     color: var(--ink-soft);
-    font-style: italic;
     margin: 0;
   }
+  .card .desc strong { color: var(--ink); }
 
   .card.wide { grid-column: 1 / -1; }
 
   .card .tag {
     font-family: var(--mono);
-    font-size: 10.5px;
+    font-size: 10px;
     color: var(--accent);
     text-transform: lowercase;
     letter-spacing: 0.02em;
   }
 
-  section.cta { padding: 4px 0 56px; }
+  .band-footer { background: #16302A; }
+  .band-footer .meta-card { border-top-color: rgba(255,255,255,0.15); }
+  .band-footer .meta-label { color: rgba(255,255,255,0.5); }
+  .band-footer .meta-note {
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.75);
+  }
+  .band-footer .meta-note .k { color: #7FC4A8; }
+
+  section.cta { padding: 28px 0; }
 
   .cta-box {
-    background: var(--accent-soft);
+    background: var(--paper);
     border-radius: 10px;
-    padding: 24px 22px;
+    padding: 20px 20px;
     text-align: left;
+    box-shadow: 0 2px 10px rgba(28,31,27,0.06);
   }
 
-  .cta-box p { margin: 0; font-size: 15.5px; }
+  .cta-box p { margin: 0; font-size: 14px; }
 
   .cta-box .cta-detail {
-    font-size: 13.5px;
+    font-size: 13px;
     color: var(--ink-soft);
     margin-top: 8px;
   }
 
   footer {
-    padding: 24px 0 48px;
+    padding: 20px 0 32px;
   }
 
   .meta-card {
@@ -313,7 +346,7 @@
 
   .meta-card .meta-label {
     font-family: var(--mono);
-    font-size: 10.5px;
+    font-size: 10px;
     letter-spacing: 0.04em;
     text-transform: lowercase;
     color: var(--ink-soft);
@@ -337,110 +370,122 @@
 </head>
 <body>
 
-<div class="wrap">
+<div class="band band-hero">
+  <div class="wrap">
 
-  <nav class="notes-nav">
-    <a href="/notes/" class="notes-btn">Notes on SEO &amp; Growth →</a>
-  </nav>
+    <nav class="notes-nav">
+      <a href="/" class="nav-mark">WG</a>
+      <a href="/notes/" class="notes-btn">Notes on SEO &amp; Growth →</a>
+    </nav>
 
-  <header class="hero">
-    <span class="eyebrow">portfolio / seo &amp; growth</span>
-    <h1>Widi Ginanjar<br>SEO &amp; Growth Services</h1>
-    <p class="subhead">SEO, technical audits, and organic growth, tailored to how each industry actually gets found.</p>
-    <p class="contact-line">
-      <span>Bali, Indonesia</span>
-      <span class="divider">·</span>
-      <a class="contact-link" href="mailto:rajnanig22@gmail.com">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
-        rajnanig22@gmail.com
-      </a>
-      <span class="divider">·</span>
-      <a class="contact-link" href="http://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-        linkedin.com/in/widiginanjar
-      </a>
-    </p>
-    <blockquote class="framing">
-      Pick the one closest to what you do. Each one has real, <strong>anonymised examples</strong> of what I actually found and fixed.
-    </blockquote>
-  </header>
+    <header class="hero">
+      <div class="hero-left">
+        <span class="eyebrow">portfolio / seo &amp; growth</span>
+        <h1>Widi Ginanjar<br>SEO &amp; Growth Services</h1>
+        <p class="subhead">I help NGOs, hospitality brands, B2B firms, and AI startups get found, ranked, and cited.</p>
+      </div>
+      <div class="hero-right">
+        <p class="contact-line">
+          <span>Bali, Indonesia</span>
+          <span class="divider">·</span>
+          <a class="contact-link" href="mailto:rajnanig22@gmail.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+            rajnanig22@gmail.com
+          </a>
+          <span class="divider">·</span>
+          <a class="contact-link" href="http://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            linkedin.com/in/widiginanjar
+          </a>
+        </p>
+        <blockquote class="framing">
+          Pick the one closest to what you do below, each with real, <strong>anonymised examples</strong> of what I actually found and fixed.
+        </blockquote>
+      </div>
+    </header>
 
-  <hr class="rule">
+  </div>
+</div>
 
-  <section class="grid">
-    <div class="cards">
+<div class="band band-cards">
+  <div class="wrap">
+    <section class="grid">
+      <div class="cards">
 
-      <a class="card" href="/services/ngo.html">
-        <div class="icon-row">
-          <span class="icon">🌱</span>
-          <span class="go-arrow">→</span>
-        </div>
-        <h2>SEO for NGOs &amp; Mission-Driven Teams</h2>
-        <p class="for-line"><strong>For NGOs, nonprofits, and impact-driven startups</strong> who need funders and partners to find real proof of their work.</p>
-        <p class="quote-line">Checking a website is a standard step in how grantmakers vet a potential grantee, before a cent is committed.</p>
-      </a>
+        <a class="card" href="/services/ngo.html">
+          <div class="icon-row">
+            <span class="icon">🌱</span>
+            <span class="go-arrow">→</span>
+          </div>
+          <h2>SEO for NGOs &amp; Mission-Driven Teams</h2>
+          <p class="desc"><strong>For NGOs, nonprofits, and impact-driven startups.</strong> Checking a website is a standard step in how grantmakers vet a potential grantee, before a cent is committed.</p>
+        </a>
 
-      <a class="card" href="/services/b2b.html">
-        <div class="icon-row">
-          <span class="icon">💼</span>
-          <span class="go-arrow">→</span>
-        </div>
-        <h2>SEO for B2B &amp; Professional Services</h2>
-        <p class="for-line"><strong>For consulting, research, and B2B firms</strong> whose website gets checked before a deal ever gets discussed.</p>
-        <p class="quote-line">Most buyers Google a vendor's name before a serious conversation starts. What they find in that moment quietly decides a lot.</p>
-      </a>
+        <a class="card" href="/services/b2b.html">
+          <div class="icon-row">
+            <span class="icon">💼</span>
+            <span class="go-arrow">→</span>
+          </div>
+          <h2>SEO for B2B &amp; Professional Services</h2>
+          <p class="desc"><strong>For consulting, research, and B2B firms.</strong> Most buyers Google a vendor's name before a serious conversation starts, and what they find quietly decides a lot.</p>
+        </a>
 
-      <a class="card" href="/services/hospitality.html">
-        <div class="icon-row">
-          <span class="icon">🍽️</span>
-          <span class="go-arrow">→</span>
-        </div>
-        <h2>SEO for Hospitality &amp; F&amp;B Brands</h2>
-        <p class="for-line"><strong>For restaurants, bars, and hospitality groups</strong> competing for the exact moment someone decides where to eat.</p>
-        <p class="quote-line">Unlike a social following built one post at a time, search visibility compounds, and keeps bringing people in long after the work is done.</p>
-      </a>
+        <a class="card" href="/services/hospitality.html">
+          <div class="icon-row">
+            <span class="icon">🍽️</span>
+            <span class="go-arrow">→</span>
+          </div>
+          <h2>SEO for Hospitality &amp; F&amp;B Brands</h2>
+          <p class="desc"><strong>For restaurants, bars, and hospitality groups.</strong> Unlike a social following, search visibility compounds, bringing people in long after the work is done.</p>
+        </a>
 
-      <a class="card" href="/services/ai-tech-startups.html">
-        <div class="icon-row">
-          <span class="icon">🚀</span>
-          <span class="go-arrow">→</span>
-        </div>
-        <h2>SEO for AI &amp; Tech Startups</h2>
-        <p class="for-line"><strong>For AI products and early-stage tech startups</strong> whose paid ads budget can't run forever and need organic that compounds.</p>
-        <p class="quote-line">Grew a product's own search authority score from 5-6 to 38 in under two months, entirely through relationship-based outreach, zero paid links.</p>
-      </a>
+        <a class="card" href="/services/ai-tech-startups.html">
+          <div class="icon-row">
+            <span class="icon">🚀</span>
+            <span class="go-arrow">→</span>
+          </div>
+          <h2>SEO for AI &amp; Tech Startups</h2>
+          <p class="desc"><strong>For AI products and early-stage tech startups.</strong> Grew a product's search authority score from 5-6 to 38 in two months, zero paid links.</p>
+        </a>
 
-      <a class="card wide" href="/services/ai-search-era.html">
-        <div class="icon-row">
-          <span class="icon">🔍</span>
-          <span class="go-arrow">→</span>
-        </div>
-        <span class="tag">cross-industry</span>
-        <h2>SEO &amp; Growth for the AI Search Era</h2>
-        <p class="for-line"><strong>For any organisation, across industries</strong>, thinking about how AI tools like ChatGPT and Perplexity find and cite sources, not just Google.</p>
-        <p class="quote-line">An AI doesn't rank your page, it decides whether to mention you at all, and whether it trusts what it finds enough to repeat it.</p>
-      </a>
+        <a class="card wide" href="/services/ai-search-era.html">
+          <div class="icon-row">
+            <span class="icon">🔍</span>
+            <span class="go-arrow">→</span>
+          </div>
+          <span class="tag">cross-industry</span>
+          <h2>SEO &amp; Growth for the AI Search Era</h2>
+          <p class="desc"><strong>For any organisation thinking about AI search.</strong> An AI doesn't rank your page, it decides whether to mention you at all, and whether it trusts what it finds.</p>
+        </a>
 
-    </div>
-  </section>
+      </div>
+    </section>
+  </div>
+</div>
 
-  <section class="cta">
-    <div class="cta-box">
-      <p><strong>Not sure which one fits?</strong> <a href="mailto:rajnanig22@gmail.com">Send me a message</a> and I'll point you to the right one, or just start with whichever sounds closest.</p>
-      <p class="cta-detail">Happy to start with a free 30-minute look at your site. You'll walk away with one concrete finding either way, whether or not we end up working together.</p>
-    </div>
-  </section>
+<div class="band band-cta">
+  <div class="wrap">
+    <section class="cta">
+      <div class="cta-box">
+        <p><strong>Not sure which one fits?</strong> <a href="mailto:rajnanig22@gmail.com">Send me a message</a> and I'll point you to the right one, or just start with whichever sounds closest.</p>
+        <p class="cta-detail">Happy to start with a free 30-minute look at your site. You'll walk away with one concrete finding either way, whether or not we end up working together.</p>
+      </div>
+    </section>
+  </div>
+</div>
 
-  <footer>
-    <div class="meta-card">
-      <p class="meta-label">// why this page loads fast and reads clean to search engines</p>
-      <p class="meta-note">
-        <span class="k">&lt;title&gt;</span> Widi Ginanjar | SEO &amp; Growth Services<br>
-        <span class="k">&lt;meta name="description"&gt;</span> written for humans and machines alike, not left to a platform default
-      </p>
-    </div>
-  </footer>
-
+<div class="band band-footer">
+  <div class="wrap">
+    <footer>
+      <div class="meta-card">
+        <p class="meta-label">// why this page loads fast and reads clean to search engines</p>
+        <p class="meta-note">
+          <span class="k">&lt;title&gt;</span> Widi Ginanjar | SEO &amp; Growth Services<br>
+          <span class="k">&lt;meta name="description"&gt;</span> written for humans and machines alike, not left to a platform default
+        </p>
+      </div>
+    </footer>
+  </div>
 </div>
 
 </body>
