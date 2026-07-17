@@ -100,7 +100,28 @@
     padding: 0 32px;
   }
 
-header.hero { padding: 56px 0 32px; }
+  header.hero { padding: 56px 0 32px; }
+
+  .notes-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 24px;
+  }
+  .notes-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background: var(--accent);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(47,111,94,0.25);
+  }
+  .notes-btn:hover { text-decoration: none; opacity: 0.92; }
 
   .eyebrow {
     font-family: var(--mono);
@@ -176,19 +197,21 @@ header.hero { padding: 56px 0 32px; }
   }
 
   @media (max-width: 620px) {
-  .cards { grid-template-columns: 1fr; }
-  header.hero { padding: 44px 0 28px; }
-  .notes-nav { justify-content: flex-start; padding-top: 16px; }
-  .notes-btn { font-size: 12.5px; padding: 7px 14px; }
+    .cards { grid-template-columns: 1fr; }
+    header.hero { padding: 44px 0 28px; }
 
-  h1 { font-size: clamp(24px, 8vw, 32px); line-height: 1.2; }
-  .subhead { font-size: 14px; }
-  .contact-line {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    .notes-nav { justify-content: flex-start; padding-top: 16px; }
+    .notes-btn { font-size: 12.5px; padding: 7px 14px; }
+
+    h1 { font-size: clamp(24px, 8vw, 32px); line-height: 1.2; }
+    .subhead { font-size: 14px; }
+    .contact-line {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+    .contact-line .divider { display: none; }
   }
-}
 
   .card {
     background: var(--paper);
@@ -316,9 +339,9 @@ header.hero { padding: 56px 0 32px; }
 
 <div class="wrap">
 
-  <nav class="notes-nav" style="display:flex; justify-content:flex-end; padding-top:24px;">
-  <a href="/notes/" class="notes-btn" style="display:inline-flex; align-items:center; gap:8px; font-family:var(--sans); font-size:14px; font-weight:600; color:#ffffff; background:var(--accent); padding:10px 20px; border-radius:8px; text-decoration:none; box-shadow:0 2px 8px rgba(47,111,94,0.25);">Notes on SEO &amp; Growth →</a>
-</nav>
+  <nav class="notes-nav">
+    <a href="/notes/" class="notes-btn">Notes on SEO &amp; Growth →</a>
+  </nav>
 
   <header class="hero">
     <span class="eyebrow">portfolio / seo &amp; growth</span>
