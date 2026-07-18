@@ -74,5 +74,5 @@ The uncomfortable part is that this kind of gap is invisible from the inside. No
 
 <div class="cta-box">
   <p><strong>If you run comms or ops for an NGO or mission-driven team</strong>, I offer a free 30-minute look at your site.</p>
-  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com">Get in touch</a>, or see the <a href="/services/ngo.html">full NGO service page</a> for more anonymised examples.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>, or see the <a href="/services/ngo.html">full NGO service page</a> for more anonymised examples.</p>
 </div>
