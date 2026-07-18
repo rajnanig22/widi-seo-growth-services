@@ -35,5 +35,5 @@ None of this means every business needs its own site. Plenty of small, local ope
 
 <div class="cta-box">
   <p><strong>Curious what a quick audit would find on your own site?</strong> I offer a free 30-minute look, hospitality, B2B, or NGO.</p>
-  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com">Get in touch</a>.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>.</p>
 </div>
