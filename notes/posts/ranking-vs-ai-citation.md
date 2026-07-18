@@ -55,5 +55,5 @@ So what do I actually do about it, other than write a note about it? Keep the si
 
 <div class="cta-box">
   <p><strong>Curious whether your own site would show up the same way?</strong> I offer a free 30-minute look at your site's AI-citability.</p>
-  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com">Get in touch</a>, or see the <a href="/services/ai-search-era.html">full AI Search Era service page</a>.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>, or see the <a href="/services/ai-search-era.html">full AI Search Era service page</a>.</p>
 </div>
