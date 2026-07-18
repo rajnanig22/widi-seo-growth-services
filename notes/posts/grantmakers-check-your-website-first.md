@@ -1,7 +1,7 @@
 ---
 title: Grantmakers Check Your Website Before They Check Your Impact
 description: A grantmaker's due diligence usually starts with your website, not your impact report. What one canonical tag error cost a real membership network in visibility.
-tag: mission-driven
+tag: ngo & nonprofit
 date: 2026-07-15
 slug: grantmakers-check-your-website-first
 sources:
@@ -74,5 +74,5 @@ The uncomfortable part is that this kind of gap is invisible from the inside. No
 
 <div class="cta-box">
   <p><strong>If you run comms or ops for an NGO or mission-driven team</strong>, I offer a free 30-minute look at your site.</p>
-  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com">Get in touch</a>, or see the <a href="https://ballistic-liver-8cd.notion.site/Widi-Ginanjar-SEO-Growth-for-Mission-Driven-Teams-397e8511280781e3996fd34ae0aec6dd" target="_blank" rel="noopener noreferrer">full NGO service page</a> for more anonymised examples.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com">Get in touch</a>, or see the <a href="/services/ngo.html">full NGO service page</a> for more anonymised examples.</p>
 </div>
