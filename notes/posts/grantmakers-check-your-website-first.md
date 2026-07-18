@@ -1,7 +1,7 @@
 ---
 title: Grantmakers Check Your Website Before They Check Your Impact
 description: A grantmaker's due diligence usually starts with your website, not your impact report. What one canonical tag error cost a real membership network in visibility.
-tag: ngo & nonprofit
+tag: "mission-driven"
 date: 2026-07-15
 slug: grantmakers-check-your-website-first
 sources:
