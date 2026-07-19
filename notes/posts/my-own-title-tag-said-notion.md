@@ -1,7 +1,7 @@
 ---
 title: "My SEO Portfolio's Title Tag Said \"Notion\" for Two Weeks"
 description: "I built a portfolio to sell SEO audits. Its own title tag was generic platform branding the whole time. Here's what that taught me about checking your own site first."
-tag: "meta"
+tag: "practice notes"
 date: 2026-07-16
 slug: "my-own-title-tag-said-notion"
 sources:
