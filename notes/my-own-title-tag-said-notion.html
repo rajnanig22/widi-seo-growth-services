@@ -214,5 +214,30 @@
 </div>
 </div>
 
+<script>
+  (function() {
+    var tracked = {};
+    var thresholds = [25, 50, 75, 100];
+    function checkScroll() {
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (docHeight <= 0) return;
+      var pct = Math.round((scrollTop / docHeight) * 100);
+      thresholds.forEach(function(t) {
+        if (pct >= t && !tracked[t]) {
+          tracked[t] = true;
+          gtag('event', 'scroll_depth', { 'percent': t, 'page_path': window.location.pathname });
+        }
+      });
+    }
+    var ticking = false;
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        requestAnimationFrame(function() { checkScroll(); ticking = false; });
+        ticking = true;
+      }
+    }, { passive: true });
+  })();
+</script>
 </body>
 </html>
