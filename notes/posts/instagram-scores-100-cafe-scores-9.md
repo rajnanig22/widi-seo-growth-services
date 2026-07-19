@@ -1,5 +1,5 @@
 ---
-title: "Instagram Scores 100 on Authority. The Cafe Down the Street Scores 9."
+title: "Instagram Scores 100 on Authority. The Cafe Down the Street Scores 9"
 description: "Three things one small audit turned up, the kind that actually change what you do next, not just interesting trivia."
 tag: "practice notes"
 date: 2026-07-17
