@@ -315,7 +315,13 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
     transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
   }}
   .article-card:hover {{ border-color: var(--accent); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(47, 111, 94, 0.08); text-decoration: none; }}
+  .article-card-top {{ display: flex; align-items: center; justify-content: space-between; }}
   .article-card .tag {{ font-family: var(--mono); font-size: 10.5px; color: var(--accent); text-transform: lowercase; letter-spacing: 0.02em; }}
+  .article-card .go-arrow {{
+    font-family: var(--mono); font-size: 15px; color: var(--ink-soft);
+    transition: color 0.15s ease, transform 0.15s ease;
+  }}
+  .article-card:hover .go-arrow {{ color: var(--accent); transform: translateX(2px); }}
   .article-card h2 {{ font-family: var(--serif); font-size: 18px; font-weight: 600; margin: 8px 0 6px; color: var(--ink); }}
   .article-card p {{ font-size: 13.5px; color: var(--ink-soft); margin: 0; }}
   .article-card .card-meta {{
@@ -351,7 +357,10 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 """
 
 CARD_TEMPLATE = """    <a class="article-card" href="/notes/{slug}.html">
-      <span class="tag">{tag}</span>
+      <div class="article-card-top">
+        <span class="tag">{tag}</span>
+        <span class="go-arrow">&rarr;</span>
+      </div>
       <h2>{title}</h2>
       <p>{description}</p>
       <p class="card-meta">{date_display}</p>
