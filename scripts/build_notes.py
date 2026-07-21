@@ -302,6 +302,13 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
     text-transform: uppercase; color: var(--ink-soft); font-weight: 600;
     margin: 0 0 14px; padding-top: 4px;
   }}
+  .section-nav {{ display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }}
+  .section-nav .nav-pill {{
+    font-family: var(--mono); font-size: 11.5px; color: var(--ink-soft);
+    background: var(--paper); border: 1px solid var(--rule); border-radius: 20px;
+    padding: 6px 14px; text-decoration: none; transition: border-color 0.15s ease, color 0.15s ease;
+  }}
+  .section-nav .nav-pill:hover {{ border-color: var(--accent); color: var(--accent); text-decoration: none; }}
   .article-card {{
     background: var(--paper); border: 1px solid var(--rule); border-radius: 10px;
     padding: 20px 22px; display: block; color: inherit; text-decoration: none;
@@ -335,6 +342,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   <span class="eyebrow">notes</span>
   <h1>Notes on SEO &amp; Growth</h1>
   <p class="subhead">Short, specific write-ups drawn from real audits, not generic listicles.</p>
+{nav}
 {cards}
 </div>
 
@@ -469,6 +477,18 @@ def build_index(posts):
     # Order sections by the most recent post date within each group
     group_order.sort(key=lambda s: str(groups[s][0].get("date", "")), reverse=True)
 
+    def slugify(text):
+        return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+    # Quick-nav pills, only meaningful once there's more than one section
+    nav_html = ""
+    if len(group_order) > 1:
+        pills = "\n".join(
+            f'    <a href="#{slugify(section)}" class="nav-pill">{html.escape(section)}</a>'
+            for section in group_order
+        )
+        nav_html = f'  <div class="section-nav">\n{pills}\n  </div>\n'
+
     sections_html = []
     for section in group_order:
         cards = "\n".join(
@@ -482,11 +502,13 @@ def build_index(posts):
             for p in groups[section]
         )
         sections_html.append(
-            f'  <h2 class="section-heading">{html.escape(section)}</h2>\n'
+            f'  <h2 class="section-heading" id="{slugify(section)}">{html.escape(section)}</h2>\n'
             f'  <div class="article-list">\n{cards}\n  </div>\n'
         )
 
-    html_out = INDEX_TEMPLATE.format(ga_id=GA_ID, site_url=SITE_URL, cards="\n".join(sections_html))
+    html_out = INDEX_TEMPLATE.format(
+        ga_id=GA_ID, site_url=SITE_URL, nav=nav_html, cards="\n".join(sections_html)
+    )
     out_path = os.path.join(OUTPUT_DIR, "index.html")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html_out)
