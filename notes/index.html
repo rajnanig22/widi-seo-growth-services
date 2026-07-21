@@ -62,7 +62,13 @@
     transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
   }
   .article-card:hover { border-color: var(--accent); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(47, 111, 94, 0.08); text-decoration: none; }
+  .article-card-top { display: flex; align-items: center; justify-content: space-between; }
   .article-card .tag { font-family: var(--mono); font-size: 10.5px; color: var(--accent); text-transform: lowercase; letter-spacing: 0.02em; }
+  .article-card .go-arrow {
+    font-family: var(--mono); font-size: 15px; color: var(--ink-soft);
+    transition: color 0.15s ease, transform 0.15s ease;
+  }
+  .article-card:hover .go-arrow { color: var(--accent); transform: translateX(2px); }
   .article-card h2 { font-family: var(--serif); font-size: 18px; font-weight: 600; margin: 8px 0 6px; color: var(--ink); }
   .article-card p { font-size: 13.5px; color: var(--ink-soft); margin: 0; }
   .article-card .card-meta {
@@ -98,14 +104,20 @@
   <h2 class="section-heading" id="ai-search">AI &amp; Search</h2>
   <div class="article-list">
     <a class="article-card" href="/notes/reviewing-ai-responses-writing-for-search.html">
-      <span class="tag">ai &amp; tech</span>
+      <div class="article-card-top">
+        <span class="tag">ai &amp; tech</span>
+        <span class="go-arrow">&rarr;</span>
+      </div>
       <h2>What Reviewing AI Responses Taught Me About Writing for Search</h2>
       <p>A pattern from reviewing AI model responses for accuracy, and what it means for writing content AI systems can quote correctly.</p>
       <p class="card-meta">July 21, 2026 &middot; 4 min read</p>
     </a>
 
     <a class="article-card" href="/notes/ranking-vs-ai-citation.html">
-      <span class="tag">ai search</span>
+      <div class="article-card-top">
+        <span class="tag">ai search</span>
+        <span class="go-arrow">&rarr;</span>
+      </div>
       <h2>I Rank #2 on Google for My Own Name. AI Still Doesn&#x27;t Know I Exist.</h2>
       <p>A live test of AI-citability using the easiest keyword there is, my own name. Ranking well on Google turned out to be a different problem than being cited by AI.</p>
       <p class="card-meta">July 16, 2026 &middot; 4 min read</p>
@@ -116,21 +128,30 @@
   <h2 class="section-heading" id="mission-driven-ngo">Mission-Driven &amp; NGO</h2>
   <div class="article-list">
     <a class="article-card" href="/notes/pdf-invisible-to-search.html">
-      <span class="tag">mission-driven</span>
+      <div class="article-card-top">
+        <span class="tag">mission-driven</span>
+        <span class="go-arrow">&rarr;</span>
+      </div>
       <h2>Your Impact Report is a PDF. Search Engines Barely See It.</h2>
       <p>A well-designed PDF impact report can still be nearly invisible to search engines and AI. Here&#x27;s why, and what a simple structure change fixes.</p>
       <p class="card-meta">July 19, 2026 &middot; 3 min read</p>
     </a>
 
     <a class="article-card" href="/notes/seo-checklist-ngo-no-marketing-team.html">
-      <span class="tag">mission-driven</span>
+      <div class="article-card-top">
+        <span class="tag">mission-driven</span>
+        <span class="go-arrow">&rarr;</span>
+      </div>
       <h2>The SEO Checklist for NGOs With No Marketing Team</h2>
       <p>A practical checklist for the person wearing five hats at a small NGO, written for someone with no SEO background and limited time.</p>
       <p class="card-meta">July 18, 2026 &middot; 3 min read</p>
     </a>
 
     <a class="article-card" href="/notes/grantmakers-check-your-website-first.html">
-      <span class="tag">mission-driven</span>
+      <div class="article-card-top">
+        <span class="tag">mission-driven</span>
+        <span class="go-arrow">&rarr;</span>
+      </div>
       <h2>Grantmakers Check Your Website Before They Check Your Impact</h2>
       <p>A grantmaker&#x27;s due diligence usually starts with your website, not your impact report. What one canonical tag error cost a real membership network in visibility.</p>
       <p class="card-meta">July 15, 2026 &middot; 4 min read</p>
@@ -141,21 +162,30 @@
   <h2 class="section-heading" id="practice-notes">Practice Notes</h2>
   <div class="article-list">
     <a class="article-card" href="/notes/instagram-scores-100-cafe-scores-9.html">
-      <span class="tag">practice notes</span>
+      <div class="article-card-top">
+        <span class="tag">practice notes</span>
+        <span class="go-arrow">&rarr;</span>
+      </div>
       <h2>Instagram Scores 100 on Authority. The Cafe Down the Street Scores 9</h2>
       <p>Three things one small audit turned up, the kind that actually change what you do next, not just interesting trivia.</p>
       <p class="card-meta">July 17, 2026 &middot; 3 min read</p>
     </a>
 
     <a class="article-card" href="/notes/my-own-title-tag-said-notion.html">
-      <span class="tag">practice notes</span>
+      <div class="article-card-top">
+        <span class="tag">practice notes</span>
+        <span class="go-arrow">&rarr;</span>
+      </div>
       <h2>My SEO Portfolio&#x27;s Title Tag Said &quot;Notion&quot; for Two Weeks</h2>
       <p>I built a portfolio to sell SEO audits. Its own title tag was generic platform branding the whole time. Here&#x27;s what that taught me about checking your own site first.</p>
       <p class="card-meta">July 16, 2026 &middot; 3 min read</p>
     </a>
 
     <a class="article-card" href="/notes/why-my-domain-is-my-name.html">
-      <span class="tag">practice notes</span>
+      <div class="article-card-top">
+        <span class="tag">practice notes</span>
+        <span class="go-arrow">&rarr;</span>
+      </div>
       <h2>Why My Portfolio&#x27;s Domain Is My Name, Not &quot;Bali SEO&quot;</h2>
       <p>A friend asked why I didn&#x27;t buy a keyword-matching domain instead. The answer says something about how AI search is changing what actually gets rewarded.</p>
       <p class="card-meta">July 16, 2026 &middot; 3 min read</p>
