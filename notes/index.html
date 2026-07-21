@@ -49,6 +49,13 @@
     text-transform: uppercase; color: var(--ink-soft); font-weight: 600;
     margin: 0 0 14px; padding-top: 4px;
   }
+  .section-nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+  .section-nav .nav-pill {
+    font-family: var(--mono); font-size: 11.5px; color: var(--ink-soft);
+    background: var(--paper); border: 1px solid var(--rule); border-radius: 20px;
+    padding: 6px 14px; text-decoration: none; transition: border-color 0.15s ease, color 0.15s ease;
+  }
+  .section-nav .nav-pill:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
   .article-card {
     background: var(--paper); border: 1px solid var(--rule); border-radius: 10px;
     padding: 20px 22px; display: block; color: inherit; text-decoration: none;
@@ -82,7 +89,13 @@
   <span class="eyebrow">notes</span>
   <h1>Notes on SEO &amp; Growth</h1>
   <p class="subhead">Short, specific write-ups drawn from real audits, not generic listicles.</p>
-  <h2 class="section-heading">AI &amp; Search</h2>
+  <div class="section-nav">
+    <a href="#ai-search" class="nav-pill">AI &amp; Search</a>
+    <a href="#mission-driven-ngo" class="nav-pill">Mission-Driven &amp; NGO</a>
+    <a href="#practice-notes" class="nav-pill">Practice Notes</a>
+  </div>
+
+  <h2 class="section-heading" id="ai-search">AI &amp; Search</h2>
   <div class="article-list">
     <a class="article-card" href="/notes/reviewing-ai-responses-writing-for-search.html">
       <span class="tag">ai &amp; tech</span>
@@ -100,7 +113,7 @@
 
   </div>
 
-  <h2 class="section-heading">Mission-Driven &amp; NGO</h2>
+  <h2 class="section-heading" id="mission-driven-ngo">Mission-Driven &amp; NGO</h2>
   <div class="article-list">
     <a class="article-card" href="/notes/pdf-invisible-to-search.html">
       <span class="tag">mission-driven</span>
@@ -125,7 +138,7 @@
 
   </div>
 
-  <h2 class="section-heading">Practice Notes</h2>
+  <h2 class="section-heading" id="practice-notes">Practice Notes</h2>
   <div class="article-list">
     <a class="article-card" href="/notes/instagram-scores-100-cafe-scores-9.html">
       <span class="tag">practice notes</span>
