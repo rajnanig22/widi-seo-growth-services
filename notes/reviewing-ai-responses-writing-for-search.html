@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XMWESDJT49"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XMWESDJT49');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#2F6F5E">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127793;</text></svg>">
+
+<title>What Reviewing AI Responses Taught Me About Writing for Search | Widi Ginanjar</title>
+<meta name="description" content="A pattern from reviewing AI model responses for accuracy, and what it means for writing content AI systems can quote correctly.">
+<link rel="canonical" href="https://widiginanjar.com/notes/reviewing-ai-responses-writing-for-search.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="What Reviewing AI Responses Taught Me About Writing for Search">
+<meta property="og:description" content="A pattern from reviewing AI model responses for accuracy, and what it means for writing content AI systems can quote correctly.">
+<meta property="og:url" content="https://widiginanjar.com/notes/reviewing-ai-responses-writing-for-search.html">
+<meta property="og:site_name" content="Widi Ginanjar">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="What Reviewing AI Responses Taught Me About Writing for Search">
+<meta name="twitter:description" content="A pattern from reviewing AI model responses for accuracy, and what it means for writing content AI systems can quote correctly.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What Reviewing AI Responses Taught Me About Writing for Search",
+  "author": {
+    "@type": "Person",
+    "name": "Widi Ginanjar",
+    "url": "https://widiginanjar.com",
+    "sameAs": ["https://linkedin.com/in/widiginanjar"],
+    "jobTitle": "SEO & Growth Consultant"
+  },
+  "publisher": { "@type": "Person", "name": "Widi Ginanjar" },
+  "mainEntityOfPage": "https://widiginanjar.com/notes/reviewing-ai-responses-writing-for-search.html",
+  "datePublished": "2026-07-21",
+  "description": "A pattern from reviewing AI model responses for accuracy, and what it means for writing content AI systems can quote correctly."
+}
+</script>
+
+<style>
+  :root {
+    --bg: #FAFAF7;
+    --paper: #FFFFFF;
+    --ink: #1C1F1B;
+    --ink-soft: #565B54;
+    --accent: #2F6F5E;
+    --accent-soft: #E7F0EB;
+    --rule: #E1DED4;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 32px 80px; }
+  .back-link {
+    font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft);
+    text-decoration: none; display: inline-block; margin-bottom: 32px;
+  }
+  .back-link:hover { color: var(--accent); }
+  .eyebrow {
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em;
+    text-transform: lowercase; color: var(--accent); background: var(--accent-soft);
+    display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 20px;
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 600; font-size: clamp(26px, 5vw, 36px);
+    line-height: 1.22; letter-spacing: -0.01em; margin: 0 0 16px;
+  }
+  .meta { font-size: 13px; color: var(--ink-soft); margin-bottom: 36px; }
+  article p { font-size: 16.5px; margin: 0 0 20px; }
+  article h2 { font-family: var(--serif); font-size: 22px; font-weight: 600; margin: 40px 0 14px; }
+  article strong { color: var(--ink); }
+  article ul, article ol { font-size: 16.5px; padding-left: 22px; margin: 0 0 20px; }
+  article li { margin-bottom: 8px; }
+  figure { margin: 32px 0; padding: 20px; background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; }
+  figure svg, figure img { display: block; width: 100%; height: auto; }
+  figcaption { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); text-align: center; margin-top: 10px; }
+  blockquote {
+    margin: 28px 0; padding-left: 18px; border-left: 2px solid var(--accent);
+    font-size: 16px; color: var(--ink-soft); font-style: italic;
+  }
+  blockquote p { margin: 0; font-size: inherit; color: inherit; font-style: inherit; }
+  .rule { border: none; border-top: 1px solid var(--rule); margin: 40px 0; }
+  .cta-box { background: var(--accent-soft); border-radius: 10px; padding: 24px 22px; margin-top: 8px; }
+  .cta-box p { margin: 0; font-size: 15px; }
+  .cta-box .cta-detail { color: var(--ink-soft); font-size: 13.5px; margin-top: 8px; }
+  .sources { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--rule); }
+  .sources h2 { font-size: 14px; margin: 0 0 12px; }
+  .sources ol { font-size: 13px; color: var(--ink-soft); padding-left: 20px; margin: 0; }
+  .sources li { margin-bottom: 6px; }
+  .author-box {
+    margin-top: 48px; padding: 22px 24px; background: var(--paper);
+    border: 1px solid var(--rule); border-radius: 10px;
+    display: flex; gap: 16px; align-items: flex-start;
+  }
+  .author-box .avatar {
+    width: 40px; height: 40px; border-radius: 50%; background: var(--accent-soft);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif); font-weight: 600; font-size: 16px; color: var(--accent);
+    flex-shrink: 0;
+  }
+  .author-box .author-label {
+    font-family: var(--mono); font-size: 10.5px; text-transform: lowercase;
+    color: var(--ink-soft); letter-spacing: 0.04em; margin: 0 0 4px;
+  }
+  .author-box p { font-size: 13.5px; color: var(--ink-soft); margin: 0 0 12px; }
+  .author-box strong { color: var(--ink); }
+  .author-box .author-link {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 5px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  .author-box .author-link:hover { text-decoration: none; opacity: 0.85; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 40px 20px 60px; }
+    h1 { font-size: clamp(22px, 7vw, 30px); line-height: 1.25; }
+    .meta { font-size: 12px; margin-bottom: 28px; }
+    article p { font-size: 15px; margin: 0 0 18px; }
+    article h2 { font-size: 19px; margin: 32px 0 12px; }
+    article ul, article ol { font-size: 15px; }
+    blockquote { font-size: 14px; margin: 22px 0; }
+    .cta-box p { font-size: 14px; }
+    .cta-box .cta-detail { font-size: 12.5px; }
+    figcaption { font-size: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <a class="back-link" href="/notes/">&larr; notes</a>
+
+  <span class="eyebrow">notes / ai &amp; tech</span>
+
+  <h1>What Reviewing AI Responses Taught Me About Writing for Search</h1>
+  <p class="meta">Widi Ginanjar &middot; SEO &amp; Growth &middot; July 21, 2026 &middot; 4 min read</p>
+
+  <article>
+<p>Alongside SEO work for two SaaS products, I spent a few months as a linguistic reviewer, evaluating AI model responses for factual accuracy. The job was narrower than it sounds: read a response, check it against what the source material actually said, flag where it drifted. Nothing about SEO in the job description at all.</p>
+<p>But doing that work for long enough teaches you something that turns out to matter a lot for writing content you want AI systems to cite correctly.</p>
+<h2>The pattern that kept showing up</h2>
+<p>The responses that held up best under review, the ones that stayed accurate when I checked them against sources, almost always pulled from source material that made one claim per sentence, clearly, with the subject stated up front. The responses that drifted or got facts slightly wrong tended to trace back to source text that buried the actual point in the middle of a long, qualifier-heavy sentence, the kind where the real claim depends on three clauses before it.</p>
+<p>This isn't a coincidence, and it isn't unique to whatever system I was reviewing. <a href="https://prsay.prsa.org/2026/05/11/how-to-increase-ai-citations-with-clear-writing/">Writing guidance aimed specifically at AI citation calls this "atomic" writing</a>: one idea, fully expressed, able to stand alone without needing the sentence before or after it to make sense. AI systems tend to extract from the start of a page, section, or paragraph first, and they'll skip a passage that depends on surrounding context to land correctly.</p>
+<figure>
+  <svg viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="20" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5C615A">same fact, ordered two different ways</text>
+    <rect x="0" y="35" width="640" height="65" rx="6" fill="#FAEEDA" stroke="#E1DED4" stroke-width="1.5"/>
+    <text x="16" y="58" font-family="Inter, sans-serif" font-size="12" fill="#1C1F1B">"While there are exceptions for syndicated content,</text>
+    <text x="16" y="76" font-family="Inter, sans-serif" font-size="12" fill="#1C1F1B">canonical tags generally redirect authority to the original page."</text>
+    <text x="16" y="93" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#5C615A">cut after the first clause &rarr; leaves an unresolved "while," no claim</text>
+    <rect x="0" y="115" width="640" height="65" rx="6" fill="#E7F0EB" stroke="#E1DED4" stroke-width="1.5"/>
+    <text x="16" y="138" font-family="Inter, sans-serif" font-size="12" fill="#1C1F1B">"Canonical tags redirect authority to the original page,</text>
+    <text x="16" y="156" font-family="Inter, sans-serif" font-size="12" fill="#1C1F1B">though exceptions apply for syndicated content."</text>
+    <text x="16" y="173" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#2F6F5E">cut after the first clause &rarr; the claim already stands on its own</text>
+  </svg>
+  <figcaption>Same information, but only one version survives being lifted out mid-sentence</figcaption>
+</figure>
+
+<h2>What this means for writing, not just reviewing</h2>
+<p>Most SEO advice about writing for AI search focuses on structure: headers, schema, meta descriptions. All real, all worth doing, and part of <a href="/notes/ranking-vs-ai-citation.html">why ranking well on Google and being cited by AI turned out to be two different problems</a> in the first place. But there's a sentence-level habit underneath all of it: write the claim, then the qualifier, not the other way around. "Canonical tags redirect search authority to the original page, though exceptions apply for syndicated content" survives being lifted out of context. The reversed version, leading with the exception, usually doesn't.</p>
+<h2>A quick way to check your own writing</h2>
+<p>Take any sentence or short passage you consider important, on your homepage, in a product description, wherever. I don't know the exact size AI systems chunk text into when they process a page, that varies by system and isn't public information. But the practical test still works: read your passage as if someone handed you just that piece, with nothing before or after it.</p>
+<p>If the main claim still lands without needing what came before it, it's more likely to survive being extracted correctly. If the claim only makes sense after a qualifier ("While there are exceptions... X is generally true"), lead with the claim instead, and put the qualifier after.</p>
+<p>It's a small habit, one sentence at a time, not a full rewrite of a site. But it's the difference between a sentence AI can quote correctly and one it quotes half of.</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>Want a second opinion on whether your content is written the way AI systems actually read it?</strong> I offer a free 30-minute look.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>.</p>
+</div>
+  </article>
+
+  <div class="author-box">
+    <div class="avatar">WG</div>
+    <div>
+      <p class="author-label">written by</p>
+      <p><strong>Widi Ginanjar</strong> is an SEO, growth marketing, and content strategist based in Bali, Indonesia. He currently helps SaaS companies earn organic visibility through SEO and outreach, audits websites for freelance clients across hospitality, B2B, and NGO sectors, and researches how local supply chains create sustainable value on the ground. He previously spent nearly four years in community development and sustainability work with Delterra/McKinsey.org.</p>
+      <a class="author-link" href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer" onclick="gtag('event','contact_click',{'method':'linkedin','location':'notes_author_box'});">LinkedIn &rarr;</a>
+    </div>
+  </div>
+
+<div class="sources">
+<h2>Sources</h2>
+<ol>
+<li><a href="https://prsay.prsa.org/2026/05/11/how-to-increase-ai-citations-with-clear-writing/" target="_blank" rel="noopener noreferrer">How to Increase AI Citations With Clear Writing</a> &mdash; PRSA</li>
+</ol>
+</div>
+</div>
+
+<script>
+  (function() {
+    var tracked = {};
+    var thresholds = [25, 50, 75, 100];
+    function checkScroll() {
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (docHeight <= 0) return;
+      var pct = Math.round((scrollTop / docHeight) * 100);
+      thresholds.forEach(function(t) {
+        if (pct >= t && !tracked[t]) {
+          tracked[t] = true;
+          gtag('event', 'scroll_depth', { 'percent': t, 'page_path': window.location.pathname });
+        }
+      });
+    }
+    var ticking = false;
+    window.addEventListener('scroll', function() {
+      if (!ticking) {
+        requestAnimationFrame(function() { checkScroll(); ticking = false; });
+        ticking = true;
+      }
+    }, { passive: true });
+  })();
+</script>
+</body>
+</html>
