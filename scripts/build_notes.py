@@ -296,7 +296,12 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   .eyebrow {{ font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 20px; }}
   h1 {{ font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 5vw, 36px); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 12px; }}
   .subhead {{ font-size: 15px; color: var(--ink-soft); margin: 0 0 36px; max-width: 52ch; }}
-  .article-list {{ display: flex; flex-direction: column; gap: 14px; }}
+  .article-list {{ display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; }}
+  .section-heading {{
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em;
+    text-transform: uppercase; color: var(--ink-soft); font-weight: 600;
+    margin: 0 0 14px; padding-top: 4px;
+  }}
   .article-card {{
     background: var(--paper); border: 1px solid var(--rule); border-radius: 10px;
     padding: 20px 22px; display: block; color: inherit; text-decoration: none;
@@ -330,9 +335,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   <span class="eyebrow">notes</span>
   <h1>Notes on SEO &amp; Growth</h1>
   <p class="subhead">Short, specific write-ups drawn from real audits, not generic listicles.</p>
-  <div class="article-list">
 {cards}
-  </div>
 </div>
 
 </body>
@@ -441,18 +444,49 @@ def build_article(post):
     print(f"Built {out_path}")
 
 
+SECTION_MAP = {
+    "mission-driven": "Mission-Driven & NGO",
+    "ngo": "Mission-Driven & NGO",
+    "practice notes": "Practice Notes",
+    "ai search": "AI & Search",
+    "ai & tech": "AI & Search",
+    "hospitality": "Hospitality & F&B",
+    "b2b": "B2B & Professional Services",
+}
+
+
 def build_index(posts):
-    cards = "\n".join(
-        CARD_TEMPLATE.format(
-            slug=p["slug"],
-            tag=html.escape(p.get("tag", "seo")),
-            title=html.escape(p.get("title", ""), quote=True),
-            description=html.escape(p.get("description", ""), quote=True),
-            date_display=p.get("_date_display", ""),
+    groups = {}
+    group_order = []
+    for p in posts:
+        tag = p.get("tag", "seo")
+        section = SECTION_MAP.get(tag, tag.title())
+        if section not in groups:
+            groups[section] = []
+            group_order.append(section)
+        groups[section].append(p)
+
+    # Order sections by the most recent post date within each group
+    group_order.sort(key=lambda s: str(groups[s][0].get("date", "")), reverse=True)
+
+    sections_html = []
+    for section in group_order:
+        cards = "\n".join(
+            CARD_TEMPLATE.format(
+                slug=p["slug"],
+                tag=html.escape(p.get("tag", "seo")),
+                title=html.escape(p.get("title", ""), quote=True),
+                description=html.escape(p.get("description", ""), quote=True),
+                date_display=p.get("_date_display", ""),
+            )
+            for p in groups[section]
         )
-        for p in posts
-    )
-    html_out = INDEX_TEMPLATE.format(ga_id=GA_ID, site_url=SITE_URL, cards=cards)
+        sections_html.append(
+            f'  <h2 class="section-heading">{html.escape(section)}</h2>\n'
+            f'  <div class="article-list">\n{cards}\n  </div>\n'
+        )
+
+    html_out = INDEX_TEMPLATE.format(ga_id=GA_ID, site_url=SITE_URL, cards="\n".join(sections_html))
     out_path = os.path.join(OUTPUT_DIR, "index.html")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html_out)
