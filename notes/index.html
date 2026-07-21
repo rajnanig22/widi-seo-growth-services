@@ -43,7 +43,12 @@
   .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 20px; }
   h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 5vw, 36px); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 12px; }
   .subhead { font-size: 15px; color: var(--ink-soft); margin: 0 0 36px; max-width: 52ch; }
-  .article-list { display: flex; flex-direction: column; gap: 14px; }
+  .article-list { display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; }
+  .section-heading {
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em;
+    text-transform: uppercase; color: var(--ink-soft); font-weight: 600;
+    margin: 0 0 14px; padding-top: 4px;
+  }
   .article-card {
     background: var(--paper); border: 1px solid var(--rule); border-radius: 10px;
     padding: 20px 22px; display: block; color: inherit; text-decoration: none;
@@ -77,6 +82,7 @@
   <span class="eyebrow">notes</span>
   <h1>Notes on SEO &amp; Growth</h1>
   <p class="subhead">Short, specific write-ups drawn from real audits, not generic listicles.</p>
+  <h2 class="section-heading">AI &amp; Search</h2>
   <div class="article-list">
     <a class="article-card" href="/notes/reviewing-ai-responses-writing-for-search.html">
       <span class="tag">ai &amp; tech</span>
@@ -85,6 +91,17 @@
       <p class="card-meta">July 21, 2026 &middot; 4 min read</p>
     </a>
 
+    <a class="article-card" href="/notes/ranking-vs-ai-citation.html">
+      <span class="tag">ai search</span>
+      <h2>I Rank #2 on Google for My Own Name. AI Still Doesn&#x27;t Know I Exist.</h2>
+      <p>A live test of AI-citability using the easiest keyword there is, my own name. Ranking well on Google turned out to be a different problem than being cited by AI.</p>
+      <p class="card-meta">July 16, 2026 &middot; 4 min read</p>
+    </a>
+
+  </div>
+
+  <h2 class="section-heading">Mission-Driven &amp; NGO</h2>
+  <div class="article-list">
     <a class="article-card" href="/notes/pdf-invisible-to-search.html">
       <span class="tag">mission-driven</span>
       <h2>Your Impact Report is a PDF. Search Engines Barely See It.</h2>
@@ -99,6 +116,17 @@
       <p class="card-meta">July 18, 2026 &middot; 3 min read</p>
     </a>
 
+    <a class="article-card" href="/notes/grantmakers-check-your-website-first.html">
+      <span class="tag">mission-driven</span>
+      <h2>Grantmakers Check Your Website Before They Check Your Impact</h2>
+      <p>A grantmaker&#x27;s due diligence usually starts with your website, not your impact report. What one canonical tag error cost a real membership network in visibility.</p>
+      <p class="card-meta">July 15, 2026 &middot; 4 min read</p>
+    </a>
+
+  </div>
+
+  <h2 class="section-heading">Practice Notes</h2>
+  <div class="article-list">
     <a class="article-card" href="/notes/instagram-scores-100-cafe-scores-9.html">
       <span class="tag">practice notes</span>
       <h2>Instagram Scores 100 on Authority. The Cafe Down the Street Scores 9</h2>
@@ -113,13 +141,6 @@
       <p class="card-meta">July 16, 2026 &middot; 3 min read</p>
     </a>
 
-    <a class="article-card" href="/notes/ranking-vs-ai-citation.html">
-      <span class="tag">ai search</span>
-      <h2>I Rank #2 on Google for My Own Name. AI Still Doesn&#x27;t Know I Exist.</h2>
-      <p>A live test of AI-citability using the easiest keyword there is, my own name. Ranking well on Google turned out to be a different problem than being cited by AI.</p>
-      <p class="card-meta">July 16, 2026 &middot; 4 min read</p>
-    </a>
-
     <a class="article-card" href="/notes/why-my-domain-is-my-name.html">
       <span class="tag">practice notes</span>
       <h2>Why My Portfolio&#x27;s Domain Is My Name, Not &quot;Bali SEO&quot;</h2>
@@ -127,14 +148,8 @@
       <p class="card-meta">July 16, 2026 &middot; 3 min read</p>
     </a>
 
-    <a class="article-card" href="/notes/grantmakers-check-your-website-first.html">
-      <span class="tag">mission-driven</span>
-      <h2>Grantmakers Check Your Website Before They Check Your Impact</h2>
-      <p>A grantmaker&#x27;s due diligence usually starts with your website, not your impact report. What one canonical tag error cost a real membership network in visibility.</p>
-      <p class="card-meta">July 15, 2026 &middot; 4 min read</p>
-    </a>
-
   </div>
+
 </div>
 
 </body>
