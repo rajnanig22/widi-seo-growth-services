@@ -136,6 +136,19 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   article strong {{ color: var(--ink); }}
   article ul, article ol {{ font-size: 16.5px; padding-left: 22px; margin: 0 0 20px; }}
   article li {{ margin-bottom: 8px; }}
+  article table {{
+    width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 12.5px;
+  }}
+  article th {{
+    text-align: left; font-family: var(--mono); font-size: 11px; text-transform: lowercase;
+    letter-spacing: 0.02em; color: var(--ink-soft); background: var(--accent-soft);
+    padding: 10px 14px; border-bottom: 1px solid var(--rule);
+  }}
+  article td {{
+    padding: 9px 14px; border-bottom: 1px solid var(--rule); color: var(--ink);
+  }}
+  article tr:last-child td {{ border-bottom: none; }}
+  article td:not(:first-child), article th:not(:first-child) {{ font-family: var(--mono); font-size: 13px; }}
   figure {{ margin: 32px 0; padding: 20px; background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; }}
   figure svg, figure img {{ display: block; width: 100%; height: auto; }}
   figcaption {{ font-family: var(--mono); font-size: 11px; color: var(--ink-soft); text-align: center; margin-top: 10px; }}
@@ -192,6 +205,9 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
     .cta-box p {{ font-size: 14px; }}
     .cta-box .cta-detail {{ font-size: 12.5px; }}
     figcaption {{ font-size: 10px; }}
+    article table {{ font-size: 11px; }}
+    article th, article td {{ padding: 7px 8px; }}
+    article td:not(:first-child), article th:not(:first-child) {{ font-size: 10px; }}
   }}
 </style>
 </head>
