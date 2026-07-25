@@ -18,6 +18,8 @@ I got curious one evening and started checking traffic breakdowns for a handful 
 
 **One more limit worth stating plainly:** every number here is a single snapshot, checked on one day in July 2026, not a trend measured over months. Delterra's 30.3% paid traffic could be an active, short-term campaign rather than a permanent feature of how it operates. If I checked again in three months, some of these numbers would likely move. The pattern across fourteen organizations is wide enough that I'd expect it to hold. The Delterra number specifically, being the one exception, is the one I'd trust least as a stable, ongoing fact rather than a moment I happened to catch.
 
+**One more thing worth naming:** these numbers are estimates from a third-party tool (Ahrefs), not confirmed data pulled directly from each organisation's own analytics. For high-traffic sites like Airbnb or UNICEF, that estimate is usually close. For smaller ones, like YCAB at 403 visits, the margin of error is proportionally much bigger. Treat the table below as directionally accurate, not exact.
+
 ## The full breakdown
 
 | Organisation | Monthly visits | Direct traffic | Paid traffic |
