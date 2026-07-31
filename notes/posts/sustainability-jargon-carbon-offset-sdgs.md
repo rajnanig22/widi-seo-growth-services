@@ -2,7 +2,7 @@
 title: "I Didn't Know What 'Carbon Offset' Meant Until Last Year"
 description: "I worked in sustainability for years and still didn't understand carbon offset until last year. Most people don't either."
 tag: "mission-driven"
-date: 2026-07-30
+date: 2026-07-31
 slug: "sustainability-jargon-carbon-offset-sdgs"
 sources:
   - title: "Report Highlights Sustainability Language Barrier Between Business, Consumers"
