@@ -16,7 +16,7 @@ sources:
     publisher: "Grist"
 ---
 
-I worked close to the sustainability sector for years. Village programs, funder reports, coordination meetings where terms like this came up constantly. I didn't fully understand what "carbon offset" meant until last year.
+Quick test: can you explain what "carbon offset" actually means, in one sentence, without looking it up? I couldn't, not until last year, and by then I'd worked close to the sustainability sector for years, sitting through meetings where the word came up constantly.
 
 Not because I wasn't paying attention. Nobody ever explained it. It was just used, over and over, as if everyone already knew.
 
