@@ -2,46 +2,60 @@
 title: "I Didn't Know What 'Carbon Offset' Meant Until Last Year"
 description: "I worked in sustainability for years and still didn't understand carbon offset until last year. Most people don't either."
 tag: "mission-driven"
-date: 2026-07-31
+date: 2026-07-30
 slug: "sustainability-jargon-carbon-offset-sdgs"
 sources:
-  - title: "The language of carbon: why words are now the frontline of climate credibility"
-    url: "https://www.esgdive.com/news/language-of-carbon-why-words-are-now-the-frontline-of-climate-credibility/757107/"
-    publisher: "ESG Dive"
-  - title: "Decoding Sustainability Language: From ESG to Net Zero"
-    url: "https://ecoskills.academy/decoding-sustainability-languageesg-to-net-zero/"
-    publisher: "EcoSkills Academy"
-  - title: "Study: The public is pretty confused by your climate change jargon"
-    url: "https://grist.org/language/study-climate-change-jargon-mitigation-tipping-points/"
-    publisher: "Grist"
+  - title: "Report Highlights Sustainability Language Barrier Between Business, Consumers"
+    url: "https://sustainablebrands.com/read/report-sustainability-language-barrier-business-consumers"
+    publisher: "Sustainable Brands (reporting on Trajectory & Fleet Street's 'The Language of Sustainability' survey)"
+  - title: "What are the UN Sustainable Development Goals and why do they matter?"
+    url: "https://www.weforum.org/stories/2019/09/un-sustainable-development-goals/"
+    publisher: "World Economic Forum (reporting on an Ipsos survey of ~20,000 people across 28 countries)"
 ---
 
 Quick test: can you explain what "carbon offset" actually means, in one sentence, without looking it up? I couldn't, not until last year, and by then I'd worked close to the sustainability sector for years, sitting through meetings where the word came up constantly.
 
 Not because I wasn't paying attention. Nobody ever explained it. It was just used, over and over, as if everyone already knew.
 
-Turns out, most people don't. **Only 11 percent of the public can correctly explain what carbon offsetting actually means**, according to [research summarised by EcoSkills Academy](https://ecoskills.academy/decoding-sustainability-languageesg-to-net-zero/). And it's not an isolated case. A separate survey found **only 53 percent could correctly identify what "net-zero" means**, even though it's one of the most repeated phrases in climate communication today.
+Turns out, most people don't. **Only 11 percent of the public can correctly explain what carbon offsetting actually means**, according to a [UK survey covered by Sustainable Brands](https://sustainablebrands.com/read/report-sustainability-language-barrier-business-consumers). The same survey found that only 59 percent could correctly identify what "net-zero" means, even though it's one of the most repeated phrases in climate communication today.
 
 <figure>
 <svg viewBox="0 0 600 190" xmlns="http://www.w3.org/2000/svg">
   <text x="0" y="20" font-family="ui-monospace, monospace" font-size="11" fill="#565B54">share of the public who correctly understand the term</text>
   <text x="0" y="60" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">"Net-zero"</text>
   <rect x="0" y="70" width="392" height="22" rx="4" fill="#E7F0EB"/>
-  <rect x="0" y="70" width="208" height="22" rx="4" fill="#2F6F5E"/>
-  <text x="216" y="86" font-family="ui-monospace, monospace" font-size="12" fill="#1C1F1B">53%</text>
+  <rect x="0" y="70" width="231" height="22" rx="4" fill="#2F6F5E"/>
+  <text x="239" y="86" font-family="ui-monospace, monospace" font-size="12" fill="#1C1F1B">59%</text>
   <text x="0" y="130" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">"Carbon offset"</text>
   <rect x="0" y="140" width="392" height="22" rx="4" fill="#E7F0EB"/>
   <rect x="0" y="140" width="43" height="22" rx="4" fill="#2F6F5E"/>
   <text x="51" y="156" font-family="ui-monospace, monospace" font-size="12" fill="#1C1F1B">11%</text>
 </svg>
-<figcaption>Two of the most repeated words in sustainability communication, per <a href="https://www.esgdive.com/news/language-of-carbon-why-words-are-now-the-frontline-of-climate-credibility/757107/">ESG Dive</a> and <a href="https://ecoskills.academy/decoding-sustainability-languageesg-to-net-zero/">EcoSkills Academy</a>.</figcaption>
+<figcaption>Two of the most repeated words in sustainability communication, from a UK survey of 1,000 adults conducted by Trajectory and Fleet Street, via <a href="https://sustainablebrands.com/read/report-sustainability-language-barrier-business-consumers">Sustainable Brands</a>.</figcaption>
 </figure>
 
 ## Carbon Offset and Net-Zero: Words Nobody Stopped to Explain
 
 Carbon offset isn't a difficult concept. Neither is "SDGs" (the UN's 17 development goals) or "greenwashing" (a claim that sounds sustainable but isn't backed by real action). These aren't specialist terms like a legal clause or a medical diagnosis. They're words about things that affect ordinary decisions: what people buy, which policies they support, which causes they trust enough to give money to.
 
-But the people who use these words the most, people working in sustainability, companies, funders, learn them from each other. From conferences, from reports written for each other, from funder templates. **A separate survey found 79 percent of people want this kind of language explained more simply**, according to [Grist's coverage of a UK study](https://grist.org/language/study-climate-change-jargon-mitigation-tipping-points/). People are asking for this. Almost nobody is doing it.
+The SDGs show the same gap in a slightly different shape. Globally, [74 percent of people have at least heard of the SDGs, but only 26 percent say they're actually familiar enough to explain them](https://www.weforum.org/stories/2019/09/un-sustainable-development-goals/), according to a World Economic Forum survey of nearly 20,000 people across 28 countries. Hearing a term and understanding it are two different things, and most of the public only ever gets the first one.
+
+<figure>
+<svg viewBox="0 0 600 190" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="20" font-family="ui-monospace, monospace" font-size="11" fill="#565B54">global public awareness of the SDGs</text>
+  <text x="0" y="60" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">Heard of the SDGs</text>
+  <rect x="0" y="70" width="392" height="22" rx="4" fill="#E7F0EB"/>
+  <rect x="0" y="70" width="290" height="22" rx="4" fill="#2F6F5E"/>
+  <text x="298" y="86" font-family="ui-monospace, monospace" font-size="12" fill="#1C1F1B">74%</text>
+  <text x="0" y="130" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">Familiar enough to explain them</text>
+  <rect x="0" y="140" width="392" height="22" rx="4" fill="#E7F0EB"/>
+  <rect x="0" y="140" width="102" height="22" rx="4" fill="#2F6F5E"/>
+  <text x="110" y="156" font-family="ui-monospace, monospace" font-size="12" fill="#1C1F1B">26%</text>
+</svg>
+<figcaption>Hearing the term and understanding it are two different things, per an <a href="https://www.weforum.org/stories/2019/09/un-sustainable-development-goals/">Ipsos survey for the World Economic Forum</a>.</figcaption>
+</figure>
+
+But the people who use these words the most, people working in sustainability, companies, funders, learn them from each other. From conferences, from reports written for each other, from funder templates. Nobody along that chain has much reason to stop and ask whether the words actually land once they reach the public.
 
 ## Why this is the same problem, one level earlier
 
