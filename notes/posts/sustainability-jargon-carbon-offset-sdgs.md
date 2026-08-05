@@ -17,7 +17,7 @@ sources:
 
 Not because I wasn't paying attention. Nobody ever explained it. It was just used, over and over, as if everyone already knew.
 
-Turns out, most people don't. **Only 11 percent of the public can correctly explain what carbon offsetting actually means**, according to a [UK survey covered by Sustainable Brands](https://sustainablebrands.com/read/report-sustainability-language-barrier-business-consumers). The same survey found that only 59 percent could correctly identify what "net-zero" means, even though it's one of the most repeated phrases in climate communication today.
+Turns out, most people don't. **Only 11 percent of the public can correctly explain what carbon offsetting actually means**, according to a [UK survey covered by Sustainable Brands](https://sustainablebrands.com/read/report-sustainability-language-barrier-business-consumers). The same survey found that **only 59 percent could correctly identify what "net-zero" means**, even though it's one of the most repeated phrases in climate communication today.
 
 <figure>
 <svg viewBox="0 0 600 190" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@ Turns out, most people don't. **Only 11 percent of the public can correctly expl
 
 Carbon offset isn't a difficult concept. Neither is "SDGs" (the UN's 17 development goals) or "greenwashing" (a claim that sounds sustainable but isn't backed by real action). These aren't specialist terms like a legal clause or a medical diagnosis. They're words about things that affect ordinary decisions: what people buy, which policies they support, which causes they trust enough to give money to.
 
-The SDGs show the same gap in a slightly different shape. Globally, [74 percent of people have at least heard of the SDGs, but only 26 percent say they're actually familiar enough to explain them](https://www.weforum.org/stories/2019/09/un-sustainable-development-goals/), according to a World Economic Forum survey of nearly 20,000 people across 28 countries. Hearing a term and understanding it are two different things, and most of the public only ever gets the first one.
+The SDGs show the same gap in a slightly different shape. Globally, [**74 percent of people have at least heard of the SDGs, but only 26 percent say they're actually familiar enough to explain them**](https://www.weforum.org/stories/2019/09/un-sustainable-development-goals/), according to a World Economic Forum survey of nearly 20,000 people across 28 countries. **Hearing a term and understanding it are two different things, and most of the public only ever gets the first one.**
 
 <figure>
 <svg viewBox="0 0 600 190" xmlns="http://www.w3.org/2000/svg">
@@ -59,13 +59,13 @@ But the people who use these words the most, people working in sustainability, c
 
 ## Why this is the same problem, one level earlier
 
-[I've written before about how insider language shuts people out](/notes/insider-test-curse-of-knowledge-ngo.html), even people working in adjacent fields. This is the more basic version of that problem. It's not organisational jargon specific to one NGO. It's the core vocabulary of an entire sector, assumed as common knowledge when it very much isn't.
+[I've written before about how insider language shuts people out](/notes/insider-test-curse-of-knowledge-ngo.html), even people working in adjacent fields. This is the more basic version of that problem. **It's not organisational jargon specific to one NGO. It's the core vocabulary of an entire sector, assumed as common knowledge when it very much isn't.**
 
-The cost isn't abstract. Someone who might genuinely care, a small donor, a person affected by a policy, someone deciding what to buy, runs into the words before they get to the point. If the words feel like they're not meant for them, most people conclude the topic isn't for them either. An issue that should belong to everyone ends up held by the small group who already speak its language.
+The cost isn't abstract. Someone who might genuinely care, a small donor, a person affected by a policy, someone deciding what to buy, runs into the words before they get to the point. **If the words feel like they're not meant for them, most people conclude the topic isn't for them either.** An issue that should belong to everyone ends up held by the small group who already speak its language.
 
 ## Why this matters for how I write
 
-This is why fixing text isn't just about technical SEO. **Getting traffic from Google or AI is pointless if visitors land on your site and can't actually understand what you're saying**. Canonical tags and meta tags matter, sure, but they don't help much if your copy assumes everyone is already an insider
+This is why fixing text isn't just about technical SEO. Getting traffic from Google or AI is pointless if visitors land on your site and can't actually understand what you're saying. Canonical tags and meta tags matter, sure, but they don't help much if your copy assumes everyone is already an insider
 
 <hr class="rule">
 
