@@ -13,7 +13,7 @@ sources:
     publisher: "World Economic Forum (reporting on an Ipsos survey of ~20,000 people across 28 countries)"
 ---
 
-Quick test: can you explain what "carbon offset" actually means, in one sentence, without looking it up? I couldn't, not until last year, and by then I'd worked close to the sustainability sector for years, sitting through meetings where the word came up constantly.
+**Quick test**: can you explain what "carbon offset" actually means, in one sentence, without looking it up? I couldn't, not until last year, and by then I'd worked close to the sustainability sector for years, where the word came up constantly.
 
 Not because I wasn't paying attention. Nobody ever explained it. It was just used, over and over, as if everyone already knew.
 
@@ -21,7 +21,7 @@ Turns out, most people don't. **Only 11 percent of the public can correctly expl
 
 <figure>
 <svg viewBox="0 0 600 190" xmlns="http://www.w3.org/2000/svg">
-  <text x="0" y="20" font-family="ui-monospace, monospace" font-size="11" fill="#565B54">share of the public who correctly understand the term</text>
+  <text x="0" y="20" font-family="ui-monospace, monospace" font-size="11" fill="#565B54"> share of the public who correctly understand the term</text>
   <text x="0" y="60" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">"Net-zero"</text>
   <rect x="0" y="70" width="392" height="22" rx="4" fill="#E7F0EB"/>
   <rect x="0" y="70" width="231" height="22" rx="4" fill="#2F6F5E"/>
@@ -65,7 +65,7 @@ The cost isn't abstract. Someone who might genuinely care, a small donor, a pers
 
 ## Why this matters for how I write
 
-This is part of why rewriting an organisation's language into plain English isn't just an SEO exercise for me. **Getting found by search or by AI is only useful if the people who arrive can actually understand what they're reading.** A technical fix like a canonical tag matters. But if the words on the page assume knowledge most visitors don't have, the fix doesn't do as much as it should.
+This is why fixing text isn't just about technical SEO. **Getting traffic from Google or AI is pointless if visitors land on your site and can't actually understand what you're saying**. Canonical tags and meta tags matter, sure, but they don't help much if your copy assumes everyone is already an insider
 
 <hr class="rule">
 
