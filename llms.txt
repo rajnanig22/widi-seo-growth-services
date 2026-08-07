@@ -1,0 +1,29 @@
+# Widi Ginanjar
+
+> SEO and growth marketing consultant based in Bali, Indonesia, specialising in technical audits for NGOs, B2B firms, hospitality brands, and organisations navigating AI search. Background in community-based development (Delterra, YCAB, BIDUK) prior to SEO and growth marketing work (BetterPic, Runflow).
+
+## Services
+
+- [SEO for NGOs & Mission-Driven Teams](https://widiginanjar.com/services/ngo.html): Technical SEO for NGOs, nonprofits, and social enterprises.
+- [B2B SEO Strategy for Professional Services](https://widiginanjar.com/services/b2b.html): SEO and backlink strategy for consulting, research, and B2B firms.
+- [Restaurant SEO for Hospitality & F&B Brands](https://widiginanjar.com/services/hospitality.html): Local SEO and Google Business Profile optimisation for restaurants, bars, and hospitality groups.
+- [AI Search Optimization & Citability](https://widiginanjar.com/services/ai-search-era.html): Helping organisations get found and accurately cited by ChatGPT, Perplexity, and Google AI summaries.
+- [Full Scope of Work](https://widiginanjar.com/scope-of-work.html): Complete, itemised breakdown of every service offered.
+- [About](https://widiginanjar.com/about.html): Background, approach, and career history.
+
+## Notes (technical write-ups and case studies)
+
+- [Notes index](https://widiginanjar.com/notes/): Full archive of write-ups, grouped by mission-driven/NGO, practice notes, and AI & search.
+- [Grantmakers Check Your Website Before They Check Your Impact](https://widiginanjar.com/notes/grantmakers-check-your-website-first.html): A canonical tag error and its effect on an NGO's search visibility.
+- [Nonprofit SEO Isn't Business SEO](https://widiginanjar.com/notes/nonprofit-seo-three-audiences.html): Why nonprofit websites serve three audiences with different goals, not one.
+- [I Rank #2 on Google for My Own Name. AI Still Doesn't Know I Exist.](https://widiginanjar.com/notes/ranking-vs-ai-citation.html): A live test distinguishing Google ranking from AI citability.
+- [I Checked 15 Organizations' Traffic Patterns](https://widiginanjar.com/notes/15-organizations-paid-traffic-pattern.html): A comparative study of paid vs organic search reliance across NGOs and companies.
+- [The Insider Test: Curse of Knowledge in NGO Communication](https://widiginanjar.com/notes/insider-test-curse-of-knowledge-ngo.html): Why people in adjacent sectors often can't explain an NGO's own work.
+- [Getting an Issue Found Isn't Always About Search](https://widiginanjar.com/notes/fundraiser-map-peer-sharing-vs-search.html): Peer-sharing as a discovery channel distinct from search.
+- [I Didn't Know What "Carbon Offset" Meant Until Last Year](https://widiginanjar.com/notes/sustainability-jargon-carbon-offset-sdgs.html): Public comprehension gaps in common sustainability terminology.
+- [The SEO Checklist for NGOs With No Marketing Team](https://widiginanjar.com/notes/seo-checklist-ngo-no-marketing-team.html): A practical checklist for resource-constrained nonprofits.
+- [Your Impact Report is a PDF. Search Engines Barely See It.](https://widiginanjar.com/notes/pdf-invisible-to-search.html): PDF indexability issues for nonprofit impact reports.
+
+## Optional
+
+- [Book a free 30-minute look](https://widiginanjar.com/book.html): Scheduling page for a free site review.
