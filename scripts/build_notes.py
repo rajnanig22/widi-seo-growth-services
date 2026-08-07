@@ -540,6 +540,52 @@ def build_index(posts):
     print(f"Built {out_path}")
 
 
+def build_llms_txt(posts):
+    """Regenerates llms.txt at the repo root, with a static header/services
+    block and an auto-generated Notes section built from post frontmatter.
+    Runs on every build, same as build_index(), so llms.txt never goes
+    stale after publishing a new note."""
+
+    header = """# Widi Ginanjar
+
+> SEO and growth marketing consultant based in Bali, Indonesia, specialising in technical audits for NGOs, B2B firms, hospitality brands, and organisations navigating AI search. Background in community-based development (Delterra, YCAB, BIDUK) prior to SEO and growth marketing work (BetterPic, Runflow).
+
+## Services
+
+- [SEO for NGOs & Mission-Driven Teams](https://widiginanjar.com/services/ngo.html): Technical SEO for NGOs, nonprofits, and social enterprises.
+- [B2B SEO Strategy for Professional Services](https://widiginanjar.com/services/b2b.html): SEO and backlink strategy for consulting, research, and B2B firms.
+- [Restaurant SEO for Hospitality & F&B Brands](https://widiginanjar.com/services/hospitality.html): Local SEO and Google Business Profile optimisation for restaurants, bars, and hospitality groups.
+- [AI Search Optimization & Citability](https://widiginanjar.com/services/ai-search-era.html): Helping organisations get found and accurately cited by ChatGPT, Perplexity, and Google AI summaries.
+- [Full Scope of Work](https://widiginanjar.com/scope-of-work.html): Complete, itemised breakdown of every service offered.
+- [About](https://widiginanjar.com/about.html): Background, approach, and career history.
+
+## Notes (technical write-ups and case studies)
+
+- [Notes index](https://widiginanjar.com/notes/): Full archive of write-ups, grouped by mission-driven/NGO, practice notes, and AI & search.
+"""
+
+    footer = """
+## Optional
+
+- [Book a free 30-minute look](https://widiginanjar.com/book.html): Scheduling page for a free site review.
+"""
+
+    notes_lines = []
+    for p in posts:
+        title = p.get("title", "").strip()
+        desc = p.get("description", "").strip()
+        slug = p["slug"]
+        url = f"https://widiginanjar.com/notes/{slug}.html"
+        notes_lines.append(f"- [{title}]({url}): {desc}")
+
+    content = header + "\n".join(notes_lines) + "\n" + footer
+
+    out_path = os.path.join(ROOT, "llms.txt")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"Wrote {out_path}")
+
+
 def main():
     posts = load_posts()
     if not posts:
@@ -548,6 +594,7 @@ def main():
     for p in posts:
         build_article(p)
     build_index(posts)
+    build_llms_txt(posts)
 
 
 if __name__ == "__main__":
