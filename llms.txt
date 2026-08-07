@@ -23,6 +23,12 @@
 - [I Didn't Know What "Carbon Offset" Meant Until Last Year](https://widiginanjar.com/notes/sustainability-jargon-carbon-offset-sdgs.html): Public comprehension gaps in common sustainability terminology.
 - [The SEO Checklist for NGOs With No Marketing Team](https://widiginanjar.com/notes/seo-checklist-ngo-no-marketing-team.html): A practical checklist for resource-constrained nonprofits.
 - [Your Impact Report is a PDF. Search Engines Barely See It.](https://widiginanjar.com/notes/pdf-invisible-to-search.html): PDF indexability issues for nonprofit impact reports.
+- [The Small Grey Text Under a Google Result That Most People Skip](https://widiginanjar.com/notes/google-missing-word-serp-snippet.html): A documented Google SERP feature that flags missing keywords, and why it affects click-through rate.
+- [Instagram Scores 100 on Authority. The Cafe Down the Street Scores 9](https://widiginanjar.com/notes/instagram-scores-100-cafe-scores-9.html): Findings from a small hospitality audit.
+- [My SEO Portfolio's Title Tag Said "Notion" for Two Weeks](https://widiginanjar.com/notes/my-own-title-tag-said-notion.html): A personal, self-caught technical SEO mistake and what it revealed.
+- [What Reviewing AI Responses Taught Me About Writing for Search](https://widiginanjar.com/notes/reviewing-ai-responses-writing-for-search.html): Lessons from evaluating AI model outputs for factual accuracy, applied to writing for AI citability.
+- [Why My Portfolio's Domain Is My Name, Not "Bali SEO"](https://widiginanjar.com/notes/why-my-domain-is-my-name.html): A domain-naming decision explained through an AI-search lens.
+- [You Can DIY Half of This. Here's the Half You Can't.](https://widiginanjar.com/notes/diy-half-of-seo.html): What AI tools can and can't do in a technical SEO audit.
 
 ## Optional
 
