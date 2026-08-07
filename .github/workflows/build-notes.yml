@@ -30,4 +30,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto-build notes from markdown"
-          file_pattern: 'notes/*.html'
+          file_pattern: notes/*.html llms.txt
