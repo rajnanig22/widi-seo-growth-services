@@ -6,7 +6,7 @@ date: 2026-09-05
 slug: "being-right-vs-being-responsible-ngo-comms"
 sources:
   - title: "Keeping the Lights On: How Government Funding Concerns Drive the Advocacy Agendas of Nonprofit Homeless Service Providers"
-    url: "https://ifp.nyu.edu/2012/journal-article-abstracts/keeping-the-lights-on-how-government-funding-concerns-drive-the-advocacy-agendas-of-nonprofit-homeless-service-providers/"
+    url: "https://doi.org/10.1093/jopart/mus003"
     publisher: "Mosley, J.E. (2012), Journal of Public Administration Research and Theory"
   - title: "Fearing Retaliation, Loss of Funding, Many Nonprofits Stay Quiet"
     url: "https://www.philanthropy.com/news/fearing-retaliation-loss-of-funding-many-nonprofits-stay-quiet-on-trump/"
@@ -33,7 +33,7 @@ The other extreme, leaning hard into the uncomfortable data, has its own version
 
 ## The part that took the longest to admit
 
-Here's the part I didn't want to say out loud at first: the organisation behind this post also works with government partners in the same area the post was, in a roundabout way, criticising through a line about shrinking disaster-response budgets. That's not a small detail. There's real research on this. A [2012 study on nonprofits that depend on government funding](https://ifp.nyu.edu/2012/journal-article-abstracts/keeping-the-lights-on-how-government-funding-concerns-drive-the-advocacy-agendas-of-nonprofit-homeless-service-providers/) found that these groups tend to avoid public confrontation and lean into quieter, cooperative approaches instead, mostly to protect their standing as a trusted partner. This isn't just one country's problem either. A [recent US survey](https://www.philanthropy.com/news/fearing-retaliation-loss-of-funding-many-nonprofits-stay-quiet-on-trump/) found that nearly two in three nonprofit communications staff now worry about government pushback or losing funding over their advocacy work, and close to half worry about backlash over sensitive topics.
+Here's the part I didn't want to say out loud at first: the organisation behind this post also works with government partners in the same area the post was, in a roundabout way, criticising through a line about shrinking disaster-response budgets. That's not a small detail. There's real research on this. A [2012 study on nonprofits that depend on government funding](https://doi.org/10.1093/jopart/mus003) found that these groups tend to avoid public confrontation and lean into quieter, cooperative approaches instead, mostly to protect their standing as a trusted partner. This isn't just one country's problem either. A [recent US survey](https://www.philanthropy.com/news/fearing-retaliation-loss-of-funding-many-nonprofits-stay-quiet-on-trump/) found that nearly two in three nonprofit communications staff now worry about government pushback or losing funding over their advocacy work, and close to half worry about backlash over sensitive topics.
 
 I don't think that means the budget line should have been softened into nothing. It means my hesitation wasn't just nerves. **It's a real trade-off a lot of people in this line of work run into, whether they ever put a name to it or not.**
 
