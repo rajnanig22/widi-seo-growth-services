@@ -52,6 +52,23 @@ notes/posts/*.md    ->  scripts/build_notes.py    ->  notes/*.html
 | `.github/workflows/` | Build automation |
 | `BRAND_GUIDE.md` | Colors, fonts, voice, and positioning rules |
 | `writing_guide.md` | Writing rules for the SEO notes |
+| `CLAUDE.md` | Instructions for Claude Code |
+
+## Roadmap
+
+About 60 hours of planned work, tracked in GitHub Issues:
+
+| Feature | Issue | Estimate |
+|---|---|---|
+| Tags and search for essays and notes | #3 | 12 h |
+| RSS feeds for Writing and Notes | #4 | 4 h |
+| Bilingual metadata for Indonesian essays | #5 | 8 h |
+| Search Console and GA4 dashboard | #6 | 20 h |
+| Build checks and maintenance | #7 | 16 h |
+
+## Working with Claude Code
+
+This project is built with Claude Code as a coding assistant. `CLAUDE.md` describes the build system, conventions, and rules it follows. Changes go through branches and pull requests, and are reviewed before merging.
 
 ## Ownership
 
