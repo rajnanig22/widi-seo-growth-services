@@ -6,6 +6,7 @@ on:
     paths:
       - 'notes/posts/**.md'
       - 'scripts/build_notes.py'
+      - 'scripts/build_site_index.py'
 
 permissions:
   contents: write
@@ -26,8 +27,11 @@ jobs:
       - name: Build notes
         run: python3 scripts/build_notes.py
 
+      - name: Build sitemap and llms.txt
+        run: python3 scripts/build_site_index.py
+
       - name: Commit generated HTML
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto-build notes from markdown"
-          file_pattern: notes/*.html llms.txt
+          file_pattern: notes/*.html llms.txt sitemap.xml

@@ -594,7 +594,7 @@ def main():
     for p in posts:
         build_article(p)
     build_index(posts)
-    build_llms_txt(posts)
+    # llms.txt and sitemap.xml are now built by scripts/build_site_index.py
 
 
 if __name__ == "__main__":
