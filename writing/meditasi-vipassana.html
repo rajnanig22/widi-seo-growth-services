@@ -37,6 +37,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
+  "image": "https://widiginanjar.com/og-image.png",
   "headline": "Meditasi adalah : Sebuah jebakan betmen",
   "inLanguage": "id",
   "author": { "@type": "Person", "name": "Widi Ginanjar", "url": "https://widiginanjar.com" },
@@ -70,6 +71,10 @@
   article blockquote { margin: 0 0 1.1em; padding-left: 16px; border-left: 2px solid var(--accent); color: var(--ink-soft); }
   article blockquote p { margin: 0 0 0.7em; font-size: inherit; color: inherit; }
   article strong { color: var(--ink); }
+  .subtitle { font-family: var(--serif); font-size: 17px; color: var(--ink-soft); margin: 0 0 10px; }
+  article img { display: block; width: 100%; height: auto; border-radius: 8px; margin: 1.6em 0 8px; }
+  article p:has(> img) { margin-bottom: 1.6em; }
+  article p:has(> img) em { display: block; font-size: 13px; line-height: 1.5; color: var(--ink-soft); text-align: center; }
   .note { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-soft); }
   @media (min-width: 720px) { .wrap { padding: 56px 32px 80px; } }
   @media (max-width: 640px) { article p { font-size: 16px; } }
