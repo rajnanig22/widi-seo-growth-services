@@ -27,7 +27,9 @@ Run: python3 scripts/build_writing.py
 (Also runs automatically via GitHub Actions on every push that touches
 writing/posts/*.md, see .github/workflows/build-writing.yml)
 
-This script never touches /notes/ or llms.txt.
+This script never touches /notes/ or llms.txt. It also refreshes the
+"Tulisan terbaru" block on the homepage (index.html), between the
+WRITING:START and WRITING:END markers, with the 3 newest essays.
 """
 
 import os
@@ -330,6 +332,66 @@ def build_article(post):
     print(f"Built {out_path}")
 
 
+HOME_CARD_TEMPLATE = """        <a class="w-card" href="/writing/%%SLUG%%.html" onclick="gtag('event','writing_click',{'location':'homepage_card'});">
+          %%THUMB%%
+          <span class="w-body">
+            <span class="tag">%%TAG%%</span>
+            <h3 lang="id">%%TITLE%%</h3>
+            <p lang="id">%%DESCRIPTION%%</p>
+            <span class="w-meta">%%DATE_DISPLAY%% &middot; %%READ_TIME%%</span>
+          </span>
+        </a>"""
+
+
+def thumb_html(post):
+    """Cover photo for a homepage card, or a quiet placeholder when the essay has none."""
+    image = str(post.get("image") or "").strip()
+    if not image:
+        return '<span class="thumb empty" aria-hidden="true">&#10086;</span>'
+    if not (image.startswith("/") or image.startswith("http")):
+        image = "/writing/" + image
+    safe = html.escape(image, quote=True)
+    return f'<span class="thumb" style="background-image:url({safe})" aria-hidden="true"></span>'
+
+
+def date_en(date_value):
+    """'2026-10-30' -> '30 Oct 2026' for the English homepage."""
+    text = str(date_value)
+    try:
+        return datetime.datetime.strptime(text[:10], "%Y-%m-%d").strftime("%-d %b %Y")
+    except ValueError:
+        return text
+
+
+def update_homepage(posts, limit=3):
+    """Fill the block between the WRITING markers in /index.html with the newest essays."""
+    path = os.path.join(ROOT, "index.html")
+    if not os.path.exists(path):
+        return
+    with open(path, "r", encoding="utf-8") as f:
+        page = f.read()
+    pattern = re.compile(r"(<!-- WRITING:START[^>]*-->\n).*?(<!-- WRITING:END -->)", re.DOTALL)
+    if not pattern.search(page):
+        print("Homepage has no WRITING markers, skipping homepage update")
+        return
+    cards = "\n".join(
+        fill(HOME_CARD_TEMPLATE, {
+            "SLUG": p["slug"],
+            "THUMB": thumb_html(p),
+            "TAG": html.escape(str(p.get("tag", "tulisan"))),
+            "TITLE": html.escape(str(p.get("title", "")), quote=True),
+            "DESCRIPTION": html.escape(str(p.get("description", "")), quote=True),
+            "DATE_DISPLAY": date_en(p.get("date", "")),
+            "READ_TIME": p["_read_time"].replace("menit baca", "min read"),
+        })
+        for p in posts[:limit]
+    )
+    page = pattern.sub(lambda m: m.group(1) + cards + "\n" + m.group(2), page)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(page)
+    print(f"Updated {path}")
+
+
 def build_index(posts):
     cards = "\n\n".join(
         fill(CARD_TEMPLATE, {
@@ -357,6 +419,7 @@ def main():
     for post in posts:
         build_article(post)
     build_index(posts)
+    update_homepage(posts)
 
 
 if __name__ == "__main__":
