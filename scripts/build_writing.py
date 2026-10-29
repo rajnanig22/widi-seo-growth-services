@@ -133,8 +133,8 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
   article blockquote p { margin: 0 0 0.7em; font-size: inherit; color: inherit; }
     article blockquote p { margin: 0 0 0.7em; font-size: inherit; color: inherit; }
   article strong { color: var(--ink); }
-  article a { color: var(--ink); text-decoration: none; background: linear-gradient(transparent 58%, #CFE5DA 58%); padding: 0 1px; transition: background 0.15s ease; }
-  article a:hover { background: #CFE5DA; text-decoration: none; }
+    article a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 1.5px; text-underline-offset: 3px; background: linear-gradient(transparent 58%, #CFE5DA 58%); padding: 0 1px; transition: background 0.15s ease; }
+  article a:hover { background: #CFE5DA; text-decoration-thickness: 2px; }
   .subtitle { font-family: var(--serif); font-size: 17px; color: var(--ink-soft); margin: 0 0 10px; }
   .subtitle { font-family: var(--serif); font-size: 17px; color: var(--ink-soft); margin: 0 0 10px; }
   article img { display: block; width: 100%; height: auto; border-radius: 8px; margin: 1.6em 0 8px; }
