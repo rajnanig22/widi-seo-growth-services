@@ -14,7 +14,12 @@ tag: esai pribadi
 date: 2019-07-28
 slug: my-essay-title
 note: "Optional small footer line, for example where it was first published."
+subtitle: "Optional line shown under the title."
+image: img/cover.jpg   # optional, 1200x630, used for link previews
 ---
+
+Photos: upload them to writing/img/ and use ![alt text](/writing/img/photo.jpg)
+with the caption as *italic text* on the very next line.
 
 Then normal markdown body below the second `---`.
 
@@ -98,7 +103,7 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
 <meta property="og:title" content="%%TITLE%%">
 <meta property="og:description" content="%%DESCRIPTION%%">
 <meta property="og:url" content="%%CANONICAL%%">
-<meta property="og:image" content="%%SITE_URL%%/og-image.png">
+<meta property="og:image" content="%%OG_IMAGE%%">
 <meta property="og:locale" content="id_ID">
 <meta property="og:site_name" content="Widi Ginanjar">
 <meta name="twitter:card" content="summary_large_image">
@@ -107,6 +112,7 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
 {
   "@context": "https://schema.org",
   "@type": "Article",
+  "image": "%%OG_IMAGE%%",
   "headline": %%TITLE_JSON%%,
   "inLanguage": "id",
   "author": { "@type": "Person", "name": "Widi Ginanjar", "url": "https://widiginanjar.com" },
@@ -126,6 +132,10 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
   article blockquote { margin: 0 0 1.1em; padding-left: 16px; border-left: 2px solid var(--accent); color: var(--ink-soft); }
   article blockquote p { margin: 0 0 0.7em; font-size: inherit; color: inherit; }
   article strong { color: var(--ink); }
+  .subtitle { font-family: var(--serif); font-size: 17px; color: var(--ink-soft); margin: 0 0 10px; }
+  article img { display: block; width: 100%; height: auto; border-radius: 8px; margin: 1.6em 0 8px; }
+  article p:has(> img) { margin-bottom: 1.6em; }
+  article p:has(> img) em { display: block; font-size: 13px; line-height: 1.5; color: var(--ink-soft); text-align: center; }
   .note { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-soft); }
   @media (min-width: 720px) { .wrap { padding: 56px 32px 80px; } }
   @media (max-width: 640px) { article p { font-size: 16px; } }
@@ -137,7 +147,7 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
   <a class="back-link" href="/writing/">&larr; Writing</a>
   <span class="eyebrow">%%TAG%%</span>
   <h1>%%TITLE%%</h1>
-  <p class="meta">Widi Ginanjar &middot; %%DATE_DISPLAY%% &middot; %%READ_TIME%%</p>
+%%SUBTITLE_BLOCK%%  <p class="meta">Widi Ginanjar &middot; %%DATE_DISPLAY%% &middot; %%READ_TIME%%</p>
 
   <article>
 %%CONTENT%%
@@ -277,6 +287,19 @@ def build_article(post):
     note = post.get("note")
     note_block = f'\n  <p class="note">{html.escape(str(note), quote=True)}</p>' if note else ""
 
+    subtitle = post.get("subtitle")
+    subtitle_block = f'  <p class="subtitle">{html.escape(str(subtitle), quote=True)}</p>\n' if subtitle else ""
+
+    image = str(post.get("image") or "").strip()
+    if image.startswith("http"):
+        og_image = image
+    elif image.startswith("/"):
+        og_image = SITE_URL + image
+    elif image:
+        og_image = f"{SITE_URL}/writing/{image}"
+    else:
+        og_image = f"{SITE_URL}/og-image.png"
+
     post["_date_display"] = format_date(date)
     post["_read_time"] = reading_time(post["body_md"])
 
@@ -294,6 +317,8 @@ def build_article(post):
         "TAG": html.escape(str(post.get("tag", "tulisan"))),
         "CONTENT": body_html,
         "NOTE_BLOCK": note_block,
+        "SUBTITLE_BLOCK": subtitle_block,
+        "OG_IMAGE": og_image,
     })
     out_path = os.path.join(OUTPUT_DIR, f"{slug}.html")
     with open(out_path, "w", encoding="utf-8") as f:
