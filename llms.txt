@@ -22,6 +22,7 @@
 ## Notes (technical write-ups and case studies)
 
 - [Notes index](https://widiginanjar.com/notes/): Full archive of write-ups on SEO, growth, and AI search.
+- [Anyone Can Be an SEO Specialist Now. So What Am I Actually Selling?](https://widiginanjar.com/notes/what-am-i-actually-selling.html): Anyone can list what's broken on a page now. Here's what that leaves for a human SEO consultant to actually be paid for.
 - [Being Right About the Data Isn't the Same as Being Responsible With It](https://widiginanjar.com/notes/being-right-vs-being-responsible-ngo-comms.html): A social post about forest fires led to a disagreement over one closing line. Sorting out why took longer than writing the post did.
 - [Google Knows My Website. It Doesn't Know Me.](https://widiginanjar.com/notes/ai-overview-domain-vs-name.html): Two searches, minutes apart. One found my site accurately. The other pulled from LinkedIn and mixed me up with someone else entirely.
 - [The Small Grey Text Under a Google Result That Most People Skip](https://widiginanjar.com/notes/google-missing-word-serp-snippet.html): A page ranking #1 was still getting a below-average click rate. The reason was sitting in plain sight, in small grey text most people scroll straight past.
@@ -35,9 +36,9 @@
 - [Your Impact Report is a PDF. Search Engines Barely See It.](https://widiginanjar.com/notes/pdf-invisible-to-search.html): A well-designed PDF impact report can still be nearly invisible to search engines and AI. Here's why, and what a simple structure change fixes.
 - [The SEO Checklist for NGOs With No Marketing Team](https://widiginanjar.com/notes/seo-checklist-ngo-no-marketing-team.html): A practical checklist for the person wearing five hats at a small NGO, written for someone with no SEO background and limited time.
 - [Instagram Scores 100 on Authority. The Cafe Down the Street Scores 9](https://widiginanjar.com/notes/instagram-scores-100-cafe-scores-9.html): Three things one small audit turned up, the kind that actually change what you do next, not just interesting trivia.
-- [My SEO Portfolio's Title Tag Said "Notion" for Two Weeks](https://widiginanjar.com/notes/my-own-title-tag-said-notion.html): I built a portfolio to sell SEO audits. Its own title tag was generic platform branding the whole time. Here's what that taught me about checking your own site first.
 - [I Rank #2 on Google for My Own Name. AI Still Doesn't Know I Exist.](https://widiginanjar.com/notes/ranking-vs-ai-citation.html): A live test of AI-citability using the easiest keyword there is, my own name. Ranking well on Google turned out to be a different problem than being cited by AI.
 - [Why My Portfolio's Domain Is My Name, Not "Bali SEO"](https://widiginanjar.com/notes/why-my-domain-is-my-name.html): A friend asked why I didn't buy a keyword-matching domain instead. The answer says something about how AI search is changing what actually gets rewarded.
+- [My SEO Portfolio's Title Tag Said "Notion" for Two Weeks](https://widiginanjar.com/notes/my-own-title-tag-said-notion.html): I built a portfolio to sell SEO audits. Its own title tag was generic platform branding the whole time. Here's what that taught me about checking your own site first.
 - [Grantmakers Check Your Website Before They Check Your Impact](https://widiginanjar.com/notes/grantmakers-check-your-website-first.html): A grantmaker's due diligence usually starts with your website, not your impact report. What one canonical tag error cost a real membership network in visibility.
 
 ## Optional
