@@ -131,7 +131,11 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
   article h2 { font-family: var(--serif); font-size: 21px; line-height: 1.3; margin: 1.6em 0 0.6em; }
   article blockquote { margin: 0 0 1.1em; padding-left: 16px; border-left: 2px solid var(--accent); color: var(--ink-soft); }
   article blockquote p { margin: 0 0 0.7em; font-size: inherit; color: inherit; }
+    article blockquote p { margin: 0 0 0.7em; font-size: inherit; color: inherit; }
   article strong { color: var(--ink); }
+  article a { color: var(--ink); text-decoration: none; background: linear-gradient(transparent 58%, #CFE5DA 58%); padding: 0 1px; transition: background 0.15s ease; }
+  article a:hover { background: #CFE5DA; text-decoration: none; }
+  .subtitle { font-family: var(--serif); font-size: 17px; color: var(--ink-soft); margin: 0 0 10px; }
   .subtitle { font-family: var(--serif); font-size: 17px; color: var(--ink-soft); margin: 0 0 10px; }
   article img { display: block; width: 100%; height: auto; border-radius: 8px; margin: 1.6em 0 8px; }
   article p:has(> img) { margin-bottom: 1.6em; }
