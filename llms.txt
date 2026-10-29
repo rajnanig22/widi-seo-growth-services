@@ -5,8 +5,8 @@
 ## Writing (field notes and essays, in Bahasa Indonesia)
 
 - [Writing index](https://widiginanjar.com/writing/): All essays and field notes.
-- [Yang Bergairah di Landih](https://widiginanjar.com/writing/yang-bergairah-di-landih.html): Field notes from Landih, Bangli, where coffee and citrus thrive on the flat land while bamboo is pushed to slopes and riverbanks.
-- [Meditasi adalah: Sebuah jebakan betmen](https://widiginanjar.com/writing/meditasi-vipassana.html): A personal essay about a 10-day silent Vipassana retreat near Bogor.
+- [Yang Bergairah di Landih](https://widiginanjar.com/writing/yang-bergairah-di-landih.html): Di Landih, Bangli, kopi dan jeruk tampak bergairah, sementara bambu terdesak ke lereng dan tepi sungai.
+- [Meditasi adalah : Sebuah jebakan betmen](https://widiginanjar.com/writing/meditasi-vipassana.html): Cerita 10 hari silent retreat Vipassana di Bogor, dan jawaban untuk pertanyaan orang soal kenapa aku ikut.
 
 ## Services
 
@@ -14,13 +14,14 @@
 - [SEO for NGOs & Mission-Driven Teams](https://widiginanjar.com/services/ngo.html): Technical SEO for NGOs, nonprofits, and social enterprises.
 - [B2B SEO Strategy for Professional Services](https://widiginanjar.com/services/b2b.html): SEO and backlink strategy for consulting, research, and B2B firms.
 - [Restaurant SEO for Hospitality & F&B Brands](https://widiginanjar.com/services/hospitality.html): Local SEO and Google Business Profile optimisation for restaurants, bars, and hospitality groups.
+- [SEO for AI & Tech Startups](https://widiginanjar.com/services/ai-tech-startups.html): SEO and organic growth for AI and tech startups.
 - [AI Search Optimization & Citability](https://widiginanjar.com/services/ai-search-era.html): Helping organisations get found and accurately cited by ChatGPT, Perplexity, and Google AI summaries.
 - [Full Scope of Work](https://widiginanjar.com/scope-of-work.html): Complete, itemised breakdown of every service offered.
 - [About](https://widiginanjar.com/about.html): Background, approach, and career history.
 
 ## Notes (technical write-ups and case studies)
 
-- [Notes index](https://widiginanjar.com/notes/): Full archive of write-ups, grouped by mission-driven/NGO, practice notes, and AI & search.
+- [Notes index](https://widiginanjar.com/notes/): Full archive of write-ups on SEO, growth, and AI search.
 - [Being Right About the Data Isn't the Same as Being Responsible With It](https://widiginanjar.com/notes/being-right-vs-being-responsible-ngo-comms.html): A social post about forest fires led to a disagreement over one closing line. Sorting out why took longer than writing the post did.
 - [Google Knows My Website. It Doesn't Know Me.](https://widiginanjar.com/notes/ai-overview-domain-vs-name.html): Two searches, minutes apart. One found my site accurately. The other pulled from LinkedIn and mixed me up with someone else entirely.
 - [The Small Grey Text Under a Google Result That Most People Skip](https://widiginanjar.com/notes/google-missing-word-serp-snippet.html): A page ranking #1 was still getting a below-average click rate. The reason was sitting in plain sight, in small grey text most people scroll straight past.
@@ -34,9 +35,9 @@
 - [Your Impact Report is a PDF. Search Engines Barely See It.](https://widiginanjar.com/notes/pdf-invisible-to-search.html): A well-designed PDF impact report can still be nearly invisible to search engines and AI. Here's why, and what a simple structure change fixes.
 - [The SEO Checklist for NGOs With No Marketing Team](https://widiginanjar.com/notes/seo-checklist-ngo-no-marketing-team.html): A practical checklist for the person wearing five hats at a small NGO, written for someone with no SEO background and limited time.
 - [Instagram Scores 100 on Authority. The Cafe Down the Street Scores 9](https://widiginanjar.com/notes/instagram-scores-100-cafe-scores-9.html): Three things one small audit turned up, the kind that actually change what you do next, not just interesting trivia.
-- [My SEO Portfolio's Title Tag Said "Notion" for Two Weeks](https://widiginanjar.com/notes/my-own-title-tag-said-notion.html): I built a portfolio to sell SEO audits. Its own title tag was generic platform branding the whole time. Here's what that taught me about checking your own site first.
 - [I Rank #2 on Google for My Own Name. AI Still Doesn't Know I Exist.](https://widiginanjar.com/notes/ranking-vs-ai-citation.html): A live test of AI-citability using the easiest keyword there is, my own name. Ranking well on Google turned out to be a different problem than being cited by AI.
 - [Why My Portfolio's Domain Is My Name, Not "Bali SEO"](https://widiginanjar.com/notes/why-my-domain-is-my-name.html): A friend asked why I didn't buy a keyword-matching domain instead. The answer says something about how AI search is changing what actually gets rewarded.
+- [My SEO Portfolio's Title Tag Said "Notion" for Two Weeks](https://widiginanjar.com/notes/my-own-title-tag-said-notion.html): I built a portfolio to sell SEO audits. Its own title tag was generic platform branding the whole time. Here's what that taught me about checking your own site first.
 - [Grantmakers Check Your Website Before They Check Your Impact](https://widiginanjar.com/notes/grantmakers-check-your-website-first.html): A grantmaker's due diligence usually starts with your website, not your impact report. What one canonical tag error cost a real membership network in visibility.
 
 ## Optional

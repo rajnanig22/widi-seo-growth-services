@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://widiginanjar.com/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
@@ -12,18 +12,13 @@
   </url>
   <url>
     <loc>https://widiginanjar.com/writing/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://widiginanjar.com/writing/yang-bergairah-di-landih.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://widiginanjar.com/writing/meditasi-vipassana.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://widiginanjar.com/notes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://widiginanjar.com/about.html</loc>
@@ -31,48 +26,152 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://widiginanjar.com/scope-of-work.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/book.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://widiginanjar.com/services/ngo.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://widiginanjar.com/services/b2b.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://widiginanjar.com/services/hospitality.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://widiginanjar.com/services/ai-tech-startups.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://widiginanjar.com/services/ai-search-era.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://widiginanjar.com/notes/</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://widiginanjar.com/writing/yang-bergairah-di-landih.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/writing/meditasi-vipassana.html</loc>
+    <lastmod>2019-07-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/being-right-vs-being-responsible-ngo-comms.html</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/ai-overview-domain-vs-name.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/google-missing-word-serp-snippet.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/sustainability-jargon-carbon-offset-sdgs.html</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/fundraiser-map-peer-sharing-vs-search.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/nonprofit-seo-three-audiences.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/insider-test-curse-of-knowledge-ngo.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/15-organizations-paid-traffic-pattern.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/diy-half-of-seo.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/reviewing-ai-responses-writing-for-search.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/pdf-invisible-to-search.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/seo-checklist-ngo-no-marketing-team.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/instagram-scores-100-cafe-scores-9.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/ranking-vs-ai-citation.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/why-my-domain-is-my-name.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://widiginanjar.com/notes/my-own-title-tag-said-notion.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://widiginanjar.com/notes/grantmakers-check-your-website-first.html</loc>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://widiginanjar.com/notes/ranking-vs-ai-citation.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://widiginanjar.com/notes/why-my-domain-is-my-name.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>
