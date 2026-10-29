@@ -1,9 +1,16 @@
 # Widi Ginanjar
 
-> SEO and growth marketing consultant based in Bali, Indonesia, specialising in technical audits for NGOs, B2B firms, hospitality brands, and organisations navigating AI search. Background in community-based development (Delterra, YCAB, BIDUK) prior to SEO and growth marketing work (BetterPic, Runflow).
+> Works in research, project management, and sustainability, mostly with community programs in Indonesia. Also provides SEO and digital marketing for NGOs, B2B firms, hospitality brands, and organisations navigating AI search, and writes field notes and essays in Bahasa Indonesia. Background in community-based development (Delterra, YCAB, BIDUK) and in SEO and growth marketing (BetterPic, Runflow).
+
+## Writing (field notes and essays, in Bahasa Indonesia)
+
+- [Writing index](https://widiginanjar.com/writing/): All essays and field notes.
+- [Yang Bergairah di Landih](https://widiginanjar.com/writing/yang-bergairah-di-landih.html): Field notes from Landih, Bangli, where coffee and citrus thrive on the flat land while bamboo is pushed to slopes and riverbanks.
+- [Meditasi adalah: Sebuah jebakan betmen](https://widiginanjar.com/writing/meditasi-vipassana.html): A personal essay about a 10-day silent Vipassana retreat near Bogor.
 
 ## Services
 
+- [Services overview](https://widiginanjar.com/services/): All SEO and digital marketing services.
 - [SEO for NGOs & Mission-Driven Teams](https://widiginanjar.com/services/ngo.html): Technical SEO for NGOs, nonprofits, and social enterprises.
 - [B2B SEO Strategy for Professional Services](https://widiginanjar.com/services/b2b.html): SEO and backlink strategy for consulting, research, and B2B firms.
 - [Restaurant SEO for Hospitality & F&B Brands](https://widiginanjar.com/services/hospitality.html): Local SEO and Google Business Profile optimisation for restaurants, bars, and hospitality groups.
