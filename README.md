@@ -56,7 +56,7 @@ notes/posts/*.md    ->  scripts/build_notes.py    ->  notes/*.html
 
 ## Roadmap
 
-About 60 hours of planned work, tracked in GitHub Issues:
+About 100 hours of planned work, tracked in GitHub Issues:
 
 | Feature | Issue | Estimate |
 |---|---|---|
@@ -65,6 +65,10 @@ About 60 hours of planned work, tracked in GitHub Issues:
 | Bilingual metadata for Indonesian essays | #5 | 8 h |
 | Search Console and GA4 dashboard | #6 | 20 h |
 | Build checks and maintenance | #7 | 16 h |
+| Rewrite the About page | #9 | 8 h |
+| Image pipeline for photos and covers | #10 | 16 h |
+| Related essays and archive by year | #11 | 8 h |
+| Refresh service pages | #12 | 8 h |
 
 ## Working with Claude Code
 
