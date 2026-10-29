@@ -5,6 +5,7 @@ tag: esai pribadi
 date: 2019-07-28
 slug: meditasi-vipassana
 note: "Esai ini pertama terbit di blog lamaku, Tracing Footsteps, pada 28 Juli 2019."
+image: img/meditasi-cover.jpg
 ---
 
 Bagian dari upaya menepati janji di tulisan sebelumnya click me tentang Vipassana.

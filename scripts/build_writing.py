@@ -217,7 +217,7 @@ INDEX_TEMPLATE = HEAD_COMMON + """
   <a class="back-link" href="/">&larr; widiginanjar.com</a>
   <span class="eyebrow">writing</span>
   <h1>Writing</h1>
-  <p class="subhead">Esai pribadi dan catatan lapangan tentang manusia dan komunitas, dalam Bahasa Indonesia. Ancora imparo.</p>
+  <p class="subhead">Esai pribadi dan catatan lapangan tentang manusia dan komunitas, dalam Bahasa Indonesia.</p>
 
   <div class="article-list">
 %%CARDS%%
