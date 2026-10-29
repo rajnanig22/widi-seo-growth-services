@@ -1,5 +1,13 @@
-# Brand Guide — Widi Ginanjar
+# Brand Guide: Widi Ginanjar
 Reference doc for keeping colors, fonts, voice, and identity consistent across the website, documents (CV, decks, proposals), and any other external comms. Paste this into a new chat when starting a new document/deck, so Claude (or future-me) doesn't have to rediscover it each time.
+
+## 0. Positioning (how the site introduces me)
+- **Who:** research, project management, and sustainability, mostly with community programs. Alongside that, SEO and digital marketing, and a small collection of field notes and essays.
+- **Homepage structure:** name as the headline, then two doors. 01 Writing (field notes and essays, in Bahasa Indonesia). 02 SEO & digital marketing (services, in English).
+- **Say what I do, not what I am.** No self-given titles ("community researcher", "expert"), no slogans that try to sound deep, no bragging numbers on the homepage.
+- **Every line must be true today.** If a sentence describes writing I haven't published yet, it doesn't go on the site.
+- **Language:** the site frame (nav, homepage, services) is in English. Essays are in Bahasa Indonesia, and their titles stay in Indonesian everywhere.
+- **No hometown or location in the bio.** Location appears only in the footer or structured data.
 
 ## 1. Colors (official, from widiginanjar.com)
 | Name | Hex | Use |
@@ -22,12 +30,12 @@ Reference doc for keeping colors, fonts, voice, and identity consistent across t
 Only introduce a new color if the website's palette doesn't cover the need (like dark slide backgrounds). Keep new colors in the same family (muted greens/creams), not arbitrary additions. This includes status/severity colors (critical, done, pending, etc.), don't reach for red or amber, signal urgency through bold weight and wording instead.
 
 ## 2. Fonts
-**Website (web fonts, safe because the browser loads them):**
-- Serif / headings: `Source Serif 4`
-- Sans / body: `Inter`
+**Website (web fonts, safe because the browser loads them). This is what the live site uses:**
+- Serif / headings: `IBM Plex Serif`
+- Sans / body: `IBM Plex Sans`
 - Mono / labels, tags, code: `IBM Plex Mono`
 
-**Documents (Word, PowerPoint, PDF) — use safe Office-installed fonts instead:**
+**Documents (Word, PowerPoint, PDF): use safe Office-installed fonts instead:**
 - Serif / headings: `Cambria`
 - Sans / body: `Calibri`
 
@@ -43,7 +51,8 @@ See `WRITING_GUIDE.md` for full writing rules. Key ones that also apply to decks
 ## 3.5 Canonical Contact Block
 Use this exact block wherever a document needs identity or contact info: cover pages, footers, closing signatures, email signatures. Update this section first if any of it changes, don't let individual documents drift from what's live on the site.
 - **Name:** Widi Ginanjar
-- **Tagline:** SEO & Growth Marketing Consultant
+- **Tagline:** Research, Sustainability & Digital Marketing
+- **Tagline for SEO client documents only (proposals, audits, quotations):** SEO & Growth Marketing Consultant
 - **Website:** widiginanjar.com
 - **Email:** rajnanig22@gmail.com
 - **LinkedIn:** linkedin.com/in/widiginanjar
@@ -138,6 +147,8 @@ Header row `Accent soft` background with bold `Ink` text. Alternate `Paper`/`Bac
 
 ## 7. Where this has been applied so far
 - Website (widiginanjar.com): source of truth for the light-mode palette, web fonts, and canonical contact info
+- Homepage, two-door version (Oct 2026): name headline, Writing door with own field photo, SEO door with a small search-result illustration, newest essays fill in automatically. SEO content lives at /services/
+- Link preview image (og-home.jpg): name large, short label, one field photo. No domain text inside the image, no small details that vanish at chat size
 - CV / cover letters (docx): Cambria + Calibri, ink/accent colors only, no dark sections
 - Cothink proposal deck (pptx): full palette including dark-mode extension, Cambria + Calibri
 - Cothink proposal & quotation (docx): Cambria + Calibri, ink/accent/accent-soft only, canonical contact block on cover and closing, source of the §6 toolkit
