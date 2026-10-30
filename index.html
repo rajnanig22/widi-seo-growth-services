@@ -77,11 +77,11 @@
   .nav-links a:hover { color: var(--accent); text-decoration: none; border-bottom-color: var(--accent); }
   .nav-links a.cta { color: var(--accent); }
 
-  header.hero { padding: 56px 0 44px; display: grid; grid-template-columns: 1fr 220px; grid-template-areas: "name photo" "lede photo"; column-gap: 48px; align-items: end; }
+  header.hero { padding: 56px 0 44px; display: grid; grid-template-columns: 1fr 180px; grid-template-areas: "name photo" "lede photo"; column-gap: 56px; align-items: end; }
   header.hero h1 { grid-area: name; }
   header.hero .lede { grid-area: lede; align-self: start; }
   .hero-photo { grid-area: photo; align-self: center; }
-  .hero-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 6px; }
+  .hero-photo img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%; }
   .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); margin: 0 0 18px; }
   .eyebrow span { white-space: nowrap; }
   .eyebrow::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-right: 10px; vertical-align: 1px; }
@@ -156,7 +156,7 @@
     .wrap { padding: 0 20px; }
     header.hero { padding: 32px 0 28px; grid-template-columns: 1fr 76px; grid-template-areas: "name photo" "lede lede"; column-gap: 16px; align-items: center; }
     header.hero h1 { margin-bottom: 18px; }
-    .hero-photo img { aspect-ratio: 1 / 1; border-radius: 50%; object-position: 50% 15%; }
+    .hero-photo img { aspect-ratio: 1 / 1; border-radius: 50%; }
     .nav-home { display: none; }
     nav.top { justify-content: flex-end; }
     .doors { grid-template-columns: 1fr; gap: 14px; }
@@ -187,7 +187,7 @@
   <header class="hero">
     <h1>Widi Ginanjar</h1>
     <p class="lede">Research, project management, and sustainability, mostly with community programs. Alongside that, I help organisations with SEO and digital marketing, and keep a small collection of field notes and essays.</p>
-    <a class="hero-photo" href="/about.html" aria-label="About Widi"><img src="/img/widi-ginanjar.jpg" alt="Widi Ginanjar" width="900" height="1125"></a>
+    <a class="hero-photo" href="/about.html" aria-label="About Widi"><img src="/img/widi-ginanjar-round.jpg" alt="Widi Ginanjar" width="480" height="480"></a>
   </header>
 
   <main class="doors">
