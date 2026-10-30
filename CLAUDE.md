@@ -20,7 +20,7 @@ The source for **widiginanjar.com**: a static personal site served by GitHub Pag
 | all of the above + static pages | `scripts/build_site_index.py` | `sitemap.xml`, `llms.txt` |
 | `notes/posts/*.md` without a cover | `scripts/make_note_covers.py` (fallback, run by hand, needs Playwright) | `notes/img/<slug>.jpg`, 1200x630 typographic cover |
 
-GitHub Actions (`.github/workflows/build-writing.yml`, `build-notes.yml`) run these on push to `main` and commit the generated files.
+GitHub Actions (`.github/workflows/build-site.yml`) runs all three on push to `main` and commits the generated files. Keep it as one workflow: two workflows committing the same files at the same time make one of them fail.
 
 Run locally:
 

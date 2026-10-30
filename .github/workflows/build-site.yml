@@ -1,12 +1,22 @@
-name: Build writing from markdown
+name: Build site from markdown
+
+# One workflow for essays, notes, sitemap, and llms.txt.
+# Two separate workflows used to run at the same time on the same push and
+# both tried to commit sitemap.xml and llms.txt, so the second push failed.
 
 on:
   push:
     branches: [main]
     paths:
       - 'writing/posts/**.md'
+      - 'notes/posts/**.md'
       - 'scripts/build_writing.py'
+      - 'scripts/build_notes.py'
       - 'scripts/build_site_index.py'
+
+concurrency:
+  group: build-site
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -27,11 +37,14 @@ jobs:
       - name: Build writing
         run: python3 scripts/build_writing.py
 
+      - name: Build notes
+        run: python3 scripts/build_notes.py
+
       - name: Build sitemap and llms.txt
         run: python3 scripts/build_site_index.py
 
-      - name: Commit generated HTML
+      - name: Commit generated files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto-build writing from markdown"
-          file_pattern: writing/*.html index.html sitemap.xml llms.txt
+          commit_message: "Auto-build site from markdown"
+          file_pattern: writing/*.html notes/*.html index.html sitemap.xml llms.txt
