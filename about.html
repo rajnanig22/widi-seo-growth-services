@@ -72,52 +72,30 @@
   a { color: var(--accent); }
   a:hover { text-decoration: underline; }
   .wrap { max-width: 1000px; margin: 0 auto; padding: 0 32px; }
-  .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; padding: 40px 0 28px; }
+  .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; padding: 40px 0 36px; }
   .back-link:hover { color: var(--accent); }
-
-  .hero { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; padding-bottom: 56px; }
-  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 18px; }
-  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(32px, 5vw, 52px); line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 22px; }
-  .lede { font-size: 18px; line-height: 1.6; color: var(--ink-soft); margin: 0; max-width: 34em; }
-  .lede strong { color: var(--ink); font-weight: 600; }
-  figure { margin: 0; }
-  figure img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; max-height: 460px; object-fit: cover; object-position: 50% 20%; border-radius: 6px; }
-  figcaption { font-family: var(--mono); font-size: 11.5px; color: var(--ink-soft); margin-top: 8px; }
-
-  .body { background: var(--paper); border-top: 1px solid var(--rule); }
-  .row { display: grid; grid-template-columns: 180px 1fr; gap: 32px; padding: 36px 0; border-bottom: 1px solid var(--rule); }
-  .row:last-child { border-bottom: none; }
-  .label { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); padding-top: 4px; }
-  .content { max-width: 40em; }
-  .content p { font-size: 16px; margin: 0 0 14px; }
-  .content p:last-child { margin-bottom: 0; }
-  .roles { list-style: none; padding: 0; margin: 0 0 18px; }
-  .roles li { padding: 0 0 12px; }
-  .roles .org { display: block; font-family: var(--serif); font-weight: 600; font-size: 17px; color: var(--ink); }
-  .roles .what { display: block; font-size: 15.5px; color: var(--ink-soft); }
-  .roles .yrs { font-family: var(--mono); font-weight: 400; font-size: 12px; color: var(--ink-soft); margin-left: 8px; white-space: nowrap; }
-  .study { font-size: 15px; color: var(--ink-soft); }
-
+  .about { display: grid; grid-template-columns: 320px 1fr; gap: 56px; align-items: start; padding-bottom: 72px; }
+  .photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 6px; position: sticky; top: 32px; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 16px; }
+  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(30px, 4vw, 42px); line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 28px; }
+  h2 { font-family: var(--mono); font-weight: 500; font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); margin: 32px 0 10px; }
+  .text { max-width: 36em; }
+  .text p { font-size: 16.5px; margin: 0 0 14px; }
   .contact { background: var(--forest); color: rgba(255,255,255,0.8); }
-  .contact .row { border: none; padding: 44px 0 20px; }
-  .contact .label { color: var(--mint); }
-  .contact p { font-size: 17px; margin: 0; }
+  .contact .wrap { padding-top: 40px; }
+  .contact p.cta { font-size: 17px; margin: 0 0 32px; }
   .contact a { color: #FFFFFF; }
   footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 24px 0 32px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 13.5px; }
   footer p { margin: 0; font-size: 13.5px; }
   footer .links { display: flex; gap: 22px; }
   footer .links a { color: var(--mint); display: inline-flex; min-width: 32px; min-height: 32px; align-items: center; justify-content: center; }
   footer .links a:hover { color: #FFFFFF; }
-
   @media (max-width: 760px) {
     .wrap { padding: 0 20px; }
-    .back-link { padding: 28px 0 22px; }
-    .hero { grid-template-columns: 1fr; gap: 28px; padding-bottom: 40px; }
-    .lede { font-size: 16px; }
-    figure img { aspect-ratio: 4 / 3; max-height: none; }
-    .row { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
-    .content p { font-size: 15px; }
-    .contact p { font-size: 16px; }
+    .back-link { padding: 28px 0 24px; }
+    .about { grid-template-columns: 1fr; gap: 28px; padding-bottom: 48px; }
+    .photo img { position: static; aspect-ratio: 4 / 3; object-position: 50% 20%; }
+    .text p { font-size: 15.5px; }
   }
 </style>
 </head>
@@ -125,50 +103,30 @@
 
 <div class="wrap">
   <a class="back-link" href="/">&larr; widiginanjar.com</a>
-  <header class="hero">
-    <div>
+  <main class="about">
+    <div class="photo">
+      <img src="/img/widi-ginanjar.jpg" alt="Widi Ginanjar" width="900" height="1125">
+    </div>
+    <div class="text">
       <span class="eyebrow">about</span>
       <h1>What I work on</h1>
-      <p class="lede"><strong>Research, project management, and sustainability, mostly with community programs.</strong> Alongside that, I help organisations with SEO and digital marketing, and keep a small collection of field notes and essays.</p>
-    </div>
-    <figure>
-      <img src="/img/widi-ginanjar.jpg" alt="Widi Ginanjar" width="900" height="1125">
-    </figure>
-  </header>
-</div>
 
-<main class="body">
-  <div class="wrap">
-    <section class="row">
-      <div class="label">now</div>
-      <div class="content">
-        <p>I'm working with <strong>Bamboo Village Trust</strong> on a bamboo academy in Bangli, and on research about bamboo. I also have a few <a href="/services/">SEO clients</a>.</p>
-      </div>
-    </section>
-    <section class="row">
-      <div class="label">writing</div>
-      <div class="content">
-        <p>I write <a href="/writing/">field notes</a> in Bahasa Indonesia, about things I see at work that don't make it into reports. The first one is <a href="/writing/yang-bergairah-di-landih.html" lang="id">Yang Bergairah di Landih</a>.</p>
-        <p>In English, I keep <a href="/notes/">SEO notes</a> from client work.</p>
-      </div>
-    </section>
-    <section class="row">
-      <div class="label">how i got here</div>
-      <div class="content">
-        <p>Banking first, then microfinance, then community programs: YCAB Foundation, BIDUK Indonesia, and almost four years with Delterra in Bali. SEO came later, through work with AI software companies. I studied Geomatics Engineering at ITS.</p>
-      </div>
-    </section>
-  </div>
-</main>
+      <h2>now</h2>
+      <p>I lead a bamboo project in Bangli with <strong>Bamboo Village Trust</strong>. On the side, I help a few organisations with <a href="/services/">SEO</a>.</p>
+
+      <h2>background</h2>
+      <p>About eight years in community work: local NGOs, BIDUK (an initiative funded by Australia's DFAT), and almost four years with Delterra in Bali. When that ended, I spent a year in AI software companies and learned SEO and growth from scratch.</p>
+      <p>What surprised me is how much carried over. Building trust, reading context, being patient about results: the things I learned working with villages work in SEO too. That's why this site has both.</p>
+
+      <h2>writing</h2>
+      <p><a href="/writing/">Field notes</a> in Bahasa Indonesia, about things I see at work that don't make it into reports. In English, <a href="/notes/">SEO notes</a> from client work.</p>
+    </div>
+  </main>
+</div>
 
 <div class="contact">
   <div class="wrap">
-    <section class="row">
-      <div class="label">get in touch</div>
-      <div class="content">
-        <p>Email is the easiest way: <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'about_body'});">rajnanig22@gmail.com</a>. For SEO work, you can also <a href="/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'about_body'});">book a free 30-minute look</a>.</p>
-      </div>
-    </section>
+    <p class="cta">Email is the easiest way to reach me: <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'about_body'});">rajnanig22@gmail.com</a>.</p>
   <footer>
     <p>&copy; 2026 Widi Ginanjar</p>
     <div class="links">
