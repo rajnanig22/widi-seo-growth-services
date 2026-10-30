@@ -174,7 +174,7 @@ INDEX_TEMPLATE = HEAD_COMMON + """
 <meta property="og:title" content="Writing | Widi Ginanjar">
 <meta property="og:description" content="Esai pribadi dan catatan lapangan, dalam Bahasa Indonesia.">
 <meta property="og:url" content="%%SITE_URL%%/writing/">
-<meta property="og:image" content="%%SITE_URL%%/og-image.png">
+<meta property="og:image" content="%%SITE_URL%%/og-home.jpg">
 <meta property="og:locale" content="id_ID">
 <meta property="og:site_name" content="Widi Ginanjar">
 <meta name="twitter:card" content="summary_large_image">
@@ -311,7 +311,7 @@ def build_article(post):
     elif image:
         og_image = f"{SITE_URL}/writing/{image}"
     else:
-        og_image = f"{SITE_URL}/og-image.png"
+        og_image = f"{SITE_URL}/og-home.jpg"
 
     post["_date_display"] = format_date(date)
     post["_read_time"] = reading_time(post["body_md"])
