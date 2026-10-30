@@ -1,7 +1,7 @@
 ---
 title: "Dulu Ada yang Meminta Air"
 subtitle: "Tentang kemarau, truk air, dan kutukan yang diwariskan"
-description: "Di sebuah desa di Bangli, warga membeli air untuk menyiram bibit, sumur 80 meter tetap kering, dan ada cerita tentang kutukan."
+description: "Catatan dari sebuah desa di Bangli: kemarau panjang, truk air Rp250 ribu, sumur bor 80 meter yang kering, dan legenda kutukan air di sekitar Danau Batur."
 tag: catatan lapangan
 date: 2026-10-30
 slug: dulu-ada-yang-meminta-air
@@ -28,7 +28,7 @@ Ternyata cerita ini bisa ditarik lebih jauh. Seorang teman yang menekuni sejarah
 
 Yang membuat saya terus memikirkannya adalah letak desa itu sendiri. Danau Batur, danau terbesar di Bali, tidak jauh dari sana. Tapi di desa itu, air untuk menyiram bibit tetap harus dibeli.
 
-![Rumpun bambu besar di pinggir jalan desa](/writing/img/rumpun-bambu-kemarau.jpg)
+![Rumpun bambu di pinggir jalan desa di Bangli saat kemarau](/writing/img/rumpun-bambu-kemarau.jpg)
 *Rumpun bambu di pinggir jalan desa, di tengah kemarau.*
 
 Jujur, saya bingung. Katanya bambu menyimpan air, dan di sana bambunya relatif banyak. Tapi sungainya kering, dan sumur sedalam 80 meter pun tidak menemukan air. Saya jadi bertanya-tanya, sebenarnya apa yang ada di bawah tanah desa itu?
