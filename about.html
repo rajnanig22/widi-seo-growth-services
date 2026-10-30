@@ -28,7 +28,7 @@
 <meta property="og:title" content="About | Widi Ginanjar">
 <meta property="og:description" content="Research, project management, and sustainability work with community programs, plus SEO and digital marketing. Current work, background, and contact.">
 <meta property="og:url" content="https://widiginanjar.com/about.html">
-<meta property="og:image" content="https://widiginanjar.com/og-home.jpg">
+<meta property="og:image" content="https://widiginanjar.com/og-about.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Widi Ginanjar">
@@ -36,7 +36,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="About | Widi Ginanjar">
 <meta name="twitter:description" content="Research, project management, and sustainability work with community programs, plus SEO and digital marketing. Current work, background, and contact.">
-<meta name="twitter:image" content="https://widiginanjar.com/og-home.jpg">
+<meta name="twitter:image" content="https://widiginanjar.com/og-about.jpg">
 
 <script type="application/ld+json">
 {
@@ -49,6 +49,7 @@
     "@type": "Person",
     "name": "Widi Ginanjar",
     "url": "https://widiginanjar.com",
+    "image": "https://widiginanjar.com/img/widi-ginanjar.jpg",
     "email": "mailto:rajnanig22@gmail.com",
     "knowsAbout": ["Research", "Project management", "Sustainability", "Community programs", "SEO", "Digital marketing"],
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "Institut Teknologi Sepuluh Nopember" },
@@ -61,44 +62,43 @@
 <style>
   :root {
     --bg: #FAFAF7; --paper: #FFFFFF; --ink: #1C1F1B; --ink-soft: #565B54;
-    --accent: #2F6F5E; --accent-soft: #E7F0EB; --rule: #E1DED4;
+    --accent: #2F6F5E; --accent-soft: #E7F0EB; --rule: #E1DED4; --forest: #16302A; --mint: #CFE5DA;
     --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
     --serif: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
     --sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.65; -webkit-font-smoothing: antialiased; }
   a { color: var(--accent); }
   a:hover { text-decoration: underline; }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 32px 80px; }
-  .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; margin-bottom: 28px; }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 32px; }
+  .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; padding: 40px 0 36px; }
   .back-link:hover { color: var(--accent); }
-  .eyebrow {
-    font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em;
-    text-transform: lowercase; color: var(--accent); background: var(--accent-soft);
-    display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 16px;
-  }
-  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(24px, 4vw, 32px); line-height: 1.25; margin: 0 0 20px; }
-  h2 { font-family: var(--serif); font-size: 19px; font-weight: 600; margin: 34px 0 12px; }
-  p { font-size: 15.5px; margin: 0 0 16px; }
-  strong { color: var(--ink); }
-  ul { font-size: 15.5px; padding-left: 20px; margin: 0 0 16px; }
-  li { margin-bottom: 8px; }
-  .lede { font-size: 17px; color: var(--ink-soft); margin-bottom: 28px; }
-  .timeline { list-style: none; padding: 0; }
-  .timeline li { margin-bottom: 14px; }
-  .timeline .when { display: block; font-family: var(--mono); font-size: 12px; color: var(--ink-soft); }
-  footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 13.5px; color: var(--ink-soft); }
-  footer p { margin: 0; font-size: 13.5px; }
-  footer .links { display: flex; gap: 16px; }
-  footer .links a { color: var(--ink-soft); display: inline-flex; }
-  footer .links a:hover { color: var(--accent); }
-
-  @media (max-width: 640px) {
-    .wrap { padding: 36px 20px 60px; }
-    h1 { font-size: clamp(22px, 7vw, 28px); }
-    .lede { font-size: 15.5px; }
-    p, ul, li { font-size: 14.5px; }
+  .about { display: grid; grid-template-columns: 320px 1fr; grid-template-areas: "photo text" "card text"; grid-template-rows: auto 1fr; column-gap: 56px; align-items: start; padding-bottom: 72px; }
+  .photo { grid-area: photo; }
+  .text { grid-area: text; }
+  .card { grid-area: card; }
+  .photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 6px; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 16px; }
+  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(30px, 4vw, 42px); line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 28px; }
+  h2 { font-family: var(--mono); font-weight: 500; font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); margin: 32px 0 10px; }
+  .text { max-width: 36em; }
+  .text p { font-size: 16.5px; margin: 0 0 14px; }
+  .card { margin-top: 20px; }
+  .card .name { font-family: var(--serif); font-weight: 600; font-size: 20px; margin: 0 0 12px; }
+  .contact-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
+  .contact-list li { border-bottom: 1px solid var(--rule); }
+  .contact-list a { display: flex; align-items: center; gap: 12px; padding: 11px 2px; color: var(--ink); text-decoration: none; font-size: 14.5px; }
+  .contact-list a svg { color: var(--accent); flex-shrink: 0; }
+  .contact-list a:hover { color: var(--accent); }
+  footer { border-top: 1px solid var(--rule); padding: 20px 0 32px; font-size: 13px; color: var(--ink-soft); }
+  @media (max-width: 760px) {
+    .wrap { padding: 0 20px; }
+    .back-link { padding: 28px 0 24px; }
+    .about { grid-template-columns: 1fr; grid-template-areas: "photo" "text" "card"; row-gap: 28px; padding-bottom: 48px; }
+    .card { margin-top: 8px; }
+    .photo img { aspect-ratio: 4 / 3; object-position: 50% 20%; }
+    .text p { font-size: 15.5px; }
   }
 </style>
 </head>
@@ -106,40 +106,37 @@
 
 <div class="wrap">
   <a class="back-link" href="/">&larr; widiginanjar.com</a>
+  <main class="about">
+    <div class="photo">
+      <img src="/img/widi-ginanjar.jpg" alt="Widi Ginanjar" width="900" height="1125">
+    </div>
+    <div class="card">
+      <p class="name">Widi Ginanjar</p>
+      <ul class="contact-list">
+        <li><a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'about_photo'});"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg><span>rajnanig22@gmail.com</span></a></li>
+        <li><a href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer" onclick="gtag('event','contact_click',{'method':'linkedin','location':'about_photo'});"><svg width="18" height="18" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg><span>LinkedIn</span></a></li>
+        <li><a href="https://www.instagram.com/wdwynson/" target="_blank" rel="noopener noreferrer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg><span>Instagram</span></a></li>
+      </ul>
+    </div>
+    <div class="text">
+      <span class="eyebrow">about</span>
+      <h1>What I work on</h1>
 
-  <span class="eyebrow">about</span>
-  <h1>What I work on</h1>
+      <h2>now</h2>
+      <p>I lead projects at <strong>Bamboo Village Trust</strong>. On the side, I help a few organisations with <a href="/services/">SEO and digital marketing</a>.</p>
 
-  <p class="lede">Research, project management, and sustainability, mostly with community programs. Alongside that, I help organisations with SEO and digital marketing, and keep a small collection of field notes and essays.</p>
+      <h2>background</h2>
+      <p>About eight years in community work: local NGOs, BIDUK (an initiative funded by Australia's DFAT), and almost four years with Delterra in Bali. In 2025, I moved into tech to see how digital products grow, and spent a year in AI software companies working on SEO, partnerships, and growth.</p>
+      <p>What surprised me is how much carried over. Building trust, reading context, being patient about results: the things I learned working with villages work in SEO too. That's why this site has both.</p>
 
-  <h2>Now</h2>
-  <p>Most of my week goes to bamboo construction and community programs with <strong>Bamboo Village Trust</strong>: research, coordinating with partners, and keeping project work moving from planning to the field.</p>
-  <p>Part-time, I handle growth and partnership operations for an AI software company, and I take on a few <a href="/services/">SEO and digital marketing</a> projects, mostly for NGOs and mission-driven teams.</p>
+      <h2>writing</h2>
+      <p><a href="/writing/">Field notes</a> in Bahasa Indonesia, about things I see at work that don't make it into reports. In English, <a href="/notes/">SEO notes</a> from client work.</p>
+    </div>
+  </main>
+</div>
 
-  <h2>Why I write</h2>
-  <p>Some of what I see during fieldwork doesn't fit in a project report: why a village keeps one crop close and pushes another to the slopes, what people trade it for, what they say about it. Writing is how I work through those things. The essays are in Bahasa Indonesia, starting with <a href="/writing/yang-bergairah-di-landih.html" lang="id">Yang Bergairah di Landih</a>. They're all on the <a href="/writing/">Writing</a> page.</p>
-  <p>On the SEO side, I keep <a href="/notes/">SEO notes</a> in English on what I learn from client work, including <a href="/notes/what-am-i-actually-selling.html">what a human SEO consultant is still paid for</a>.</p>
-
-  <h2>Before this</h2>
-  <ul class="timeline">
-    <li><span class="when">Delterra</span>Nearly four years coordinating a community-based sustainability program in Bali, working with village governments and waste operators.</li>
-    <li><span class="when">YCAB Foundation</span>Managed donor and partner relationships for crowdfunding campaigns.</li>
-    <li><span class="when">Banking and microfinance</span>Relationship banking at Bank Mandiri and CIMB Niaga, then an SME program with BIDUK Indonesia.</li>
-    <li><span class="when">AI evaluation</span>Reviewed AI model responses for factual accuracy.</li>
-  </ul>
-  <p>I studied Geomatics Engineering at ITS, and later took MITx's course on qualitative research methods.</p>
-
-  <h2>Get in touch</h2>
-  <p>Email is the easiest way: <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'about_body'});">rajnanig22@gmail.com</a>. For SEO work, you can also <a href="/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'about_body'});">book a free 30-minute look</a>.</p>
-
-  <footer>
-    <p>&copy; 2026 Widi Ginanjar</p>
-    <div class="links">
-        <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'about_footer'});" aria-label="Email" title="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></a>
-        <a href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
-        <a href="https://www.instagram.com/wdwynson/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a>
-      </div>
-  </footer>
+<div class="wrap">
+  <footer>&copy; 2026 Widi Ginanjar</footer>
 </div>
 
 </body>
