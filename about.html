@@ -75,9 +75,10 @@
   .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; padding: 40px 0 28px; }
   .back-link:hover { color: var(--accent); }
 
-  .hero { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; padding-bottom: 56px; }
+  .hero { padding-bottom: 48px; max-width: 40em; }
+  .avatar { display: block; width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 24px; }
   .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 18px; }
-  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(32px, 5vw, 52px); line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 22px; }
+  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(30px, 4.5vw, 44px); line-height: 1.1; letter-spacing: -0.015em; margin: 0 0 22px; }
   .lede { font-size: 18px; line-height: 1.6; color: var(--ink-soft); margin: 0; max-width: 34em; }
   .lede strong { color: var(--ink); font-weight: 600; }
   figure { margin: 0; }
@@ -112,7 +113,8 @@
   @media (max-width: 760px) {
     .wrap { padding: 0 20px; }
     .back-link { padding: 28px 0 22px; }
-    .hero { grid-template-columns: 1fr; gap: 28px; padding-bottom: 40px; }
+    .hero { padding-bottom: 36px; }
+    .avatar { width: 96px; height: 96px; }
     .lede { font-size: 16px; }
     figure img { aspect-ratio: 4 / 3; max-height: none; }
     .row { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
@@ -126,14 +128,10 @@
 <div class="wrap">
   <a class="back-link" href="/">&larr; widiginanjar.com</a>
   <header class="hero">
-    <div>
-      <span class="eyebrow">about</span>
-      <h1>What I work on</h1>
-      <p class="lede"><strong>Research, project management, and sustainability, mostly with community programs.</strong> Alongside that, I help organisations with SEO and digital marketing, and keep a small collection of field notes and essays.</p>
-    </div>
-    <figure>
-      <img src="/img/widi-ginanjar.jpg" alt="Widi Ginanjar" width="900" height="1125">
-    </figure>
+    <img class="avatar" src="/img/widi-ginanjar-avatar.jpg" alt="Widi Ginanjar" width="160" height="160">
+    <span class="eyebrow">about</span>
+    <h1>What I work on</h1>
+    <p class="lede">I work on community programs: research, project management, and sustainability. I also do SEO and digital marketing, and write now and then.</p>
   </header>
 </div>
 
@@ -142,22 +140,20 @@
     <section class="row">
       <div class="label">now</div>
       <div class="content">
-        <p>I lead the building of a bamboo academy in Bangli with <strong>Bamboo Village Trust</strong>, and support their research on the bamboo value chain.</p>
-        <p>Alongside that, I take on a few <a href="/services/">SEO and growth marketing</a> projects, mostly for NGOs and hospitality.</p>
+        <p>I'm working with <strong>Bamboo Village Trust</strong> on a bamboo academy in Bangli, and on research about bamboo. I also have a few <a href="/services/">SEO clients</a>.</p>
       </div>
     </section>
     <section class="row">
-      <div class="label">why i write</div>
+      <div class="label">writing</div>
       <div class="content">
-        <p>Some of what I see during fieldwork doesn't fit in a project report: why a village keeps one crop close and pushes another to the slopes, what people trade it for, what they say about it. Writing is how I work through those things. The essays are in Bahasa Indonesia, starting with <a href="/writing/yang-bergairah-di-landih.html" lang="id">Yang Bergairah di Landih</a>. They're all on the <a href="/writing/">Writing</a> page.</p>
-        <p>On the SEO side, I keep <a href="/notes/">SEO notes</a> in English on what I learn from client work, including <a href="/notes/what-am-i-actually-selling.html">what a human SEO consultant is still paid for</a>.</p>
+        <p>I write <a href="/writing/">field notes</a> in Bahasa Indonesia, about things I see at work that don't make it into reports. The first one is <a href="/writing/yang-bergairah-di-landih.html" lang="id">Yang Bergairah di Landih</a>.</p>
+        <p>In English, I keep <a href="/notes/">SEO notes</a> from client work.</p>
       </div>
     </section>
     <section class="row">
       <div class="label">how i got here</div>
       <div class="content">
-        <p>I started in banking in Surabaya, then moved into microfinance and community work: first with YCAB Foundation and BIDUK Indonesia, later nearly four years with Delterra, a McKinsey.org initiative, on a recycling program with villages in Bali.</p>
-        <p>The SEO side came later, from growth work for AI software companies. I studied Geomatics Engineering at ITS, and most of what I use now I learned on the job.</p>
+        <p>Banking first, then microfinance, then community programs: YCAB Foundation, BIDUK Indonesia, and almost four years with Delterra in Bali. SEO came later, through work with AI software companies. I studied Geomatics Engineering at ITS.</p>
       </div>
     </section>
   </div>
