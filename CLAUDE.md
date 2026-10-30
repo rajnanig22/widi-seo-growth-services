@@ -18,6 +18,7 @@ The source for **widiginanjar.com**: a static personal site served by GitHub Pag
 | `writing/posts/*.md` | `scripts/build_writing.py` | `writing/*.html`, `writing/index.html`, the cards between the `WRITING:START` and `WRITING:END` markers in `index.html` |
 | `notes/posts/*.md` | `scripts/build_notes.py` | `notes/*.html`, `notes/index.html` |
 | all of the above + static pages | `scripts/build_site_index.py` | `sitemap.xml`, `llms.txt` |
+| `notes/posts/*.md` without a cover | `scripts/make_note_covers.py` (fallback, run by hand, needs Playwright) | `notes/img/<slug>.jpg`, 1200x630 typographic cover |
 
 GitHub Actions (`.github/workflows/build-writing.yml`, `build-notes.yml`) run these on push to `main` and commit the generated files.
 
@@ -38,6 +39,7 @@ python3 scripts/build_site_index.py
 - **Language:** site frame, services, and notes in English. Essays in Bahasa Indonesia; keep their titles in Indonesian everywhere.
 - **Brand:** colors, fonts (IBM Plex Serif, Sans, Mono), and design guardrails are in `BRAND_GUIDE.md`. Follow its "avoid the AI look" rules: no icon-in-circle, no drop shadow on every card, no decorative accent bars.
 - **Mobile first:** check every layout change at 360px and 390px wide with no horizontal scroll.
+- **Note covers:** free Unsplash photos, 1200x630, in `notes/img/<slug>.jpg`, each listed in `notes/img/CREDITS.md`. No clear faces or brand logos.
 - **Images:** essay photos go in `writing/img/`, 4:5 crop around 900px wide, under about 300 KB. Covers for cards and link previews are 1200x630.
 - **SEO notes** follow `writing_guide.md`, including its six official tags.
 - **Privacy:** don't name people from fieldwork without their consent. Never commit client data or credentials. API keys go in repository secrets.

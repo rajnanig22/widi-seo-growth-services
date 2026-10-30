@@ -91,7 +91,7 @@ CSS_COMMON = """  :root {
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
   a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
-  .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: inline-block; margin-bottom: 32px; }
+  .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; margin-bottom: 32px; }
   .back-link:hover { color: var(--accent); text-decoration: none; }
   .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 14px; }
 """
@@ -181,16 +181,20 @@ INDEX_TEMPLATE = HEAD_COMMON + """
 
 <style>
 """ + CSS_COMMON + """  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 32px 80px; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 56px 32px 80px; }
   h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 5vw, 36px); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 12px; }
   .subhead { font-size: 15px; color: var(--ink-soft); margin: 0 0 36px; max-width: 52ch; }
-  .article-list { display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; }
+  .article-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 36px; }
   .article-card {
     background: var(--paper); border: 1px solid var(--rule); border-radius: 10px;
-    padding: 20px 22px; display: block; color: inherit; text-decoration: none;
-    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    display: flex; flex-direction: column; overflow: hidden; color: inherit; text-decoration: none;
+    transition: border-color 0.15s ease;
   }
-  .article-card:hover { border-color: var(--accent); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(47, 111, 94, 0.08); text-decoration: none; }
+  .article-card:hover { border-color: var(--accent); text-decoration: none; }
+  .article-card .thumb { display: block; background-size: cover; background-position: center; aspect-ratio: 1200 / 630; background-color: var(--accent-soft); }
+  .article-card .thumb.empty { display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 22px; }
+  .article-card .card-body { display: flex; flex-direction: column; flex: 1; padding: 18px 20px 20px; min-width: 0; }
+  .article-card .card-meta { margin-top: auto !important; padding-top: 14px; }
   .article-card-top { display: flex; align-items: center; justify-content: space-between; }
   .article-card .tag { font-family: var(--mono); font-size: 10.5px; color: var(--accent); text-transform: lowercase; letter-spacing: 0.02em; }
   .article-card .go-arrow { font-family: var(--mono); font-size: 15px; color: var(--ink-soft); transition: color 0.15s ease, transform 0.15s ease; }
@@ -198,13 +202,13 @@ INDEX_TEMPLATE = HEAD_COMMON + """
   .article-card h2 { font-family: var(--serif); font-size: 18px; font-weight: 600; margin: 8px 0 6px; color: var(--ink); }
   .article-card p { font-size: 13.5px; color: var(--ink-soft); margin: 0; }
   .article-card .card-meta { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); margin-top: 10px; opacity: 0.8; }
-  @media (prefers-reduced-motion: reduce) { .article-card { transition: none !important; } .article-card:hover { transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .article-card { transition: none !important; } }
 
   @media (max-width: 640px) {
     .wrap { padding: 40px 20px 60px; }
     h1 { font-size: clamp(24px, 7vw, 30px); }
     .subhead { font-size: 13px; margin-bottom: 28px; }
-    .article-card { padding: 16px 18px; }
+    .article-card .card-body { padding: 16px 18px; }
     .article-card h2 { font-size: 16px; }
     .article-card p { font-size: 12.5px; }
     .article-card .card-meta { font-size: 10px; }
@@ -229,13 +233,16 @@ INDEX_TEMPLATE = HEAD_COMMON + """
 """
 
 CARD_TEMPLATE = """    <a class="article-card" href="/writing/%%SLUG%%.html">
-      <div class="article-card-top">
-        <span class="tag">%%TAG%%</span>
-        <span class="go-arrow">&rarr;</span>
+      %%THUMB%%
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">%%TAG%%</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>%%TITLE%%</h2>
+        <p>%%DESCRIPTION%%</p>
+        <p class="card-meta">%%DATE_DISPLAY%% &middot; %%READ_TIME%%</p>
       </div>
-      <h2>%%TITLE%%</h2>
-      <p>%%DESCRIPTION%%</p>
-      <p class="card-meta">%%DATE_DISPLAY%% &middot; %%READ_TIME%%</p>
     </a>"""
 
 
@@ -396,6 +403,7 @@ def build_index(posts):
     cards = "\n\n".join(
         fill(CARD_TEMPLATE, {
             "SLUG": p["slug"],
+            "THUMB": thumb_html(p),
             "TAG": html.escape(str(p.get("tag", "tulisan"))),
             "TITLE": html.escape(str(p.get("title", "")), quote=True),
             "DESCRIPTION": html.escape(str(p.get("description", "")), quote=True),

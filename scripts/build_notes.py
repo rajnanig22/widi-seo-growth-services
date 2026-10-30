@@ -67,8 +67,8 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 <meta property="og:description" content="{description}">
 <meta property="og:url" content="{canonical}">
 <meta property="og:site_name" content="Widi Ginanjar">
-
-<meta name="twitter:card" content="summary">
+{og_image}
+<meta name="twitter:card" content="{twitter_card}">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{description}">
 
@@ -306,13 +306,13 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   body {{ margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }}
   a {{ color: var(--accent); text-decoration: none; }}
   a:hover {{ text-decoration: underline; }}
-  .wrap {{ max-width: 760px; margin: 0 auto; padding: 56px 32px 80px; }}
+  .wrap {{ max-width: 1080px; margin: 0 auto; padding: 56px 32px 80px; }}
   .back-link {{ font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; margin-bottom: 32px; }}
   .back-link:hover {{ color: var(--accent); }}
   .eyebrow {{ font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 20px; }}
   h1 {{ font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 5vw, 36px); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 12px; }}
   .subhead {{ font-size: 15px; color: var(--ink-soft); margin: 0 0 36px; max-width: 52ch; }}
-  .article-list {{ display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; }}
+  .article-list {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 44px; }}
   .section-heading {{
     font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em;
     text-transform: uppercase; color: var(--ink-soft); font-weight: 600;
@@ -327,10 +327,12 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   .section-nav .nav-pill:hover {{ border-color: var(--accent); color: var(--accent); text-decoration: none; }}
   .article-card {{
     background: var(--paper); border: 1px solid var(--rule); border-radius: 10px;
-    padding: 20px 22px; display: block; color: inherit; text-decoration: none;
-    transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+    display: flex; flex-direction: column; overflow: hidden; color: inherit; text-decoration: none;
+    transition: border-color 0.15s ease;
   }}
-  .article-card:hover {{ border-color: var(--accent); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(47, 111, 94, 0.08); text-decoration: none; }}
+  .article-card:hover {{ border-color: var(--accent); text-decoration: none; }}
+  .article-card .thumb {{ display: block; aspect-ratio: 1200 / 630; background-size: cover; background-position: center; border-bottom: 1px solid var(--rule); }}
+  .article-card .card-body {{ display: flex; flex-direction: column; flex: 1; padding: 18px 20px 20px; min-width: 0; }}
   .article-card-top {{ display: flex; align-items: center; justify-content: space-between; }}
   .article-card .tag {{ font-family: var(--mono); font-size: 10.5px; color: var(--accent); text-transform: lowercase; letter-spacing: 0.02em; }}
   .article-card .go-arrow {{
@@ -342,15 +344,15 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   .article-card p {{ font-size: 13.5px; color: var(--ink-soft); margin: 0; }}
   .article-card .card-meta {{
     font-family: var(--mono); font-size: 11px; color: var(--ink-soft);
-    margin-top: 10px; opacity: 0.8;
+    margin-top: auto; padding-top: 14px; opacity: 0.8;
   }}
-  @media (prefers-reduced-motion: reduce) {{ .article-card {{ transition: none !important; }} .article-card:hover {{ transform: none; }} }}
+  @media (prefers-reduced-motion: reduce) {{ .article-card {{ transition: none !important; }} }}
 
   @media (max-width: 640px) {{
     .wrap {{ padding: 40px 20px 60px; }}
     h1 {{ font-size: clamp(24px, 7vw, 30px); }}
     .subhead {{ font-size: 13px; margin-bottom: 28px; }}
-    .article-card {{ padding: 16px 18px; }}
+    .article-card .card-body {{ padding: 16px 18px; }}
     .article-card h2 {{ font-size: 16px; }}
     .article-card p {{ font-size: 12.5px; }}
     .article-card .card-meta {{ font-size: 10px; }}
@@ -373,13 +375,16 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 """
 
 CARD_TEMPLATE = """    <a class="article-card" href="/notes/{slug}.html">
-      <div class="article-card-top">
-        <span class="tag">{tag}</span>
-        <span class="go-arrow">&rarr;</span>
+      {thumb}
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">{tag}</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <p class="card-meta">{date_display}</p>
       </div>
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <p class="card-meta">{date_display}</p>
     </a>
 """
 
@@ -430,12 +435,37 @@ def render_sources(sources):
         title = s.get("title", "")
         url = s.get("url", "")
         publisher = s.get("publisher", "")
-        items.append(f'<li><a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a> &mdash; {publisher}</li>')
+        items.append(f'<li><a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a> , {publisher}</li>')
     return (
         '<div class="sources">\n<h2>Sources</h2>\n<ol>\n'
         + "\n".join(items)
         + "\n</ol>\n</div>"
     )
+
+
+def cover_path(slug):
+    """Site path of the note's cover (made by make_note_covers.py), or '' if there is none."""
+    if os.path.exists(os.path.join(OUTPUT_DIR, "img", f"{slug}.jpg")):
+        return f"/notes/img/{slug}.jpg"
+    return ""
+
+
+def og_image_tags(slug):
+    path = cover_path(slug)
+    if not path:
+        return ""
+    url = SITE_URL + path
+    return (f'<meta property="og:image" content="{url}">\n'
+            '<meta property="og:image:width" content="1200">\n'
+            '<meta property="og:image:height" content="630">\n'
+            f'<meta name="twitter:image" content="{url}">\n')
+
+
+def thumb_html(slug):
+    path = cover_path(slug)
+    if not path:
+        return ""
+    return f'<span class="thumb" style="background-image:url({path})" aria-hidden="true"></span>'
 
 
 def build_article(post):
@@ -469,6 +499,8 @@ def build_article(post):
         tag=tag,
         content=body_html,
         sources_block=render_sources(post.get("sources")),
+        og_image=og_image_tags(slug),
+        twitter_card="summary_large_image" if cover_path(slug) else "summary",
     )
 
     out_path = os.path.join(OUTPUT_DIR, f"{slug}.html")
@@ -519,6 +551,7 @@ def build_index(posts):
         cards = "\n".join(
             CARD_TEMPLATE.format(
                 slug=p["slug"],
+                thumb=thumb_html(p["slug"]),
                 tag=html.escape(p.get("tag", "seo")),
                 title=html.escape(p.get("title", ""), quote=True),
                 description=html.escape(p.get("description", ""), quote=True),
