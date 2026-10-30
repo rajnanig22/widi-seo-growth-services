@@ -12,7 +12,7 @@ Ketemu orang di komunitas lalu ngobrol, saya jadi tahu hal-hal yang tidak tercat
 
 Kemarau tahun ini panjang. Di banyak tempat di Bali, pemerintah mulai mengirim [bantuan air bersih](https://bali.antaranews.com/berita/411667/pemprov-bali-mulai-pasok-bantuan-air-antisipasi-kemarau), termasuk ke Bangli. Tapi di sebuah desa di Bangli yang saya datangi, kesulitan air rupanya bukan cerita satu musim. Orang-orang yang saya temui membicarakannya seperti membicarakan cuaca: sesuatu yang sudah lama ada, dan harus diakali.
 
-Awalnya obrolan kami berangkat dari keresahan finansial. Desa itu memang susah air, apalagi pas kemarau panjang seperti sekarang, sampai-sampai warga harus beli air untuk menyiram tanaman. Pak X, misalnya, rata-rata membeli satu truk air tangki seminggu, seharga Rp250 ribu. Itu pun belum cukup. Kalau mau menyiram semua bibit bambu, kopi, dan jeruknya, ia butuh tiga sampai empat truk seminggu, atau Rp750 ribu sampai Rp1 juta hanya untuk air.
+Awalnya obrolan kami berangkat dari keresahan finansial. Desa itu memang susah air, apalagi pas kemarau panjang seperti sekarang, sampai-sampai warga harus beli air untuk menyiram tanaman. Seorang bapak yang saya temui, misalnya, rata-rata membeli satu truk air tangki seminggu, seharga Rp250 ribu. Itu pun belum cukup. Kalau mau menyiram semua bibit bambu, kopi, dan jeruknya, ia butuh tiga sampai empat truk seminggu, atau Rp750 ribu sampai Rp1 juta hanya untuk air.
 
 Diskusinya lalu berlanjut ke keinginan membuat sumur bor. Tapi ada yang langsung menimpali, "Iya, tetangga yang agak jauh di sana beberapa waktu lalu ngebor sampai kedalaman 80 meter. Nggak tahu habis berapa, dan nggak nemu air juga." Ide itu pun menggantung, tinggal wacana.
 
@@ -20,7 +20,7 @@ Lalu saya dapat cerita lain, sebuah urban legend.
 
 Isinya begini: dulu ada seseorang yang minta air. Warga desa tidak memberi. Lalu daerah ini dikutuk, akan selalu susah air.
 
-Pak X menceritakannya sambil menerawang jauh ke arah ladang yang kerontang, seakan sedang memutar video. Saya jadi membayangkan warga zaman dulu di sana: kaget, karena tiba-tiba ada orang yang agak aneh, tidak lazim, datang minta air. Mungkin mereka masih bingung, lalu langsung bilang, "Kami tidak bisa memberi air."
+Bapak itu menceritakannya sambil menerawang jauh ke arah ladang yang kerontang, seakan sedang memutar video. Saya jadi membayangkan warga zaman dulu di sana: kaget, karena tiba-tiba ada orang yang agak aneh, tidak lazim, datang minta air. Mungkin mereka masih bingung, lalu langsung bilang, "Kami tidak bisa memberi air."
 
 Ceritanya tidak disampaikan sambil bercanda. Nadanya lebih seperti frustrasi yang bercampur puk-puk untuk diri sendiri: ya sudah, memang sudah takdirnya, kena kutukan.
 
