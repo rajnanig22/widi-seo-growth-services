@@ -61,44 +61,61 @@
 <style>
   :root {
     --bg: #FAFAF7; --paper: #FFFFFF; --ink: #1C1F1B; --ink-soft: #565B54;
-    --accent: #2F6F5E; --accent-soft: #E7F0EB; --rule: #E1DED4;
+    --accent: #2F6F5E; --accent-soft: #E7F0EB; --rule: #E1DED4; --forest: #16302A; --mint: #CFE5DA;
     --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
     --serif: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
     --sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.65; -webkit-font-smoothing: antialiased; }
   a { color: var(--accent); }
   a:hover { text-decoration: underline; }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 32px 80px; }
-  .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; margin-bottom: 28px; }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 32px; }
+  .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; padding: 40px 0 28px; }
   .back-link:hover { color: var(--accent); }
-  .eyebrow {
-    font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em;
-    text-transform: lowercase; color: var(--accent); background: var(--accent-soft);
-    display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 16px;
-  }
-  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(24px, 4vw, 32px); line-height: 1.25; margin: 0 0 20px; }
-  h2 { font-family: var(--serif); font-size: 19px; font-weight: 600; margin: 34px 0 12px; }
-  p { font-size: 15.5px; margin: 0 0 16px; }
-  strong { color: var(--ink); }
-  ul { font-size: 15.5px; padding-left: 20px; margin: 0 0 16px; }
-  li { margin-bottom: 8px; }
-  .lede { font-size: 17px; color: var(--ink-soft); margin-bottom: 28px; }
-  .timeline { list-style: none; padding: 0; }
-  .timeline li { margin-bottom: 14px; }
-  .timeline .when { display: block; font-family: var(--mono); font-size: 12px; color: var(--ink-soft); }
-  footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 13.5px; color: var(--ink-soft); }
-  footer p { margin: 0; font-size: 13.5px; }
-  footer .links { display: flex; gap: 16px; }
-  footer .links a { color: var(--ink-soft); display: inline-flex; }
-  footer .links a:hover { color: var(--accent); }
 
-  @media (max-width: 640px) {
-    .wrap { padding: 36px 20px 60px; }
-    h1 { font-size: clamp(22px, 7vw, 28px); }
-    .lede { font-size: 15.5px; }
-    p, ul, li { font-size: 14.5px; }
+  .hero { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; padding-bottom: 56px; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 18px; }
+  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(32px, 5vw, 52px); line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 22px; }
+  .lede { font-size: 18px; line-height: 1.6; color: var(--ink-soft); margin: 0; max-width: 34em; }
+  .lede strong { color: var(--ink); font-weight: 600; }
+  figure { margin: 0; }
+  figure img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; max-height: 460px; object-fit: cover; border-radius: 6px; }
+  figcaption { font-family: var(--mono); font-size: 11.5px; color: var(--ink-soft); margin-top: 8px; }
+
+  .body { background: var(--paper); border-top: 1px solid var(--rule); }
+  .row { display: grid; grid-template-columns: 180px 1fr; gap: 32px; padding: 36px 0; border-bottom: 1px solid var(--rule); }
+  .row:last-child { border-bottom: none; }
+  .label { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); padding-top: 4px; }
+  .content { max-width: 40em; }
+  .content p { font-size: 16px; margin: 0 0 14px; }
+  .content p:last-child { margin-bottom: 0; }
+  .roles { list-style: none; padding: 0; margin: 0 0 18px; }
+  .roles li { padding: 0 0 16px; }
+  .roles .org { display: block; font-family: var(--serif); font-weight: 600; font-size: 17px; color: var(--ink); }
+  .roles .what { display: block; font-size: 15.5px; color: var(--ink-soft); }
+  .study { font-size: 15px; color: var(--ink-soft); }
+
+  .contact { background: var(--forest); color: rgba(255,255,255,0.8); }
+  .contact .row { border: none; padding: 44px 0 20px; }
+  .contact .label { color: var(--mint); }
+  .contact p { font-size: 17px; margin: 0; }
+  .contact a { color: #FFFFFF; }
+  footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 24px 0 32px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 13.5px; }
+  footer p { margin: 0; font-size: 13.5px; }
+  footer .links { display: flex; gap: 22px; }
+  footer .links a { color: var(--mint); display: inline-flex; min-width: 32px; min-height: 32px; align-items: center; justify-content: center; }
+  footer .links a:hover { color: #FFFFFF; }
+
+  @media (max-width: 760px) {
+    .wrap { padding: 0 20px; }
+    .back-link { padding: 28px 0 22px; }
+    .hero { grid-template-columns: 1fr; gap: 28px; padding-bottom: 40px; }
+    .lede { font-size: 16px; }
+    figure img { aspect-ratio: 4 / 3; max-height: none; }
+    .row { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
+    .content p { font-size: 15px; }
+    .contact p { font-size: 16px; }
   }
 </style>
 </head>
@@ -106,32 +123,58 @@
 
 <div class="wrap">
   <a class="back-link" href="/">&larr; widiginanjar.com</a>
+  <header class="hero">
+    <div>
+      <span class="eyebrow">about</span>
+      <h1>What I work on</h1>
+      <p class="lede"><strong>Research, project management, and sustainability, mostly with community programs.</strong> Alongside that, I help organisations with SEO and digital marketing, and keep a small collection of field notes and essays.</p>
+    </div>
+    <figure>
+      <img src="/writing/img/landih-kebun-dan-bambu.jpg" alt="Garden plots and bamboo on a hillside in Bangli" width="900" height="1125">
+      <figcaption>Fieldwork, Bangli.</figcaption>
+    </figure>
+  </header>
+</div>
 
-  <span class="eyebrow">about</span>
-  <h1>What I work on</h1>
+<main class="body">
+  <div class="wrap">
+    <section class="row">
+      <div class="label">now</div>
+      <div class="content">
+        <p>Most of my week goes to bamboo construction and community programs with <strong>Bamboo Village Trust</strong>: research, coordinating with partners, and keeping project work moving from planning to the field.</p>
+        <p>Part-time, I handle growth and partnership operations for an AI software company, and I take on a few <a href="/services/">SEO and digital marketing</a> projects, mostly for NGOs and mission-driven teams.</p>
+      </div>
+    </section>
+    <section class="row">
+      <div class="label">why i write</div>
+      <div class="content">
+        <p>Some of what I see during fieldwork doesn't fit in a project report: why a village keeps one crop close and pushes another to the slopes, what people trade it for, what they say about it. Writing is how I work through those things. The essays are in Bahasa Indonesia, starting with <a href="/writing/yang-bergairah-di-landih.html" lang="id">Yang Bergairah di Landih</a>. They're all on the <a href="/writing/">Writing</a> page.</p>
+        <p>On the SEO side, I keep <a href="/notes/">SEO notes</a> in English on what I learn from client work, including <a href="/notes/what-am-i-actually-selling.html">what a human SEO consultant is still paid for</a>.</p>
+      </div>
+    </section>
+    <section class="row">
+      <div class="label">before this</div>
+      <div class="content">
+        <ul class="roles">
+          <li><span class="org">Delterra</span><span class="what">Nearly four years coordinating a community-based sustainability program in Bali, working with village governments and waste operators.</span></li>
+          <li><span class="org">YCAB Foundation</span><span class="what">Managed donor and partner relationships for crowdfunding campaigns.</span></li>
+          <li><span class="org">Banking and microfinance</span><span class="what">Relationship banking at Bank Mandiri and CIMB Niaga, then an SME program with BIDUK Indonesia.</span></li>
+          <li><span class="org">AI evaluation</span><span class="what">Reviewed AI model responses for factual accuracy.</span></li>
+        </ul>
+        <p class="study">I studied Geomatics Engineering at ITS, and later took MITx's course on qualitative research methods.</p>
+      </div>
+    </section>
+  </div>
+</main>
 
-  <p class="lede">Research, project management, and sustainability, mostly with community programs. Alongside that, I help organisations with SEO and digital marketing, and keep a small collection of field notes and essays.</p>
-
-  <h2>Now</h2>
-  <p>Most of my week goes to bamboo construction and community programs with <strong>Bamboo Village Trust</strong>: research, coordinating with partners, and keeping project work moving from planning to the field.</p>
-  <p>Part-time, I handle growth and partnership operations for an AI software company, and I take on a few <a href="/services/">SEO and digital marketing</a> projects, mostly for NGOs and mission-driven teams.</p>
-
-  <h2>Why I write</h2>
-  <p>Some of what I see during fieldwork doesn't fit in a project report: why a village keeps one crop close and pushes another to the slopes, what people trade it for, what they say about it. Writing is how I work through those things. The essays are in Bahasa Indonesia, starting with <a href="/writing/yang-bergairah-di-landih.html" lang="id">Yang Bergairah di Landih</a>. They're all on the <a href="/writing/">Writing</a> page.</p>
-  <p>On the SEO side, I keep <a href="/notes/">SEO notes</a> in English on what I learn from client work, including <a href="/notes/what-am-i-actually-selling.html">what a human SEO consultant is still paid for</a>.</p>
-
-  <h2>Before this</h2>
-  <ul class="timeline">
-    <li><span class="when">Delterra</span>Nearly four years coordinating a community-based sustainability program in Bali, working with village governments and waste operators.</li>
-    <li><span class="when">YCAB Foundation</span>Managed donor and partner relationships for crowdfunding campaigns.</li>
-    <li><span class="when">Banking and microfinance</span>Relationship banking at Bank Mandiri and CIMB Niaga, then an SME program with BIDUK Indonesia.</li>
-    <li><span class="when">AI evaluation</span>Reviewed AI model responses for factual accuracy.</li>
-  </ul>
-  <p>I studied Geomatics Engineering at ITS, and later took MITx's course on qualitative research methods.</p>
-
-  <h2>Get in touch</h2>
-  <p>Email is the easiest way: <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'about_body'});">rajnanig22@gmail.com</a>. For SEO work, you can also <a href="/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'about_body'});">book a free 30-minute look</a>.</p>
-
+<div class="contact">
+  <div class="wrap">
+    <section class="row">
+      <div class="label">get in touch</div>
+      <div class="content">
+        <p>Email is the easiest way: <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'about_body'});">rajnanig22@gmail.com</a>. For SEO work, you can also <a href="/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'about_body'});">book a free 30-minute look</a>.</p>
+      </div>
+    </section>
   <footer>
     <p>&copy; 2026 Widi Ginanjar</p>
     <div class="links">
@@ -140,6 +183,7 @@
         <a href="https://www.instagram.com/wdwynson/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a>
       </div>
   </footer>
+  </div>
 </div>
 
 </body>
