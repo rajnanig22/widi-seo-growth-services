@@ -309,13 +309,15 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   body {{ margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }}
   a {{ color: var(--accent); text-decoration: none; }}
   a:hover {{ text-decoration: underline; }}
-  .wrap {{ max-width: 1080px; margin: 0 auto; padding: 56px 32px 80px; }}
+  .wrap {{ max-width: 1520px; margin: 0 auto; padding: 56px clamp(20px, 5vw, 80px) 80px; }}
   .back-link {{ font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; margin-bottom: 32px; }}
   .back-link:hover {{ color: var(--accent); }}
   .eyebrow {{ font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 20px; }}
   h1 {{ font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 5vw, 36px); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 12px; }}
   .subhead {{ font-size: 15px; color: var(--ink-soft); margin: 0 0 36px; max-width: 52ch; }}
-  .article-list {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 44px; }}
+  .article-list {{ display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-bottom: 44px; }}
+  @media (max-width: 1000px) {{ .article-list {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }} }}
+  @media (max-width: 640px) {{ .article-list {{ grid-template-columns: 1fr; }} }}
   .section-heading {{
     font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em;
     text-transform: uppercase; color: var(--ink-soft); font-weight: 600;
