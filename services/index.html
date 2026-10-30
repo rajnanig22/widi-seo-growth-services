@@ -244,10 +244,9 @@
     background: var(--paper);
     border: 1px solid var(--rule);
     border-radius: 10px;
-    padding: 18px 18px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 8px;
     color: inherit;
     text-decoration: none;
     transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
@@ -261,6 +260,8 @@
     .card, .go-arrow { transition: none !important; }
   }
 
+  .card .thumb { display: block; aspect-ratio: 1200 / 630; background-size: cover; background-position: center; border-bottom: 1px solid var(--rule); }
+  .card .card-body { display: flex; flex-direction: column; gap: 8px; padding: 18px; }
   .card .icon-row {
     display: flex;
     align-items: baseline;
@@ -376,35 +377,47 @@
       <div class="cards">
 
         <a class="card" href="/services/ngo.html" onclick="gtag('event','service_page_click',{'service':'ngo'});">
+          <span class="thumb" style="background-image:url(/services/img/ngo.jpg)" aria-hidden="true"></span>
+          <div class="card-body">
           <div class="icon-row">
             <h2>SEO for NGOs &amp; Mission-Driven Teams</h2>
             <span class="go-arrow">&rarr;</span>
           </div>
           <p class="desc"><strong>For NGOs, nonprofits, and social enterprises.</strong> Good work doesn't get seen if people can't find your website in the first place.</p>
+          </div>
         </a>
 
         <a class="card" href="/services/b2b.html" onclick="gtag('event','service_page_click',{'service':'b2b'});">
+          <span class="thumb" style="background-image:url(/services/img/b2b.jpg)" aria-hidden="true"></span>
+          <div class="card-body">
           <div class="icon-row">
             <h2>SEO for B2B &amp; Professional Services</h2>
             <span class="go-arrow">&rarr;</span>
           </div>
           <p class="desc"><strong>For consulting, research, and B2B firms.</strong> Clients search a company's name before reaching out, and what they find matters a lot.</p>
+          </div>
         </a>
 
         <a class="card" href="/services/hospitality.html" onclick="gtag('event','service_page_click',{'service':'hospitality'});">
+          <span class="thumb" style="background-image:url(/services/img/hospitality.jpg)" aria-hidden="true"></span>
+          <div class="card-body">
           <div class="icon-row">
             <h2>SEO for Hospitality &amp; F&amp;B Brands</h2>
             <span class="go-arrow">&rarr;</span>
           </div>
           <p class="desc"><strong>For restaurants, bars, and hospitality groups.</strong> Unlike followers on social media, people keep finding you through search long after the work is done.</p>
+          </div>
         </a>
 
         <a class="card" href="/services/ai-search-era.html" onclick="gtag('event','service_page_click',{'service':'ai_search_era'});">
+          <span class="thumb" style="background-image:url(/services/img/ai-search-era.jpg)" aria-hidden="true"></span>
+          <div class="card-body">
           <div class="icon-row">
             <h2>SEO &amp; Growth for the AI Search Era</h2>
             <span class="go-arrow">&rarr;</span>
           </div>
           <p class="desc"><strong>For any organisation thinking about AI search.</strong> An AI doesn't rank your page, it decides whether to mention you at all, and whether it trusts what it finds.</p>
+          </div>
         </a>
 
       </div>
