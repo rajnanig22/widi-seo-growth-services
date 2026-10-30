@@ -71,10 +71,10 @@
   body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.65; -webkit-font-smoothing: antialiased; }
   a { color: var(--accent); }
   a:hover { text-decoration: underline; }
-  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 32px; }
+  .wrap { max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
   .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; padding: 40px 0 36px; }
   .back-link:hover { color: var(--accent); }
-  .about { display: grid; grid-template-columns: 320px 1fr; grid-template-areas: "photo text" "card text"; grid-template-rows: auto 1fr; column-gap: 56px; align-items: start; padding-bottom: 72px; }
+  .about { display: grid; grid-template-columns: minmax(280px, 380px) 1fr; grid-template-areas: "photo text" "card text"; grid-template-rows: auto 1fr; column-gap: 56px; align-items: start; padding-bottom: 72px; }
   .photo { grid-area: photo; }
   .text { grid-area: text; }
   .card { grid-area: card; }
@@ -83,7 +83,7 @@
   h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(30px, 4vw, 42px); line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 28px; }
   .text .lede { font-size: 19px; line-height: 1.5; color: var(--ink-soft); margin: -8px 0 8px; }
   h2 { font-family: var(--mono); font-weight: 500; font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); margin: 32px 0 10px; }
-  .text { max-width: 36em; }
+  .text { max-width: 44em; }
   .text p { font-size: 16.5px; margin: 0 0 14px; }
   .card { margin-top: 20px; }
   .card .name { font-family: var(--serif); font-weight: 600; font-size: 20px; margin: 0 0 12px; }
