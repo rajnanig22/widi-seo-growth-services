@@ -58,10 +58,12 @@
   .section-nav .nav-pill:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
   .article-card {
     background: var(--paper); border: 1px solid var(--rule); border-radius: 10px;
-    padding: 20px 22px; display: flex; flex-direction: column; color: inherit; text-decoration: none;
+    display: flex; flex-direction: column; overflow: hidden; color: inherit; text-decoration: none;
     transition: border-color 0.15s ease;
   }
   .article-card:hover { border-color: var(--accent); text-decoration: none; }
+  .article-card .thumb { display: block; aspect-ratio: 1200 / 630; background-size: cover; background-position: center; border-bottom: 1px solid var(--rule); }
+  .article-card .card-body { display: flex; flex-direction: column; flex: 1; padding: 18px 20px 20px; min-width: 0; }
   .article-card-top { display: flex; align-items: center; justify-content: space-between; }
   .article-card .tag { font-family: var(--mono); font-size: 10.5px; color: var(--accent); text-transform: lowercase; letter-spacing: 0.02em; }
   .article-card .go-arrow {
@@ -81,7 +83,7 @@
     .wrap { padding: 40px 20px 60px; }
     h1 { font-size: clamp(24px, 7vw, 30px); }
     .subhead { font-size: 13px; margin-bottom: 28px; }
-    .article-card { padding: 16px 18px; }
+    .article-card .card-body { padding: 16px 18px; }
     .article-card h2 { font-size: 16px; }
     .article-card p { font-size: 12.5px; }
     .article-card .card-meta { font-size: 10px; }
@@ -104,63 +106,81 @@
   <h2 class="section-heading" id="practice-notes">Practice Notes</h2>
   <div class="article-list">
     <a class="article-card" href="/notes/what-am-i-actually-selling.html">
-      <div class="article-card-top">
-        <span class="tag">practice notes</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/what-am-i-actually-selling.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">practice notes</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>Anyone Can Be an SEO Specialist Now. So What Am I Actually Selling?</h2>
+        <p>Anyone can list what&#x27;s broken on a page now. Here&#x27;s what that leaves for a human SEO consultant to actually be paid for.</p>
+        <p class="card-meta">October 30, 2026 &middot; 3 min read</p>
       </div>
-      <h2>Anyone Can Be an SEO Specialist Now. So What Am I Actually Selling?</h2>
-      <p>Anyone can list what&#x27;s broken on a page now. Here&#x27;s what that leaves for a human SEO consultant to actually be paid for.</p>
-      <p class="card-meta">October 30, 2026 &middot; 3 min read</p>
     </a>
 
     <a class="article-card" href="/notes/google-missing-word-serp-snippet.html">
-      <div class="article-card-top">
-        <span class="tag">practice notes</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/google-missing-word-serp-snippet.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">practice notes</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>The Small Grey Text Under a Google Result That Most People Skip</h2>
+        <p>A page ranking #1 was still getting a below-average click rate. The reason was sitting in plain sight, in small grey text most people scroll straight past.</p>
+        <p class="card-meta">August 5, 2026 &middot; 3 min read</p>
       </div>
-      <h2>The Small Grey Text Under a Google Result That Most People Skip</h2>
-      <p>A page ranking #1 was still getting a below-average click rate. The reason was sitting in plain sight, in small grey text most people scroll straight past.</p>
-      <p class="card-meta">August 5, 2026 &middot; 3 min read</p>
     </a>
 
     <a class="article-card" href="/notes/diy-half-of-seo.html">
-      <div class="article-card-top">
-        <span class="tag">practice notes</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/diy-half-of-seo.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">practice notes</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>You Can DIY Half of This. Here&#x27;s the Half You Can&#x27;t.</h2>
+        <p>AI can spot a missing meta description in seconds. It can&#x27;t tell you which broken thing is actually urgent versus which one just looks urgent.</p>
+        <p class="card-meta">July 22, 2026 &middot; 4 min read</p>
       </div>
-      <h2>You Can DIY Half of This. Here&#x27;s the Half You Can&#x27;t.</h2>
-      <p>AI can spot a missing meta description in seconds. It can&#x27;t tell you which broken thing is actually urgent versus which one just looks urgent.</p>
-      <p class="card-meta">July 22, 2026 &middot; 4 min read</p>
     </a>
 
     <a class="article-card" href="/notes/instagram-scores-100-cafe-scores-9.html">
-      <div class="article-card-top">
-        <span class="tag">practice notes</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/instagram-scores-100-cafe-scores-9.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">practice notes</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>Instagram Scores 100 on Authority. The Cafe Down the Street Scores 9</h2>
+        <p>Three things one small audit turned up, the kind that actually change what you do next, not just interesting trivia.</p>
+        <p class="card-meta">July 17, 2026 &middot; 3 min read</p>
       </div>
-      <h2>Instagram Scores 100 on Authority. The Cafe Down the Street Scores 9</h2>
-      <p>Three things one small audit turned up, the kind that actually change what you do next, not just interesting trivia.</p>
-      <p class="card-meta">July 17, 2026 &middot; 3 min read</p>
     </a>
 
     <a class="article-card" href="/notes/my-own-title-tag-said-notion.html">
-      <div class="article-card-top">
-        <span class="tag">practice notes</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/my-own-title-tag-said-notion.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">practice notes</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>My SEO Portfolio&#x27;s Title Tag Said &quot;Notion&quot; for Two Weeks</h2>
+        <p>I built a portfolio to sell SEO audits. Its own title tag was generic platform branding the whole time. Here&#x27;s what that taught me about checking your own site first.</p>
+        <p class="card-meta">July 16, 2026 &middot; 3 min read</p>
       </div>
-      <h2>My SEO Portfolio&#x27;s Title Tag Said &quot;Notion&quot; for Two Weeks</h2>
-      <p>I built a portfolio to sell SEO audits. Its own title tag was generic platform branding the whole time. Here&#x27;s what that taught me about checking your own site first.</p>
-      <p class="card-meta">July 16, 2026 &middot; 3 min read</p>
     </a>
 
     <a class="article-card" href="/notes/why-my-domain-is-my-name.html">
-      <div class="article-card-top">
-        <span class="tag">practice notes</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/why-my-domain-is-my-name.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">practice notes</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>Why My Portfolio&#x27;s Domain Is My Name, Not &quot;Bali SEO&quot;</h2>
+        <p>A friend asked why I didn&#x27;t buy a keyword-matching domain instead. The answer says something about how AI search is changing what actually gets rewarded.</p>
+        <p class="card-meta">July 16, 2026 &middot; 3 min read</p>
       </div>
-      <h2>Why My Portfolio&#x27;s Domain Is My Name, Not &quot;Bali SEO&quot;</h2>
-      <p>A friend asked why I didn&#x27;t buy a keyword-matching domain instead. The answer says something about how AI search is changing what actually gets rewarded.</p>
-      <p class="card-meta">July 16, 2026 &middot; 3 min read</p>
     </a>
 
   </div>
@@ -168,93 +188,120 @@
   <h2 class="section-heading" id="mission-driven-ngo">Mission-Driven &amp; NGO</h2>
   <div class="article-list">
     <a class="article-card" href="/notes/being-right-vs-being-responsible-ngo-comms.html">
-      <div class="article-card-top">
-        <span class="tag">mission-driven</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/being-right-vs-being-responsible-ngo-comms.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">mission-driven</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>Being Right About the Data Isn&#x27;t the Same as Being Responsible With It</h2>
+        <p>A social post about forest fires led to a disagreement over one closing line. Sorting out why took longer than writing the post did.</p>
+        <p class="card-meta">September 5, 2026 &middot; 5 min read</p>
       </div>
-      <h2>Being Right About the Data Isn&#x27;t the Same as Being Responsible With It</h2>
-      <p>A social post about forest fires led to a disagreement over one closing line. Sorting out why took longer than writing the post did.</p>
-      <p class="card-meta">September 5, 2026 &middot; 5 min read</p>
     </a>
 
     <a class="article-card" href="/notes/sustainability-jargon-carbon-offset-sdgs.html">
-      <div class="article-card-top">
-        <span class="tag">mission-driven</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/sustainability-jargon-carbon-offset-sdgs.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">mission-driven</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>I Didn&#x27;t Know What &#x27;Carbon Offset&#x27; Meant Until Last Year</h2>
+        <p>I worked in sustainability for years and still didn&#x27;t understand carbon offset until last year. Most people don&#x27;t either.</p>
+        <p class="card-meta">July 31, 2026 &middot; 4 min read</p>
       </div>
-      <h2>I Didn&#x27;t Know What &#x27;Carbon Offset&#x27; Meant Until Last Year</h2>
-      <p>I worked in sustainability for years and still didn&#x27;t understand carbon offset until last year. Most people don&#x27;t either.</p>
-      <p class="card-meta">July 31, 2026 &middot; 4 min read</p>
     </a>
 
     <a class="article-card" href="/notes/fundraiser-map-peer-sharing-vs-search.html">
-      <div class="article-card-top">
-        <span class="tag">mission-driven</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/fundraiser-map-peer-sharing-vs-search.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">mission-driven</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>Getting an Issue Found Isn&#x27;t Always About Search</h2>
+        <p>Search finds people who know what to look for. It cannot find the people who don&#x27;t. A nonprofit fundraiser built as a map shows the other route in, and why donor and campaign engagement belongs next to SEO, not apart from it.</p>
+        <p class="card-meta">July 30, 2026 &middot; 4 min read</p>
       </div>
-      <h2>Getting an Issue Found Isn&#x27;t Always About Search</h2>
-      <p>Search finds people who know what to look for. It cannot find the people who don&#x27;t. A nonprofit fundraiser built as a map shows the other route in, and why donor and campaign engagement belongs next to SEO, not apart from it.</p>
-      <p class="card-meta">July 30, 2026 &middot; 4 min read</p>
     </a>
 
     <a class="article-card" href="/notes/nonprofit-seo-three-audiences.html">
-      <div class="article-card-top">
-        <span class="tag">mission-driven</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/nonprofit-seo-three-audiences.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">mission-driven</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>Nonprofit SEO Isn&#x27;t Business SEO, Because the Audiences Don&#x27;t Want the Same Thing</h2>
+        <p>A business site can have several different visitors and still point them all at one outcome. A nonprofit site can&#x27;t. Two real homepages show what happens when the site is only built for one of them.</p>
+        <p class="card-meta">July 29, 2026 &middot; 5 min read</p>
       </div>
-      <h2>Nonprofit SEO Isn&#x27;t Business SEO, Because the Audiences Don&#x27;t Want the Same Thing</h2>
-      <p>A business site can have several different visitors and still point them all at one outcome. A nonprofit site can&#x27;t. Two real homepages show what happens when the site is only built for one of them.</p>
-      <p class="card-meta">July 29, 2026 &middot; 5 min read</p>
     </a>
 
     <a class="article-card" href="/notes/insider-test-curse-of-knowledge-ngo.html">
-      <div class="article-card-top">
-        <span class="tag">mission-driven</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/insider-test-curse-of-knowledge-ngo.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">mission-driven</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>The Insider Test: If People in Your Own Sector Can&#x27;t Explain Your Work, Nobody Else Can</h2>
+        <p>At an NGO I used to work for, even people at other NGOs couldn&#x27;t say what we actually did. It&#x27;s called the curse of knowledge, and it explains most nonprofit jargon problems.</p>
+        <p class="card-meta">July 28, 2026 &middot; 5 min read</p>
       </div>
-      <h2>The Insider Test: If People in Your Own Sector Can&#x27;t Explain Your Work, Nobody Else Can</h2>
-      <p>At an NGO I used to work for, even people at other NGOs couldn&#x27;t say what we actually did. It&#x27;s called the curse of knowledge, and it explains most nonprofit jargon problems.</p>
-      <p class="card-meta">July 28, 2026 &middot; 5 min read</p>
     </a>
 
     <a class="article-card" href="/notes/15-organizations-paid-traffic-pattern.html">
-      <div class="article-card-top">
-        <span class="tag">mission-driven</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/15-organizations-paid-traffic-pattern.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">mission-driven</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>I Checked 15 Organizations&#x27; Traffic. Only One Had Meaningful Paid Search.</h2>
+        <p>A curiosity-driven check across NGOs and companies of every size found the same pattern almost everywhere, and one outlier that didn&#x27;t fit any theory I had.</p>
+        <p class="card-meta">July 25, 2026 &middot; 6 min read</p>
       </div>
-      <h2>I Checked 15 Organizations&#x27; Traffic. Only One Had Meaningful Paid Search.</h2>
-      <p>A curiosity-driven check across NGOs and companies of every size found the same pattern almost everywhere, and one outlier that didn&#x27;t fit any theory I had.</p>
-      <p class="card-meta">July 25, 2026 &middot; 6 min read</p>
     </a>
 
     <a class="article-card" href="/notes/pdf-invisible-to-search.html">
-      <div class="article-card-top">
-        <span class="tag">mission-driven</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/pdf-invisible-to-search.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">mission-driven</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>Your Impact Report is a PDF. Search Engines Barely See It.</h2>
+        <p>A well-designed PDF impact report can still be nearly invisible to search engines and AI. Here&#x27;s why, and what a simple structure change fixes.</p>
+        <p class="card-meta">July 19, 2026 &middot; 3 min read</p>
       </div>
-      <h2>Your Impact Report is a PDF. Search Engines Barely See It.</h2>
-      <p>A well-designed PDF impact report can still be nearly invisible to search engines and AI. Here&#x27;s why, and what a simple structure change fixes.</p>
-      <p class="card-meta">July 19, 2026 &middot; 3 min read</p>
     </a>
 
     <a class="article-card" href="/notes/seo-checklist-ngo-no-marketing-team.html">
-      <div class="article-card-top">
-        <span class="tag">mission-driven</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/seo-checklist-ngo-no-marketing-team.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">mission-driven</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>The SEO Checklist for NGOs With No Marketing Team</h2>
+        <p>A practical checklist for the person wearing five hats at a small NGO, written for someone with no SEO background and limited time.</p>
+        <p class="card-meta">July 18, 2026 &middot; 3 min read</p>
       </div>
-      <h2>The SEO Checklist for NGOs With No Marketing Team</h2>
-      <p>A practical checklist for the person wearing five hats at a small NGO, written for someone with no SEO background and limited time.</p>
-      <p class="card-meta">July 18, 2026 &middot; 3 min read</p>
     </a>
 
     <a class="article-card" href="/notes/grantmakers-check-your-website-first.html">
-      <div class="article-card-top">
-        <span class="tag">mission-driven</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/grantmakers-check-your-website-first.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">mission-driven</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>Grantmakers Check Your Website Before They Check Your Impact</h2>
+        <p>A grantmaker&#x27;s due diligence usually starts with your website, not your impact report. What one canonical tag error cost a real membership network in visibility.</p>
+        <p class="card-meta">July 15, 2026 &middot; 4 min read</p>
       </div>
-      <h2>Grantmakers Check Your Website Before They Check Your Impact</h2>
-      <p>A grantmaker&#x27;s due diligence usually starts with your website, not your impact report. What one canonical tag error cost a real membership network in visibility.</p>
-      <p class="card-meta">July 15, 2026 &middot; 4 min read</p>
     </a>
 
   </div>
@@ -262,33 +309,42 @@
   <h2 class="section-heading" id="ai-search">AI &amp; Search</h2>
   <div class="article-list">
     <a class="article-card" href="/notes/ai-overview-domain-vs-name.html">
-      <div class="article-card-top">
-        <span class="tag">ai search</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/ai-overview-domain-vs-name.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">ai search</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>Google Knows My Website. It Doesn&#x27;t Know Me.</h2>
+        <p>Two searches, minutes apart. One found my site accurately. The other pulled from LinkedIn and mixed me up with someone else entirely.</p>
+        <p class="card-meta">August 7, 2026 &middot; 4 min read</p>
       </div>
-      <h2>Google Knows My Website. It Doesn&#x27;t Know Me.</h2>
-      <p>Two searches, minutes apart. One found my site accurately. The other pulled from LinkedIn and mixed me up with someone else entirely.</p>
-      <p class="card-meta">August 7, 2026 &middot; 4 min read</p>
     </a>
 
     <a class="article-card" href="/notes/reviewing-ai-responses-writing-for-search.html">
-      <div class="article-card-top">
-        <span class="tag">ai &amp; tech</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/reviewing-ai-responses-writing-for-search.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">ai &amp; tech</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>What Reviewing AI Responses Taught Me About Writing for Search</h2>
+        <p>A pattern from reviewing AI model responses for accuracy, and what it means for writing content AI systems can quote correctly.</p>
+        <p class="card-meta">July 21, 2026 &middot; 4 min read</p>
       </div>
-      <h2>What Reviewing AI Responses Taught Me About Writing for Search</h2>
-      <p>A pattern from reviewing AI model responses for accuracy, and what it means for writing content AI systems can quote correctly.</p>
-      <p class="card-meta">July 21, 2026 &middot; 4 min read</p>
     </a>
 
     <a class="article-card" href="/notes/ranking-vs-ai-citation.html">
-      <div class="article-card-top">
-        <span class="tag">ai search</span>
-        <span class="go-arrow">&rarr;</span>
+      <span class="thumb" style="background-image:url(/notes/img/ranking-vs-ai-citation.jpg)" aria-hidden="true"></span>
+      <div class="card-body">
+        <div class="article-card-top">
+          <span class="tag">ai search</span>
+          <span class="go-arrow">&rarr;</span>
+        </div>
+        <h2>I Rank #2 on Google for My Own Name. AI Still Doesn&#x27;t Know I Exist.</h2>
+        <p>A live test of AI-citability using the easiest keyword there is, my own name. Ranking well on Google turned out to be a different problem than being cited by AI.</p>
+        <p class="card-meta">July 16, 2026 &middot; 4 min read</p>
       </div>
-      <h2>I Rank #2 on Google for My Own Name. AI Still Doesn&#x27;t Know I Exist.</h2>
-      <p>A live test of AI-citability using the easiest keyword there is, my own name. Ranking well on Google turned out to be a different problem than being cited by AI.</p>
-      <p class="card-meta">July 16, 2026 &middot; 4 min read</p>
     </a>
 
   </div>

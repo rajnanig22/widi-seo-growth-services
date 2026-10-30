@@ -18,6 +18,7 @@ The source for **widiginanjar.com**: a static personal site served by GitHub Pag
 | `writing/posts/*.md` | `scripts/build_writing.py` | `writing/*.html`, `writing/index.html`, the cards between the `WRITING:START` and `WRITING:END` markers in `index.html` |
 | `notes/posts/*.md` | `scripts/build_notes.py` | `notes/*.html`, `notes/index.html` |
 | all of the above + static pages | `scripts/build_site_index.py` | `sitemap.xml`, `llms.txt` |
+| `notes/posts/*.md` without a cover | `scripts/make_note_covers.py` (run by hand, needs Playwright) | `notes/img/<slug>.jpg`, 1200x630 typographic covers |
 
 GitHub Actions (`.github/workflows/build-writing.yml`, `build-notes.yml`) run these on push to `main` and commit the generated files.
 
