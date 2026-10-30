@@ -41,8 +41,6 @@ SERVICE_PAGES = [
      "SEO and backlink strategy for consulting, research, and B2B firms."),
     ("/services/hospitality.html", "Restaurant SEO for Hospitality & F&B Brands",
      "Local SEO and Google Business Profile optimisation for restaurants, bars, and hospitality groups."),
-    ("/services/ai-tech-startups.html", "SEO for AI & Tech Startups",
-     "SEO and organic growth for AI and tech startups."),
     ("/services/ai-search-era.html", "AI Search Optimization & Citability",
      "Helping organisations get found and accurately cited by ChatGPT, Perplexity, and Google AI summaries."),
 ]

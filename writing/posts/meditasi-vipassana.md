@@ -1,5 +1,5 @@
 ---
-title: "Meditasi adalah : Sebuah jebakan betmen"
+title: "Meditasi adalah: Sebuah jebakan betmen"
 description: "Cerita 10 hari silent retreat Vipassana di Bogor, dan jawaban untuk pertanyaan orang soal kenapa aku ikut."
 tag: esai pribadi
 date: 2019-07-28
