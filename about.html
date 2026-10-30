@@ -75,10 +75,9 @@
   .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; padding: 40px 0 28px; }
   .back-link:hover { color: var(--accent); }
 
-  .hero { padding-bottom: 48px; max-width: 40em; }
-  .avatar { display: block; width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 24px; }
+  .hero { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; padding-bottom: 56px; }
   .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 18px; }
-  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(30px, 4.5vw, 44px); line-height: 1.1; letter-spacing: -0.015em; margin: 0 0 22px; }
+  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(32px, 5vw, 52px); line-height: 1.08; letter-spacing: -0.015em; margin: 0 0 22px; }
   .lede { font-size: 18px; line-height: 1.6; color: var(--ink-soft); margin: 0; max-width: 34em; }
   .lede strong { color: var(--ink); font-weight: 600; }
   figure { margin: 0; }
@@ -113,8 +112,7 @@
   @media (max-width: 760px) {
     .wrap { padding: 0 20px; }
     .back-link { padding: 28px 0 22px; }
-    .hero { padding-bottom: 36px; }
-    .avatar { width: 96px; height: 96px; }
+    .hero { grid-template-columns: 1fr; gap: 28px; padding-bottom: 40px; }
     .lede { font-size: 16px; }
     figure img { aspect-ratio: 4 / 3; max-height: none; }
     .row { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
@@ -128,10 +126,14 @@
 <div class="wrap">
   <a class="back-link" href="/">&larr; widiginanjar.com</a>
   <header class="hero">
-    <img class="avatar" src="/img/widi-ginanjar-avatar.jpg" alt="Widi Ginanjar" width="160" height="160">
-    <span class="eyebrow">about</span>
-    <h1>What I work on</h1>
-    <p class="lede">I work on community programs: research, project management, and sustainability. I also do SEO and digital marketing, and write now and then.</p>
+    <div>
+      <span class="eyebrow">about</span>
+      <h1>What I work on</h1>
+      <p class="lede"><strong>Research, project management, and sustainability, mostly with community programs.</strong> Alongside that, I help organisations with SEO and digital marketing, and keep a small collection of field notes and essays.</p>
+    </div>
+    <figure>
+      <img src="/img/widi-ginanjar.jpg" alt="Widi Ginanjar" width="900" height="1125">
+    </figure>
   </header>
 </div>
 
