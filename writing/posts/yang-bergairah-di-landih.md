@@ -20,7 +20,7 @@ Bambu justru menyambut lebih dulu, dari bawah, di tepi jalan utama. Tapi ia sepe
 ![Rumpun bambu yang rapat dengan batang-batang kecil, dan satu batang patah yang dibiarkan bersandar.](/writing/img/landih-rumpun-bambu.jpg)
 *Rumpun yang rapat, batang kecil, dan batang patah yang dibiarkan.*
 
-Saya datang ke rumah Pak X untuk membicarakan pembentukan kelompok tani bambu. Ia dikenal sebagai praktisi sekaligus pengusaha bambu di desa ini. Tapi sebagian besar lahannya justru sudah ditanami bibit kopi dan jeruk.
+Saya mampir ke rumah seorang warga yang menanam bambu. Tapi sebagian besar lahannya justru sudah ditanami bibit kopi dan jeruk.
 
 ![Barisan bibit kopi di bawah jaring peneduh, di antara pohon-pohon muda.](/writing/img/landih-bibit-kopi.jpg)
 *Bibit kopi di bawah jaring peneduh.*
@@ -37,7 +37,7 @@ Lalu ia bercerita bahwa bambu di Landih makin sedikit. Lahan yang datar sudah ja
 
 Belakangan, saya sempat mampir ke kantor desa. Seorang perangkat di sana mengatakan hal yang sama.
 
-Setelah pulang, saya mencari angka. Pada 2016, Bangli tercatat punya sekitar [6.100 hektare tegakan bambu](https://ojs.unud.ac.id/index.php/eep/article/download/38422/23593/). Dua tahun kemudian, [lahan jeruknya sudah lebih dari 5.000 hektare](https://finance.detik.com/berita-ekonomi-bisnis/d-4199110/peluang-pasar-besar-dorong-budidaya-jeruk-siam), dan kabupaten ini dikenal sebagai [sentra jeruk terbesar di Bali](https://repository.pertanian.go.id/server/api/core/bitstreams/d92ddf25-1617-4835-bf1c-220218825619/content). Bupati Bangli sendiri pernah mengaku [tidak bisa melarang warga yang mengganti bambu di lahannya dengan jeruk](https://bali.antaranews.com/berita/173267/bupati-bangli-ajak-masyarakat-tanam-bambu-guna-jaga-sumber-air). Angka-angka itu tidak bercerita tentang Landih secara khusus. Tapi rasanya cukup untuk tahu bahwa yang dikatakan Pak X bukan keluhan satu orang.
+Setelah pulang, saya mencari angka. Pada 2016, Bangli tercatat punya sekitar [6.100 hektare tegakan bambu](https://ojs.unud.ac.id/index.php/eep/article/download/38422/23593/). Dua tahun kemudian, [lahan jeruknya sudah lebih dari 5.000 hektare](https://finance.detik.com/berita-ekonomi-bisnis/d-4199110/peluang-pasar-besar-dorong-budidaya-jeruk-siam), dan kabupaten ini dikenal sebagai [sentra jeruk terbesar di Bali](https://repository.pertanian.go.id/server/api/core/bitstreams/d92ddf25-1617-4835-bf1c-220218825619/content). Bupati Bangli sendiri pernah mengaku [tidak bisa melarang warga yang mengganti bambu di lahannya dengan jeruk](https://bali.antaranews.com/berita/173267/bupati-bangli-ajak-masyarakat-tanam-bambu-guna-jaga-sumber-air). Angka-angka itu tidak bercerita tentang Landih secara khusus. Tapi rasanya cukup untuk tahu bahwa yang dikatakan bapak itu bukan keluhan satu orang.
 
 Dalam perjalanan pulang, saya penasaran sekaligus sedikit sedih. Sebagian orang meninggalkan bambu untuk pekerjaan lain yang lebih cepat menghasilkan. Sebagian lagi beralih ke jeruk dan kopi.
 
