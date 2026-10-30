@@ -215,7 +215,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 
 <div class="wrap">
 
-  <a class="back-link" href="/notes/">&larr; notes</a>
+  <a class="back-link" href="/notes/">&larr; SEO notes</a>
 
   <span class="eyebrow">notes / {tag}</span>
 
@@ -284,12 +284,12 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <meta name="robots" content="index, follow">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127793;</text></svg>">
 
-<title>Notes | Widi Ginanjar</title>
+<title>SEO Notes | Widi Ginanjar</title>
 <meta name="description" content="Short notes on SEO, technical audits, and what real audits actually find, from Widi Ginanjar.">
 <link rel="canonical" href="{site_url}/notes/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Notes | Widi Ginanjar">
+<meta property="og:title" content="SEO Notes | Widi Ginanjar">
 <meta property="og:description" content="Short notes on SEO, technical audits, and what real audits actually find.">
 <meta property="og:url" content="{site_url}/notes/">
 <meta property="og:site_name" content="Widi Ginanjar">
@@ -307,7 +307,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   a {{ color: var(--accent); text-decoration: none; }}
   a:hover {{ text-decoration: underline; }}
   .wrap {{ max-width: 760px; margin: 0 auto; padding: 56px 32px 80px; }}
-  .back-link {{ font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: inline-block; margin-bottom: 32px; }}
+  .back-link {{ font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; margin-bottom: 32px; }}
   .back-link:hover {{ color: var(--accent); }}
   .eyebrow {{ font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 20px; }}
   h1 {{ font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 5vw, 36px); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 12px; }}
@@ -360,9 +360,9 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <body>
 
 <div class="wrap">
-  <a class="back-link" href="/">&larr; widiginanjar.com</a>
-  <span class="eyebrow">notes</span>
-  <h1>Notes on SEO &amp; Growth</h1>
+  <a class="back-link" href="/services/">&larr; SEO &amp; Marketing</a>
+  <span class="eyebrow">seo notes</span>
+  <h1>SEO Notes</h1>
   <p class="subhead">Short, specific write-ups drawn from real audits, not generic listicles.</p>
 {nav}
 {cards}
