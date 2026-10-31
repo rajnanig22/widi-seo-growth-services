@@ -17,6 +17,7 @@ note: "Optional small footer line, for example where it was first published."
 subtitle: "Optional line shown under the title."
 image: img/cover.jpg   # optional, 1200x630, used for link previews
 seo_title: "Optional title for Google results, with the words people search for"
+republished: true   # optional, for essays first published elsewhere: shows "Pertama terbit <date>"
 title_en: "Optional English translation of the title (llms.txt and search data only)"
 description_en: "Optional English summary, shown on the English homepage card and in llms.txt"
 ---
@@ -375,6 +376,9 @@ def build_article(post):
     cover_block = f'    <img class="cover" src="{cover_src}" alt="" width="1200" height="630">\n' if cover_src else ""
 
     post["_date_display"] = format_date(date)
+    if post.get("republished"):
+        # Older essays moved here from another blog keep their real date, labelled.
+        post["_date_display"] = "Pertama terbit " + post["_date_display"]
     post["_read_time"] = reading_time(post["body_md"])
 
     page = fill(ARTICLE_TEMPLATE, {
@@ -457,7 +461,7 @@ def update_homepage(posts, limit=3):
             "TITLE": html.escape(str(p.get("title", "")), quote=True),
             "DESCRIPTION": html.escape(str(p.get("description_en") or p.get("description", "")), quote=True),
             "DESC_LANG": "en" if p.get("description_en") else "id",
-            "DATE_DISPLAY": date_en(p.get("date", "")),
+            "DATE_DISPLAY": ("First published " if p.get("republished") else "") + date_en(p.get("date", "")),
             "READ_TIME": p["_read_time"].replace("menit baca", "min read"),
         })
         for p in posts[:limit]
