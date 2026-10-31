@@ -81,10 +81,14 @@
   }
   a { color: var(--accent); }
   a:hover { text-decoration: underline; }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 32px 72px; }
+  .wrap { max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+  .art-hero { display: grid; grid-template-columns: 1fr minmax(0, 0.8fr); gap: 56px; align-items: center; padding-bottom: 48px; border-bottom: 1px solid var(--rule); }
+  .art-hero.no-cover { grid-template-columns: 1fr; }
+  .art-hero .cover { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; border-radius: 12px; margin: 0; }
+  .art-body { max-width: 46em; padding: 48px 0 72px; }
   .back-link {
     font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft);
-    text-decoration: none; display: block; width: fit-content; margin-bottom: 32px;
+    text-decoration: none; display: block; width: fit-content; margin: 32px 0 24px;
   }
   .back-link:hover { color: var(--accent); }
   .eyebrow {
@@ -93,10 +97,10 @@
     display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 20px;
   }
   h1 {
-    font-family: var(--serif); font-weight: 600; font-size: clamp(26px, 5vw, 36px);
+    font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 3.6vw, 42px);
     line-height: 1.22; letter-spacing: -0.01em; margin: 0 0 16px;
   }
-  .meta { font-size: 13px; color: var(--ink-soft); margin-bottom: 36px; }
+  .meta { font-size: 13px; color: var(--ink-soft); margin: 0; }
   article p { font-size: 16.5px; margin: 0 0 20px; }
   article h2 { font-family: var(--serif); font-size: 22px; font-weight: 600; margin: 40px 0 14px; }
   article h3 { font-family: var(--serif); font-size: 19px; font-weight: 600; line-height: 1.3; margin: 32px 0 12px; }
@@ -158,8 +162,12 @@
   }
   .author-box .author-link:hover { text-decoration: none; opacity: 0.85; }
 
+  @media (max-width: 760px) {
+    .art-hero { grid-template-columns: 1fr; gap: 24px; padding-bottom: 32px; }
+    .art-hero .cover { order: -1; }
+    .art-body { padding: 32px 0 48px; }
+  }
   @media (max-width: 640px) {
-    .wrap { padding: 40px 20px 60px; }
     h1 { font-size: clamp(22px, 7vw, 30px); line-height: 1.25; }
     .meta { font-size: 12px; margin-bottom: 28px; }
     article p { font-size: 15px; margin: 0 0 18px; }
@@ -203,13 +211,16 @@
 
   <a class="back-link" href="/notes/">&larr; SEO Notes</a>
 
-  <span class="eyebrow">notes / mission-driven</span>
+  <header class="art-hero">
+    <div>
+      <span class="eyebrow">notes / mission-driven</span>
+      <h1>Getting an Issue Found Isn&#x27;t Always About Search</h1>
+      <p class="meta">Widi Ginanjar &middot; July 30, 2026 &middot; 4 min read</p>
+    </div>
+    <img class="cover" src="/notes/img/fundraiser-map-peer-sharing-vs-search.jpg" alt="" width="1200" height="630">
+  </header>
 
-  <h1>Getting an Issue Found Isn&#x27;t Always About Search</h1>
-  <p class="meta">Widi Ginanjar &middot; July 30, 2026 &middot; 4 min read</p>
-  <img class="cover" src="/notes/img/fundraiser-map-peer-sharing-vs-search.jpg" alt="" width="1200" height="630">
-
-
+  <div class="art-body">
   <article>
 <p><strong>The bottom line: search and peer sharing solve two different problems, not the same problem twice.</strong> Most of what's on this site is about search: fixing what stops a page from ranking, structuring content so an AI tool can find it. Search works when someone already knows enough to go looking. It does nothing for the person who doesn't know the thing exists yet, and has no reason to type anything into a search bar at all.</p>
 <p>I came across a clear example of that second, harder problem on Reddit. A small nonprofit built a fundraiser as a map instead of a normal donation page. Each US state had its own dollar goal, and the state lit up once it was funded. They also shared, publicly, which channels actually worked: <strong>cold email and generic social posts brought in almost nothing. Peer sharing, people posting the campaign and their own friends responding, brought in most of the money.</strong> I can't verify the exact figures from that post well enough to repeat them here, but the pattern lines up with what the wider data shows.</p>
@@ -259,6 +270,7 @@
 <li><a href="https://www.causevox.com/blog/peer-to-peer-fundraising/" target="_blank" rel="noopener noreferrer">Peer-to-Peer Fundraising: Everything You Need to Know</a>, CauseVox</li>
 </ol>
 </div>
+  </div>
 </div>
 
 <div class="navwrap">

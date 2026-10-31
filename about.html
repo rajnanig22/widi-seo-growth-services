@@ -72,8 +72,14 @@
   a { color: var(--accent); }
   a:hover { text-decoration: underline; }
   .wrap { max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
-  .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; padding: 40px 0 36px; }
-  .back-link:hover { color: var(--accent); }
+  nav.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--rule); flex-wrap: wrap; margin-bottom: 40px; }
+  .nav-home { font-family: var(--mono); font-size: 13px; color: var(--ink); letter-spacing: 0.02em; text-decoration: none; }
+  .nav-links { display: flex; gap: 28px; flex-wrap: wrap; }
+  .nav-links a { font-size: 15px; font-weight: 600; color: var(--ink); border-bottom: 2px solid transparent; padding-bottom: 3px; text-decoration: none; }
+  .nav-links a:hover, .nav-home:hover { color: var(--accent); text-decoration: none; }
+  .nav-links a:hover { border-bottom-color: var(--accent); }
+  @media (max-width: 760px) { .nav-home { display: none; } nav.top { justify-content: flex-end; margin-bottom: 28px; } }
+  @media (max-width: 420px) { .nav-links { gap: 14px; } .nav-links a { font-size: 13px; } }
   .about { display: grid; grid-template-columns: minmax(280px, 380px) 1fr; grid-template-areas: "photo text" "card text"; grid-template-rows: auto 1fr; column-gap: 56px; align-items: start; padding-bottom: 72px; }
   .photo { grid-area: photo; }
   .text { grid-area: text; }
@@ -95,7 +101,6 @@
   footer { border-top: 1px solid var(--rule); padding: 20px 0 32px; font-size: 13px; color: var(--ink-soft); }
   @media (max-width: 760px) {
     .wrap { padding: 0 20px; }
-    .back-link { padding: 28px 0 24px; }
     .about { grid-template-columns: 1fr; grid-template-areas: "photo" "text" "card"; row-gap: 28px; padding-bottom: 48px; }
     .card { margin-top: 8px; }
     .photo img { aspect-ratio: 4 / 3; object-position: 50% 20%; }
@@ -106,7 +111,14 @@
 <body>
 
 <div class="wrap">
-  <a class="back-link" href="/">&larr; widiginanjar.com</a>
+  <nav class="top" aria-label="Main">
+    <a class="nav-home" href="/">widiginanjar.com</a>
+    <div class="nav-links">
+      <a href="/writing/">Writing</a>
+      <a href="/services/">SEO &amp; Marketing</a>
+      <a href="/about.html">About</a>
+    </div>
+  </nav>
   <main class="about">
     <div class="photo">
       <img src="/img/widi-ginanjar.jpg" alt="Widi Ginanjar" width="900" height="1125">

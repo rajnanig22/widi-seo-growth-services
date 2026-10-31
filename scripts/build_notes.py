@@ -120,10 +120,14 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   }}
   a {{ color: var(--accent); }}
   a:hover {{ text-decoration: underline; }}
-  .wrap {{ max-width: 760px; margin: 0 auto; padding: 40px 32px 72px; }}
+  .wrap {{ max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }}
+  .art-hero {{ display: grid; grid-template-columns: 1fr minmax(0, 0.8fr); gap: 56px; align-items: center; padding-bottom: 48px; border-bottom: 1px solid var(--rule); }}
+  .art-hero.no-cover {{ grid-template-columns: 1fr; }}
+  .art-hero .cover {{ display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; border-radius: 12px; margin: 0; }}
+  .art-body {{ max-width: 46em; padding: 48px 0 72px; }}
   .back-link {{
     font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft);
-    text-decoration: none; display: block; width: fit-content; margin-bottom: 32px;
+    text-decoration: none; display: block; width: fit-content; margin: 32px 0 24px;
   }}
   .back-link:hover {{ color: var(--accent); }}
   .eyebrow {{
@@ -132,10 +136,10 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
     display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 20px;
   }}
   h1 {{
-    font-family: var(--serif); font-weight: 600; font-size: clamp(26px, 5vw, 36px);
+    font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 3.6vw, 42px);
     line-height: 1.22; letter-spacing: -0.01em; margin: 0 0 16px;
   }}
-  .meta {{ font-size: 13px; color: var(--ink-soft); margin-bottom: 36px; }}
+  .meta {{ font-size: 13px; color: var(--ink-soft); margin: 0; }}
   article p {{ font-size: 16.5px; margin: 0 0 20px; }}
   article h2 {{ font-family: var(--serif); font-size: 22px; font-weight: 600; margin: 40px 0 14px; }}
   article h3 {{ font-family: var(--serif); font-size: 19px; font-weight: 600; line-height: 1.3; margin: 32px 0 12px; }}
@@ -197,8 +201,12 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   }}
   .author-box .author-link:hover {{ text-decoration: none; opacity: 0.85; }}
 
+  @media (max-width: 760px) {{
+    .art-hero {{ grid-template-columns: 1fr; gap: 24px; padding-bottom: 32px; }}
+    .art-hero .cover {{ order: -1; }}
+    .art-body {{ padding: 32px 0 48px; }}
+  }}
   @media (max-width: 640px) {{
-    .wrap {{ padding: 40px 20px 60px; }}
     h1 {{ font-size: clamp(22px, 7vw, 30px); line-height: 1.25; }}
     .meta {{ font-size: 12px; margin-bottom: 28px; }}
     article p {{ font-size: 15px; margin: 0 0 18px; }}
@@ -242,12 +250,15 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 
   <a class="back-link" href="/notes/">&larr; SEO Notes</a>
 
-  <span class="eyebrow">notes / {tag}</span>
+  <header class="art-hero{hero_class}">
+    <div>
+      <span class="eyebrow">notes / {tag}</span>
+      <h1>{title}</h1>
+      <p class="meta">Widi Ginanjar &middot; {date_display}</p>
+    </div>
+{cover_block}  </header>
 
-  <h1>{title}</h1>
-  <p class="meta">Widi Ginanjar &middot; {date_display}</p>
-{cover_block}
-
+  <div class="art-body">
   <article>
 {content}
   </article>
@@ -263,6 +274,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   </div>
 
 {sources_block}
+  </div>
 </div>
 
 <div class="navwrap">
@@ -567,7 +579,8 @@ def build_article(post):
         content=body_html,
         sources_block=render_sources(post.get("sources")),
         og_image=og_image_tags(slug),
-        cover_block=(f'  <img class="cover" src="{cover_path(slug)}" alt="" width="1200" height="630">\n' if cover_path(slug) else ""),
+        cover_block=(f'    <img class="cover" src="{cover_path(slug)}" alt="" width="1200" height="630">\n' if cover_path(slug) else ""),
+        hero_class="" if cover_path(slug) else " no-cover",
         twitter_card="summary_large_image" if cover_path(slug) else "summary",
     )
 

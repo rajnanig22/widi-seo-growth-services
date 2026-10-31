@@ -81,10 +81,14 @@
   }
   a { color: var(--accent); }
   a:hover { text-decoration: underline; }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 32px 72px; }
+  .wrap { max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+  .art-hero { display: grid; grid-template-columns: 1fr minmax(0, 0.8fr); gap: 56px; align-items: center; padding-bottom: 48px; border-bottom: 1px solid var(--rule); }
+  .art-hero.no-cover { grid-template-columns: 1fr; }
+  .art-hero .cover { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; border-radius: 12px; margin: 0; }
+  .art-body { max-width: 46em; padding: 48px 0 72px; }
   .back-link {
     font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft);
-    text-decoration: none; display: block; width: fit-content; margin-bottom: 32px;
+    text-decoration: none; display: block; width: fit-content; margin: 32px 0 24px;
   }
   .back-link:hover { color: var(--accent); }
   .eyebrow {
@@ -93,10 +97,10 @@
     display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 20px;
   }
   h1 {
-    font-family: var(--serif); font-weight: 600; font-size: clamp(26px, 5vw, 36px);
+    font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 3.6vw, 42px);
     line-height: 1.22; letter-spacing: -0.01em; margin: 0 0 16px;
   }
-  .meta { font-size: 13px; color: var(--ink-soft); margin-bottom: 36px; }
+  .meta { font-size: 13px; color: var(--ink-soft); margin: 0; }
   article p { font-size: 16.5px; margin: 0 0 20px; }
   article h2 { font-family: var(--serif); font-size: 22px; font-weight: 600; margin: 40px 0 14px; }
   article h3 { font-family: var(--serif); font-size: 19px; font-weight: 600; line-height: 1.3; margin: 32px 0 12px; }
@@ -158,8 +162,12 @@
   }
   .author-box .author-link:hover { text-decoration: none; opacity: 0.85; }
 
+  @media (max-width: 760px) {
+    .art-hero { grid-template-columns: 1fr; gap: 24px; padding-bottom: 32px; }
+    .art-hero .cover { order: -1; }
+    .art-body { padding: 32px 0 48px; }
+  }
   @media (max-width: 640px) {
-    .wrap { padding: 40px 20px 60px; }
     h1 { font-size: clamp(22px, 7vw, 30px); line-height: 1.25; }
     .meta { font-size: 12px; margin-bottom: 28px; }
     article p { font-size: 15px; margin: 0 0 18px; }
@@ -203,13 +211,16 @@
 
   <a class="back-link" href="/notes/">&larr; SEO Notes</a>
 
-  <span class="eyebrow">notes / ai search</span>
+  <header class="art-hero">
+    <div>
+      <span class="eyebrow">notes / ai search</span>
+      <h1>Google Knows My Website. It Doesn&#x27;t Know Me.</h1>
+      <p class="meta">Widi Ginanjar &middot; August 7, 2026 &middot; 4 min read</p>
+    </div>
+    <img class="cover" src="/notes/img/ai-overview-domain-vs-name.jpg" alt="" width="1200" height="630">
+  </header>
 
-  <h1>Google Knows My Website. It Doesn&#x27;t Know Me.</h1>
-  <p class="meta">Widi Ginanjar &middot; August 7, 2026 &middot; 4 min read</p>
-  <img class="cover" src="/notes/img/ai-overview-domain-vs-name.jpg" alt="" width="1200" height="630">
-
-
+  <div class="art-body">
   <article>
 <p>I ran two Google searches back to back last night. Same person, same intent, one word different.</p>
 <p>First search: my domain, widiginanjar.com. The AI Overview got it right, in detail. It described the site as my professional portfolio, correctly listed the four things I actually specialise in (NGO, B2B, hospitality, AI search), and cited the site itself as the source.</p>
@@ -262,6 +273,7 @@
   </div>
 
 
+  </div>
 </div>
 
 <div class="navwrap">

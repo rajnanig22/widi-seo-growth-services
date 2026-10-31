@@ -47,9 +47,18 @@
   a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
   .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; margin-bottom: 32px; }
   .back-link:hover { color: var(--accent); text-decoration: none; }
-  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 14px; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 14px; }  .navwrap { max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+  nav.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
+  .nav-home { font-family: var(--mono); font-size: 13px; color: var(--ink); letter-spacing: 0.02em; text-decoration: none; }
+  .nav-links { display: flex; gap: 28px; flex-wrap: wrap; }
+  .nav-links a { font-size: 15px; font-weight: 600; color: var(--ink); border-bottom: 2px solid transparent; padding-bottom: 3px; text-decoration: none; }
+  .nav-links a:hover, .nav-home:hover { color: var(--accent); text-decoration: none; }
+  .nav-links a:hover { border-bottom-color: var(--accent); }
+  .site-footer { border-top: 1px solid var(--rule); padding: 20px 0 32px; font-size: 13px; color: var(--ink-soft); }
+  @media (max-width: 760px) { .nav-home { display: none; } nav.top { justify-content: flex-end; } }
+  @media (max-width: 420px) { .nav-links { gap: 14px; } .nav-links a { font-size: 13px; } }
   body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
-  .wrap { max-width: 1520px; margin: 0 auto; padding: 56px clamp(20px, 5vw, 80px) 80px; }
+  .wrap { max-width: 1520px; margin: 0 auto; padding: 48px clamp(20px, 5vw, 80px) 72px; }
   h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 5vw, 36px); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 12px; }
   .subhead { font-size: 15px; color: var(--ink-soft); margin: 0 0 36px; max-width: 52ch; }
   .article-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-bottom: 36px; }
@@ -87,8 +96,18 @@
 </head>
 <body>
 
+<div class="navwrap">
+  <nav class="top" aria-label="Main">
+    <a class="nav-home" href="/">widiginanjar.com</a>
+    <div class="nav-links">
+      <a href="/writing/">Writing</a>
+      <a href="/services/">SEO &amp; Marketing</a>
+      <a href="/about.html">About</a>
+    </div>
+  </nav>
+</div>
+
 <div class="wrap">
-  <a class="back-link" href="/">&larr; widiginanjar.com</a>
   <span class="eyebrow">writing</span>
   <h1>Writing</h1>
   <p class="subhead">Esai pribadi dan catatan lapangan tentang manusia dan komunitas, dalam Bahasa Indonesia.</p>
@@ -133,6 +152,10 @@
       </div>
     </a>
   </div>
+</div>
+
+<div class="navwrap">
+  <footer class="site-footer">&copy; 2026 Widi Ginanjar</footer>
 </div>
 
 </body>
