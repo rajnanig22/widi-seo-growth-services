@@ -6,10 +6,10 @@ Guidance for Claude Code when working in this repository.
 
 The source for **widiginanjar.com**: a static personal site served by GitHub Pages (custom domain in `CNAME`). No framework, no CMS, no JavaScript build step. Plain HTML and CSS, plus Python scripts that turn Markdown into pages.
 
-- `/` homepage: name, two doors (Writing and Services), newest essays filled in automatically
-- `/writing/` field notes and essays, **in Bahasa Indonesia**
-- `/services/` SEO and digital marketing services, **in English**
-- `/notes/` SEO and growth notes, in English
+- `/` homepage: name, newest essays (filled in automatically), and a small strip linking to SEO consulting
+- `/writing/` Essays: field notes and essays, **in Bahasa Indonesia**
+- `/services/` SEO Consulting, **in English**
+- `/notes/` SEO Notes, part of SEO Consulting, in English
 
 ## How the build works
 

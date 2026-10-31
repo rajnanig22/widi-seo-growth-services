@@ -47,7 +47,7 @@ SERVICE_PAGES = [
 
 LLMS_HEADER = """# Widi Ginanjar
 
-> Works in research, project management, and sustainability, mostly with community programs in Indonesia. Also provides SEO and digital marketing for NGOs, B2B firms, hospitality brands, and organisations navigating AI search, and writes field notes and essays in Bahasa Indonesia. Background in community-based development (Delterra, YCAB, BIDUK) and in SEO and growth marketing (BetterPic, Runflow).
+> Works in research, project management, and sustainability, mostly with community programs in Indonesia. Also does SEO consulting for NGOs, B2B firms, hospitality brands, and organisations navigating AI search, and writes field notes and essays in Bahasa Indonesia. Background in community-based development (Delterra, YCAB, BIDUK) and in SEO and growth marketing (BetterPic, Runflow).
 """
 
 
@@ -119,12 +119,12 @@ def essay_desc(p):
 def build_llms(essays, notes):
     parts = [LLMS_HEADER]
 
-    parts.append("## Writing (field notes and essays, in Bahasa Indonesia)\n")
-    parts.append(line("Writing index", f"{SITE_URL}/writing/", "All essays and field notes."))
+    parts.append("## Essays (field notes and essays, in Bahasa Indonesia)\n")
+    parts.append(line("Essays index", f"{SITE_URL}/writing/", "All essays and field notes."))
     parts += [line(essay_title(p), f"{SITE_URL}/writing/{p['slug']}.html", essay_desc(p)) for p in essays]
 
     parts.append("\n## Services\n")
-    parts.append(line("Services overview", f"{SITE_URL}/services/", "All SEO and digital marketing services."))
+    parts.append(line("Services overview", f"{SITE_URL}/services/", "SEO consulting: services, scope of work, and booking."))
     parts += [line(t, SITE_URL + path, d) for path, t, d in SERVICE_PAGES
               if os.path.exists(os.path.join(ROOT, path.lstrip("/")))]
     parts.append(line("Full Scope of Work", f"{SITE_URL}/scope-of-work.html", "Complete, itemised breakdown of every service offered."))

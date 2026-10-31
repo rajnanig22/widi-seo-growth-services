@@ -112,15 +112,21 @@ CSS_COMMON = """  :root {
   .site-foot .links a:hover { color: #FFFFFF; text-decoration: none; }
   @media (max-width: 760px) { .nav-home { display: none; } nav.top { justify-content: flex-end; } }
   @media (max-width: 420px) { .nav-links { gap: 14px; } .nav-links a { font-size: 13px; } }
+  /* shared nav: name on the left on every screen, lighter links */
+  .nav-home { font-family: var(--serif) !important; font-weight: 700; font-size: 17px !important; letter-spacing: -0.01em !important; color: var(--ink); display: inline !important; text-decoration: none; }
+  nav.top .nav-links { gap: 24px; }
+  nav.top .nav-links a { font-size: 14.5px; font-weight: 500; }
+  @media (max-width: 820px) { nav.top { justify-content: space-between !important; flex-wrap: nowrap !important; } }
+  @media (max-width: 420px) { .nav-home { font-size: 15px !important; } nav.top .nav-links { gap: 12px !important; } nav.top .nav-links a { font-size: 13px !important; } }
 """
 
 NAV = """<div class="navwrap">
   <nav class="top" aria-label="Main">
-    <a class="nav-home" href="/">widiginanjar.com</a>
+    <a class="nav-home" href="/">Widi Ginanjar</a>
     <div class="nav-links">
-      <a href="/writing/">Writing</a>
-      <a href="/services/">SEO &amp; Marketing</a>
+      <a href="/writing/">Essays</a>
       <a href="/about.html">About</a>
+      <a href="/services/">SEO Consulting</a>
     </div>
   </nav>
 </div>
@@ -200,7 +206,7 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
 
 %%NAV%%
 <div class="wrap">
-  <a class="back-link" href="/writing/">&larr; Writing</a>
+  <a class="back-link" href="/writing/">&larr; Essays</a>
   <header class="art-hero%%HERO_CLASS%%">
     <div>
       <span class="eyebrow">%%TAG%%</span>
@@ -223,12 +229,12 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
 """
 
 INDEX_TEMPLATE = HEAD_COMMON + """
-<title>Writing | Widi Ginanjar</title>
+<title>Essays | Widi Ginanjar</title>
 <meta name="description" content="Esai pribadi dan catatan lapangan dari Widi Ginanjar, dalam Bahasa Indonesia.">
 <link rel="canonical" href="%%SITE_URL%%/writing/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Writing | Widi Ginanjar">
+<meta property="og:title" content="Essays | Widi Ginanjar">
 <meta property="og:description" content="Esai pribadi dan catatan lapangan, dalam Bahasa Indonesia.">
 <meta property="og:url" content="%%SITE_URL%%/writing/">
 <meta property="og:image" content="%%SITE_URL%%/og-home.jpg">
@@ -278,8 +284,8 @@ INDEX_TEMPLATE = HEAD_COMMON + """
 
 %%NAV%%
 <div class="wrap">
-  <span class="eyebrow">writing</span>
-  <h1>Writing</h1>
+  <span class="eyebrow">essays</span>
+  <h1>Essays</h1>
   <p class="subhead">Esai pribadi dan catatan lapangan tentang manusia dan komunitas, dalam Bahasa Indonesia.</p>
 
   <div class="article-list">
