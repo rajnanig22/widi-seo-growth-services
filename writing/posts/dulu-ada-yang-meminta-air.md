@@ -6,6 +6,8 @@ description: "Catatan lapangan soal kekeringan di Bangli: air tangki Rp250 ribu 
 tag: catatan lapangan
 date: 2026-10-31
 slug: dulu-ada-yang-meminta-air
+title_en: "Once, Someone Asked for Water"
+description_en: "Field notes from a village in Bangli, Bali: a long dry season, water trucks at Rp250,000 each, an 80-metre borehole with no water, and a local legend of a water curse."
 image: img/meminta-air-cover.jpg
 ---
 

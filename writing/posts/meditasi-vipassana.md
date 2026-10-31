@@ -4,6 +4,8 @@ description: "Cerita 10 hari silent retreat Vipassana di Bogor, dan jawaban untu
 tag: esai pribadi
 date: 2019-07-28
 slug: meditasi-vipassana
+title_en: "Meditation Is a Sneaky Trap"
+description_en: "Ten days of silent Vipassana retreat in Bogor, and an answer to people who ask why I went."
 note: "Esai ini pertama terbit di blog lamaku, Tracing Footsteps, pada 28 Juli 2019."
 image: img/meditasi-cover.jpg
 ---

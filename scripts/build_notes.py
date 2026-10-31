@@ -72,6 +72,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 <meta property="og:description" content="{description}">
 <meta property="og:url" content="{canonical}">
 <meta property="og:site_name" content="Widi Ginanjar">
+<meta property="og:locale" content="en_US">
 {og_image}
 <meta name="twitter:card" content="{twitter_card}">
 <meta name="twitter:title" content="{title}">
@@ -354,6 +355,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <meta property="og:description" content="Short notes on SEO, technical audits, and what real audits actually find.">
 <meta property="og:url" content="{site_url}/notes/">
 <meta property="og:site_name" content="Widi Ginanjar">
+<meta property="og:locale" content="en_US">
 <meta property="og:image" content="{site_url}/og-home.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">

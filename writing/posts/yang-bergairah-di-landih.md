@@ -5,6 +5,8 @@ description: "Di Landih, Bangli, kopi dan jeruk tampak bergairah, sementara bamb
 tag: catatan lapangan
 date: 2026-10-30
 slug: yang-bergairah-di-landih
+title_en: "What Thrives in Landih"
+description_en: "In Landih, Bangli, coffee and citrus are thriving, while bamboo is pushed to the slopes and riverbanks."
 image: img/landih-cover.jpg
 ---
 

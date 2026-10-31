@@ -17,6 +17,8 @@ note: "Optional small footer line, for example where it was first published."
 subtitle: "Optional line shown under the title."
 image: img/cover.jpg   # optional, 1200x630, used for link previews
 seo_title: "Optional title for Google results, with the words people search for"
+title_en: "Optional English translation of the title (llms.txt and search data only)"
+description_en: "Optional English summary, shown on the English homepage card and in llms.txt"
 ---
 
 Photos: upload them to writing/img/ and use ![alt text](/writing/img/photo.jpg)
@@ -154,7 +156,7 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
   "@context": "https://schema.org",
   "@type": "Article",
   "image": "%%OG_IMAGE%%",
-  "headline": %%TITLE_JSON%%,
+  "headline": %%TITLE_JSON%%,%%ALT_HEADLINE%%
   "inLanguage": "id",
   "author": { "@type": "Person", "name": "Widi Ginanjar", "url": "https://widiginanjar.com" },
   "mainEntityOfPage": "%%CANONICAL%%",
@@ -381,6 +383,7 @@ def build_article(post):
         "TITLE": html.escape(title_raw, quote=True),
         "TITLE_JSON": json.dumps(title_raw, ensure_ascii=False),
         # Search results can use a plainer title than the essay's own title.
+        "ALT_HEADLINE": (f'\n  "alternativeHeadline": {json.dumps(str(post["title_en"]), ensure_ascii=False)},' if post.get("title_en") else ""),
         "SEO_TITLE": html.escape(str(post.get("seo_title") or title_raw), quote=True),
         "DESCRIPTION": html.escape(description_raw, quote=True),
         "DESCRIPTION_JSON": json.dumps(description_raw, ensure_ascii=False),
@@ -409,8 +412,8 @@ HOME_CARD_TEMPLATE = """        <a class="w-card" href="/writing/%%SLUG%%.html" 
           <span class="w-body">
             <span class="tag">%%TAG%%</span>
             <h3 lang="id">%%TITLE%%</h3>
-            <p lang="id">%%DESCRIPTION%%</p>
-            <span class="w-meta">%%DATE_DISPLAY%% &middot; %%READ_TIME%%</span>
+            <p lang="%%DESC_LANG%%">%%DESCRIPTION%%</p>
+            <span class="w-meta">%%DATE_DISPLAY%% &middot; %%READ_TIME%% &middot; in Bahasa Indonesia</span>
           </span>
         </a>"""
 
@@ -452,7 +455,8 @@ def update_homepage(posts, limit=3):
             "THUMB": thumb_html(p),
             "TAG": html.escape(str(p.get("tag", "tulisan"))),
             "TITLE": html.escape(str(p.get("title", "")), quote=True),
-            "DESCRIPTION": html.escape(str(p.get("description", "")), quote=True),
+            "DESCRIPTION": html.escape(str(p.get("description_en") or p.get("description", "")), quote=True),
+            "DESC_LANG": "en" if p.get("description_en") else "id",
             "DATE_DISPLAY": date_en(p.get("date", "")),
             "READ_TIME": p["_read_time"].replace("menit baca", "min read"),
         })
