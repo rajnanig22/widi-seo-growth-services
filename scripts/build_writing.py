@@ -16,6 +16,7 @@ slug: my-essay-title
 note: "Optional small footer line, for example where it was first published."
 subtitle: "Optional line shown under the title."
 image: img/cover.jpg   # optional, 1200x630, used for link previews
+seo_title: "Optional title for Google results, with the words people search for"
 ---
 
 Photos: upload them to writing/img/ and use ![alt text](/writing/img/photo.jpg)
@@ -97,7 +98,7 @@ CSS_COMMON = """  :root {
 """
 
 ARTICLE_TEMPLATE = HEAD_COMMON + """
-<title>%%TITLE%% | Widi Ginanjar</title>
+<title>%%SEO_TITLE%% | Widi Ginanjar</title>
 <meta name="description" content="%%DESCRIPTION%%">
 <link rel="canonical" href="%%CANONICAL%%">
 
@@ -120,6 +121,8 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
   "author": { "@type": "Person", "name": "Widi Ginanjar", "url": "https://widiginanjar.com" },
   "mainEntityOfPage": "%%CANONICAL%%",
   "datePublished": "%%DATE%%",
+  "dateModified": "%%DATE%%",
+  "publisher": { "@type": "Person", "name": "Widi Ginanjar", "url": "https://widiginanjar.com" },
   "description": %%DESCRIPTION_JSON%%
 }
 </script>
@@ -323,6 +326,8 @@ def build_article(post):
         "SITE_URL": SITE_URL,
         "TITLE": html.escape(title_raw, quote=True),
         "TITLE_JSON": json.dumps(title_raw, ensure_ascii=False),
+        # Search results can use a plainer title than the essay's own title.
+        "SEO_TITLE": html.escape(str(post.get("seo_title") or title_raw), quote=True),
         "DESCRIPTION": html.escape(description_raw, quote=True),
         "DESCRIPTION_JSON": json.dumps(description_raw, ensure_ascii=False),
         "CANONICAL": canonical,

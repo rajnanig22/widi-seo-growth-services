@@ -57,6 +57,7 @@ tag: catatan lapangan
 date: 2026-10-30
 slug: ...
 image: img/cover.jpg   # optional
+seo_title: "..."      # optional, title for Google results
 note: "..."            # optional footer line
 ---
 ```
