@@ -103,12 +103,25 @@ def line(title, url, desc):
     return f"- [{title}]({url}): {desc}" if desc else f"- [{title}]({url})"
 
 
+def essay_title(p):
+    """Indonesian title, with the English translation in brackets when there is one."""
+    title = str(p.get("title", "")).strip()
+    return f"{title} (English: {str(p['title_en']).strip()})" if p.get("title_en") else title
+
+
+def essay_desc(p):
+    """English summary first (llms.txt is read in English), then the Indonesian original."""
+    id_desc = str(p.get("description", "")).strip()
+    en_desc = str(p.get("description_en") or "").strip()
+    return f"{en_desc} Indonesian: {id_desc}" if en_desc else id_desc
+
+
 def build_llms(essays, notes):
     parts = [LLMS_HEADER]
 
     parts.append("## Writing (field notes and essays, in Bahasa Indonesia)\n")
     parts.append(line("Writing index", f"{SITE_URL}/writing/", "All essays and field notes."))
-    parts += [line(p.get("title", ""), f"{SITE_URL}/writing/{p['slug']}.html", p.get("description", "")) for p in essays]
+    parts += [line(essay_title(p), f"{SITE_URL}/writing/{p['slug']}.html", essay_desc(p)) for p in essays]
 
     parts.append("\n## Services\n")
     parts.append(line("Services overview", f"{SITE_URL}/services/", "All SEO and digital marketing services."))
