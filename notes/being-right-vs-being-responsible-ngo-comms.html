@@ -15,6 +15,11 @@
 <meta name="robots" content="index, follow">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127793;</text></svg>">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600;700&display=swap" rel="stylesheet"></noscript>
+
 <title>Being Right About the Data Isn&#x27;t the Same as Being Responsible With It | Widi Ginanjar</title>
 <meta name="description" content="A social post about forest fires led to a disagreement over one closing line. Sorting out why took longer than writing the post did.">
 <link rel="canonical" href="https://widiginanjar.com/notes/being-right-vs-being-responsible-ngo-comms.html">
@@ -61,9 +66,9 @@
     --accent: #2F6F5E;
     --accent-soft: #E7F0EB;
     --rule: #E1DED4;
-    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
-    --serif: Georgia, 'Times New Roman', serif;
-    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    --serif: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
+    --sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
   * { box-sizing: border-box; }
   body {
@@ -76,10 +81,10 @@
   }
   a { color: var(--accent); }
   a:hover { text-decoration: underline; }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 32px 80px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 32px 72px; }
   .back-link {
     font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft);
-    text-decoration: none; display: inline-block; margin-bottom: 32px;
+    text-decoration: none; display: block; width: fit-content; margin-bottom: 32px;
   }
   .back-link:hover { color: var(--accent); }
   .eyebrow {
@@ -131,12 +136,9 @@
     border: 1px solid var(--rule); border-radius: 10px;
     display: flex; gap: 16px; align-items: flex-start;
   }
-  .author-box .avatar {
-    width: 40px; height: 40px; border-radius: 50%; background: var(--accent-soft);
-    display: flex; align-items: center; justify-content: center;
-    font-family: var(--serif); font-weight: 600; font-size: 16px; color: var(--accent);
-    flex-shrink: 0;
-  }
+  .author-box .avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+  .author-box .author-link + .author-link { margin-left: 6px; }
+  .cover { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; border-radius: 10px; margin: 0 0 36px; }
   .author-box .author-label {
     font-family: var(--mono); font-size: 10.5px; text-transform: lowercase;
     color: var(--ink-soft); letter-spacing: 0.04em; margin: 0 0 4px;
@@ -170,18 +172,41 @@
     article th, article td { padding: 7px 8px; }
     article td:not(:first-child), article th:not(:first-child) { font-size: 10px; }
   }
+  .navwrap { max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+  nav.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
+  .nav-home { font-family: var(--mono); font-size: 13px; color: var(--ink); letter-spacing: 0.02em; text-decoration: none; }
+  .nav-links { display: flex; gap: 28px; flex-wrap: wrap; }
+  .nav-links a { font-size: 15px; font-weight: 600; color: var(--ink); border-bottom: 2px solid transparent; padding-bottom: 3px; text-decoration: none; }
+  .nav-links a:hover, .nav-home:hover { color: var(--accent); text-decoration: none; }
+  .nav-links a:hover { border-bottom-color: var(--accent); }
+  .site-footer { border-top: 1px solid var(--rule); padding: 20px 0 32px; font-size: 13px; color: var(--ink-soft); }
+  @media (max-width: 760px) { .nav-home { display: none; } nav.top { justify-content: flex-end; } }
+  @media (max-width: 420px) { .nav-links { gap: 14px; } .nav-links a { font-size: 13px; } }
 </style>
 </head>
 <body>
 
+<div class="navwrap">
+  <nav class="top" aria-label="Main">
+    <a class="nav-home" href="/">widiginanjar.com</a>
+    <div class="nav-links">
+      <a href="/writing/">Writing</a>
+      <a href="/services/">SEO &amp; Marketing</a>
+      <a href="/about.html">About</a>
+    </div>
+  </nav>
+</div>
+
 <div class="wrap">
 
-  <a class="back-link" href="/notes/">&larr; SEO notes</a>
+  <a class="back-link" href="/notes/">&larr; SEO Notes</a>
 
   <span class="eyebrow">notes / mission-driven</span>
 
   <h1>Being Right About the Data Isn&#x27;t the Same as Being Responsible With It</h1>
-  <p class="meta">Widi Ginanjar &middot; SEO &amp; Growth &middot; September 5, 2026 &middot; 5 min read</p>
+  <p class="meta">Widi Ginanjar &middot; September 5, 2026 &middot; 5 min read</p>
+  <img class="cover" src="/notes/img/being-right-vs-being-responsible-ngo-comms.jpg" alt="" width="1200" height="630">
+
 
   <article>
 <p><strong>The bottom line:</strong> a colleague told me the last line of a post I wrote sounded passive-aggressive. My first move was to defend it, since the numbers behind it were solid. It took me a while to see the argument was never really about the numbers. It was three different questions, all squeezed into one sentence, and no rewording was going to fix that.</p>
@@ -207,10 +232,11 @@
   </article>
 
   <div class="author-box">
-    <div class="avatar">WG</div>
+    <img class="avatar" src="/img/widi-ginanjar-round.jpg" alt="" width="56" height="56" loading="lazy">
     <div>
       <p class="author-label">written by</p>
-      <p><strong>Widi Ginanjar</strong> is an SEO, growth marketing, and content strategist based in Bali, Indonesia. He currently helps SaaS companies earn organic visibility through SEO and outreach, audits websites for freelance clients across hospitality, B2B, and NGO sectors, and researches how local supply chains create sustainable value on the ground. He previously spent nearly four years in community development and sustainability work with Delterra/McKinsey.org.</p>
+      <p><strong>Widi Ginanjar</strong> works on research, project management, and sustainability with community programs, and helps a few organisations with SEO and digital marketing. These notes come from that SEO work.</p>
+      <a class="author-link" href="/about.html">About &rarr;</a>
       <a class="author-link" href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer" onclick="gtag('event','contact_click',{'method':'linkedin','location':'notes_author_box'});">LinkedIn &rarr;</a>
     </div>
   </div>
@@ -218,11 +244,16 @@
 <div class="sources">
 <h2>Sources</h2>
 <ol>
-<li><a href="https://doi.org/10.1093/jopart/mus003" target="_blank" rel="noopener noreferrer">Keeping the Lights On: How Government Funding Concerns Drive the Advocacy Agendas of Nonprofit Homeless Service Providers</a> , Mosley, J.E. (2012), Journal of Public Administration Research and Theory</li>
-<li><a href="https://www.philanthropy.com/news/fearing-retaliation-loss-of-funding-many-nonprofits-stay-quiet-on-trump/" target="_blank" rel="noopener noreferrer">Fearing Retaliation, Loss of Funding, Many Nonprofits Stay Quiet</a> , The Chronicle of Philanthropy</li>
+<li><a href="https://doi.org/10.1093/jopart/mus003" target="_blank" rel="noopener noreferrer">Keeping the Lights On: How Government Funding Concerns Drive the Advocacy Agendas of Nonprofit Homeless Service Providers</a>, Mosley, J.E. (2012), Journal of Public Administration Research and Theory</li>
+<li><a href="https://www.philanthropy.com/news/fearing-retaliation-loss-of-funding-many-nonprofits-stay-quiet-on-trump/" target="_blank" rel="noopener noreferrer">Fearing Retaliation, Loss of Funding, Many Nonprofits Stay Quiet</a>, The Chronicle of Philanthropy</li>
 </ol>
 </div>
 </div>
+
+<div class="navwrap">
+  <footer class="site-footer">&copy; 2026 Widi Ginanjar</footer>
+</div>
+
 
 <script>
   (function() {
