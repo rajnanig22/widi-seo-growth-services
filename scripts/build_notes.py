@@ -237,17 +237,24 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   .site-foot .links a:hover {{ color: #FFFFFF; text-decoration: none; }}
   @media (max-width: 760px) {{ .nav-home {{ display: none; }} nav.top {{ justify-content: flex-end; }} }}
   @media (max-width: 420px) {{ .nav-links {{ gap: 14px; }} .nav-links a {{ font-size: 13px; }} }}
+  /* shared nav: name on the left on every screen, lighter links */
+  .nav-home {{ font-family: var(--serif) !important; font-weight: 700; font-size: 19px !important; letter-spacing: -0.01em !important; color: var(--ink); display: inline !important; text-decoration: none; }}
+  nav.top .nav-links {{ gap: 24px; }}
+  nav.top .nav-links a {{ font-size: 16px; font-weight: 600; color: var(--ink); }}
+  nav.top .nav-links a[aria-current] {{ color: var(--accent); border-bottom-color: var(--accent); }}
+  @media (max-width: 820px) {{ nav.top {{ justify-content: space-between !important; flex-wrap: nowrap !important; }} }}
+  @media (max-width: 420px) {{ .nav-home {{ font-size: 15px !important; }} nav.top .nav-links {{ gap: 12px !important; }} nav.top .nav-links a {{ font-size: 13.5px !important; }} }}
 </style>
 </head>
 <body>
 
 <div class="navwrap">
   <nav class="top" aria-label="Main">
-    <a class="nav-home" href="/">widiginanjar.com</a>
+    <a class="nav-home" href="/">Widi Ginanjar</a>
     <div class="nav-links">
-      <a href="/writing/">Writing</a>
-      <a href="/services/">SEO &amp; Marketing</a>
+      <a href="/writing/">Essays</a>
       <a href="/about.html">About</a>
+      <a aria-current="page" href="/services/">SEO Consulting</a>
     </div>
   </nav>
 </div>
@@ -273,7 +280,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
     <img class="avatar" src="/img/widi-ginanjar-round.jpg" alt="" width="56" height="56" loading="lazy">
     <div>
       <p class="author-label">written by</p>
-      <p><strong>Widi Ginanjar</strong> works on research, project management, and sustainability with community programs, and helps a few organisations with SEO and digital marketing. These notes come from that SEO work.</p>
+      <p><strong>Widi Ginanjar</strong> works on research, project management, and sustainability with community programs, and helps a few organisations with SEO. These notes come from that SEO work.</p>
       <a class="author-link" href="/about.html">About &rarr;</a>
       <a class="author-link" href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer" onclick="gtag('event','contact_click',{{'method':'linkedin','location':'notes_author_box'}});">LinkedIn &rarr;</a>
     </div>
@@ -440,23 +447,30 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   .site-foot .links a:hover {{ color: #FFFFFF; text-decoration: none; }}
   @media (max-width: 760px) {{ .nav-home {{ display: none; }} nav.top {{ justify-content: flex-end; }} }}
   @media (max-width: 420px) {{ .nav-links {{ gap: 14px; }} .nav-links a {{ font-size: 13px; }} }}
+  /* shared nav: name on the left on every screen, lighter links */
+  .nav-home {{ font-family: var(--serif) !important; font-weight: 700; font-size: 19px !important; letter-spacing: -0.01em !important; color: var(--ink); display: inline !important; text-decoration: none; }}
+  nav.top .nav-links {{ gap: 24px; }}
+  nav.top .nav-links a {{ font-size: 16px; font-weight: 600; color: var(--ink); }}
+  nav.top .nav-links a[aria-current] {{ color: var(--accent); border-bottom-color: var(--accent); }}
+  @media (max-width: 820px) {{ nav.top {{ justify-content: space-between !important; flex-wrap: nowrap !important; }} }}
+  @media (max-width: 420px) {{ .nav-home {{ font-size: 15px !important; }} nav.top .nav-links {{ gap: 12px !important; }} nav.top .nav-links a {{ font-size: 13.5px !important; }} }}
 </style>
 </head>
 <body>
 
 <div class="navwrap">
   <nav class="top" aria-label="Main">
-    <a class="nav-home" href="/">widiginanjar.com</a>
+    <a class="nav-home" href="/">Widi Ginanjar</a>
     <div class="nav-links">
-      <a href="/writing/">Writing</a>
-      <a href="/services/">SEO &amp; Marketing</a>
+      <a href="/writing/">Essays</a>
       <a href="/about.html">About</a>
+      <a aria-current="page" href="/services/">SEO Consulting</a>
     </div>
   </nav>
 </div>
 
 <div class="wrap">
-  <a class="back-link" href="/services/">&larr; SEO &amp; Marketing</a>
+  <a class="back-link" href="/services/">&larr; SEO Consulting</a>
   <span class="eyebrow">seo notes</span>
   <h1>SEO Notes</h1>
   <p class="subhead">Short, specific write-ups drawn from real audits, not generic listicles.</p>
