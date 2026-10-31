@@ -19,7 +19,7 @@ Bagian dari upaya menepati janji di tulisan sebelumnya tentang Vipassana.
 >
 > “Lo mau jadi biksu atau pindah agama ikutan meditasi?”
 
-Begitulah kira-kira respon orang-orang saat tahu aku baru saja menunaikan sebuah meditasi bernama Vipassana ([further information pls click](https://www.dhamma.org/en-US/locations/directory)), konon sebuah teknik meditasi tertua di dunia ajaran asli dari Sang Budha Gautama 25 abad yang lalu. Dalam perjalanannya sempat hilang beberapa abad karena termodifikasi dengan teknik meditasi lain namun rupanya berkat ikhtiar dari beberapa murid Sidharta yang masa itu pergi dan menetap di Tibet, sehingga membawa dan menjaga kemurnian teknik meditasi ini. Di abad ini lah teknik ini kembali ke tempat lahirnya di India oleh guru S.N Goenka dan berkembang pesat yang ditandai dengan berdirinya puluhan pusat meditasi yang tersebar diseluruh dunia.
+Begitulah kira-kira respon orang-orang saat tahu aku baru saja menunaikan sebuah meditasi bernama Vipassana ([further information pls click](https://www.dhamma.org/en-US/locations/directory)), konon sebuah teknik meditasi tertua di dunia ajaran asli dari Sang Budha Gautama 25 abad yang lalu. Dalam perjalanannya sempat hilang beberapa abad karena termodifikasi dengan teknik meditasi lain namun rupanya berkat ikhtiar dari beberapa murid Sidharta yang masa itu pergi dan menetap di Burma (sekarang Myanmar), sehingga membawa dan menjaga kemurnian teknik meditasi ini. Di abad ini lah teknik ini kembali ke tempat lahirnya di India oleh guru S.N Goenka dan berkembang pesat yang ditandai dengan berdirinya puluhan pusat meditasi yang tersebar diseluruh dunia.
 
 Fun facts and finding:
 
@@ -28,7 +28,7 @@ Fun facts and finding:
 3. Handphone, laptop, buku akan disita dan dikembalikan di hari ke-10.
 4. Hanya ada makan pagi dan siang.
 5. Menjadi vegan selama retreat.
-6. Tambahan. S. N. Goenka adalah guru-langsung Yuval Noah Harari, author Sapiens. Lupita Nyong’o mengikuti retreat ini di Texas beberapa waktu sebelum shooting Us.
+6. Tambahan. Yuval Noah Harari, author Sapiens, rutin berlatih Vipassana dari tradisi S. N. Goenka. Lupita Nyong’o juga pernah ikut silent retreat 10 hari di Texas.
 
 Ok, baik. Aku pertama kali tahu dan terinfluence ikut retreat di Bogor (Indonesia’s Vipassana meditation center) ini dari sahabatnya pacar-mantan pacar-??? ku yang sudah 2x tanpa disuruh join retreat ini. Nah, begitu ada waktu yang tepat akhirnya aku memutuskan untuk ikut retreat beberapa bulan setelahnya.
 
@@ -67,3 +67,12 @@ Disisi lain judgement orang terhadap praktik meditasi ini cukup menghibur sekali
 **Meditasi : Sebuah jebakan betmen.**
 
 Terdengar cukup tricky. Namun ini adalah opini ku sekaligus bahan ujian dan tantangan untuk berbagi sudut pandang, hal yang semakin hari orang semakin arogan memaksakan sudut pandang nya, dengan menganggap paling benar dan sisanya adalah salah. Jebakan meditasi bisa kamu lihat sebagai sebenarnya-benarnya jebakan yang membuat kamu kecewa dan menyesal atau sebuah hal yang dengan sukarela kamu menjebakkan diri kedalamnya? Sebuah pertanyaan yang tidak harus langsung dijawab. 😊
+
+---
+
+### Sumber
+
+- [Direktori pusat meditasi Vipassana](https://www.dhamma.org/en-US/locations/directory), dhamma.org
+- [S. N. Goenka](https://en.wikipedia.org/wiki/S._N._Goenka), Wikipedia
+- [Yuval Harari on how meditation made him a better historian](https://3quarksdaily.com/?p=4856), 3 Quarks Daily
+- [Lupita Nyong'o's birthday silent retreat](https://www.wmagazine.com/story/lupita-nyongo-birthday-silent-retreat), W Magazine
