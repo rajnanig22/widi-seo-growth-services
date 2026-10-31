@@ -58,6 +58,11 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 <meta name="robots" content="index, follow">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127793;</text></svg>">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600;700&display=swap" rel="stylesheet"></noscript>
+
 <title>{title} | Widi Ginanjar</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
@@ -100,9 +105,9 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
     --accent: #2F6F5E;
     --accent-soft: #E7F0EB;
     --rule: #E1DED4;
-    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
-    --serif: Georgia, 'Times New Roman', serif;
-    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    --serif: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
+    --sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }}
   * {{ box-sizing: border-box; }}
   body {{
@@ -115,10 +120,10 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   }}
   a {{ color: var(--accent); }}
   a:hover {{ text-decoration: underline; }}
-  .wrap {{ max-width: 760px; margin: 0 auto; padding: 56px 32px 80px; }}
+  .wrap {{ max-width: 760px; margin: 0 auto; padding: 40px 32px 72px; }}
   .back-link {{
     font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft);
-    text-decoration: none; display: inline-block; margin-bottom: 32px;
+    text-decoration: none; display: block; width: fit-content; margin-bottom: 32px;
   }}
   .back-link:hover {{ color: var(--accent); }}
   .eyebrow {{
@@ -133,6 +138,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   .meta {{ font-size: 13px; color: var(--ink-soft); margin-bottom: 36px; }}
   article p {{ font-size: 16.5px; margin: 0 0 20px; }}
   article h2 {{ font-family: var(--serif); font-size: 22px; font-weight: 600; margin: 40px 0 14px; }}
+  article h3 {{ font-family: var(--serif); font-size: 19px; font-weight: 600; line-height: 1.3; margin: 32px 0 12px; }}
   article strong {{ color: var(--ink); }}
   article ul, article ol {{ font-size: 16.5px; padding-left: 22px; margin: 0 0 20px; }}
   article li {{ margin-bottom: 8px; }}
@@ -170,12 +176,9 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
     border: 1px solid var(--rule); border-radius: 10px;
     display: flex; gap: 16px; align-items: flex-start;
   }}
-  .author-box .avatar {{
-    width: 40px; height: 40px; border-radius: 50%; background: var(--accent-soft);
-    display: flex; align-items: center; justify-content: center;
-    font-family: var(--serif); font-weight: 600; font-size: 16px; color: var(--accent);
-    flex-shrink: 0;
-  }}
+  .author-box .avatar {{ width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }}
+  .author-box .author-link + .author-link {{ margin-left: 6px; }}
+  .cover {{ display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; border-radius: 10px; margin: 0 0 36px; }}
   .author-box .author-label {{
     font-family: var(--mono); font-size: 10.5px; text-transform: lowercase;
     color: var(--ink-soft); letter-spacing: 0.04em; margin: 0 0 4px;
@@ -200,6 +203,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
     .meta {{ font-size: 12px; margin-bottom: 28px; }}
     article p {{ font-size: 15px; margin: 0 0 18px; }}
     article h2 {{ font-size: 19px; margin: 32px 0 12px; }}
+    article h3 {{ font-size: 17px; margin: 28px 0 10px; }}
     article ul, article ol {{ font-size: 15px; }}
     blockquote {{ font-size: 14px; margin: 22px 0; }}
     .cta-box p {{ font-size: 14px; }}
@@ -209,34 +213,62 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
     article th, article td {{ padding: 7px 8px; }}
     article td:not(:first-child), article th:not(:first-child) {{ font-size: 10px; }}
   }}
+  .navwrap {{ max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }}
+  nav.top {{ display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }}
+  .nav-home {{ font-family: var(--mono); font-size: 13px; color: var(--ink); letter-spacing: 0.02em; text-decoration: none; }}
+  .nav-links {{ display: flex; gap: 28px; flex-wrap: wrap; }}
+  .nav-links a {{ font-size: 15px; font-weight: 600; color: var(--ink); border-bottom: 2px solid transparent; padding-bottom: 3px; text-decoration: none; }}
+  .nav-links a:hover, .nav-home:hover {{ color: var(--accent); text-decoration: none; }}
+  .nav-links a:hover {{ border-bottom-color: var(--accent); }}
+  .site-footer {{ border-top: 1px solid var(--rule); padding: 20px 0 32px; font-size: 13px; color: var(--ink-soft); }}
+  @media (max-width: 760px) {{ .nav-home {{ display: none; }} nav.top {{ justify-content: flex-end; }} }}
+  @media (max-width: 420px) {{ .nav-links {{ gap: 14px; }} .nav-links a {{ font-size: 13px; }} }}
 </style>
 </head>
 <body>
 
+<div class="navwrap">
+  <nav class="top" aria-label="Main">
+    <a class="nav-home" href="/">widiginanjar.com</a>
+    <div class="nav-links">
+      <a href="/writing/">Writing</a>
+      <a href="/services/">SEO &amp; Marketing</a>
+      <a href="/about.html">About</a>
+    </div>
+  </nav>
+</div>
+
 <div class="wrap">
 
-  <a class="back-link" href="/notes/">&larr; SEO notes</a>
+  <a class="back-link" href="/notes/">&larr; SEO Notes</a>
 
   <span class="eyebrow">notes / {tag}</span>
 
   <h1>{title}</h1>
-  <p class="meta">Widi Ginanjar &middot; SEO &amp; Growth &middot; {date_display}</p>
+  <p class="meta">Widi Ginanjar &middot; {date_display}</p>
+{cover_block}
 
   <article>
 {content}
   </article>
 
   <div class="author-box">
-    <div class="avatar">WG</div>
+    <img class="avatar" src="/img/widi-ginanjar-round.jpg" alt="" width="56" height="56" loading="lazy">
     <div>
       <p class="author-label">written by</p>
-      <p><strong>Widi Ginanjar</strong> is an SEO, growth marketing, and content strategist based in Bali, Indonesia. He currently helps SaaS companies earn organic visibility through SEO and outreach, audits websites for freelance clients across hospitality, B2B, and NGO sectors, and researches how local supply chains create sustainable value on the ground. He previously spent nearly four years in community development and sustainability work with Delterra/McKinsey.org.</p>
+      <p><strong>Widi Ginanjar</strong> works on research, project management, and sustainability with community programs, and helps a few organisations with SEO and digital marketing. These notes come from that SEO work.</p>
+      <a class="author-link" href="/about.html">About &rarr;</a>
       <a class="author-link" href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer" onclick="gtag('event','contact_click',{{'method':'linkedin','location':'notes_author_box'}});">LinkedIn &rarr;</a>
     </div>
   </div>
 
 {sources_block}
 </div>
+
+<div class="navwrap">
+  <footer class="site-footer">&copy; 2026 Widi Ginanjar</footer>
+</div>
+
 
 <script>
   (function() {{
@@ -284,6 +316,11 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <meta name="robots" content="index, follow">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127793;</text></svg>">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600;700&display=swap" rel="stylesheet"></noscript>
+
 <title>SEO Notes | Widi Ginanjar</title>
 <meta name="description" content="Short notes on SEO, technical audits, and what real audits actually find, from Widi Ginanjar.">
 <link rel="canonical" href="{site_url}/notes/">
@@ -301,15 +338,15 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   :root {{
     --bg: #FAFAF7; --paper: #FFFFFF; --ink: #1C1F1B; --ink-soft: #565B54;
     --accent: #2F6F5E; --accent-soft: #E7F0EB; --rule: #E1DED4;
-    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
-    --serif: Georgia, 'Times New Roman', serif;
-    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    --serif: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
+    --sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }}
   * {{ box-sizing: border-box; }}
   body {{ margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }}
   a {{ color: var(--accent); text-decoration: none; }}
   a:hover {{ text-decoration: underline; }}
-  .wrap {{ max-width: 1520px; margin: 0 auto; padding: 56px clamp(20px, 5vw, 80px) 80px; }}
+  .wrap {{ max-width: 1520px; margin: 0 auto; padding: 40px clamp(20px, 5vw, 80px) 72px; }}
   .back-link {{ font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; margin-bottom: 32px; }}
   .back-link:hover {{ color: var(--accent); }}
   .eyebrow {{ font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 20px; }}
@@ -362,9 +399,30 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
     .article-card p {{ font-size: 12.5px; }}
     .article-card .card-meta {{ font-size: 10px; }}
   }}
+  .navwrap {{ max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }}
+  nav.top {{ display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }}
+  .nav-home {{ font-family: var(--mono); font-size: 13px; color: var(--ink); letter-spacing: 0.02em; text-decoration: none; }}
+  .nav-links {{ display: flex; gap: 28px; flex-wrap: wrap; }}
+  .nav-links a {{ font-size: 15px; font-weight: 600; color: var(--ink); border-bottom: 2px solid transparent; padding-bottom: 3px; text-decoration: none; }}
+  .nav-links a:hover, .nav-home:hover {{ color: var(--accent); text-decoration: none; }}
+  .nav-links a:hover {{ border-bottom-color: var(--accent); }}
+  .site-footer {{ border-top: 1px solid var(--rule); padding: 20px 0 32px; font-size: 13px; color: var(--ink-soft); }}
+  @media (max-width: 760px) {{ .nav-home {{ display: none; }} nav.top {{ justify-content: flex-end; }} }}
+  @media (max-width: 420px) {{ .nav-links {{ gap: 14px; }} .nav-links a {{ font-size: 13px; }} }}
 </style>
 </head>
 <body>
+
+<div class="navwrap">
+  <nav class="top" aria-label="Main">
+    <a class="nav-home" href="/">widiginanjar.com</a>
+    <div class="nav-links">
+      <a href="/writing/">Writing</a>
+      <a href="/services/">SEO &amp; Marketing</a>
+      <a href="/about.html">About</a>
+    </div>
+  </nav>
+</div>
 
 <div class="wrap">
   <a class="back-link" href="/services/">&larr; SEO &amp; Marketing</a>
@@ -373,6 +431,10 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   <p class="subhead">Short, specific write-ups drawn from real audits, not generic listicles.</p>
 {nav}
 {cards}
+</div>
+
+<div class="navwrap">
+  <footer class="site-footer">&copy; 2026 Widi Ginanjar</footer>
 </div>
 
 </body>
@@ -440,7 +502,7 @@ def render_sources(sources):
         title = s.get("title", "")
         url = s.get("url", "")
         publisher = s.get("publisher", "")
-        items.append(f'<li><a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a> , {publisher}</li>')
+        items.append(f'<li><a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a>, {publisher}</li>')
     return (
         '<div class="sources">\n<h2>Sources</h2>\n<ol>\n'
         + "\n".join(items)
@@ -505,6 +567,7 @@ def build_article(post):
         content=body_html,
         sources_block=render_sources(post.get("sources")),
         og_image=og_image_tags(slug),
+        cover_block=(f'  <img class="cover" src="{cover_path(slug)}" alt="" width="1200" height="630">\n' if cover_path(slug) else ""),
         twitter_card="summary_large_image" if cover_path(slug) else "summary",
     )
 
