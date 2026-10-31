@@ -15,6 +15,11 @@
 <meta name="robots" content="index, follow">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127793;</text></svg>">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600;700&display=swap" rel="stylesheet"></noscript>
+
 <title>AI Search Optimization & Citability | Widi Ginanjar</title>
 <meta name="description" content="AI search optimization and citability audits for organisations navigating ChatGPT, Perplexity, and AI summaries. Free 30-minute review.">
 <link rel="canonical" href="https://widiginanjar.com/services/ai-search-era.html">
@@ -23,7 +28,7 @@
 <meta property="og:title" content="AI Search Optimization & Citability | Widi Ginanjar">
 <meta property="og:description" content="AI search optimization and citability audits for organisations navigating ChatGPT, Perplexity, and AI summaries. Free 30-minute review.">
 <meta property="og:url" content="https://widiginanjar.com/services/ai-search-era.html">
-<meta property="og:image" content="https://widiginanjar.com/og-image.png">
+<meta property="og:image" content="https://widiginanjar.com/services/img/ai-search-era.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Widi Ginanjar">
@@ -31,7 +36,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI Search Optimization & Citability | Widi Ginanjar">
 <meta name="twitter:description" content="AI search optimization and citability audits for organisations navigating ChatGPT, Perplexity, and AI summaries. Free 30-minute review.">
-<meta name="twitter:image" content="https://widiginanjar.com/og-image.png">
+<meta name="twitter:image" content="https://widiginanjar.com/services/img/ai-search-era.jpg">
 
 <script type="application/ld+json">
 {
@@ -48,76 +53,98 @@
   :root {
     --bg: #FAFAF7; --paper: #FFFFFF; --ink: #1C1F1B; --ink-soft: #565B54;
     --accent: #2F6F5E; --accent-soft: #E7F0EB; --rule: #E1DED4;
-    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
-    --serif: Georgia, 'Times New Roman', serif;
-    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    --serif: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
+    --sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.65; -webkit-font-smoothing: antialiased; }
   a { color: var(--accent); }
   a:hover { text-decoration: underline; }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
-  .back-link { font-family: var(--mono); font-size: 12px; color: var(--ink-soft); text-decoration: none; display: inline-block; margin-bottom: 28px; }
+  .wrap { max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+
+  nav.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
+  .nav-home { font-family: var(--mono); font-size: 13px; color: var(--ink); letter-spacing: 0.02em; text-decoration: none; }
+  .nav-links { display: flex; gap: 28px; flex-wrap: wrap; }
+  .nav-links a { font-size: 15px; font-weight: 600; color: var(--ink); border-bottom: 2px solid transparent; padding-bottom: 3px; text-decoration: none; }
+  .nav-links a:hover, .nav-home:hover { color: var(--accent); text-decoration: none; }
+  .nav-links a:hover { border-bottom-color: var(--accent); }
+
+  .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; margin: 32px 0 24px; }
   .back-link:hover { color: var(--accent); }
-  .contact-line { font-size: 13px; color: var(--ink-soft); margin-bottom: 20px; }
-  .contact-line a { color: var(--ink); }
-  .contact-line a:hover { color: var(--accent); }
-  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(26px, 5vw, 36px); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 16px; display: flex; align-items: center; gap: 10px; }
-  blockquote.framing { margin: 0 0 20px; padding-left: 16px; border-left: 2px solid var(--accent); font-size: 14px; color: var(--ink-soft); }
-  .intro p { font-size: 16px; margin: 0 0 18px; }
-  .intro strong { color: var(--ink); }
-  h2 { font-family: var(--serif); font-size: 20px; font-weight: 600; margin: 36px 0 12px; }
-  h3 { font-family: var(--serif); font-size: 16px; font-weight: 600; margin: 0 0 8px; }
-  p { font-size: 15px; color: var(--ink); }
+  .svc-hero { display: grid; grid-template-columns: 1fr minmax(0, 0.8fr); gap: 56px; align-items: center; padding-bottom: 48px; border-bottom: 1px solid var(--rule); }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 16px; }
+  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 18px; }
+  .lede { font-size: 17px; color: var(--ink-soft); margin: 0; max-width: 40em; }
+  .svc-hero img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; border-radius: 12px; }
+
+  .content { padding: 48px 0 72px; }
+  .content > *:not(.diag-grid) { max-width: 46em; }
+  .intro p { font-size: 17px; margin: 0 0 18px; }
+  h2 { font-family: var(--serif); font-size: 24px; font-weight: 600; line-height: 1.25; margin: 44px 0 14px; }
+  h3 { font-family: var(--serif); font-size: 17px; font-weight: 600; margin: 0 0 10px; }
+  p { font-size: 16px; color: var(--ink); }
   ul { padding-left: 20px; }
-  li { font-size: 15px; margin-bottom: 10px; }
-  li strong { color: var(--ink); }
-  .rule { border: none; border-top: 1px solid var(--rule); margin: 32px 0; }
-  .diag-intro { font-size: 14px; color: var(--ink-soft); font-style: italic; margin: 0 0 20px; }
-  .diagnostic {
-    background: var(--paper); border: 1px solid var(--rule); border-radius: 10px;
-    padding: 20px 22px; margin-bottom: 16px;
-  }
+  li { font-size: 16px; margin-bottom: 10px; }
+  .rule { border: none; border-top: 1px solid var(--rule); margin: 44px 0; }
+  .diag-intro { font-size: 15px; color: var(--ink-soft); margin: 0 0 22px; }
+  .diag-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .diagnostic { background: var(--paper); border: 1px solid var(--rule); border-radius: 10px; padding: 22px 24px; }
   .diagnostic h3 { margin-bottom: 12px; }
-  .diagnostic p { font-size: 14px; margin: 0 0 10px; }
+  .diagnostic p { font-size: 14.5px; margin: 0 0 10px; }
   .diagnostic p:last-child { margin-bottom: 0; }
-  .diagnostic .label { color: var(--ink); }
-  .related-reading { margin-top: 8px; }
+  .related-reading { margin-top: 12px; }
   .related-reading p { font-weight: 600; margin-bottom: 8px; }
   .related-reading ul { margin: 0; }
-  .cta-box { background: var(--accent-soft); border-radius: 10px; padding: 24px 22px; margin-top: 32px; }
-  .cta-box p { margin: 0; font-size: 15px; }
-  .cta-box .cta-detail { color: var(--ink-soft); font-size: 13px; margin-top: 8px; }
+  .cta-box { background: var(--accent-soft); border-radius: 10px; padding: 26px 28px; margin-top: 40px; }
+  .cta-box p { margin: 0; font-size: 16px; }
+  .cta-box .cta-detail { color: var(--ink-soft); font-size: 14px; margin-top: 8px; }
 
-  @media (max-width: 640px) {
-    .wrap { padding: 32px 20px 60px; }
-    .back-link { margin-bottom: 20px; }
-    .contact-line { font-size: 12px; }
-    h1 { font-size: clamp(22px, 7vw, 30px); gap: 8px; }
-    blockquote.framing { font-size: 13px; margin-bottom: 16px; }
-    .intro p { font-size: 14px; margin: 0 0 14px; }
-    h2 { font-size: 18px; margin: 28px 0 10px; }
-    h3 { font-size: 15px; }
-    p { font-size: 14px; }
-    li { font-size: 14px; }
-    .diag-intro { font-size: 13px; }
-    .diagnostic { padding: 16px 18px; }
-    .diagnostic p { font-size: 13px; }
-    .cta-box p { font-size: 14px; }
-    .cta-box .cta-detail { font-size: 12px; }
+  footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 24px 0 32px; border-top: 1px solid var(--rule); font-size: 13.5px; color: var(--ink-soft); }
+  footer .links { display: flex; gap: 18px; }
+  footer .links a { color: var(--ink-soft); display: inline-flex; min-width: 32px; min-height: 32px; align-items: center; justify-content: center; }
+  footer .links a:hover { color: var(--accent); }
+
+  @media (max-width: 1000px) { .diag-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 760px) {
+    .nav-home { display: none; }
+    nav.top { justify-content: flex-end; }
+    .svc-hero { grid-template-columns: 1fr; gap: 24px; padding-bottom: 32px; }
+    .svc-hero img { order: -1; }
+    .lede { font-size: 15.5px; }
+    .content { padding: 32px 0 48px; }
+    .intro p { font-size: 15.5px; }
+    h2 { font-size: 20px; margin: 32px 0 10px; }
+    p, li { font-size: 15px; }
+    .diag-grid { grid-template-columns: 1fr; }
+    .rule { margin: 32px 0; }
   }
+  @media (max-width: 420px) { .nav-links { gap: 14px; } .nav-links a { font-size: 13px; } }
 </style>
 </head>
 <body>
 
 <div class="wrap">
-  <a class="back-link" href="/services/">&larr; Services</a>
+  <nav class="top" aria-label="Main">
+    <a class="nav-home" href="/">widiginanjar.com</a>
+    <div class="nav-links">
+      <a href="/writing/">Writing</a>
+      <a href="/services/">SEO &amp; Marketing</a>
+      <a href="/about.html">About</a>
+    </div>
+  </nav>
 
-  <h1><span aria-hidden="true">&#128269;</span> SEO & Growth for the AI Search Era</h1>
+  <a class="back-link" href="/services/">&larr; SEO &amp; Marketing</a>
+  <header class="svc-hero">
+    <div>
+      <span class="eyebrow">seo &amp; digital marketing</span>
+      <h1>SEO & Growth for the AI Search Era</h1>
+      <p class="lede">A short overview of how I approach AI search optimization: getting found by ChatGPT, Perplexity, and Google's AI summaries, put together for anyone weighing whether this is worth a conversation.</p>
+    </div>
+    <img src="/services/img/ai-search-era.jpg" alt="" width="1200" height="630">
+  </header>
 
-  <p class="contact-line">Bali, Indonesia &middot; <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'service_page'});">rajnanig22@gmail.com</a> &middot; <a href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer" onclick="gtag('event','contact_click',{'method':'linkedin','location':'service_page'});">linkedin.com/in/widiginanjar</a></p>
-
-  <blockquote class="framing">A short overview of how I approach AI search optimization: getting found by ChatGPT, Perplexity, and Google's AI summaries, put together for anyone weighing whether this is worth a conversation.</blockquote>
+  <main class="content">
 
   <div class="intro">
     <p>More people now ask an AI directly instead of typing a search query: which vendor to trust, which NGO to support, which product actually solves their problem. That's a different game from ranking on Google. An AI doesn't rank your page, it decides whether to mention you at all, and whether it trusts what it finds enough to repeat it. Most of what breaks that trust is the same structural stuff that's always broken SEO. It just has a new, higher-stakes consequence now.</p>
@@ -130,20 +157,22 @@
   <hr class="rule">
   <h2>Recent Diagnostics</h2>
   <p class="diag-intro">Two real audits, anonymised. Both were originally diagnosed as conventional SEO problems, but the same root cause also explains why an AI system would struggle to find or trust these sites.</p>
+  <div class="diag-grid">
 
-  <div class="diagnostic">
-    <h3>A B2B Climate-Tech Startup</h3>
-    <p><span class="label"><strong>The situation:</strong></span> Real content, a genuine backlink base, but organic search traffic sitting at 0%.</p>
-    <p><span class="label"><strong>What I found:</strong></span> Every page on the site shared the exact same title and description, so Google couldn't tell them apart, and neither could anything else trying to read the site. An AI model summarising or citing sources leans hard on exactly these signals to decide what a page is actually about and whether it's worth quoting.</p>
-    <p><span class="label"><strong>Why it matters:</strong></span> This wasn't just a Google ranking problem. It was a page-identity problem. Fixing it helps human search and AI citation at the same time, because both depend on being able to tell your pages apart.</p>
+    <div class="diagnostic">
+      <h3>A B2B Climate-Tech Startup</h3>
+      <p><span class="label"><strong>The situation:</strong></span> Real content, a genuine backlink base, but organic search traffic sitting at 0%.</p>
+      <p><span class="label"><strong>What I found:</strong></span> Every page on the site shared the exact same title and description, so Google couldn't tell them apart, and neither could anything else trying to read the site. An AI model summarising or citing sources leans hard on exactly these signals to decide what a page is actually about and whether it's worth quoting.</p>
+      <p><span class="label"><strong>Why it matters:</strong></span> This wasn't just a Google ranking problem. It was a page-identity problem. Fixing it helps human search and AI citation at the same time, because both depend on being able to tell your pages apart.</p>
 
-  </div>
-  <div class="diagnostic">
-    <h3>A Market Research &amp; Consulting Agency</h3>
-    <p><span class="label"><strong>The situation:</strong></span> Credible testimonials and real published research, but zero visitors from any channel.</p>
-    <p><span class="label"><strong>What I found:</strong></span> An indexing block left over from staging was quietly telling search engines not to look at the site at all, and no analytics installed anywhere to catch it.</p>
-    <p><span class="label"><strong>Why it matters:</strong></span> An AI system that can't crawl a site can't cite it, full stop. This is the most basic gate before any question of "is this trustworthy enough to reference" even comes up.</p>
+    </div>
+    <div class="diagnostic">
+      <h3>A Market Research &amp; Consulting Agency</h3>
+      <p><span class="label"><strong>The situation:</strong></span> Credible testimonials and real published research, but zero visitors from any channel.</p>
+      <p><span class="label"><strong>What I found:</strong></span> An indexing block left over from staging was quietly telling search engines not to look at the site at all, and no analytics installed anywhere to catch it.</p>
+      <p><span class="label"><strong>Why it matters:</strong></span> An AI system that can't crawl a site can't cite it, full stop. This is the most basic gate before any question of "is this trustworthy enough to reference" even comes up.</p>
 
+    </div>
   </div>
 
   <hr class="rule">
@@ -171,6 +200,16 @@
     <p><strong>Happy to start with a free 30-minute look at your site.</strong> <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'service_page_cta'});">Let's talk &rarr;</a> or <a href="/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'service_page_cta'});">book a call directly</a>.</p>
     <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. If it's useful, we go from there.</p>
   </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Widi Ginanjar</p>
+    <div class="links">
+        <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'service_footer'});" aria-label="Email" title="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></a>
+        <a href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a href="https://www.instagram.com/wdwynson/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a>
+      </div>
+  </footer>
 </div>
 
 </body>
