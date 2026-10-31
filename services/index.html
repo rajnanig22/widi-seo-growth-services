@@ -331,6 +331,17 @@
   footer .links { display: flex; gap: 22px; }
   footer .links a { display: inline-flex; align-items: center; justify-content: center; min-width: 32px; min-height: 32px; color: #CFE5DA; }
   footer .links a:hover { color: #FFFFFF; }
+    nav.top { margin-bottom: 32px; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
+  .nav-home { font-family: var(--mono); font-size: 13px; color: var(--ink); letter-spacing: 0.02em; text-decoration: none; }
+  .nav-links { display: flex; gap: 28px; flex-wrap: wrap; }
+  .nav-links a { font-size: 15px; font-weight: 600; color: var(--ink); border-bottom: 2px solid transparent; padding-bottom: 3px; text-decoration: none; }
+  .nav-links a:hover, .nav-home:hover { color: var(--accent); text-decoration: none; }
+  .nav-links a:hover { border-bottom-color: var(--accent); }
+  @media (max-width: 760px) { .nav-home { display: none; } nav.top { justify-content: flex-end; } }
+  @media (max-width: 420px) { .nav-links { gap: 14px; } .nav-links a { font-size: 13px; } }
+  .more-links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 18px 0 0; font-family: var(--mono); font-size: 13px; }
+  .more-links a { color: var(--accent); border-bottom: 1px solid var(--mint, #CFE5DA); text-decoration: none; }
+  .more-links a:hover { border-bottom-color: var(--accent); text-decoration: none; }
 </style>
 </head>
 <body>
@@ -338,12 +349,13 @@
 <div class="band band-hero">
   <div class="wrap">
 
-    <nav class="notes-nav">
-      <a href="/" class="about-link">&larr; Home</a>
-      <a href="/writing/" class="about-link">Writing</a>
-      <a href="/about.html" class="about-link">About</a>
-      <a href="/scope-of-work.html" class="about-link">Scope of Work</a>
-      <a href="/notes/" class="about-link">SEO Notes</a>
+    <nav class="top" aria-label="Main">
+      <a class="nav-home" href="/">widiginanjar.com</a>
+      <div class="nav-links">
+        <a href="/writing/">Writing</a>
+        <a href="/services/">SEO &amp; Marketing</a>
+        <a href="/about.html">About</a>
+      </div>
     </nav>
 
     <header class="hero">
@@ -351,6 +363,7 @@
         <span class="eyebrow">seo &amp; digital marketing</span>
         <h1>I help good work get found.</h1>
         <p class="subhead">Technical audits and organic growth for NGOs, hospitality brands, B2B firms, and AI startups, so the right people find you on Google and in AI answers.</p>
+        <p class="more-links"><a href="/notes/">SEO Notes</a><a href="/scope-of-work.html">Scope of work</a><a href="/book.html">Book a free 30-minute look</a></p>
       </div>
       <div class="hero-right">
         <p class="framing">AI can list what's broken on a page in seconds. It can't tell you which fix actually matters. Pick the closest fit below, each with real, anonymised examples of what I found and fixed.</p>

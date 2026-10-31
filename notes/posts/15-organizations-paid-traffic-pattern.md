@@ -74,7 +74,7 @@ I didn't find a clean rule here. What I found is that **almost every organisatio
 
 **Related reading:**
 - [The SEO Checklist for NGOs With No Marketing Team](/notes/seo-checklist-ngo-no-marketing-team.html)
-- [Grantmakers Check Your Website Before They Check Your Impact](/notes/grantmakers-check-your-website-first.html)
+- [Grantmakers Check Your NGO Website Before Your Impact Report](/notes/grantmakers-check-your-website-first.html)
 
 <hr class="rule">
 

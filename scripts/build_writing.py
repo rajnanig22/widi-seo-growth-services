@@ -94,7 +94,45 @@ CSS_COMMON = """  :root {
   a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
   .back-link { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); text-decoration: none; display: block; width: fit-content; margin-bottom: 32px; }
   .back-link:hover { color: var(--accent); text-decoration: none; }
-  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 14px; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: lowercase; color: var(--accent); background: var(--accent-soft); display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 14px; }  .navwrap { max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+  nav.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--rule); flex-wrap: wrap; }
+  .nav-home { font-family: var(--mono); font-size: 13px; color: var(--ink); letter-spacing: 0.02em; text-decoration: none; }
+  .nav-links { display: flex; gap: 28px; flex-wrap: wrap; }
+  .nav-links a { font-size: 15px; font-weight: 600; color: var(--ink); border-bottom: 2px solid transparent; padding-bottom: 3px; text-decoration: none; }
+  .nav-links a:hover, .nav-home:hover { color: var(--accent); text-decoration: none; }
+  .nav-links a:hover { border-bottom-color: var(--accent); }
+  .site-foot { background: #16302A; color: rgba(255,255,255,0.75); }
+  .site-foot-in { max-width: 1520px; margin: 0 auto; padding: 28px clamp(20px, 5vw, 80px) 32px; display: flex; justify-content: space-between; align-items: center; gap: 12px 32px; flex-wrap: wrap; font-size: 13.5px; }
+  .site-foot-in p { margin: 0; color: rgba(255,255,255,0.75); font-size: 13.5px; }
+  .site-foot .links { display: flex; gap: 22px; }
+  .site-foot .links a { display: inline-flex; align-items: center; justify-content: center; min-width: 32px; min-height: 32px; color: #CFE5DA; }
+  .site-foot .links a:hover { color: #FFFFFF; text-decoration: none; }
+  @media (max-width: 760px) { .nav-home { display: none; } nav.top { justify-content: flex-end; } }
+  @media (max-width: 420px) { .nav-links { gap: 14px; } .nav-links a { font-size: 13px; } }
+"""
+
+NAV = """<div class="navwrap">
+  <nav class="top" aria-label="Main">
+    <a class="nav-home" href="/">widiginanjar.com</a>
+    <div class="nav-links">
+      <a href="/writing/">Writing</a>
+      <a href="/services/">SEO &amp; Marketing</a>
+      <a href="/about.html">About</a>
+    </div>
+  </nav>
+</div>
+"""
+
+FOOTER = """<div class="site-foot">
+  <div class="site-foot-in">
+    <p>&copy; 2026 Widi Ginanjar</p>
+    <div class="links">
+      <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'site_footer'});" aria-label="Email" title="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></a>
+        <a href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a href="https://www.instagram.com/wdwynson/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a>
+    </div>
+  </div>
+</div>
 """
 
 ARTICLE_TEMPLATE = HEAD_COMMON + """
@@ -128,10 +166,16 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
 </script>
 
 <style>
-""" + CSS_COMMON + """  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.7; -webkit-font-smoothing: antialiased; }
-  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 20px 64px; }
-  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(24px, 6vw, 32px); line-height: 1.25; letter-spacing: -0.01em; margin: 0 0 10px; }
-  .meta { font-size: 13px; color: var(--ink-soft); margin: 0 0 32px; }
+""" + CSS_COMMON + """  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+  .back-link { margin: 32px 0 24px; }
+  .art-hero { display: grid; grid-template-columns: 1fr minmax(0, 0.8fr); gap: 56px; align-items: center; padding-bottom: 48px; border-bottom: 1px solid var(--rule); }
+  .art-hero.no-cover { grid-template-columns: 1fr; }
+  .art-hero .cover { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; border-radius: 12px; margin: 0; }
+  .art-body { max-width: 42em; padding: 48px 0 72px; }
+  h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 12px; }
+  .meta { font-size: 13px; color: var(--ink-soft); margin: 0; }
+  @media (max-width: 760px) { .art-hero { grid-template-columns: 1fr; gap: 24px; padding-bottom: 32px; } .art-hero .cover { order: -1; } .art-body { padding: 32px 0 48px; } }
   article p { font-size: 16.5px; margin: 0 0 1.1em; overflow-wrap: anywhere; }
   article h2 { font-family: var(--serif); font-size: 21px; line-height: 1.3; margin: 1.6em 0 0.6em; }
   article blockquote { margin: 0 0 1.1em; padding-left: 16px; border-left: 2px solid var(--accent); color: var(--ink-soft); }
@@ -146,24 +190,31 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
   article p:has(> img) { margin-bottom: 1.6em; }
   article p:has(> img) em { display: block; font-size: 13px; line-height: 1.5; color: var(--ink-soft); text-align: center; }
   .note { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-soft); }
-  @media (min-width: 720px) { .wrap { padding: 56px 32px 80px; } }
   @media (max-width: 640px) { article p { font-size: 16px; } }
 </style>
 </head>
 <body>
 
+%%NAV%%
 <div class="wrap">
   <a class="back-link" href="/writing/">&larr; Writing</a>
-  <span class="eyebrow">%%TAG%%</span>
-  <h1>%%TITLE%%</h1>
-%%SUBTITLE_BLOCK%%  <p class="meta">Widi Ginanjar &middot; %%DATE_DISPLAY%% &middot; %%READ_TIME%%</p>
+  <header class="art-hero%%HERO_CLASS%%">
+    <div>
+      <span class="eyebrow">%%TAG%%</span>
+      <h1>%%TITLE%%</h1>
+%%SUBTITLE_BLOCK%%      <p class="meta">Widi Ginanjar &middot; %%DATE_DISPLAY%% &middot; %%READ_TIME%%</p>
+    </div>
+%%COVER_BLOCK%%  </header>
 
+  <div class="art-body">
   <article>
 %%CONTENT%%
   </article>
 %%NOTE_BLOCK%%
+  </div>
 </div>
 
+%%FOOTER%%
 </body>
 </html>
 """
@@ -184,7 +235,7 @@ INDEX_TEMPLATE = HEAD_COMMON + """
 
 <style>
 """ + CSS_COMMON + """  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
-  .wrap { max-width: 1520px; margin: 0 auto; padding: 56px clamp(20px, 5vw, 80px) 80px; }
+  .wrap { max-width: 1520px; margin: 0 auto; padding: 48px clamp(20px, 5vw, 80px) 72px; }
   h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 5vw, 36px); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 12px; }
   .subhead { font-size: 15px; color: var(--ink-soft); margin: 0 0 36px; max-width: 52ch; }
   .article-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-bottom: 36px; }
@@ -222,8 +273,8 @@ INDEX_TEMPLATE = HEAD_COMMON + """
 </head>
 <body>
 
+%%NAV%%
 <div class="wrap">
-  <a class="back-link" href="/">&larr; widiginanjar.com</a>
   <span class="eyebrow">writing</span>
   <h1>Writing</h1>
   <p class="subhead">Esai pribadi dan catatan lapangan tentang manusia dan komunitas, dalam Bahasa Indonesia.</p>
@@ -233,6 +284,7 @@ INDEX_TEMPLATE = HEAD_COMMON + """
   </div>
 </div>
 
+%%FOOTER%%
 </body>
 </html>
 """
@@ -306,7 +358,7 @@ def build_article(post):
     note_block = f'\n  <p class="note">{html.escape(str(note), quote=True)}</p>' if note else ""
 
     subtitle = post.get("subtitle")
-    subtitle_block = f'  <p class="subtitle">{html.escape(str(subtitle), quote=True)}</p>\n' if subtitle else ""
+    subtitle_block = f'      <p class="subtitle">{html.escape(str(subtitle), quote=True)}</p>\n' if subtitle else ""
 
     image = str(post.get("image") or "").strip()
     if image.startswith("http"):
@@ -317,6 +369,8 @@ def build_article(post):
         og_image = f"{SITE_URL}/writing/{image}"
     else:
         og_image = f"{SITE_URL}/og-home.jpg"
+    cover_src = og_image[len(SITE_URL):] if image else ""
+    cover_block = f'    <img class="cover" src="{cover_src}" alt="" width="1200" height="630">\n' if cover_src else ""
 
     post["_date_display"] = format_date(date)
     post["_read_time"] = reading_time(post["body_md"])
@@ -339,6 +393,10 @@ def build_article(post):
         "NOTE_BLOCK": note_block,
         "SUBTITLE_BLOCK": subtitle_block,
         "OG_IMAGE": og_image,
+        "NAV": NAV,
+        "FOOTER": FOOTER,
+        "COVER_BLOCK": cover_block,
+        "HERO_CLASS": "" if cover_block else " no-cover",
     })
     out_path = os.path.join(OUTPUT_DIR, f"{slug}.html")
     with open(out_path, "w", encoding="utf-8") as f:
@@ -419,7 +477,7 @@ def build_index(posts):
         })
         for p in posts
     )
-    page = fill(INDEX_TEMPLATE, {"GA_ID": GA_ID, "SITE_URL": SITE_URL, "CARDS": cards})
+    page = fill(INDEX_TEMPLATE, {"GA_ID": GA_ID, "SITE_URL": SITE_URL, "CARDS": cards, "NAV": NAV, "FOOTER": FOOTER})
     out_path = os.path.join(OUTPUT_DIR, "index.html")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(page)

@@ -81,10 +81,14 @@
   }
   a { color: var(--accent); }
   a:hover { text-decoration: underline; }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 32px 72px; }
+  .wrap { max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
+  .art-hero { display: grid; grid-template-columns: 1fr minmax(0, 0.8fr); gap: 56px; align-items: center; padding-bottom: 48px; border-bottom: 1px solid var(--rule); }
+  .art-hero.no-cover { grid-template-columns: 1fr; }
+  .art-hero .cover { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; border-radius: 12px; margin: 0; }
+  .art-body { max-width: 46em; padding: 48px 0 72px; }
   .back-link {
     font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft);
-    text-decoration: none; display: block; width: fit-content; margin-bottom: 32px;
+    text-decoration: none; display: block; width: fit-content; margin: 32px 0 24px;
   }
   .back-link:hover { color: var(--accent); }
   .eyebrow {
@@ -93,10 +97,10 @@
     display: inline-block; padding: 4px 10px; border-radius: 4px; margin-bottom: 20px;
   }
   h1 {
-    font-family: var(--serif); font-weight: 600; font-size: clamp(26px, 5vw, 36px);
+    font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 3.6vw, 42px);
     line-height: 1.22; letter-spacing: -0.01em; margin: 0 0 16px;
   }
-  .meta { font-size: 13px; color: var(--ink-soft); margin-bottom: 36px; }
+  .meta { font-size: 13px; color: var(--ink-soft); margin: 0; }
   article p { font-size: 16.5px; margin: 0 0 20px; }
   article h2 { font-family: var(--serif); font-size: 22px; font-weight: 600; margin: 40px 0 14px; }
   article h3 { font-family: var(--serif); font-size: 19px; font-weight: 600; line-height: 1.3; margin: 32px 0 12px; }
@@ -158,8 +162,12 @@
   }
   .author-box .author-link:hover { text-decoration: none; opacity: 0.85; }
 
+  @media (max-width: 760px) {
+    .art-hero { grid-template-columns: 1fr; gap: 24px; padding-bottom: 32px; }
+    .art-hero .cover { order: -1; }
+    .art-body { padding: 32px 0 48px; }
+  }
   @media (max-width: 640px) {
-    .wrap { padding: 40px 20px 60px; }
     h1 { font-size: clamp(22px, 7vw, 30px); line-height: 1.25; }
     .meta { font-size: 12px; margin-bottom: 28px; }
     article p { font-size: 15px; margin: 0 0 18px; }
@@ -181,7 +189,12 @@
   .nav-links a { font-size: 15px; font-weight: 600; color: var(--ink); border-bottom: 2px solid transparent; padding-bottom: 3px; text-decoration: none; }
   .nav-links a:hover, .nav-home:hover { color: var(--accent); text-decoration: none; }
   .nav-links a:hover { border-bottom-color: var(--accent); }
-  .site-footer { border-top: 1px solid var(--rule); padding: 20px 0 32px; font-size: 13px; color: var(--ink-soft); }
+  .site-foot { background: #16302A; color: rgba(255,255,255,0.75); }
+  .site-foot-in { max-width: 1520px; margin: 0 auto; padding: 28px clamp(20px, 5vw, 80px) 32px; display: flex; justify-content: space-between; align-items: center; gap: 12px 32px; flex-wrap: wrap; font-size: 13.5px; }
+  .site-foot-in p { margin: 0; color: rgba(255,255,255,0.75); font-size: 13.5px; }
+  .site-foot .links { display: flex; gap: 22px; }
+  .site-foot .links a { display: inline-flex; align-items: center; justify-content: center; min-width: 32px; min-height: 32px; color: #CFE5DA; }
+  .site-foot .links a:hover { color: #FFFFFF; text-decoration: none; }
   @media (max-width: 760px) { .nav-home { display: none; } nav.top { justify-content: flex-end; } }
   @media (max-width: 420px) { .nav-links { gap: 14px; } .nav-links a { font-size: 13px; } }
 </style>
@@ -203,13 +216,16 @@
 
   <a class="back-link" href="/notes/">&larr; SEO Notes</a>
 
-  <span class="eyebrow">notes / practice notes</span>
+  <header class="art-hero">
+    <div>
+      <span class="eyebrow">notes / practice notes</span>
+      <h1>Instagram Scores 100 on Authority. The Cafe Down the Street Scores 9</h1>
+      <p class="meta">Widi Ginanjar &middot; July 17, 2026 &middot; 3 min read</p>
+    </div>
+    <img class="cover" src="/notes/img/instagram-scores-100-cafe-scores-9.jpg" alt="" width="1200" height="630">
+  </header>
 
-  <h1>Instagram Scores 100 on Authority. The Cafe Down the Street Scores 9</h1>
-  <p class="meta">Widi Ginanjar &middot; July 17, 2026 &middot; 3 min read</p>
-  <img class="cover" src="/notes/img/instagram-scores-100-cafe-scores-9.jpg" alt="" width="1200" height="630">
-
-
+  <div class="art-body">
   <article>
 <p>Three things one small audit turned up, the kind that actually change what you do next, not just interesting trivia.</p>
 <h3>1. Domain authority tells you where to actually spend effort</h3>
@@ -247,10 +263,18 @@
 <li><a href="https://susodigital.com/thoughts/keyword-difficulty-what-it-is-how-to-check-it/" target="_blank" rel="noopener noreferrer">Keyword Difficulty: What It Is and How to Check It</a>, SUSO Digital</li>
 </ol>
 </div>
+  </div>
 </div>
 
-<div class="navwrap">
-  <footer class="site-footer">&copy; 2026 Widi Ginanjar</footer>
+<div class="site-foot">
+  <div class="site-foot-in">
+    <p>&copy; 2026 Widi Ginanjar</p>
+    <div class="links">
+      <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'site_footer'});" aria-label="Email" title="Email"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg></a>
+        <a href="https://linkedin.com/in/widiginanjar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg width="20" height="20" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a href="https://www.instagram.com/wdwynson/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a>
+    </div>
+  </div>
 </div>
 
 
