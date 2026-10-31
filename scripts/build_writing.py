@@ -180,7 +180,7 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
 """ + CSS_COMMON + """  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.7; -webkit-font-smoothing: antialiased; }
   .wrap { max-width: 1520px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 80px); }
   .back-link { margin: 32px 0 24px; }
-  .art-hero { display: grid; grid-template-columns: 1fr minmax(0, 0.8fr); gap: 56px; align-items: center; padding-bottom: 48px; border-bottom: 1px solid var(--rule); }
+  .art-hero { margin-top: 40px; display: grid; grid-template-columns: 1fr minmax(0, 0.8fr); gap: 56px; align-items: center; padding-bottom: 48px; border-bottom: 1px solid var(--rule); }
   .art-hero.no-cover { grid-template-columns: 1fr; }
   .art-hero .cover { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; border-radius: 12px; margin: 0; }
   .art-body { max-width: 42em; padding: 48px 0 72px; }
@@ -217,7 +217,6 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
 
 %%NAV%%
 <div class="wrap">
-  <a class="back-link" href="/writing/">&larr; Essays</a>
   <header class="art-hero%%HERO_CLASS%%">
     <div>
       <span class="eyebrow">%%TAG%%</span>
@@ -312,7 +311,6 @@ INDEX_TEMPLATE = HEAD_COMMON + """
 
 %%NAV%%
 <div class="wrap">
-  <span class="eyebrow">essays</span>
   <h1>Essays</h1>
   <p class="subhead">Esai pribadi dan catatan lapangan tentang manusia dan komunitas, dalam Bahasa Indonesia.</p>
 

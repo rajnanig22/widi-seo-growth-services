@@ -259,6 +259,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   .to-top {{ position: fixed; right: 16px; bottom: 16px; padding: 9px 14px; border-radius: 999px; background: var(--accent); color: #FFFFFF; font-size: 13.5px; font-weight: 600; text-decoration: none; opacity: 0; pointer-events: none; transition: opacity 0.2s ease; z-index: 10; }}
   .to-top.show {{ opacity: 0.92; pointer-events: auto; }}
   .to-top:hover {{ opacity: 1; text-decoration: none; color: #FFFFFF; }}
+  .art-hero {{ margin-top: 40px; }}
 </style>
 </head>
 <body>
@@ -282,7 +283,6 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 
 <div class="wrap">
 
-  <a class="back-link" href="/notes/">&larr; SEO Notes</a>
 
   <header class="art-hero{hero_class}">
     <div>
@@ -519,8 +519,6 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 </div>
 
 <div class="wrap">
-  <a class="back-link" href="/services/">&larr; SEO Consulting</a>
-  <span class="eyebrow">seo notes</span>
   <h1>SEO Notes</h1>
   <p class="subhead">Short, specific write-ups drawn from real audits, not generic listicles.</p>
 {nav}
