@@ -143,6 +143,25 @@
   .to-top.show { opacity: 0.92; pointer-events: auto; }
   .to-top:hover { opacity: 1; text-decoration: none; color: #FFFFFF; }
   .svc-hero { margin-top: 40px; }
+  /* two-column reading layout: section heading on the left, text on the right */
+  @media (min-width: 1000px) {
+    .content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr); column-gap: 64px; align-items: start; }
+    .content > * { grid-column: 2; max-width: 46em; }
+    .content > h2 { grid-column: 1; margin-top: 20px; position: sticky; top: 24px; }
+    .content > .intro { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr); column-gap: 64px; max-width: none; }
+    .content > .intro > * { grid-column: 2; max-width: 46em; }
+    .content > .intro::before { content: "overview"; grid-column: 1; font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; color: var(--accent); padding-top: 6px; }
+    .content > .diag-grid, .content > .rule, .content > .cta-box { grid-column: 1 / -1; max-width: none; }
+    .content > h2 + p, .content > h2 + ul, .content > h2 + .diag-intro { margin-top: 24px; }
+    .content { padding: 32px 0 56px; }
+    .content > .rule { margin: 28px 0 8px; }
+    .content > .diag-intro { margin-bottom: 18px; }
+    .content > .cta-box { margin-top: 28px; }
+    .content > .related-reading { margin-top: 4px; }
+    .svc-hero { margin-top: 32px; padding-bottom: 40px; }
+    .content > .cta-box { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+  }
+  @media (max-width: 999px) { .rule { margin: 24px 0; } }
 </style>
 </head>
 <body>
