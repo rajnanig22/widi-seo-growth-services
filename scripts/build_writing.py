@@ -212,6 +212,16 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
   article p:has(> img) em { display: block; font-size: 13px; line-height: 1.5; color: var(--ink-soft); text-align: center; }
   .note { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--ink-soft); }
   @media (max-width: 640px) { article p { font-size: 16px; } }
+
+  /* Type scale: body 17/16, lede 17/15.5, card title 20/18, card text 15.5/15, small 14, labels 12 */
+  article p, article li { font-size: 17px; }
+  .meta, .cta-box .cta-detail, .author-box p, .sources ol { font-size: 14px; }
+  figcaption { font-size: 13px; }
+  @media (max-width: 600px) {
+    article p, article li { font-size: 16px; }
+    .meta, .cta-box .cta-detail, .author-box p, .sources ol { font-size: 13.5px; }
+    figcaption { font-size: 12.5px; }
+  }
 </style>
 </head>
 <body>
@@ -317,6 +327,20 @@ INDEX_TEMPLATE = HEAD_COMMON + """
     .article-card h2 { font-size: 16px; }
     .article-card p { font-size: 12.5px; }
     .article-card .card-meta { font-size: 10px; }
+  }
+
+  /* Type scale: body 17/16, lede 17/15.5, card title 20/18, card text 15.5/15, small 14, labels 12 */
+  h1 { font-size: 36px; }
+  .subhead { font-size: 17px; }
+  .article-card h2 { font-size: 20px; }
+  .article-card .card-desc, .article-list .article-card:first-child .card-desc { font-size: 15.5px; }
+  .article-card .card-meta, .article-card .tag { font-size: 12px; }
+  @media (max-width: 600px) {
+    h1 { font-size: 28px; }
+    .subhead { font-size: 15.5px; }
+    .article-card h2 { font-size: 18px; }
+    .article-card .card-desc, .article-list .article-card:first-child .card-desc { font-size: 15px; }
+    .article-card .card-meta, .article-card .tag { font-size: 11.5px; }
   }
 </style>
 </head>

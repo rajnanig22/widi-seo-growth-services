@@ -162,6 +162,16 @@
     .content > .cta-box { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
   }
   @media (max-width: 999px) { .rule { margin: 24px 0; } }
+
+  /* Type scale: body 17/16, lede 17/15.5, card title 20/18, card text 15.5/15, small 14, labels 12 */
+  .content p, .content li { font-size: 17px; }
+  .content .diag-intro { font-size: 15.5px; }
+  .diagnostic p { font-size: 15.5px; }
+  .content .cta-detail, .cta-detail { font-size: 14px; }
+  @media (max-width: 600px) {
+    .content p, .content li { font-size: 16px; }
+    .diagnostic p { font-size: 15px; }
+  }
 </style>
 </head>
 <body>
