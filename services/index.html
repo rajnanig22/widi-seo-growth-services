@@ -299,6 +299,18 @@
 
   .card.wide { grid-column: 1 / -1; }
 
+  /* Readable card text, and a shorter photo on wide screens */
+  .card .card-body { gap: 10px; padding: 20px; }
+  .card h2 { font-size: 19px; }
+  .card .desc { font-size: 15px; line-height: 1.55; }
+  .card .go-arrow { font-size: 18px; }
+  @media (min-width: 700px) {
+    .card .thumb { aspect-ratio: 3 / 1; }
+    .card .card-body { padding: 24px 26px 26px; }
+    .card h2 { font-size: 22px; }
+    .card .desc { font-size: 16px; }
+  }
+
   .card .tag {
     font-family: var(--mono);
     font-size: 10px;
