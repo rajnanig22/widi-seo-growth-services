@@ -22,6 +22,8 @@ The source for **widiginanjar.com**: a static personal site served by GitHub Pag
 
 GitHub Actions (`.github/workflows/build-site.yml`) runs all three on push to `main` and commits the generated files. Keep it as one workflow: two workflows committing the same files at the same time make one of them fail.
 
+Every pull request also runs `.github/workflows/check-site.yml`: it builds the site and runs `scripts/check_site.py`, which fails on broken internal links, missing images, invalid frontmatter, a note tag outside the six, or em dashes and double hyphens in visible text, and warns about essay photos over about 300 KB and Google titles or descriptions likely to be cut off. That workflow never commits.
+
 Run locally:
 
 ```bash
@@ -29,6 +31,7 @@ pip install markdown pyyaml
 python3 scripts/build_writing.py
 python3 scripts/build_notes.py
 python3 scripts/build_site_index.py
+python3 scripts/check_site.py   # same checks as on pull requests
 ```
 
 ## Rules

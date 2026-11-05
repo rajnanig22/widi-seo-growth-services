@@ -11,7 +11,7 @@ It is a static site served by GitHub Pages on a custom domain (see `CNAME`). The
 
 ## How publishing works
 
-Essays and notes are written in Markdown with a small YAML header. On every push, GitHub Actions runs a Python build script that turns them into HTML pages.
+Essays and notes are written in Markdown with a small YAML header. On every push, GitHub Actions runs a Python build script that turns them into HTML pages. On every pull request, a check run builds the site and flags broken links, missing images, invalid frontmatter, and em dashes before anything is merged.
 
 ```
 writing/posts/*.md  ->  scripts/build_writing.py  ->  writing/*.html
