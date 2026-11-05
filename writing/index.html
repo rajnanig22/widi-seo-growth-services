@@ -73,8 +73,7 @@
   .wrap { max-width: 1520px; margin: 0 auto; padding: 48px clamp(20px, 5vw, 80px) 72px; }
   h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 5vw, 36px); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 12px; }
   .subhead { font-size: 15px; color: var(--ink-soft); margin: 0 0 36px; max-width: 52ch; }
-  .article-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-bottom: 36px; }
-  @media (max-width: 1000px) { .article-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .article-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-bottom: 36px; }
   @media (max-width: 640px) { .article-list { grid-template-columns: 1fr; } }
   .article-card {
     background: var(--paper); border: 1px solid var(--rule); border-radius: 10px;
@@ -92,6 +91,19 @@
   .article-card:hover .go-arrow { color: var(--accent); transform: translateX(2px); }
   .article-card h2 { font-family: var(--serif); font-size: 18px; font-weight: 600; margin: 8px 0 6px; color: var(--ink); }
   .article-card p { font-size: 13.5px; color: var(--ink-soft); margin: 0; }
+  .article-card .card-q { font-family: var(--serif); font-size: 16px; line-height: 1.45; color: var(--ink); margin: 2px 0 8px; }
+  .article-card:not(:first-child) .card-q + .card-desc { display: none; }
+  .article-list .article-card:first-child { grid-column: 1 / -1; flex-direction: row; }
+  .article-list .article-card:first-child .thumb { flex: 0 0 58%; aspect-ratio: 16 / 10; }
+  .article-list .article-card:first-child .card-body { padding: 32px 36px; justify-content: center; }
+  .article-list .article-card:first-child h2 { font-size: clamp(24px, 2.6vw, 32px); line-height: 1.2; margin: 12px 0 12px; }
+  .article-list .article-card:first-child .card-q { font-size: clamp(18px, 1.7vw, 22px); margin-bottom: 12px; }
+  .article-list .article-card:first-child .card-desc { font-size: 14px; }
+  @media (max-width: 820px) {
+    .article-list .article-card:first-child { flex-direction: column; }
+    .article-list .article-card:first-child .thumb { flex: none; aspect-ratio: 1200 / 630; }
+    .article-list .article-card:first-child .card-body { padding: 18px 20px 20px; }
+  }
   .article-card .card-meta { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); margin-top: 10px; opacity: 0.8; }
   @media (prefers-reduced-motion: reduce) { .article-card { transition: none !important; } }
 
@@ -132,7 +144,8 @@
           <span class="go-arrow">&rarr;</span>
         </div>
         <h2>Dulu Ada yang Meminta Air</h2>
-        <p>Catatan lapangan soal kekeringan di Bangli: air tangki Rp250 ribu per truk, sumur bor 80 meter tanpa air, dan legenda kutukan air dekat Danau Batur.</p>
+        <p class="card-q" lang="id">Kenapa desa yang dekat danau terbesar di Bali harus membeli air?</p>
+        <p class="card-desc">Catatan lapangan soal kekeringan di Bangli: air tangki Rp250 ribu per truk, sumur bor 80 meter tanpa air, dan legenda kutukan air dekat Danau Batur.</p>
         <p class="card-meta">31 Oktober 2026 &middot; 3 menit baca</p>
       </div>
     </a>
@@ -145,7 +158,8 @@
           <span class="go-arrow">&rarr;</span>
         </div>
         <h2>Yang Bergairah di Landih</h2>
-        <p>Di Landih, Bangli, kopi dan jeruk tampak bergairah, sementara bambu terdesak ke lereng dan tepi sungai.</p>
+        <p class="card-q" lang="id">Kenapa di desa yang dikenal karena bambunya, yang tumbuh subur justru kopi dan jeruk?</p>
+        <p class="card-desc">Di Landih, Bangli, kopi dan jeruk tampak bergairah, sementara bambu terdesak ke lereng dan tepi sungai.</p>
         <p class="card-meta">30 Oktober 2026 &middot; 5 menit baca</p>
       </div>
     </a>
@@ -158,7 +172,8 @@
           <span class="go-arrow">&rarr;</span>
         </div>
         <h2>Meditasi adalah: Sebuah jebakan betmen</h2>
-        <p>Cerita 10 hari silent retreat Vipassana di Bogor, dan jawaban untuk pertanyaan orang soal kenapa aku ikut.</p>
+        <p class="card-q" lang="id">Kenapa ikut retreat diam 10 hari, kalau bukan karena stres atau ingin jadi biksu?</p>
+        <p class="card-desc">Cerita 10 hari silent retreat Vipassana di Bogor, dan jawaban untuk pertanyaan orang soal kenapa aku ikut.</p>
         <p class="card-meta">Pertama terbit 28 Juli 2019 &middot; 12 menit baca</p>
       </div>
     </a>

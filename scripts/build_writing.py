@@ -20,6 +20,7 @@ seo_title: "Optional title for Google results, with the words people search for"
 republished: true   # optional, for essays first published elsewhere: shows "Pertama terbit <date>"
 title_en: "Optional English translation of the title (llms.txt and search data only)"
 description_en: "Optional English summary, shown on the English homepage card and in llms.txt"
+question: "Optional guiding question in Indonesian, shown on the essay cards"
 ---
 
 Photos: upload them to writing/img/ and use ![alt text](/writing/img/photo.jpg)
@@ -274,8 +275,7 @@ INDEX_TEMPLATE = HEAD_COMMON + """
   .wrap { max-width: 1520px; margin: 0 auto; padding: 48px clamp(20px, 5vw, 80px) 72px; }
   h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 5vw, 36px); line-height: 1.2; letter-spacing: -0.01em; margin: 0 0 12px; }
   .subhead { font-size: 15px; color: var(--ink-soft); margin: 0 0 36px; max-width: 52ch; }
-  .article-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-bottom: 36px; }
-  @media (max-width: 1000px) { .article-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .article-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-bottom: 36px; }
   @media (max-width: 640px) { .article-list { grid-template-columns: 1fr; } }
   .article-card {
     background: var(--paper); border: 1px solid var(--rule); border-radius: 10px;
@@ -293,6 +293,19 @@ INDEX_TEMPLATE = HEAD_COMMON + """
   .article-card:hover .go-arrow { color: var(--accent); transform: translateX(2px); }
   .article-card h2 { font-family: var(--serif); font-size: 18px; font-weight: 600; margin: 8px 0 6px; color: var(--ink); }
   .article-card p { font-size: 13.5px; color: var(--ink-soft); margin: 0; }
+  .article-card .card-q { font-family: var(--serif); font-size: 16px; line-height: 1.45; color: var(--ink); margin: 2px 0 8px; }
+  .article-card:not(:first-child) .card-q + .card-desc { display: none; }
+  .article-list .article-card:first-child { grid-column: 1 / -1; flex-direction: row; }
+  .article-list .article-card:first-child .thumb { flex: 0 0 58%; aspect-ratio: 16 / 10; }
+  .article-list .article-card:first-child .card-body { padding: 32px 36px; justify-content: center; }
+  .article-list .article-card:first-child h2 { font-size: clamp(24px, 2.6vw, 32px); line-height: 1.2; margin: 12px 0 12px; }
+  .article-list .article-card:first-child .card-q { font-size: clamp(18px, 1.7vw, 22px); margin-bottom: 12px; }
+  .article-list .article-card:first-child .card-desc { font-size: 14px; }
+  @media (max-width: 820px) {
+    .article-list .article-card:first-child { flex-direction: column; }
+    .article-list .article-card:first-child .thumb { flex: none; aspect-ratio: 1200 / 630; }
+    .article-list .article-card:first-child .card-body { padding: 18px 20px 20px; }
+  }
   .article-card .card-meta { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); margin-top: 10px; opacity: 0.8; }
   @media (prefers-reduced-motion: reduce) { .article-card { transition: none !important; } }
 
@@ -332,7 +345,7 @@ CARD_TEMPLATE = """    <a class="article-card" href="/writing/%%SLUG%%.html">
           <span class="go-arrow">&rarr;</span>
         </div>
         <h2>%%TITLE%%</h2>
-        <p>%%DESCRIPTION%%</p>
+%%QUESTION_BLOCK%%        <p class="card-desc">%%DESCRIPTION%%</p>
         <p class="card-meta">%%DATE_DISPLAY%% &middot; %%READ_TIME%%</p>
       </div>
     </a>"""
@@ -451,10 +464,16 @@ HOME_CARD_TEMPLATE = """        <a class="w-card" href="/writing/%%SLUG%%.html" 
           <span class="w-body">
             <span class="tag">%%TAG%%</span>
             <h3 lang="id">%%TITLE%%</h3>
-            <p lang="%%DESC_LANG%%">%%DESCRIPTION%%</p>
+%%QUESTION_BLOCK%%            <p lang="%%DESC_LANG%%">%%DESCRIPTION%%</p>
             <span class="w-meta">%%DATE_DISPLAY%% &middot; %%READ_TIME%% &middot; in Bahasa Indonesia</span>
           </span>
         </a>"""
+
+
+def question_html(post, indent):
+    """The essay's guiding question, shown on cards as the hook. Optional."""
+    q = str(post.get("question") or "").strip()
+    return f'{indent}<p class="card-q" lang="id">{html.escape(q, quote=True)}</p>\n' if q else ""
 
 
 def thumb_html(post):
@@ -496,6 +515,7 @@ def update_homepage(posts, limit=3):
             "TITLE": html.escape(str(p.get("title", "")), quote=True),
             "DESCRIPTION": html.escape(str(p.get("description_en") or p.get("description", "")), quote=True),
             "DESC_LANG": "en" if p.get("description_en") else "id",
+            "QUESTION_BLOCK": question_html(p, "            "),
             "DATE_DISPLAY": ("First published " if p.get("republished") else "") + date_en(p.get("date", "")),
             "READ_TIME": p["_read_time"].replace("menit baca", "min read"),
         })
@@ -515,6 +535,7 @@ def build_index(posts):
             "TAG": html.escape(str(p.get("tag", "tulisan"))),
             "TITLE": html.escape(str(p.get("title", "")), quote=True),
             "DESCRIPTION": html.escape(str(p.get("description", "")), quote=True),
+            "QUESTION_BLOCK": question_html(p, "        "),
             "DATE_DISPLAY": p["_date_display"],
             "READ_TIME": p["_read_time"],
         })
