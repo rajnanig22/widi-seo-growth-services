@@ -1,0 +1,34 @@
+name: Check site
+
+# Runs on every pull request and shows a pass or fail before merge.
+# It builds the site and checks it, but never commits anything, so it
+# cannot collide with the "Build site from markdown" workflow on main.
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install markdown pyyaml
+
+      - name: Build
+        run: |
+          python3 scripts/build_writing.py
+          python3 scripts/build_notes.py
+          python3 scripts/build_site_index.py
+
+      - name: Check links, frontmatter, dashes, and images
+        run: python3 scripts/check_site.py
