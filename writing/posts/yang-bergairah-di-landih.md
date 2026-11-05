@@ -8,7 +8,7 @@ slug: yang-bergairah-di-landih
 question: "Kenapa di desa yang dikenal karena bambunya, yang tumbuh subur justru kopi dan jeruk?"
 title_en: "What Thrives in Landih"
 description_en: "In Landih, Bangli, coffee and citrus are thriving, while bamboo is pushed to the slopes and riverbanks."
-image: img/landih-cover.jpg
+image: img/landih-cover-kopi.jpg
 ---
 
 Pertama kali datang ke Landih, saya datang untuk urusan bambu. Tapi entah kenapa, yang terlihat bergairah justru kopi dan jeruk.
