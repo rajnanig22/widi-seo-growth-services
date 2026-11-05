@@ -1,5 +1,6 @@
 ---
 title: "Why My Portfolio's Domain Is My Name, Not \"Bali SEO\""
+seo_title: "Why My Domain Is My Name, Not \"Bali SEO\""
 description: "A friend asked why I didn't buy a keyword-matching domain instead. The answer says something about how AI search is changing what actually gets rewarded."
 tag: "practice notes"
 date: 2026-07-16

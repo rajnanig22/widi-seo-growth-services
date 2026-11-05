@@ -267,12 +267,12 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
 """
 
 INDEX_TEMPLATE = HEAD_COMMON + """
-<title>Essays | Widi Ginanjar</title>
+<title>Esai dan Catatan Lapangan | Widi Ginanjar</title>
 <meta name="description" content="Esai pribadi dan catatan lapangan dari Widi Ginanjar, dalam Bahasa Indonesia.">
 <link rel="canonical" href="%%SITE_URL%%/writing/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Essays | Widi Ginanjar">
+<meta property="og:title" content="Esai dan Catatan Lapangan | Widi Ginanjar">
 <meta property="og:description" content="Esai pribadi dan catatan lapangan, dalam Bahasa Indonesia.">
 <meta property="og:url" content="%%SITE_URL%%/writing/">
 <meta property="og:image" content="%%SITE_URL%%/og-home.jpg">

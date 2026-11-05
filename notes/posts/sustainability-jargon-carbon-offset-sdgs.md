@@ -1,5 +1,6 @@
 ---
 title: "I Didn't Know What 'Carbon Offset' Meant Until Last Year"
+seo_title: "I Didn't Know What 'Carbon Offset' Meant"
 description: "I worked in sustainability for years and still didn't understand carbon offset until last year. Most people don't either."
 tag: "mission-driven"
 date: 2026-07-31
