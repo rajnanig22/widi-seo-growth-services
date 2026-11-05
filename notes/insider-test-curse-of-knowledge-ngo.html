@@ -220,6 +220,16 @@
   .to-top.show { opacity: 0.92; pointer-events: auto; }
   .to-top:hover { opacity: 1; text-decoration: none; color: #FFFFFF; }
   .art-hero { margin-top: 40px; }
+
+  /* Type scale: body 17/16, lede 17/15.5, card title 20/18, card text 15.5/15, small 14, labels 12 */
+  article p, article li { font-size: 17px; }
+  .meta, .cta-box .cta-detail, .author-box p, .sources ol { font-size: 14px; }
+  figcaption { font-size: 13px; }
+  @media (max-width: 600px) {
+    article p, article li { font-size: 16px; }
+    .meta, .cta-box .cta-detail, .author-box p, .sources ol { font-size: 13.5px; }
+    figcaption { font-size: 12.5px; }
+  }
 </style>
 </head>
 <body>

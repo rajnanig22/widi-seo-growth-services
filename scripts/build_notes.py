@@ -260,6 +260,16 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   .to-top.show {{ opacity: 0.92; pointer-events: auto; }}
   .to-top:hover {{ opacity: 1; text-decoration: none; color: #FFFFFF; }}
   .art-hero {{ margin-top: 40px; }}
+
+  /* Type scale: body 17/16, lede 17/15.5, card title 20/18, card text 15.5/15, small 14, labels 12 */
+  article p, article li {{ font-size: 17px; }}
+  .meta, .cta-box .cta-detail, .author-box p, .sources ol {{ font-size: 14px; }}
+  figcaption {{ font-size: 13px; }}
+  @media (max-width: 600px) {{
+    article p, article li {{ font-size: 16px; }}
+    .meta, .cta-box .cta-detail, .author-box p, .sources ol {{ font-size: 13.5px; }}
+    figcaption {{ font-size: 12.5px; }}
+  }}
 </style>
 </head>
 <body>
@@ -496,6 +506,20 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   .subnav a:hover, .subnav a[aria-current] {{ color: var(--accent); text-decoration: none; }}
   .subnav a[aria-current] {{ font-weight: 600; }}
   @media (max-width: 420px) {{ .subnav {{ gap: 6px 16px; font-size: 13.5px; }} .subnav .long {{ display: none; }} }}
+
+  /* Type scale: body 17/16, lede 17/15.5, card title 20/18, card text 15.5/15, small 14, labels 12 */
+  h1 {{ font-size: 36px; }}
+  .subhead {{ font-size: 17px; }}
+  .article-card h2 {{ font-size: 20px; }}
+  .article-card p:not(.card-meta) {{ font-size: 15.5px; }}
+  .article-card .card-meta, .article-card .tag {{ font-size: 12px; }}
+  @media (max-width: 600px) {{
+    h1 {{ font-size: 28px; }}
+    .subhead {{ font-size: 15.5px; }}
+    .article-card h2 {{ font-size: 18px; }}
+    .article-card p:not(.card-meta) {{ font-size: 15px; }}
+    .article-card .card-meta, .article-card .tag {{ font-size: 11.5px; }}
+  }}
 </style>
 </head>
 <body>
