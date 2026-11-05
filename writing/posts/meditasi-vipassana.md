@@ -4,6 +4,7 @@ description: "Cerita 10 hari silent retreat Vipassana di Bogor, dan jawaban untu
 tag: esai pribadi
 date: 2019-07-28
 slug: meditasi-vipassana
+question: "Kenapa ikut retreat diam 10 hari, kalau bukan karena stres atau ingin jadi biksu?"
 republished: true
 title_en: "Meditation Is a Sneaky Trap"
 description_en: "Ten days of silent Vipassana retreat in Bogor, and an answer to people who ask why I went."

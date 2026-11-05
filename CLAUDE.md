@@ -61,6 +61,7 @@ seo_title: "..."      # optional, title for Google results
 republished: true     # optional, essay first published elsewhere: date shows as "Pertama terbit ..."
 title_en: "..."       # optional, English title (llms.txt and search data only)
 description_en: "..." # optional, English summary for the homepage card and llms.txt
+question: "..."       # optional, guiding question in Indonesian, shown on essay cards
 note: "..."            # optional footer line
 ---
 ```

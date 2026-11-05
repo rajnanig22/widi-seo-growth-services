@@ -140,6 +140,21 @@
   .w-card .tag { font-family: var(--mono); font-size: 10.5px; color: var(--accent); text-transform: lowercase; letter-spacing: 0.02em; }
   .w-card h3 { font-family: var(--serif); font-size: 17px; line-height: 1.3; font-weight: 600; margin: 0; color: var(--ink); }
   .w-card p { font-size: 13px; line-height: 1.5; color: var(--ink-soft); margin: 0; }
+  .w-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .w-card:first-child { grid-column: 1 / -1; flex-direction: row; }
+  .w-card:first-child .thumb { flex: 0 0 58%; max-height: none; aspect-ratio: 16 / 10; }
+  .w-card:first-child .w-body { padding: 32px 36px; justify-content: center; gap: 12px; }
+  .w-card:first-child h3 { font-size: clamp(24px, 2.6vw, 32px); line-height: 1.2; }
+  .w-card .card-q { font-family: var(--serif); font-size: 16px; line-height: 1.45; color: var(--ink); margin: 0; }
+  .w-card:first-child .card-q { font-size: clamp(18px, 1.7vw, 22px); }
+  .w-card:not(:first-child) .card-q + p { display: none; }
+  .w-card:first-child p[lang="en"] { font-size: 14px; }
+  @media (max-width: 820px) {
+    .w-cards { grid-template-columns: 1fr; }
+    .w-card:first-child { flex-direction: column; }
+    .w-card:first-child .thumb { flex: none; aspect-ratio: 16 / 9; }
+    .w-card:first-child .w-body { padding: 18px 18px 20px; }
+  }
   .w-card .w-meta { font-family: var(--mono); font-size: 10.5px; color: var(--ink-soft); margin-top: auto; padding-top: 8px; }
 
   .band-footer { background: var(--forest); color: rgba(255,255,255,0.75); }
@@ -215,6 +230,7 @@
           <span class="w-body">
             <span class="tag">catatan lapangan</span>
             <h3 lang="id">Dulu Ada yang Meminta Air</h3>
+            <p class="card-q" lang="id">Kenapa desa yang dekat danau terbesar di Bali harus membeli air?</p>
             <p lang="en">Field notes from a village in Bangli, Bali: a long dry season, water trucks at Rp250,000 each, an 80-metre borehole with no water, and a local legend of a water curse.</p>
             <span class="w-meta">31 Oct 2026 &middot; 3 min read &middot; in Bahasa Indonesia</span>
           </span>
@@ -224,6 +240,7 @@
           <span class="w-body">
             <span class="tag">catatan lapangan</span>
             <h3 lang="id">Yang Bergairah di Landih</h3>
+            <p class="card-q" lang="id">Kenapa di desa yang dikenal karena bambunya, yang tumbuh subur justru kopi dan jeruk?</p>
             <p lang="en">In Landih, Bangli, coffee and citrus are thriving, while bamboo is pushed to the slopes and riverbanks.</p>
             <span class="w-meta">30 Oct 2026 &middot; 5 min read &middot; in Bahasa Indonesia</span>
           </span>
@@ -233,6 +250,7 @@
           <span class="w-body">
             <span class="tag">esai pribadi</span>
             <h3 lang="id">Meditasi adalah: Sebuah jebakan betmen</h3>
+            <p class="card-q" lang="id">Kenapa ikut retreat diam 10 hari, kalau bukan karena stres atau ingin jadi biksu?</p>
             <p lang="en">Ten days of silent Vipassana retreat in Bogor, and an answer to people who ask why I went.</p>
             <span class="w-meta">First published 28 Jul 2019 &middot; 12 min read &middot; in Bahasa Indonesia</span>
           </span>
