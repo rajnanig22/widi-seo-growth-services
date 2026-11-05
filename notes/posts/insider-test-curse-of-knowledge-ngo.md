@@ -79,7 +79,7 @@ That gap has a real cost. **An NGO whose own peers can't explain its work is inv
 
 Ask the people closest to your sector, not the general public, **to explain what your organisation does in one sentence, without using any word from your own materials.** If they can't, the problem isn't reach. It's translation, and it starts long before anyone gets to a search engine.
 
-Fixing it is closer to [content strategy work than a technical fix](/scope-of-work.html), rewriting the same real work in language that reaches past the room it started in.
+Fixing it is closer to [content strategy work than a technical fix](/services/), rewriting the same real work in language that reaches past the room it started in.
 
 <hr class="rule">
 

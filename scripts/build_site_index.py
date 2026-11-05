@@ -29,7 +29,6 @@ STATIC_PAGES = [
     ("/writing/", "0.9", "weekly"),
     ("/notes/", "0.8", "weekly"),
     ("/about.html", "0.8", "monthly"),
-    ("/scope-of-work.html", "0.7", "monthly"),
     ("/book.html", "0.6", "yearly"),
 ]
 
@@ -124,10 +123,9 @@ def build_llms(essays, notes):
     parts += [line(essay_title(p), f"{SITE_URL}/writing/{p['slug']}.html", essay_desc(p)) for p in essays]
 
     parts.append("\n## Services\n")
-    parts.append(line("Services overview", f"{SITE_URL}/services/", "SEO consulting: services, scope of work, and booking."))
+    parts.append(line("Services overview", f"{SITE_URL}/services/", "SEO consulting: services and booking."))
     parts += [line(t, SITE_URL + path, d) for path, t, d in SERVICE_PAGES
               if os.path.exists(os.path.join(ROOT, path.lstrip("/")))]
-    parts.append(line("Full Scope of Work", f"{SITE_URL}/scope-of-work.html", "Complete, itemised breakdown of every service offered."))
     parts.append(line("About", f"{SITE_URL}/about.html", "Background, approach, and career history."))
 
     parts.append("\n## Notes (technical write-ups and case studies)\n")

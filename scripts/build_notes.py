@@ -276,7 +276,6 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
   <nav class="subnav" aria-label="SEO Consulting">
     <a href="/services/">Services</a>
     <a href="/notes/" aria-current="page">SEO Notes</a>
-    <a href="/scope-of-work.html">Scope<span class="long"> of work</span></a>
     <a href="/book.html">Book a call</a>
   </nav>
 </div>
@@ -513,7 +512,6 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   <nav class="subnav" aria-label="SEO Consulting">
     <a href="/services/">Services</a>
     <a href="/notes/" aria-current="page">SEO Notes</a>
-    <a href="/scope-of-work.html">Scope<span class="long"> of work</span></a>
     <a href="/book.html">Book a call</a>
   </nav>
 </div>
