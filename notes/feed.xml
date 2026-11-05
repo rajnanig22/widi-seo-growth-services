@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title>SEO Notes by Widi Ginanjar</title>
+  <link>https://widiginanjar.com/notes/</link>
+  <atom:link href="https://widiginanjar.com/notes/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Short, specific write-ups drawn from real audits, not generic listicles.</description>
+  <language>en</language>
+  <lastBuildDate>Fri, 30 Oct 2026 08:00:00 +0800</lastBuildDate>
+  <item>
+    <title>Anyone Can Be an SEO Specialist Now. So What Am I Actually Selling?</title>
+    <link>https://widiginanjar.com/notes/what-am-i-actually-selling.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/what-am-i-actually-selling.html</guid>
+    <pubDate>Fri, 30 Oct 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>Anyone can list what's broken on a page now. Here's what that leaves for a human SEO consultant to actually be paid for.</description>
+    <content:encoded><![CDATA[<p>Paste a URL into an AI tool, get a list of what's broken. Ask for a meta description, get one in five seconds. Most of what used to make this work valuable is templated now. Here's what that leaves.</p>
+<p>The execution was never the hard part, even before AI. Writing a meta description, fixing a title tag, generating a keyword list: that's the visible layer, and it's the layer that got commoditized first because it was always the most templated part of the job. What's underneath it is harder to fake: <strong>knowing which of the ten things on a checklist is the one actually costing an organisation money, and which nine are cosmetic</strong>. That's not a skill an AI tool demonstrates by listing problems. It's a skill that shows up in the specific cases where the obvious-looking issue and the important issue aren't the same thing.</p>
+<p><strong>Relationships don't scale the way content does.</strong> A tool can generate a hundred outreach emails in an afternoon. It can't get someone to actually respond, trust the person writing it, and link back organically because they wanted to, not because they were paid to. The backlink work I've done that actually moved a domain's authority came from individual conversations, not volume.</p>
+<p>Proof beats claims, and proof takes longer to fake than a promise does. What's harder to fabricate than "I can improve your rankings" is <strong>a specific, checkable finding</strong>: this canonical tag was misdirecting authority, this staging folder was exposed, this is what changed after it was fixed. That's why <a href="https://widiginanjar.com/services/">every service page here</a> leads with real, anonymised examples, not testimonials.</p>
+<h2>Where the transferable part comes from</h2>
+<p>None of my background is a typical path into SEO. Before it, I spent nearly four years coordinating community-based sustainability work with village governments and waste operators, and before that I managed donor and partner relationships for crowdfunding campaigns. I also spent time reviewing AI model responses for factual accuracy, which is where a lot of the <a href="https://widiginanjar.com/notes/reviewing-ai-responses-writing-for-search.html">AI-citability angle on this site</a> comes from.</p>
+<p>The parts that transfer are <strong>building trust with people who have no reason to trust you yet</strong>, and telling the difference between something that looks like a problem and something that actually is one. Neither was learned from an SEO course. If you want to see what I offer, it's on the <a href="https://widiginanjar.com/services/">services page</a>.</p>]]></content:encoded>
+  </item>
+  <item>
+    <title>Being Right About the Data Isn't the Same as Being Responsible With It</title>
+    <link>https://widiginanjar.com/notes/being-right-vs-being-responsible-ngo-comms.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/being-right-vs-being-responsible-ngo-comms.html</guid>
+    <pubDate>Sat, 05 Sep 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>A social post about forest fires led to a disagreement over one closing line. Sorting out why took longer than writing the post did.</description>
+    <content:encoded><![CDATA[<p><strong>The bottom line:</strong> a colleague told me the last line of a post I wrote sounded passive-aggressive. My first move was to defend it, since the numbers behind it were solid. It took me a while to see the argument was never really about the numbers. It was three different questions, all squeezed into one sentence, and no rewording was going to fix that.</p>
+<h2>The post that started it</h2>
+<p>The post was about forest fires. It rested on one fact I had checked twice: most of the fire hotspots in that region sat on land held by companies, not on land worked by small farmers. That's a real, checkable pattern. It also goes against the usual story about dry season and small-scale land clearing.</p>
+<p>The trouble was the ending. The draft closed with a question aimed straight at that fact, something like who should be held responsible. A colleague flagged it. Not the data, just that last question. <strong>He felt it repeated an accusation the post had already made once, just said again in a sharper way.</strong></p>
+<p>My first instinct was to push back a little. The numbers were right, so why did the tone matter so much? Writing this out is what made me see it. Three separate things were tangled up in that one line, and only one of them was really about wording.</p>
+<h2>When impact stories start to feel hollow</h2>
+<p>Mission-driven content leans hard on numbers: hectares restored, households reached, tons of carbon stored somewhere. Those numbers are real and worth sharing. <strong>But a feed that only ever says look what we did starts to feel like it hasn't noticed how big the problem still is.</strong> I've felt this as a reader too, scrolling past a nonprofit account that's all wins and no friction, and wondering if anyone there has actually looked at the scale of what they're up against.</p>
+<h2>When sharper framing starts to feel like an accusation</h2>
+<p>The other extreme, leaning hard into the uncomfortable data, has its own version of this problem. Naming exactly where the fires were was just accurate reporting. Turning that fact into a pointed question about blame was a separate choice, added on top. <strong>That's the part that actually caused friction. The data didn't need defending. What I built on top of it did.</strong></p>
+<h2>The part that took the longest to admit</h2>
+<p>Here's the part I didn't want to say out loud at first: the organisation behind this post also works with government partners in the same area the post was, in a roundabout way, criticising through a line about shrinking disaster-response budgets. That's not a small detail. There's real research on this. A <a href="https://doi.org/10.1093/jopart/mus003">2012 study on nonprofits that depend on government funding</a> found that these groups tend to avoid public confrontation and lean into quieter, cooperative approaches instead, mostly to protect their standing as a trusted partner. This isn't just one country's problem either. A <a href="https://www.philanthropy.com/news/fearing-retaliation-loss-of-funding-many-nonprofits-stay-quiet-on-trump/">recent US survey</a> found that nearly two in three nonprofit communications staff now worry about government pushback or losing funding over their advocacy work, and close to half worry about backlash over sensitive topics.</p>
+<p>I don't think that means the budget line should have been softened into nothing. It means my hesitation wasn't just nerves. <strong>It's a real trade-off a lot of people in this line of work run into, whether they ever put a name to it or not.</strong></p>
+<h2>What actually changed in the end</h2>
+<p>We kept the hard parts. The statistic about the fires stayed. The line about the budgets stayed. What changed was the last line. <strong>Instead of asking who should be held responsible, the post ended on the organisation's own work: smaller in scale, but built on the same idea.</strong> The question aimed at someone else got cut. The line about what we're actually doing stayed.</p>
+<p>It's a smaller fix than it probably sounds. It didn't solve the bigger tension between wanting the post to make people think and not wanting to damage a working relationship it was standing right next to. It just meant I stopped trying to solve three problems with one closing sentence.</p>
+<h2>Why I'm writing this down</h2>
+<p>People talk about bold and safe like two ends of one dial, and I don't think that's quite right. <strong>They're really answers to three different questions.</strong> Does this content actually show the size of the problem. Does the framing make people think, or does it just point a finger. And does this organisation's own position, who it works with, who it depends on, change what it can say in public without hurting itself. <strong>Squashing all three into "should we tone this down" is how good feedback ends up sounding like someone just getting cold feet.</strong></p>
+<hr />
+<p><strong>If your own team has ever argued over one closing line and couldn't quite say why,</strong> I offer a free 30-minute look at how your public content reads from the outside.</p>
+<p>You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com">Get in touch</a> or <a href="https://widiginanjar.com/book.html">book a call</a>, or see the <a href="https://widiginanjar.com/services/ngo.html">full NGO service page</a> for more anonymised examples.</p>]]></content:encoded>
+  </item>
+  <item>
+    <title>Google Knows My Website. It Doesn't Know Me.</title>
+    <link>https://widiginanjar.com/notes/ai-overview-domain-vs-name.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/ai-overview-domain-vs-name.html</guid>
+    <pubDate>Fri, 07 Aug 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>Two searches, minutes apart. One found my site accurately. The other pulled from LinkedIn and mixed me up with someone else entirely.</description>
+    <content:encoded><![CDATA[<p>I ran two Google searches back to back last night. Same person, same intent, one word different.</p>
+<p>First search: my domain, widiginanjar.com. The AI Overview got it right, in detail. It described the site as my professional portfolio, correctly listed the four things I actually specialise in (NGO, B2B, hospitality, AI search), and cited the site itself as the source.</p>
+<p>Second search: my name, Widi Ginanjar. No domain, just the name. The AI Overview came back completely different. It only pulled from LinkedIn, described me as someone working in "digital operations and community management," and never mentioned the SEO work at all. It even added a line saying if I meant a different Widi Ginanjar, to share more details, because there's a Wikipedia page for someone with a similar name and Google wasn't sure which one I meant.</p>
+<p><strong>Same person. Two searches, minutes apart. Completely different answers.</strong></p>
+<figure>
+<svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="300" height="220" rx="10" fill="#FFFFFF" stroke="#E1DED4"/>
+  <text x="150" y="34" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" fill="#2F6F5E">search: widiginanjar.com</text>
+  <text x="150" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#1C1F1B">Correctly describes</text>
+  <text x="150" y="92" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#1C1F1B">the SEO consultancy</text>
+  <text x="150" y="130" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#565B54">source: widiginanjar.com</text>
+
+  <rect x="340" y="0" width="300" height="220" rx="10" fill="#FFFFFF" stroke="#E1DED4"/>
+  <text x="490" y="34" text-anchor="middle" font-family="ui-monospace, monospace" font-size="12" fill="#2F6F5E">search: widi ginanjar</text>
+  <text x="490" y="70" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#1C1F1B">Only describes the</text>
+  <text x="490" y="92" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#1C1F1B">LinkedIn job history</text>
+  <text x="490" y="130" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#565B54">source: linkedin.com</text>
+  <text x="490" y="160" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10.5" fill="#9A958A">+ a disclaimer about</text>
+  <text x="490" y="176" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10.5" fill="#9A958A">a different person</text>
+</svg>
+<figcaption>Same person, two queries, two very different answers.</figcaption>
+</figure>
+
+<p>I've written about this gap before, <a href="https://widiginanjar.com/notes/ranking-vs-ai-citation.html">ranking well on Google versus being understood by AI</a>, but this is a cleaner version of the same problem, because nothing else changed except which word I typed.</p>
+<h2>Why a domain search and a name search aren't the same question</h2>
+<p>A domain is unambiguous. There's one widiginanjar.com, so Google has one clear thing to describe, and it can pull straight from the site itself.</p>
+<p>A name is a different kind of query entirely. Plenty of people share a name, so Google has to guess which one you mean, and it leans on whatever source looks most established. In my case, that's a LinkedIn profile with years of history and 800-plus followers, against a three-week-old website with almost no other sites linking to it yet. LinkedIn wins that comparison easily, not because the information there is more accurate about what I actually do now, but because it's the source Google trusts more right now.</p>
+<p><strong>The AI Overview isn't wrong so much as it's outdated by default.</strong> It's summarising the version of me that has the most established signal, not the most current one.</p>
+<h2>Why this actually matters, not just as a curiosity</h2>
+<p>If someone hears my name from a referral and looks me up instead of clicking a link, this is what they'd get: a description of a past job, not the consultancy I actually run now. That's a real gap between what I do and what shows up when someone searches for me directly, and it's a gap I wouldn't have known was this specific without actually testing it.</p>
+<h2>What I'm trying, without knowing yet if it'll work</h2>
+<p>I added an <code>llms.txt</code> file to the site this week, a short, plain-language summary written specifically for AI systems to read, listing what the site actually covers. It's a new, informal convention, not something Google or OpenAI has officially confirmed they use. I don't know yet if it changes anything. But it's cheap to try, and given that half of what I write about here is telling other people to make their sites legible to AI, it felt strange not to test it on my own first.</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>If you're not sure what AI tools currently say about your organisation when someone searches your name,</strong> I offer a free 30-minute look at your site.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>, or see the <a href="https://widiginanjar.com/services/ai-search-era.html">full AI Search Era service page</a> for more anonymised examples.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>The Small Grey Text Under a Google Result That Most People Skip</title>
+    <link>https://widiginanjar.com/notes/google-missing-word-serp-snippet.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/google-missing-word-serp-snippet.html</guid>
+    <pubDate>Wed, 05 Aug 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>A page ranking #1 was still getting a below-average click rate. The reason was sitting in plain sight, in small grey text most people scroll straight past.</description>
+    <content:encoded><![CDATA[<p>I was checking rankings for a client's cafe last week when I noticed something under one of their listings, right below the snippet, in small grey text:</p>
+<figure>
+<svg viewBox="0 0 640 170" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="640" height="170" rx="10" fill="#FFFFFF" stroke="#E1DED4"/>
+  <text x="24" y="40" font-family="Georgia, serif" font-size="17" fill="#2F6F5E">A Cafe in Denpasar | Menu, Hours &amp; Location</text>
+  <text x="24" y="62" font-family="ui-monospace, monospace" font-size="11.5" fill="#565B54">www.example-cafe.com</text>
+  <text x="24" y="90" font-family="Georgia, serif" font-size="13.5" fill="#1C1F1B">Cozy neighbourhood cafe serving coffee, brunch, and pastries.</text>
+  <text x="24" y="110" font-family="Georgia, serif" font-size="13.5" fill="#1C1F1B">Open daily from 8am. Dine-in and takeaway available.</text>
+  <text x="24" y="138" font-family="ui-monospace, monospace" font-size="12.5" fill="#9A958A">Missing: city</text>
+  <text x="112" y="138" font-family="ui-monospace, monospace" font-size="12.5" fill="#9A958A"> | </text>
+  <text x="122" y="138" font-family="ui-monospace, monospace" font-size="12.5" fill="#2F6F5E" text-decoration="underline">Show results with: city</text>
+</svg>
+<figcaption>What most people scroll past without reading.</figcaption>
+</figure>
+
+<p>The page was already ranking #1 for the search "[cafe name] denpasar city." First position. But that little note was sitting there anyway, and <strong>the click-through rate on that query was 6.7 percent, well below every other query the site ranked for.</strong></p>
+<p>Turns out this is <a href="https://google.fandom.com/wiki/Google_Search/Missing_Words">a documented Google Search feature</a> that tells you, directly, in plain language, that the word "city" doesn't appear anywhere in the content it crawled for that page. Not the title, not the description, not the body copy. Google still matched the page to the search because the rest of it was relevant enough, but it's flagging the gap to the person searching too, which is probably why fewer of them bothered clicking through.</p>
+<p>I don't see this mentioned much. Most SEO advice is about title tags, meta descriptions, keyword density, the usual list. This is different: <strong>it's Google showing its work, on the actual results page, for free</strong>, and most people scroll right past it because the text is small and grey and easy to mistake for a footnote.</p>
+<h2>Why it happens</h2>
+<p>Usually it's a mismatch between how a business writes about itself and how people actually search for it. A cafe might write "Denpasar" everywhere in its copy but never "Denpasar City," even though that's the exact phrase someone typed. Same city, different phrasing, and Google notices the difference even if a human reader wouldn't. It's the same underlying pattern I keep finding in <a href="https://widiginanjar.com/notes/instagram-scores-100-cafe-scores-9.html">larger technical audits</a>: a small, invisible mismatch between the words a business uses and the words a searcher types.</p>
+<h2>What to do about it</h2>
+<p>Pull up your own listings in an incognito window and actually read the grey text under them, not just the blue link and the description. <strong>If you see a "Missing: [word]" note, that's a free instruction from Google:</strong> add that exact word somewhere natural on the page, an address line, a sentence in the description, wherever it fits without sounding forced. It's a small fix, but it's one of the few times Google tells you precisely what's missing instead of making you guess.</p>
+<p>Worth checking next time you're auditing anything, not just for new pages, for pages that are already ranking well but underperforming on clicks. <strong>Position #1 doesn't mean the work is done if the click-through rate says otherwise.</strong></p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>If you're not sure whether your own top-ranking pages are quietly leaking clicks like this,</strong> I offer a free 30-minute look at your site.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>, or see the <a href="https://widiginanjar.com/services/hospitality.html">full Hospitality service page</a> for more anonymised examples.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>I Didn't Know What 'Carbon Offset' Meant Until Last Year</title>
+    <link>https://widiginanjar.com/notes/sustainability-jargon-carbon-offset-sdgs.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/sustainability-jargon-carbon-offset-sdgs.html</guid>
+    <pubDate>Fri, 31 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>I worked in sustainability for years and still didn't understand carbon offset until last year. Most people don't either.</description>
+    <content:encoded><![CDATA[<p><strong>Quick test</strong>: can you explain what "carbon offset" actually means, in one sentence, without looking it up? I couldn't, not until last year, and by then I'd worked close to the sustainability sector for years, where the word came up constantly.</p>
+<p>Not because I wasn't paying attention. Nobody ever explained it. It was just used, over and over, as if everyone already knew.</p>
+<p>Turns out, most people don't. <strong>Only 11 percent of the public can correctly explain what carbon offsetting actually means</strong>, according to a <a href="https://sustainablebrands.com/read/report-sustainability-language-barrier-business-consumers">UK survey covered by Sustainable Brands</a>. The same survey found that <strong>only 59 percent could correctly identify what "net-zero" means</strong>, even though it's one of the most repeated phrases in climate communication today.</p>
+<figure>
+<svg viewBox="0 0 600 190" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="20" font-family="ui-monospace, monospace" font-size="11" fill="#565B54"> share of the public who correctly understand the term</text>
+  <text x="0" y="60" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">"Net-zero"</text>
+  <rect x="0" y="70" width="392" height="22" rx="4" fill="#E7F0EB"/>
+  <rect x="0" y="70" width="231" height="22" rx="4" fill="#2F6F5E"/>
+  <text x="239" y="86" font-family="ui-monospace, monospace" font-size="12" fill="#1C1F1B">59%</text>
+  <text x="0" y="130" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">"Carbon offset"</text>
+  <rect x="0" y="140" width="392" height="22" rx="4" fill="#E7F0EB"/>
+  <rect x="0" y="140" width="43" height="22" rx="4" fill="#2F6F5E"/>
+  <text x="51" y="156" font-family="ui-monospace, monospace" font-size="12" fill="#1C1F1B">11%</text>
+</svg>
+<figcaption>Two of the most repeated words in sustainability communication, from a UK survey of 1,000 adults conducted by Trajectory and Fleet Street, via <a href="https://sustainablebrands.com/read/report-sustainability-language-barrier-business-consumers">Sustainable Brands</a>.</figcaption>
+</figure>
+
+<h2>Carbon Offset and Net-Zero: Words Nobody Stopped to Explain</h2>
+<p>Carbon offset isn't a difficult concept. Neither is "SDGs" (the UN's 17 development goals) or "greenwashing" (a claim that sounds sustainable but isn't backed by real action). These aren't specialist terms like a legal clause or a medical diagnosis. They're words about things that affect ordinary decisions: what people buy, which policies they support, which causes they trust enough to give money to.</p>
+<p>The SDGs show the same gap in a slightly different shape. Globally, <a href="https://www.weforum.org/stories/2019/09/un-sustainable-development-goals/"><strong>74 percent of people have at least heard of the SDGs, but only 26 percent say they're actually familiar enough to explain them</strong></a>, according to a World Economic Forum survey of nearly 20,000 people across 28 countries. <strong>Hearing a term and understanding it are two different things, and most of the public only ever gets the first one.</strong></p>
+<figure>
+<svg viewBox="0 0 600 190" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="20" font-family="ui-monospace, monospace" font-size="11" fill="#565B54">global public awareness of the SDGs</text>
+  <text x="0" y="60" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">Heard of the SDGs</text>
+  <rect x="0" y="70" width="392" height="22" rx="4" fill="#E7F0EB"/>
+  <rect x="0" y="70" width="290" height="22" rx="4" fill="#2F6F5E"/>
+  <text x="298" y="86" font-family="ui-monospace, monospace" font-size="12" fill="#1C1F1B">74%</text>
+  <text x="0" y="130" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">Familiar enough to explain them</text>
+  <rect x="0" y="140" width="392" height="22" rx="4" fill="#E7F0EB"/>
+  <rect x="0" y="140" width="102" height="22" rx="4" fill="#2F6F5E"/>
+  <text x="110" y="156" font-family="ui-monospace, monospace" font-size="12" fill="#1C1F1B">26%</text>
+</svg>
+<figcaption>Hearing the term and understanding it are two different things, per an <a href="https://www.weforum.org/stories/2019/09/un-sustainable-development-goals/">Ipsos survey for the World Economic Forum</a>.</figcaption>
+</figure>
+
+<p>But the people who use these words the most, people working in sustainability, companies, funders, learn them from each other. From conferences, from reports written for each other, from funder templates. Nobody along that chain has much reason to stop and ask whether the words actually land once they reach the public.</p>
+<h2>Why this is the same problem, one level earlier</h2>
+<p><a href="https://widiginanjar.com/notes/insider-test-curse-of-knowledge-ngo.html">I've written before about how insider language shuts people out</a>, even people working in adjacent fields. This is the more basic version of that problem. <strong>It's not organisational jargon specific to one NGO. It's the core vocabulary of an entire sector, assumed as common knowledge when it very much isn't.</strong></p>
+<p>The cost isn't abstract. Someone who might genuinely care, a small donor, a person affected by a policy, someone deciding what to buy, runs into the words before they get to the point. <strong>If the words feel like they're not meant for them, most people conclude the topic isn't for them either.</strong> An issue that should belong to everyone ends up held by the small group who already speak its language.</p>
+<h2>Why this matters for how I write</h2>
+<p>This is why fixing text isn't just about technical SEO. Getting traffic from Google or AI is pointless if visitors land on your site and can't actually understand what you're saying. Canonical tags and meta tags matter, sure, but they don't help much if your copy assumes everyone is already an insider</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>If you're not sure whether your own site assumes too much prior knowledge,</strong> I offer a free 30-minute look at your site.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>, or see the <a href="https://widiginanjar.com/services/ngo.html">full NGO service page</a> for more anonymised examples.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>Getting an Issue Found Isn't Always About Search</title>
+    <link>https://widiginanjar.com/notes/fundraiser-map-peer-sharing-vs-search.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/fundraiser-map-peer-sharing-vs-search.html</guid>
+    <pubDate>Thu, 30 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>Search only finds people who already know what to look for. A nonprofit fundraiser built as a map shows another route in, through people's own networks.</description>
+    <content:encoded><![CDATA[<p><strong>The bottom line: search and peer sharing solve two different problems, not the same problem twice.</strong> Most of what's on this site is about search: fixing what stops a page from ranking, structuring content so an AI tool can find it. Search works when someone already knows enough to go looking. It does nothing for the person who doesn't know the thing exists yet, and has no reason to type anything into a search bar at all.</p>
+<p>I came across a clear example of that second, harder problem on Reddit. A small nonprofit built a fundraiser as a map instead of a normal donation page. Each US state had its own dollar goal, and the state lit up once it was funded. They also shared, publicly, which channels actually worked: <strong>cold email and generic social posts brought in almost nothing. Peer sharing, people posting the campaign and their own friends responding, brought in most of the money.</strong> I can't verify the exact figures from that post well enough to repeat them here, but the pattern lines up with what the wider data shows.</p>
+<figure>
+<svg viewBox="0 0 600 190" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="20" font-family="ui-monospace, monospace" font-size="11" fill="#565B54">share of donations raised, by page type</text>
+  <text x="0" y="60" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">Peer-to-peer pages</text>
+  <rect x="0" y="70" width="392" height="22" rx="4" fill="#E7F0EB"/>
+  <rect x="0" y="70" width="341" height="22" rx="4" fill="#2F6F5E"/>
+  <text x="349" y="86" font-family="ui-monospace, monospace" font-size="12" fill="#1C1F1B">87%</text>
+  <text x="0" y="130" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">General campaign page</text>
+  <rect x="0" y="140" width="392" height="22" rx="4" fill="#E7F0EB"/>
+  <rect x="0" y="140" width="51" height="22" rx="4" fill="#2F6F5E"/>
+  <text x="59" y="156" font-family="ui-monospace, monospace" font-size="12" fill="#1C1F1B">13%</text>
+</svg>
+<figcaption>Where peer-to-peer donations actually come from, per <a href="https://www.causevox.com/blog/peer-to-peer-fundraising/">CauseVox's fundraising data</a>.</figcaption>
+</figure>
+
+<h2>The ask that spread wasn't an ask for money</h2>
+<p>A normal donation page asks for money directly. The map gave people a reason to talk about the campaign with someone else first. "My state's only at 20 percent" is a sentence a person can say out loud to a friend. "Please donate to our year-end campaign" isn't.</p>
+<p>That's a small design difference, but it moved who was doing the asking. Instead of the nonprofit reaching out to donors directly, <strong>donors ended up reaching out to their own friends.</strong> The organisation built the structure. The supporters did the actual asking, in their own words, to people who already trusted them.</p>
+<h2>Same underlying problem as findability, solved through a different route</h2>
+<p><a href="https://widiginanjar.com/notes/nonprofit-seo-three-audiences.html">The rest of this site talks about findability through search</a>: an NGO writes in mission language, a donor or funder searches in plain language, and the two don't meet unless the site is built to bridge them. This is the same problem, one level upstream. Nobody was ever going to search for this specific campaign, because nobody knew it existed yet. The only way in was someone they already trusted, sharing it first.</p>
+<p><strong>This is also why donor and campaign engagement belongs next to SEO, not apart from it.</strong> Both answer the same question: how does something true and worth knowing actually reach the people it's for. Sometimes the fix is a canonical tag. Sometimes it's turning a fundraising ask into something a supporter actually wants to repeat.</p>
+<p>Neither replaces the other. A nonprofit with strong search visibility and no shareable story still misses the person who'd never think to search. A nonprofit with a shareable campaign and <a href="https://widiginanjar.com/notes/grantmakers-check-your-website-first.html">an invisible website</a> still loses the person who looks it up afterward to check it's real.</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>If your organisation relies entirely on one channel, search, email, or social,</strong> and you're not sure what a second one would even look like, I offer a free 30-minute look at your site.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>, or see the <a href="https://widiginanjar.com/services/ngo.html">full NGO service page</a> for more anonymised examples.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>Nonprofit SEO Isn't Business SEO, Because the Audiences Don't Want the Same Thing</title>
+    <link>https://widiginanjar.com/notes/nonprofit-seo-three-audiences.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/nonprofit-seo-three-audiences.html</guid>
+    <pubDate>Wed, 29 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>A business site can point every visitor at one outcome. A nonprofit site can't. Two real homepages show what happens when a site serves only one audience.</description>
+    <content:encoded><![CDATA[<p>Try this: pull up your organisation's homepage and ask who it's actually talking to. Not who it's supposed to serve. Who it's talking to, right now, in the words and layout you actually see.</p>
+<p>Most nonprofit homepages have a clear answer, and it's almost always the same one: the donor. That isn't unique to nonprofits. Plenty of B2B software sites have an end-user, a budget-holder, and an internal champion all reading the same page, and those are three genuinely different people too. <strong>The difference is what happens after.</strong> In most businesses, no matter how many different people read a page, they're all working toward the same outcome: a purchase, a signup, a demo request. A nonprofit site can have a similar mix of visitors, but <strong>they don't want the same outcome at all.</strong></p>
+<p><strong>A donor</strong> wants to know if the organisation is credible and where the money goes.
+<strong>A beneficiary</strong>, or their family, wants to know how to actually get the help.
+<strong>A funder or grantmaker</strong> wants proof of track record before committing anything.</p>
+<figure>
+<svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg">
+  <rect x="220" y="10" width="260" height="50" rx="8" fill="#2F6F5E"/>
+  <text x="350" y="40" text-anchor="middle" font-family="ui-monospace, monospace" font-size="14" fill="#FAFAF7">your homepage</text>
+
+  <line x1="350" y1="60" x2="110" y2="130" stroke="#E1DED4" stroke-width="2"/>
+  <line x1="350" y1="60" x2="350" y2="130" stroke="#E1DED4" stroke-width="2"/>
+  <line x1="350" y1="60" x2="590" y2="130" stroke="#E1DED4" stroke-width="2"/>
+
+  <rect x="20" y="130" width="180" height="110" rx="8" fill="#FFFFFF" stroke="#E1DED4"/>
+  <text x="110" y="158" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#2F6F5E">donor</text>
+  <text x="110" y="185" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">"Is this</text>
+  <text x="110" y="203" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">credible?"</text>
+
+  <rect x="260" y="130" width="180" height="110" rx="8" fill="#FFFFFF" stroke="#E1DED4"/>
+  <text x="350" y="158" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#2F6F5E">beneficiary</text>
+  <text x="350" y="185" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">"How do I</text>
+  <text x="350" y="203" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">get help?"</text>
+
+  <rect x="500" y="130" width="180" height="110" rx="8" fill="#FFFFFF" stroke="#E1DED4"/>
+  <text x="590" y="158" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" fill="#2F6F5E">funder</text>
+  <text x="590" y="185" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">"What's the</text>
+  <text x="590" y="203" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#1C1F1B">track record?"</text>
+</svg>
+<figcaption>One homepage, three unrelated questions arriving at the same time.</figcaption>
+</figure>
+
+<p>These aren't three versions of the same question. They're three different people who want three different outcomes, and each one will leave unsatisfied if the page doesn't address them specifically. <a href="https://www.nngroup.com/reports/attracting-donors-and-volunteers-non-profit/">Nielsen Norman Group's usability testing across 60 nonprofit sites</a> found homepages consistently under-serving one audience or another, since most were built with a single visitor in mind rather than the several who actually arrive. When a nonprofit's whole site is quietly built around one of them, usually the donor, <strong>the other two don't just get less attention. They often get none.</strong></p>
+<h2>What "built for one audience" looks like in practice</h2>
+<p>I looked at two real, unrelated nonprofit homepages with exactly this question in mind. Each one had the problem, just in opposite directions.</p>
+<p>One was an environmental NGO I used to work for. The homepage is, honestly, well done: worker profiles with real names and real stories, an impact-numbers section, partner testimonials from cities they've worked with. Everything about it builds trust in how the money is used. But the organisation's actual work is partnering with cities and companies, and if you're a city official or a business lead wondering how that partnership starts, <strong>there's nothing on the homepage that addresses you at all.</strong> The trust-building is strong. The answer to "how do I actually begin" doesn't exist.</p>
+<p>The second was a small NGO running a safe house and education program in Jakarta. Same problem, opposite direction. The homepage has a whole section built around donating and volunteering, with a large, clearly visible donate button. But the pages describing the actual programs, the safe house, the school, only describe what the organisation does. <strong>They don't say how to contact anyone or ask for help.</strong> Nothing tells a family who needs that safe house tonight how to actually reach someone. And the one page that would matter most to <a href="https://widiginanjar.com/notes/grantmakers-check-your-website-first.html">a grantmaker doing due diligence</a>, anything with real outcomes or a track record, sits two clicks away under a menu called "Publication," and isn't visible from the homepage at all.</p>
+<p>Neither site is badly built. Both are simply built for one visitor: whichever one the team had in mind when they wrote the homepage.</p>
+<h2>Why this matters more than it looks like</h2>
+<p>This isn't really a technical SEO problem, in the sense of broken tags or crawl errors. It's a content architecture problem, and it changes which pages and keywords are even worth building. A business can usually optimize a page toward one converting action, no matter how many personas read it. A nonprofit page often can't, because "how do I get a grant," "how do I donate," and "how do I get help" aren't different paths to the same outcome. They're different outcomes. A site built to answer only one of them will struggle to rank, or convert, for the other two, no matter how technically clean the pages are.</p>
+<p><strong>The fix isn't building three separate sites.</strong> Most nonprofits, especially small ones running on a volunteer-managed site, don't have the resources for that. It's simpler than it sounds: figure out which of the three audiences your current site is quietly ignoring, and give that one audience a single clear page, or even just a clear paragraph, that actually answers their question.</p>
+<p>Here's the fast way to check. Open your homepage and time yourself: 10 seconds to find "how do I donate," 10 seconds to find "how do people get help," 10 seconds to find real proof of results. <strong>If one of those takes longer than the other two, or doesn't exist at all, that's your answer.</strong> Most people who run the site have never timed it, because they already know where everything is. That's exactly why it's easy to miss.</p>
+<p>The gap is usually easier to spot from the outside than from the inside, which is part of why it goes unnoticed for so long.</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>If you're not sure which of these three audiences your own site is missing</strong>, I offer a free 30-minute look at your site.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>, or see the <a href="https://widiginanjar.com/services/ngo.html">full NGO service page</a> for more anonymised examples.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>The Insider Test: If People in Your Own Sector Can't Explain Your Work, Nobody Else Can</title>
+    <link>https://widiginanjar.com/notes/insider-test-curse-of-knowledge-ngo.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/insider-test-curse-of-knowledge-ngo.html</guid>
+    <pubDate>Tue, 28 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>Even people at other NGOs couldn't say what the NGO I worked for actually did. That's the curse of knowledge, and it explains most nonprofit jargon.</description>
+    <content:encoded><![CDATA[<p><strong>The bottom line:</strong> a friend who worked at a different NGO once asked me what a third organisation did, one in a similar field that neither of us worked at. I didn't know. That would have been forgettable, except it raised a different question right away: if I couldn't answer that about an organisation near my own field, could anyone answer it about mine?</p>
+<h2>The test</h2>
+<p>So I started asking around, friends, acquaintances, people at other NGOs, anyone who could plausibly have crossed paths with the organisation I worked for. "Do you know what we actually do?" <strong>Most gave a version of "something about the environment," or a guess built from the name alone, not the work.</strong> A few worked at NGOs in adjacent fields, close enough that they arguably should have known, and still couldn't describe it.</p>
+<p>That stood out. These weren't strangers with no reason to have run into this kind of work. They were already inside the field, in roughly the position I'd been in minutes earlier, and the explanation still hadn't reached them.</p>
+<h2>It's called the curse of knowledge</h2>
+<p>This isn't just something NGOs do. It's a documented cognitive bias: once you know something well, it's hard to remember what it felt like not to know it, so you assume other people know more than they actually do.</p>
+<figure>
+  <svg viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="20" font-family="IBM Plex Mono, monospace" font-size="11" fill="#565B54">what gets lost between knowing something and explaining it</text>
+
+    <rect x="0" y="45" width="190" height="130" rx="10" fill="#2F6F5E"/>
+    <text x="95" y="100" font-family="Georgia, serif" font-size="13" font-weight="600" fill="#FAFAF7" text-anchor="middle">What the team</text>
+    <text x="95" y="118" font-family="Georgia, serif" font-size="13" font-weight="600" fill="#FAFAF7" text-anchor="middle">actually knows</text>
+    <text x="95" y="145" font-family="Inter, sans-serif" font-size="10.5" fill="#9FC8B8" text-anchor="middle">full context, built</text>
+    <text x="95" y="160" font-family="Inter, sans-serif" font-size="10.5" fill="#9FC8B8" text-anchor="middle">over months of work</text>
+
+    <text x="220" y="115" font-family="IBM Plex Mono, monospace" font-size="18" fill="#565B54">→</text>
+
+    <rect x="245" y="45" width="190" height="130" rx="10" fill="#E7F0EB" stroke="#2F6F5E" stroke-width="1"/>
+    <text x="340" y="100" font-family="Georgia, serif" font-size="13" font-weight="600" fill="#1C1F1B" text-anchor="middle">What gets said</text>
+    <text x="340" y="118" font-family="Georgia, serif" font-size="13" font-weight="600" fill="#1C1F1B" text-anchor="middle">out loud</text>
+    <text x="340" y="145" font-family="Inter, sans-serif" font-size="10.5" fill="#565B54" text-anchor="middle">compressed into terms</text>
+    <text x="340" y="160" font-family="Inter, sans-serif" font-size="10.5" fill="#565B54" text-anchor="middle">that assume shared context</text>
+
+    <text x="465" y="115" font-family="IBM Plex Mono, monospace" font-size="18" fill="#565B54">→</text>
+
+    <rect x="490" y="45" width="190" height="130" rx="10" fill="#FAFAF7" stroke="#E1DED4" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <text x="585" y="100" font-family="Georgia, serif" font-size="13" font-weight="600" fill="#1C1F1B" text-anchor="middle">What an outsider</text>
+    <text x="585" y="118" font-family="Georgia, serif" font-size="13" font-weight="600" fill="#1C1F1B" text-anchor="middle">actually hears</text>
+    <text x="585" y="145" font-family="Inter, sans-serif" font-size="10.5" fill="#565B54" text-anchor="middle">a guess, built from</text>
+    <text x="585" y="160" font-family="Inter, sans-serif" font-size="10.5" fill="#565B54" text-anchor="middle">the name alone</text>
+
+    <text x="0" y="205" font-family="Inter, sans-serif" font-size="11" fill="#565B54">Each arrow is a point where context quietly gets dropped, not deliberately, just unnoticed.</text>
+  </svg>
+  <figcaption>The gap doesn't open all at once. It opens at each handoff, and nobody in the first box can see it happening.</figcaption>
+</figure>
+
+<p><a href="https://en.wikipedia.org/wiki/Curse_of_knowledge">Named in 1989</a>, the bias was demonstrated clearly a year later in a Stanford study: one group tapped out well-known songs on a table, another group guessed the song from the tapping alone. Tappers expected listeners to guess right about half the time. <strong>Listeners actually got it right about 2.5% of the time.</strong> The tappers heard the full melody in their heads. The listeners only heard knocking.</p>
+<p>An NGO describing its own work runs the same experiment for years at a time. The team hears the full melody. Everyone else just hears the tapping.</p>
+<h2>Why this matters more for ordinary people, not less</h2>
+<p>The people who really need to find and understand this work aren't other NGOs. They're ordinary people: potential donors, volunteers, neighbours, anyone who might genuinely care once they understood. <strong>If someone in an adjacent field, with far more context than an ordinary person will ever have, still can't explain it, an ordinary person has almost no chance.</strong> The insider test isn't the real audience. It's proof of how wide the gap is before it even reaches the people who matter most.</p>
+<p>That's a different audience than the one this data measures, but the underlying pattern rhymes: <a href="https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-organization-blog/six-power-practices-to-retain-nonprofit-talent">McKinsey.org's Organizational Health Index, run across more than 70 nonprofits in over 40 countries</a>, found that a mission staff actually understand, not just words in a strategy document, was one of the strongest signs of a healthy organisation. <strong>Staff at the least healthy organisations were two to three times more likely to be at risk of leaving within a year.</strong> That's internal retention, not outside awareness, but it points to the same root cause: a mission that isn't genuinely understood doesn't hold up, whether the person trying to hold onto it is inside the building or outside it.</p>
+<h2>This is the same gap, from the inside</h2>
+<p>I've written before about how <a href="https://widiginanjar.com/services/ngo.html">NGO visibility is less about funders and more about an issue staying stuck inside a small circle of people who already know the right words for it</a>. The curse of knowledge is the mechanism behind that gap. Organisations don't choose to leave people out. <strong>The people writing the description have simply forgotten what it's like not to already know it,</strong> so the words still assume the reader has context they don't have.</p>
+<p>That gap has a real cost. <strong>An NGO whose own peers can't explain its work is invisible to donors, volunteers, and neighbours too, not just partners or funders.</strong> Word of mouth, the cheapest and most trusted visibility a mission-driven organisation has, depends on someone being able to repeat what you do. It also means <a href="https://widiginanjar.com/notes/seo-checklist-ngo-no-marketing-team.html">the language gap that costs visibility online</a> usually isn't a website problem first. The website is just one more place the tapping gets heard as knocking.</p>
+<h2>The test worth running</h2>
+<p>Ask the people closest to your sector, not the general public, <strong>to explain what your organisation does in one sentence, without using any word from your own materials.</strong> If they can't, the problem isn't reach. It's translation, and it starts long before anyone gets to a search engine.</p>
+<p>Fixing it is closer to <a href="https://widiginanjar.com/services/">content strategy work than a technical fix</a>, rewriting the same real work in language that reaches past the room it started in.</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>Curious whether your own organisation would pass that test?</strong> I offer a free 30-minute look.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>I Checked 15 Organizations' Traffic. Only One Had Meaningful Paid Search.</title>
+    <link>https://widiginanjar.com/notes/15-organizations-paid-traffic-pattern.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/15-organizations-paid-traffic-pattern.html</guid>
+    <pubDate>Sat, 25 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>A curiosity-driven check across NGOs and companies of every size found the same pattern almost everywhere, and one outlier that didn't fit any theory I had.</description>
+    <content:encoded><![CDATA[<p>I got curious one evening and started checking traffic breakdowns for a handful of organizations, starting with the one I used to work for. Then I kept going. Fifteen organizations later, ranging from a 400-visit local foundation to Airbnb at 80 million, one pattern held almost everywhere: <strong>direct and organic search dominate, paid search barely registers.</strong></p>
+<p><strong>The bottom line:</strong> fourteen out of fifteen organizations get found the same way, through search or through people who already know the name. One organization, Delterra, breaks that pattern, and the reason isn't age, size, or sector. It's a single, specific choice.</p>
+<p><strong>A note on the sample before the data.</strong> Most of what follows is nonprofits, since that's where the question started. But a pattern that only shows up in nonprofits could mean the pattern is about nonprofits specifically, or it could mean nonprofits just happen to share some other trait, budget constraints, for instance, that produces the same result for an unrelated reason. To tell those two explanations apart, I deliberately added two organizations that are not nonprofits at all: HubSpot, a company with a large, well-documented marketing budget, and Airbnb, one of the highest-traffic consumer sites in the world. If the pattern held for them too, that would be evidence the pattern isn't really about nonprofit status. It did.</p>
+<p><strong>One more limit worth stating plainly:</strong> every number here is a single snapshot, checked on one day in July 2026, not a trend measured over months. Delterra's 30.3% paid traffic could be an active, short-term campaign rather than a permanent feature of how it operates. If I checked again in three months, some of these numbers would likely move. The pattern across fourteen organizations is wide enough that I'd expect it to hold. The Delterra number specifically, being the one exception, is the one I'd trust least as a stable, ongoing fact rather than a moment I happened to catch.</p>
+<p><strong>One more thing worth naming:</strong> these numbers are estimates from a third-party tool (Ahrefs), not confirmed data pulled directly from each organisation's own analytics. For high-traffic sites like Airbnb or UNICEF, that estimate is usually close. For smaller ones, like YCAB at 403 visits, the margin of error is proportionally much bigger. Treat the table below as directionally accurate, not exact.</p>
+<h2>The full breakdown</h2>
+<table>
+<thead>
+<tr>
+<th>Organisation</th>
+<th>Monthly visits</th>
+<th>Direct traffic</th>
+<th>Paid traffic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Airbnb</td>
+<td>80.6M</td>
+<td>70.16%</td>
+<td>3.99%</td>
+</tr>
+<tr>
+<td>HubSpot</td>
+<td>49.7M</td>
+<td>83.86%</td>
+<td>0.58%</td>
+</tr>
+<tr>
+<td>Red Cross</td>
+<td>4.94M</td>
+<td>45.76%</td>
+<td>1.19%</td>
+</tr>
+<tr>
+<td>UNICEF</td>
+<td>4.14M</td>
+<td>60.14%</td>
+<td>0.46%</td>
+</tr>
+<tr>
+<td>WWF</td>
+<td>744K</td>
+<td>36.01%</td>
+<td>1.9%</td>
+</tr>
+<tr>
+<td>MSF (Doctors Without Borders)</td>
+<td>573K</td>
+<td>50.18%</td>
+<td>1.22%</td>
+</tr>
+<tr>
+<td>charity: water</td>
+<td>316K</td>
+<td>69.32%</td>
+<td>0.55%</td>
+</tr>
+<tr>
+<td>Oxfam</td>
+<td>170K</td>
+<td>41.51%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>World Vision</td>
+<td>155K</td>
+<td>54.49%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Mercy Corps</td>
+<td>113K</td>
+<td>58.46%</td>
+<td>0.28%</td>
+</tr>
+<tr>
+<td>WCS Indonesia</td>
+<td>5.10K</td>
+<td>75.24%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Kopernik</td>
+<td>2.54K</td>
+<td>73%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Wahana Visi</td>
+<td>2.97K</td>
+<td>52.96%</td>
+<td>1.11%</td>
+</tr>
+<tr>
+<td>Delterra</td>
+<td>1.22K</td>
+<td><strong>5.09%</strong></td>
+<td><strong>30.3%</strong></td>
+</tr>
+<tr>
+<td>YCAB Foundation</td>
+<td>403</td>
+<td>33.75%</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table>
+<h2>The one exception</h2>
+<p><strong>Fourteen organisations sit under 2% paid traffic</strong>, most well under 1%. Even HubSpot, a company known for aggressive marketing spend, shows just 0.58% paid on 49.7 million visits.</p>
+<p>Then there's Delterra, at <strong>30.3%</strong>. Every other organisation on this list is a rounding error by comparison.</p>
+<h2>My first theory didn't hold up</h2>
+<p>My first guess was age. Delterra spun out as an independent nonprofit in 2021, decades younger than Red Cross or WWF, so maybe younger organisations lean on paid search while older ones coast on accumulated backlinks and brand recognition.</p>
+<p>Then I checked charity: water, founded in 2006, roughly a quarter the age of Red Cross. <strong>Its paid traffic was 0.55%</strong>, in line with the century-old organisations, not the newer one. Age alone doesn't explain it.</p>
+<h2>What actually might be going on</h2>
+<p>Here's what makes the near-universal low paid traffic more surprising, not less. <a href="https://www.google.com/grants/">Google gives eligible nonprofits up to $10,000 a month in free search advertising through its Ad Grants program</a>, <strong>no cash spend required</strong>, just eligibility and compliance. Money isn't the barrier it would be for a for-profit company deciding whether to buy ads.</p>
+<p>And yet even organisations that could plausibly be using that free grant still show almost no paid traffic in the data. I don't know why. Maybe some aren't enrolled. Maybe the traffic from Ad Grants gets classified differently by the tool I was using. Maybe running Ad Grants well takes more ongoing management than most nonprofit teams have time for, since <a href="https://www.google.com/grants/">Google requires accounts to maintain a 5% click-through rate</a> to stay compliant.</p>
+<p><strong>Delterra looks less like a pattern and more like a single organisation's specific decision</strong>, one campaign or one push that the other fourteen didn't happen to be running the week I checked.</p>
+<h2>A second number that points the same way</h2>
+<p>Paid traffic wasn't the only place Delterra stood out. Its direct traffic, people who type the site's address straight into their browser instead of searching for it, was <strong>5.09%</strong>. Every other organisation on the list was higher, most well above 50%.</p>
+<p>Low direct traffic usually means one simple thing: <strong>people don't know the name yet.</strong> They're not typing "delterra.org" the way someone might type "unicef.org". They find the site through a search or through an ad instead.</p>
+<p>Put the two numbers together and the story gets clearer. Low direct traffic plus high paid traffic looks like an organisation still building the kind of name recognition that Red Cross or UNICEF built up over decades. That's not a problem. It's just an earlier stage.</p>
+<h2>The honest conclusion</h2>
+<p>I didn't find a clean rule here. What I found is that <strong>almost every organisation I checked, regardless of age, size, or sector, gets found the same way</strong>: people either already know the name, or they find it through unpaid search. Given that <a href="https://widiginanjar.com/notes/seo-checklist-ngo-no-marketing-team.html">most nonprofits still don't have anyone dedicated to thinking about their own SEO</a>, that's either reassuring or slightly alarming, depending on how much of that organic visibility they can actually explain.</p>
+<p><strong>Related reading:</strong>
+- <a href="https://widiginanjar.com/notes/seo-checklist-ngo-no-marketing-team.html">The SEO Checklist for NGOs With No Marketing Team</a>
+- <a href="https://widiginanjar.com/notes/grantmakers-check-your-website-first.html">Grantmakers Check Your NGO Website Before Your Impact Report</a></p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>If this kind of pattern-checking is useful, I do more of it than just write about it.</strong></p>
+  <p class="cta-detail">If you'd rather have someone check what your own organisation's traffic actually says, <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>, no pressure either way.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>You Can DIY Half of This. Here's the Half You Can't.</title>
+    <link>https://widiginanjar.com/notes/diy-half-of-seo.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/diy-half-of-seo.html</guid>
+    <pubDate>Wed, 22 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>AI can spot a missing meta description in seconds. It can't tell you which broken thing is actually urgent versus which one just looks urgent.</description>
+    <content:encoded><![CDATA[<p>Most SEO fixes are a Google search away now, or these days, a few prompts to ChatGPT away. Paste in your homepage's HTML and ask what's wrong, and you'll get a decent list back:</p>
+<ul>
+<li>Remove a leftover <code>noindex</code> tag from when the site was still in development</li>
+<li>Write an actual meta description instead of leaving it blank</li>
+<li>Add alt text to images so they're readable, not just visible</li>
+<li>Fix a title tag that still says "Home" or the name of whatever platform built the site</li>
+<li>Point a canonical tag at the right page instead of a duplicate</li>
+<li>Add a missing sitemap.xml or fix a robots.txt blocking the wrong folder</li>
+</ul>
+<p>Most of it is documented and simple enough to copy. AI tools can spot these problems in seconds too now. <strong>If that's all this was, I wouldn't charge for it. I don't.</strong></p>
+<p>What a checklist, or an AI reading your HTML, cannot do is tell you <strong>which problem is actually urgent and which one only looks urgent.</strong></p>
+<figure>
+  <svg viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="20" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5C615A">what gets caught, and by what</text>
+    <rect x="0" y="35" width="325" height="210" rx="10" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="1"/>
+    <text x="20" y="62" font-family="Georgia, serif" font-size="14" font-weight="600" fill="#2C2C2A">A checklist, or an AI prompt</text>
+    <text x="20" y="90" font-family="Inter, sans-serif" font-size="12" fill="#5F5E5A">Missing meta description</text>
+    <text x="20" y="112" font-family="Inter, sans-serif" font-size="12" fill="#5F5E5A">Leftover noindex tag</text>
+    <text x="20" y="134" font-family="Inter, sans-serif" font-size="12" fill="#5F5E5A">Broken canonical tag</text>
+    <text x="20" y="156" font-family="Inter, sans-serif" font-size="12" fill="#5F5E5A">Missing alt text</text>
+    <text x="20" y="178" font-family="Inter, sans-serif" font-size="12" fill="#5F5E5A">Keyword list, ranked by volume</text>
+    <text x="20" y="210" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#5C615A">Fast, cheap, and genuinely useful,</text>
+    <text x="20" y="226" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#5C615A">as far as it goes</text>
+    <rect x="355" y="35" width="325" height="210" rx="10" fill="#E7F0EB" stroke="#5DCAA5" stroke-width="1"/>
+    <text x="375" y="62" font-family="Georgia, serif" font-size="14" font-weight="600" fill="#04342C">Judgment</text>
+    <text x="375" y="90" font-family="Inter, sans-serif" font-size="12" fill="#085041">Which fix is actually urgent</text>
+    <text x="375" y="112" font-family="Inter, sans-serif" font-size="12" fill="#085041">A staging link that's really a security gap</text>
+    <text x="375" y="134" font-family="Inter, sans-serif" font-size="12" fill="#085041">Zero traffic is a symptom worth chasing</text>
+    <text x="375" y="156" font-family="Inter, sans-serif" font-size="12" fill="#085041">Which keyword actually fits the business</text>
+    <text x="375" y="178" font-family="Inter, sans-serif" font-size="12" fill="#085041">Whether a fix actually worked</text>
+    <text x="375" y="210" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#085041">Slower, and the part someone</text>
+    <text x="375" y="226" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#085041">has to actually be paid to notice</text>
+  </svg>
+  <figcaption>Same site, same list of fixes. Only one column tells you what actually matters.</figcaption>
+</figure>
+
+<p>A recent audit I ran turned up a "leftover staging link" that an internal team had already flagged and planned to fix with a simple find-and-replace. It wasn't a broken image link. <strong>It was an exposed staging folder with a server error log sitting in public view. A security problem, disguised as an SEO problem.</strong></p>
+<p>That's not a rare mistake. <a href="https://www.conductor.com/academy/protect-staging-environment/">Staging environments left on a public subdomain risk getting crawled and indexed the same way a live site does</a>, which means the "hidden" test folder nobody bothers to lock is often just one Google search away from anyone who knows where to look. The line between a small SEO issue and an exposed internal system is thinner than a checklist shows, or thinner than an AI tool can tell you, since it only matches patterns and doesn't really understand what it's looking at.</p>
+<p>This is why <a href="https://widiginanjar.com/notes/grantmakers-check-your-website-first.html">a small canonical tag mistake can quietly cost an organisation real search visibility</a>, while looking like nothing on paper. Small technical detail, easy to miss, big consequence.</p>
+<h2>There's a layer underneath that one, too</h2>
+<p>A checklist can only exist once someone already knows what to check for. Before any of the bullet points above get written down, someone has to notice that a site pulling zero traffic despite a decent backlink profile is a symptom worth chasing, not just a slow month. <strong>That's diagnosis, not remediation, and it never shows up on the list itself.</strong> By the time something is on the checklist, the hard part is already done. It's the same with <a href="https://widiginanjar.com/notes/my-own-title-tag-said-notion.html">checking what a crawler actually sees on your own site</a>: you only think to check once you stop trusting what looks fine in a browser.</p>
+<p>The same split shows up somewhere less dramatic: keyword research. A tool, or a prompt, can hand you a list of search terms ranked by volume in a few seconds. What it won't tell you is which of those terms actually fits where the business is trying to go, whether to chase the broad high-volume search or the narrower one nobody else has claimed yet, whether it's worth writing for an international audience or staying local. <strong>A better prompt doesn't fix this, because it was never really a factual question. It's a business decision, not a technical one.</strong></p>
+<p>That's the difference between reading a list of fixes and knowing which one changes the story. That judgment, plus the discipline to actually verify a fix worked instead of assuming it did, is what I get paid for.</p>
+<p><strong>The checklist is free. Knowing which line on it matters isn't.</strong></p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>Curious what's actually urgent on your own site, versus what just looks urgent?</strong> I offer a free 30-minute look.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>What Reviewing AI Responses Taught Me About Writing for Search</title>
+    <link>https://widiginanjar.com/notes/reviewing-ai-responses-writing-for-search.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/reviewing-ai-responses-writing-for-search.html</guid>
+    <pubDate>Tue, 21 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>A pattern from reviewing AI model responses for accuracy, and what it means for writing content AI systems can quote correctly.</description>
+    <content:encoded><![CDATA[<p>Alongside SEO work for two SaaS products, I spent a few months as a linguistic reviewer, evaluating AI model responses for factual accuracy. The job was narrower than it sounds: read a response, check it against what the source material actually said, flag where it drifted. Nothing about SEO in the job description at all.</p>
+<p>But doing that work for long enough teaches you something that turns out to matter a lot for writing content you want AI systems to cite correctly.</p>
+<h2>The pattern that kept showing up</h2>
+<p>The responses that held up best under review, the ones that stayed accurate when I checked them against sources, almost always pulled from source material that made one claim per sentence, clearly, with the subject stated up front. The responses that drifted or got facts slightly wrong tended to trace back to source text that buried the actual point in the middle of a long, qualifier-heavy sentence, the kind where the real claim depends on three clauses before it.</p>
+<p>This isn't a coincidence, and it isn't unique to whatever system I was reviewing. <a href="https://prsay.prsa.org/2026/05/11/how-to-increase-ai-citations-with-clear-writing/">Writing guidance aimed specifically at AI citation calls this "atomic" writing</a>: one idea, fully expressed, able to stand alone without needing the sentence before or after it to make sense. AI systems tend to extract from the start of a page, section, or paragraph first, and they'll skip a passage that depends on surrounding context to land correctly.</p>
+<figure>
+  <svg viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="20" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5C615A">same fact, ordered two different ways</text>
+    <rect x="0" y="35" width="640" height="65" rx="6" fill="#FAEEDA" stroke="#E1DED4" stroke-width="1.5"/>
+    <text x="16" y="58" font-family="Inter, sans-serif" font-size="12" fill="#1C1F1B">"While there are exceptions for syndicated content,</text>
+    <text x="16" y="76" font-family="Inter, sans-serif" font-size="12" fill="#1C1F1B">canonical tags generally redirect authority to the original page."</text>
+    <text x="16" y="93" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#5C615A">cut after the first clause &rarr; leaves an unresolved "while," no claim</text>
+    <rect x="0" y="115" width="640" height="65" rx="6" fill="#E7F0EB" stroke="#E1DED4" stroke-width="1.5"/>
+    <text x="16" y="138" font-family="Inter, sans-serif" font-size="12" fill="#1C1F1B">"Canonical tags redirect authority to the original page,</text>
+    <text x="16" y="156" font-family="Inter, sans-serif" font-size="12" fill="#1C1F1B">though exceptions apply for syndicated content."</text>
+    <text x="16" y="173" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#2F6F5E">cut after the first clause &rarr; the claim already stands on its own</text>
+  </svg>
+  <figcaption>Same information, but only one version survives being lifted out mid-sentence</figcaption>
+</figure>
+
+<h2>What this means for writing, not just reviewing</h2>
+<p>Most SEO advice about writing for AI search focuses on structure: headers, schema, meta descriptions. All real, all worth doing, and part of <a href="https://widiginanjar.com/notes/ranking-vs-ai-citation.html">why ranking well on Google and being cited by AI turned out to be two different problems</a> in the first place. But there's a sentence-level habit underneath all of it: write the claim, then the qualifier, not the other way around. "Canonical tags redirect search authority to the original page, though exceptions apply for syndicated content" survives being lifted out of context. The reversed version, leading with the exception, usually doesn't.</p>
+<h2>A quick way to check your own writing</h2>
+<p>Take any sentence or short passage you consider important, on your homepage, in a product description, wherever. I don't know the exact size AI systems chunk text into when they process a page, that varies by system and isn't public information. But the practical test still works: read your passage as if someone handed you just that piece, with nothing before or after it.</p>
+<p>If the main claim still lands without needing what came before it, it's more likely to survive being extracted correctly. If the claim only makes sense after a qualifier ("While there are exceptions... X is generally true"), lead with the claim instead, and put the qualifier after.</p>
+<p>It's a small habit, one sentence at a time, not a full rewrite of a site. But it's the difference between a sentence AI can quote correctly and one it quotes half of.</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>Want a second opinion on whether your content is written the way AI systems actually read it?</strong> I offer a free 30-minute look.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>Your Impact Report is a PDF. Search Engines Barely See It.</title>
+    <link>https://widiginanjar.com/notes/pdf-invisible-to-search.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/pdf-invisible-to-search.html</guid>
+    <pubDate>Sun, 19 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>A well-designed PDF impact report can still be nearly invisible to search engines and AI. Here's why, and what a simple structure change fixes.</description>
+    <content:encoded><![CDATA[<p>I've downloaded and read through a handful of NGO impact reports recently, out of curiosity more than anything. Most of them followed the same pattern: a well-designed, 40 to 60-page PDF, genuinely strong work described inside it. But to a search engine or an AI system trying to find and cite that work, the document is close to invisible.</p>
+<h2>PDFs are technically indexable. In practice, they rarely compete</h2>
+<p>Google can index PDFs, that part isn't in dispute. But <a href="https://embryo.com/seo/technical-seo/pdf-seo/">search engines tend to treat HTML pages as the priority format</a>, and PDFs are structurally at a disadvantage: no crawlable heading hierarchy the way HTML has, no metadata search engines can read the way they read a title tag, and far weaker internal linking, since links inside a PDF get a fraction of the clicks a normal page link does.</p>
+<figure>
+  <svg viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#565B54" stroke-width="1.5"/></marker>
+    </defs>
+    <text x="40" y="28" font-family="IBM Plex Mono, monospace" font-size="12" fill="#565B54">what a crawler actually extracts</text>
+    <rect x="40" y="45" width="280" height="255" rx="12" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="1"/>
+    <text x="60" y="75" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#2C2C2A">60-page PDF report</text>
+    <line x1="60" y1="88" x2="300" y2="88" stroke="#B4B2A9" stroke-width="1"/>
+    <text x="60" y="112" font-family="Inter, sans-serif" font-size="12" fill="#5F5E5A">No crawlable heading hierarchy</text>
+    <text x="60" y="136" font-family="Inter, sans-serif" font-size="12" fill="#5F5E5A">No readable meta description</text>
+    <text x="60" y="160" font-family="Inter, sans-serif" font-size="12" fill="#5F5E5A">Internal links rarely followed</text>
+    <text x="60" y="184" font-family="Inter, sans-serif" font-size="12" fill="#5F5E5A">Text often locked in page images</text>
+    <text x="60" y="220" font-family="Inter, sans-serif" font-size="12" fill="#5F5E5A">Result: findings buried,</text>
+    <text x="60" y="238" font-family="Inter, sans-serif" font-size="12" fill="#5F5E5A">hard to surface or cite</text>
+    <rect x="360" y="45" width="280" height="255" rx="12" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="1"/>
+    <text x="380" y="75" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#04342C">Short HTML article</text>
+    <line x1="380" y1="88" x2="620" y2="88" stroke="#5DCAA5" stroke-width="1"/>
+    <text x="380" y="112" font-family="Inter, sans-serif" font-size="12" fill="#085041">Clear H1/H2 structure</text>
+    <text x="380" y="136" font-family="Inter, sans-serif" font-size="12" fill="#085041">Real, specific meta description</text>
+    <text x="380" y="160" font-family="Inter, sans-serif" font-size="12" fill="#085041">Internal links carry weight</text>
+    <text x="380" y="184" font-family="Inter, sans-serif" font-size="12" fill="#085041">Findings sit in plain, indexable text</text>
+    <text x="380" y="220" font-family="Inter, sans-serif" font-size="12" fill="#085041">Result: specific, citable</text>
+    <text x="380" y="238" font-family="Inter, sans-serif" font-size="12" fill="#085041">findings</text>
+    <line x1="322" y1="172" x2="356" y2="172" stroke="#565B54" stroke-width="1.5" marker-end="url(#arrow)"/>
+  </svg>
+  <figcaption>Same underlying work, two very different outcomes for anything that isn't a human reading the file directly</figcaption>
+</figure>
+
+<p>The practical effect: an organisation's single best piece of evidence, the actual outcomes from actual programmes, ends up living in the format search engines are least equipped to parse and least likely to surface.</p>
+<h2>The real cost is friction, not just visibility</h2>
+<p>There's a second problem underneath the indexing one. Every time you make someone download a file before they can see what you accomplished, you're adding a step between curiosity and understanding. That gap has a name in UX research: interaction cost, <a href="https://www.nngroup.com/articles/interaction-cost-definition/">the cumulative mental and physical effort someone spends before reaching value</a>. A grantmaker skimming ten organisations in an afternoon is not going to open ten PDFs. They're going to read what's visible on the page in front of them, and move on.</p>
+<h2>What I'd actually try</h2>
+<p>Not abandoning the PDF entirely, some funders still expect one, and it has real value as an archival, printable document. The fix is narrower: pull your strongest 3 to 4 findings out of the PDF and publish them as their own short HTML pages or articles. Give each one a clear heading, a specific number, and a real sentence describing what changed. Keep the full PDF linked from there for anyone who wants the complete picture.</p>
+<p>I don't know how much traffic this recovers for any specific organisation, that depends on too many variables to promise a number. What I do know is that right now, the best evidence most mission-driven orgs have is sitting in the one format that's hardest for anything automated to find.</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>Want to know if your reporting is actually visible, or just well-designed?</strong> I offer a free 30-minute look.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>The SEO Checklist for NGOs With No Marketing Team</title>
+    <link>https://widiginanjar.com/notes/seo-checklist-ngo-no-marketing-team.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/seo-checklist-ngo-no-marketing-team.html</guid>
+    <pubDate>Sat, 18 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>A practical checklist for the person wearing five hats at a small NGO, written for someone with no SEO background and limited time.</description>
+    <content:encoded><![CDATA[<p>Most NGOs don't have anyone whose actual job is marketing. <a href="https://umatechnology.org/110-nonprofit-marketing-statistics-and-insights-you-should-know/">Only 22% of nonprofits have a dedicated marketing staff member</a>, which means the website usually falls to whoever's willing to touch it: a program officer, a founder, someone's part-time hire. Unsurprisingly, <a href="https://gettingattention.org/nonprofit-marketing-statistics/">only 37% of nonprofits have anything resembling a dedicated SEO strategy</a>. Not because SEO doesn't matter to them. Because nobody has the bandwidth to learn it on top of everything else.</p>
+<p>This is a checklist for that person. Nothing here requires a marketing background, a budget, or more than an afternoon.</p>
+<h2>1. Check what your title tag actually says</h2>
+<p>Open your homepage. Right-click, "View Page Source." Find the line that starts with <code>&lt;title&gt;</code>. Does it say your organisation's actual name and what you do, or does it say something generic your website builder left there by default? This is the single most common thing I find broken, and the easiest to fix.</p>
+<h2>2. Write a real meta description</h2>
+<p>Two lines below the title tag, look for <code>&lt;meta name="description"&gt;</code>. If it's empty or missing, this is what search engines (and increasingly, AI tools) fall back on to guess what your page is about, and the guess is rarely flattering. One or two honest sentences about who you serve and what you do is enough.</p>
+<h2>3. Make sure your impact is actual text, not just images</h2>
+<p>If your case studies, outcomes, or "who we've helped" content only exists as photos or infographics, none of it is readable by search engines or AI systems. A grantmaker's assistant searching your organisation's name won't find it either. Real text, even a short caption, is what gets indexed.</p>
+<h2>4. Check that your site isn't accidentally hidden</h2>
+<p>Search <code>site:yourdomain.org</code> in Google. If nothing comes up, or far fewer pages than you'd expect, something is blocking search engines from indexing you, often a leftover setting from when the site was still in development. This is worth checking even if you've never touched the technical side of your site.</p>
+<h2>5. Link your own pages to each other</h2>
+<p>If your programmes, impact reports, and about page don't link to one another, both visitors and search engines have a harder time understanding how your work connects. A few honest, relevant links between related pages does more than most people expect.</p>
+<h2>6. Say what you do the way people would actually search for it</h2>
+<p>NGOs often describe their work in the language of the mission ("empowering resilient futures") rather than the language a search engine, or a person, would type in ("clean water access rural Java"). Both can exist on the same page. Just make sure the plain version is somewhere too.</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>Want a second pair of eyes on your site?</strong> I offer a free 30-minute look, no obligation either way.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>Instagram Scores 100 on Authority. The Cafe Down the Street Scores 9</title>
+    <link>https://widiginanjar.com/notes/instagram-scores-100-cafe-scores-9.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/instagram-scores-100-cafe-scores-9.html</guid>
+    <pubDate>Fri, 17 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>Three things one small audit turned up, the kind that actually change what you do next, not just interesting trivia.</description>
+    <content:encoded><![CDATA[<p>Three things one small audit turned up, the kind that actually change what you do next, not just interesting trivia.</p>
+<h3>1. Domain authority tells you where to actually spend effort</h3>
+<p>Checked the authority score of everything ranking for a client's target keywords. Instagram and Tripadvisor sat near 100. Every individual competitor's own website scored under 10. Exact numbers shift depending on which tool measures them, Moz, Ahrefs, and SEMrush each run their own version, but the pattern holds across all three: <a href="https://launchcodex.com/blog/seo-geo-ai/what-is-a-good-domain-authority-score/">benchmark analysis compiled by Linkscope</a> puts the average score for a first-position Google result around 68. Trying to out-rank Instagram at that gap is a losing game. Out-ranking another small business's homepage, sitting at single digits, is a fight that's actually winnable. One number, and it completely reordered the priority list.</p>
+<h3>2. I don't trust a single search, and neither should you</h3>
+<p>Checked the same keyword twice, same tool, same rough location, a few days apart. Got two different difficulty scores. Turns out that's a known quirk of these tools, not a glitch specific to me. <a href="https://susodigital.com/thoughts/keyword-difficulty-what-it-is-how-to-check-it/">SUSO Digital's write-up on keyword difficulty</a> uses exactly this example to make the point: the same keyword can show a difficulty of 21 on one tool and 37 on another, simply because each one weighs its inputs differently. The scores aren't wrong, they're estimates built on shifting inputs. The lesson isn't "the data is bad," it's that any one search is a snapshot, not a verdict. Before I tell a client a keyword is winnable, I check it more than once.</p>
+<h3>3. Splitting copy into invisible and visible made cross-team work painless</h3>
+<p>Every piece of SEO copy fell into one of two buckets: invisible (meta tags, schema markup, alt text, nobody reads it, it only talks to Google) or visible (headlines, About sections, the stuff people actually read). <a href="https://seogeek.sg/technical-seo-vs-content-what-matters-more/">SEO Geek draws a similar line</a>: one side of the work decides whether a search engine can access and interpret a page at all, the other decides whether that page earns its place once it's found. Working alongside a brand strategist on the same project, keeping the two separate meant there was almost nothing to argue about. She owned the column people read. I owned the column Google reads.</p>
+<blockquote>
+<p>None of these were clever tricks. They were just the difference between guessing and checking.</p>
+</blockquote>
+<p>None of this means every business needs its own site. Plenty of small, local operations do fine on Instagram and word of mouth alone, borrowing a platform's authority is a reasonable trade if that's as far as the ambition goes. It stops being enough when there's a specific problem only a website can fix. A line of code telling Google "this is a distinct business, not the other one with a similar name" has nowhere to live on a social profile. Neither does the intent behind someone typing a search into Google, which is a different crowd from someone scrolling Instagram.</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>Curious what a quick audit would find on your own site?</strong> I offer a free 30-minute look, hospitality, B2B, or NGO.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>My SEO Portfolio's Title Tag Said "Notion" for Two Weeks</title>
+    <link>https://widiginanjar.com/notes/my-own-title-tag-said-notion.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/my-own-title-tag-said-notion.html</guid>
+    <pubDate>Thu, 16 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>I built a portfolio to sell SEO audits. Its own title tag was generic platform branding the whole time. A lesson in checking your own site first.</description>
+    <content:encoded><![CDATA[<p>I built my portfolio the fast way: a Notion page, shared publicly, five sub-pages for five audiences. It looked clean. Anonymised case studies, a clear CTA, the whole thing done in an afternoon. I linked it everywhere: LinkedIn, email signature, client pitches.</p>
+<p>Two weeks in, I did something I tell clients to do on day one: I checked what the raw page actually looked like to something that isn't a browser. Not "does it look good when I open it." What does a crawler, or an AI system that doesn't run JavaScript, actually see.</p>
+<p>The title tag said "Notion." The meta description was Notion's own generic product copy: something about teams and agents working together. Nothing about me, nothing about SEO, nothing about the actual content sitting one click away.</p>
+<h2>How this actually happens</h2>
+<p>Notion's public share links render the real page fine in a browser, because your browser runs the JavaScript that builds it. But the raw HTML shell, the version any tool that doesn't execute JavaScript pulls first, ships with Notion's own default metadata. Mine had been sitting there the entire time I was sending the link to people, confident it represented me.</p>
+<p>This isn't a rare mistake. <a href="https://seranking.com/blog/title-tags-and-meta-descriptions-in-seo/">Analysis of 40,000 sites by SE Ranking</a> found that 71% had an empty or missing meta description, and nearly two-thirds had duplicate title tags. Generic or missing metadata isn't an edge case. It's closer to the default state of the average website, mine included, until someone actually checks.</p>
+<figure>
+  <svg viewBox="0 0 600 170" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="20" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5C615A">what a non-rendering crawler actually saw</text>
+    <rect x="0" y="35" width="600" height="50" rx="6" fill="#FAEEDA" stroke="#E1DED4" stroke-width="1.5"/>
+    <text x="16" y="55" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1C1F1B">&lt;title&gt;</text>
+    <text x="80" y="55" font-family="Inter, sans-serif" font-size="12" fill="#1C1F1B">Notion</text>
+    <text x="16" y="73" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5C615A">Notion's own generic product description, unrelated to my content</text>
+    <rect x="0" y="100" width="600" height="50" rx="6" fill="#E7F0EB" stroke="#E1DED4" stroke-width="1.5"/>
+    <text x="16" y="120" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1C1F1B">&lt;title&gt;</text>
+    <text x="80" y="120" font-family="Inter, sans-serif" font-size="12" fill="#1C1F1B">Widi Ginanjar | SEO &amp; Growth Services</text>
+    <text x="16" y="138" font-family="IBM Plex Mono, monospace" font-size="11" fill="#2F6F5E">specific, accurate, written for this page and no other</text>
+  </svg>
+  <figcaption>Same content, two very different first impressions to anything that doesn't run JavaScript</figcaption>
+</figure>
+
+<h2>The fix, and the more useful lesson</h2>
+<p>The fix itself was straightforward: move the front door of the portfolio to a plain static HTML page I fully control, with hand-written title tags, meta descriptions, and structured data. That's what this site is now. The detailed case studies still live on Notion, but the page people actually land on first, and the one crawlers see, is one I built by hand.</p>
+<p>The more useful lesson is the order I did things in. I'd been telling myself the portfolio was "done" because it looked right in a browser. I hadn't checked what it looked like to anything else. That's an easy mistake to make precisely because it's invisible from the inside: everything about the experience of visiting your own site feels fine, right up until you look at it the way a machine does.</p>
+<p>I'd been about to pitch AI-citability audits to clients while my own site's raw metadata said "Notion." If I hadn't caught it, that's not a hypothetical embarrassment, that's the exact failure I'd be auditing someone else for.</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>Curious what your site actually says to something that doesn't render JavaScript?</strong> I offer a free 30-minute look.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>I Rank #2 on Google for My Own Name. AI Still Doesn't Know I Exist.</title>
+    <link>https://widiginanjar.com/notes/ranking-vs-ai-citation.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/ranking-vs-ai-citation.html</guid>
+    <pubDate>Thu, 16 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>A live test of AI-citability with the easiest keyword there is, my own name. Ranking on Google turned out to be a different problem from being cited by AI.</description>
+    <content:encoded><![CDATA[<p>Your own name is supposed to be the easiest keyword there is. No real competitor, nothing to out-optimize, no ambiguity about who "means" what. So a few days after this site went live, I did the obvious thing and just googled myself.</p>
+<p><strong>widiginanjar.com sits at position #2</strong>, right under my LinkedIn profile. For a domain that's a few days old, I'll take it. Genuinely pleased about that one.</p>
+<p>Then I scrolled up to the AI Overview sitting above those results, for the exact same search. It got my role right, my background right, what I'm currently working on, all correct. And it cited exactly one source to get there: LinkedIn. My own site, sitting two spots below in the actual results, didn't get a mention. Not even a "some sources suggest."</p>
+<figure>
+  <svg viewBox="0 0 600 210" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="20" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5C615A">same search, two different outcomes</text>
+    <rect x="0" y="40" width="280" height="150" rx="8" fill="#FAFAF7" stroke="#E1DED4" stroke-width="1.5"/>
+    <text x="140" y="68" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#5C615A">google organic results</text>
+    <text x="140" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#1C1F1B">#1 LinkedIn</text>
+    <text x="140" y="124" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#2F6F5E" font-weight="600">#2 widiginanjar.com</text>
+    <text x="140" y="148" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#1C1F1B">#3 other profiles</text>
+    <rect x="320" y="40" width="280" height="150" rx="8" fill="#FAFAF7" stroke="#E1DED4" stroke-width="1.5"/>
+    <text x="460" y="68" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#5C615A">ai overview, sources cited</text>
+    <text x="460" y="110" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#1C1F1B">LinkedIn</text>
+    <text x="460" y="140" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5C615A">(nothing else cited)</text>
+  </svg>
+  <figcaption>Ranking #2 organically didn't translate into being cited at all</figcaption>
+</figure>
+
+<h2>Why this is more unusual than it looks</h2>
+<p>Here's the thing: most AI-generated answers don't lean on just one source. Research aggregated by <a href="https://aeovision.ai/articles/google-ai-overviews-geo-statistics-2026/">AEO Vision, citing Pew Research Center</a>, found that the large majority of AI summaries cite three sources or more, and only about 1 in 100 rely on a single one. So my search didn't just miss out on a citation. It landed in a genuinely rare bucket, and not the good kind of rare.</p>
+<p>The ranking side of the story checks out too, and not in my favour. <a href="https://quickseo.ai/blog/google-ai-overviews-statistics-2026-60-data-points-every-seo-should-know">Industry analysis from QuickSEO, aggregating Ahrefs and SE Ranking data</a>, puts the overlap between top-10 organic rankings and AI Overview citations somewhere between 17% and 54%, depending on the study and the month. Ranking #2 bought me visibility. Apparently it didn't buy me a single line in the summary.</p>
+<h2>What this probably means, and what I'm not claiming</h2>
+<p>Let's be clear about what this actually is: one search, one day, zero statistical significance. I'm not about to dress it up as a study. But it happens to match exactly what the research above says, and it's honestly the cleanest example I've run into of something I keep telling clients: ranking well and getting cited are not the same job, even when it feels like they should be.</p>
+<p>My best guess, and it is a guess, is that LinkedIn simply has more history behind it than a domain that's a few days old: more inbound signal, more time for Google to build confidence in it. That's a reasonable explanation. It's also not something a content tweak fixes by next Tuesday. Domain age and accumulated trust aren't things you can shortcut.</p>
+<blockquote>
+<p>Ranking is a snapshot. Citation is a track record. I've got the first one. I'm still building the second.</p>
+</blockquote>
+<p>So what do I actually do about it, other than write a note about it? Keep the site fast and easy for anything crawling it to parse. Keep the metadata honest and specific rather than generic. And let the rest, the mentions, the links, the general sense across the internet that this is a real, consistent person, accumulate over time. It's not a glamorous answer. It's also exactly what I'd tell a client sitting in the same spot.</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>Curious whether your own site would show up the same way?</strong> I offer a free 30-minute look at your site's AI-citability.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>, or see the <a href="https://widiginanjar.com/services/ai-search-era.html">full AI Search Era service page</a>.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>Why My Portfolio's Domain Is My Name, Not "Bali SEO"</title>
+    <link>https://widiginanjar.com/notes/why-my-domain-is-my-name.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/why-my-domain-is-my-name.html</guid>
+    <pubDate>Thu, 16 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>A friend asked why I didn't buy a keyword-matching domain instead. The answer says something about how AI search is changing what actually gets rewarded.</description>
+    <content:encoded><![CDATA[<p>A friend asked me recently why my portfolio sits at widiginanjar.com instead of something like balieseo.com. Fair question. A domain that matches what people actually type into Google sounds like it should win by default.</p>
+<p>For a while, it did. Google used to treat a domain name as a strong signal on its own. If someone searched "cheap car insurance" and a domain called cheapcarinsurancequotes.com existed, that domain could rank near the top almost automatically, regardless of whether the site behind it was actually any good. People noticed, and started buying up keyword-matching domains purely to exploit that shortcut, often slapping thin, low-effort content behind them. In 2012, Google specifically changed its algorithm to stop rewarding that trick. A domain matching the search term stopped being an automatic advantage.</p>
+<p>It didn't disappear entirely, though. <a href="https://www.seoexamples.com/p/exact-match-domains-how-emds-still">A 2025 study of 500 search results</a> found these domains still show up disproportionately in the top 3 spots, and need less accumulated authority to get there than an ordinary domain would. But the same study found something more telling: 70% of them only ever rank for that one exact phrase. They don't spread to anything related.</p>
+<p>That's the part that actually mattered for my decision. A domain called "Bali SEO" locks in one identity: SEO, in Bali, forever. My work doesn't sit still inside that box. I do SEO, but also growth marketing, content strategy, and a research role that has nothing to do with search rankings at all. A keyword domain would have been accurate the week I bought it and increasingly wrong every year after.</p>
+<p>There's a second reason this matters more now than it used to. <a href="https://searchengineland.com/exact-match-domains-value-453837">Search Engine Land's 2025 analysis</a> put it plainly: search, especially the AI-driven kind, is shifting toward rewarding brand recognition over keyword matching. An AI system deciding whether to cite a source isn't scanning the domain for the right words. It's checking whether it recognizes the name as a real, consistent entity it's seen before, across more than one place. A name is the thing that gets recognized. A keyword is just the thing that gets found, and increasingly, that's the smaller job.</p>
+<p>None of this makes exact-match domains useless. If you run one narrow, local service and have no plans to grow past it, a matching domain can still be a legitimate shortcut. It just wasn't the shortcut that fit what I'm actually building.</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>Thinking through domain strategy for your own site?</strong> Happy to talk it through.</p>
+  <p class="cta-detail">Free 30-minute look either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>.</p>
+</div>]]></content:encoded>
+  </item>
+  <item>
+    <title>Grantmakers Check Your NGO Website Before Your Impact Report</title>
+    <link>https://widiginanjar.com/notes/grantmakers-check-your-website-first.html</link>
+    <guid isPermaLink="true">https://widiginanjar.com/notes/grantmakers-check-your-website-first.html</guid>
+    <pubDate>Wed, 15 Jul 2026 08:00:00 +0800</pubDate>
+    <dc:creator>Widi Ginanjar</dc:creator>
+    <description>Before a funder reads your proposal, they look at your website. How one canonical tag error cost a real membership network its search visibility.</description>
+    <content:encoded><![CDATA[<p>An NGO's real work rarely happens on its website. It happens in the field, in the community meetings, in the reports nobody outside the sector reads closely. So it's easy to treat the website as an afterthought, a digital business card that exists mostly to look legitimate.</p>
+<p>But for a grantmaker deciding where funding goes, the website often <em>is</em> the first and only touchpoint before a conversation even starts. Due diligence, especially the early, informal kind, usually begins with a quick look at the site: who is this organisation, what have they done, can I verify any of it. That look happens before a call is scheduled, before a proposal is read in full, sometimes before anyone on the funding side has spoken to a single person at the organisation.</p>
+<p>This isn't just a hunch. <a href="https://consumer.ftc.gov/articles/giving-charity">Guidance from the U.S. Federal Trade Commission</a> tells prospective donors to search a cause, check the organisation's own site for programme details and how funds are used, and look up independent ratings, all before giving anything. A grantmaker's process is more formal, but it starts from the same instinct: verify from the outside before committing from the inside.</p>
+<h2>A real example</h2>
+<p>I audited a membership-based impact network whose work was genuinely strong. Real partnerships, real reach, a track record that held up under scrutiny. But their search traffic told a strange story: only 14 in every 100 visitors were arriving through search, compared to 40 in every 100 for organisations doing comparable work in the same space.</p>
+<figure>
+  <svg viewBox="0 0 600 190" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="20" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5C615A">search traffic share, per 100 visitors</text>
+    <text x="0" y="60" font-family="Inter, sans-serif" font-size="13" fill="#1C1F1B">This organisation</text>
+    <rect x="0" y="70" width="196" height="22" rx="4" fill="#E7F0EB"/>
+    <rect x="0" y="70" width="70" height="22" rx="4" fill="#2F6F5E"/>
+    <text x="78" y="86" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1C1F1B">14</text>
+    <text x="0" y="130" font-family="Inter, sans-serif" font-size="13" fill="#1C1F1B">Comparable organisations</text>
+    <rect x="0" y="140" width="392" height="22" rx="4" fill="#E7F0EB"/>
+    <rect x="0" y="140" width="200" height="22" rx="4" fill="#2F6F5E"/>
+    <text x="208" y="156" font-family="IBM Plex Mono, monospace" font-size="12" fill="#1C1F1B">40</text>
+  </svg>
+  <figcaption>Same sector, same relative credibility. One canonical tag was the difference.</figcaption>
+</figure>
+
+<p>The cause wasn't a lack of content or credibility. It was a canonical tag, quietly telling search engines that several of their most substantive pages weren't the "real" version of themselves. Search engines were deferring to a different page entirely, one with far less information. The organisation's actual work was there. It just wasn't the version anyone browsing or crawling was being pointed to.</p>
+<figure>
+  <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+    <rect x="20" y="30" width="160" height="110" rx="8" fill="#FAFAF7" stroke="#E1DED4" stroke-width="1.5"/>
+    <text x="100" y="70" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#1C1F1B">Real page</text>
+    <text x="100" y="90" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#5C615A">full programme detail</text>
+    <path d="M180 85 C 260 85, 260 85, 340 85" stroke="#2F6F5E" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <text x="260" y="70" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#2F6F5E">canonical points here</text>
+    <rect x="340" y="30" width="160" height="110" rx="8" fill="#FAFAF7" stroke="#E1DED4" stroke-width="1.5"/>
+    <text x="420" y="70" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#1C1F1B">Thin page</text>
+    <text x="420" y="90" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#5C615A">little real content</text>
+    <text x="300" y="175" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#1C1F1B">Search engines index and rank the thin page. The real one stays invisible.</text>
+    <defs>
+      <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+        <path d="M0,0 L8,4 L0,8 Z" fill="#2F6F5E"/>
+      </marker>
+    </defs>
+  </svg>
+  <figcaption>What a stray canonical tag actually tells a search engine to do</figcaption>
+</figure>
+
+<blockquote>
+<p>The fix wasn't a content strategy. It was a single line in the site's code, left over from a template change nobody had reason to double check.</p>
+</blockquote>
+<h2>Why this matters more for mission-driven organisations specifically</h2>
+<p>A commercial company that ranks poorly loses some customers. An NGO that's hard to find, or that looks thinner online than its actual work justifies, risks something closer to trust. A grantmaker who can't quickly verify an organisation's legitimacy doesn't usually ask for more information first. They move to the next name on the list.</p>
+<p>Impact reporting compounds the problem. <a href="https://www.ftc.gov/system/files/documents/public_events/982093/charitynavigator_informationdonorsseekbeforedonating.pdf">Research cited by Charity Navigator</a> found that only a small fraction of rated charities published any results-related outcomes data at all. If your organisation is one of the few that actually tracks and shares real outcomes, a broken or invisible website is the difference between that work being found and it being assumed away.</p>
+<p>The uncomfortable part is that this kind of gap is invisible from the inside. Nobody at the organisation is doing anything wrong day to day. The programmes are running, the reports are being written, the partnerships are real. The gap only shows up when you look at the site the way an outside evaluator does: quickly, skeptically, and without the context everyone internally already has.</p>
+<hr class="rule">
+
+<div class="cta-box">
+  <p><strong>If you run comms or ops for an NGO or mission-driven team</strong>, I offer a free 30-minute look at your site.</p>
+  <p class="cta-detail">You'll walk away with one concrete finding either way, whether or not we end up working together. <a href="mailto:rajnanig22@gmail.com" onclick="gtag('event','contact_click',{'method':'email','location':'notes_cta'});">Get in touch</a> or <a href="https://widiginanjar.com/book.html" onclick="gtag('event','contact_click',{'method':'booking','location':'notes_cta'});">book a call</a>, or see the <a href="https://widiginanjar.com/services/ngo.html">full NGO service page</a> for more anonymised examples.</p>
+</div>]]></content:encoded>
+  </item>
+</channel>
+</rss>
