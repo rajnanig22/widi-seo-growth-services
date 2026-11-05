@@ -1,5 +1,6 @@
 ---
 title: "What Reviewing AI Responses Taught Me About Writing for Search"
+seo_title: "What Reviewing AI Taught Me About Search"
 description: "A pattern from reviewing AI model responses for accuracy, and what it means for writing content AI systems can quote correctly."
 tag: "ai & tech"
 date: 2026-07-21

@@ -1,6 +1,7 @@
 ---
 title: "Nonprofit SEO Isn't Business SEO, Because the Audiences Don't Want the Same Thing"
-description: "A business site can have several different visitors and still point them all at one outcome. A nonprofit site can't. Two real homepages show what happens when the site is only built for one of them."
+seo_title: "Nonprofit SEO Isn't Business SEO"
+description: "A business site can point every visitor at one outcome. A nonprofit site can't. Two real homepages show what happens when a site serves only one audience."
 tag: "mission-driven"
 date: 2026-07-29
 slug: "nonprofit-seo-three-audiences"

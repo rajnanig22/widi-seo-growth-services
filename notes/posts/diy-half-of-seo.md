@@ -1,5 +1,6 @@
 ---
 title: "You Can DIY Half of This. Here's the Half You Can't."
+seo_title: "The Half of SEO You Can't DIY"
 description: "AI can spot a missing meta description in seconds. It can't tell you which broken thing is actually urgent versus which one just looks urgent."
 tag: "practice notes"
 date: 2026-07-22

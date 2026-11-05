@@ -1,5 +1,6 @@
 ---
 title: "I Checked 15 Organizations' Traffic. Only One Had Meaningful Paid Search."
+seo_title: "Only 1 of 15 Orgs Had Meaningful Paid Search"
 description: "A curiosity-driven check across NGOs and companies of every size found the same pattern almost everywhere, and one outlier that didn't fit any theory I had."
 tag: "mission-driven"
 date: 2026-07-25

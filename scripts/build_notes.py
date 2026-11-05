@@ -64,7 +64,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600;700&display=swap" rel="stylesheet"></noscript>
 
-<title>{title} | Widi Ginanjar</title>
+<title>{seo_title} | Widi Ginanjar</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
 
@@ -678,6 +678,7 @@ def build_article(post):
     html_out = ARTICLE_TEMPLATE.format(
         ga_id=GA_ID,
         title=title,
+        seo_title=html.escape(str(post.get("seo_title") or title_raw), quote=True),
         title_json=json.dumps(title_raw),
         description=description,
         description_json=json.dumps(description_raw),

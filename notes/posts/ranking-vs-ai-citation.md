@@ -1,6 +1,7 @@
 ---
 title: "I Rank #2 on Google for My Own Name. AI Still Doesn't Know I Exist."
-description: "A live test of AI-citability using the easiest keyword there is, my own name. Ranking well on Google turned out to be a different problem than being cited by AI."
+seo_title: "I Rank #2 on Google. AI Doesn't Know Me."
+description: "A live test of AI-citability with the easiest keyword there is, my own name. Ranking on Google turned out to be a different problem from being cited by AI."
 tag: "ai search"
 date: 2026-07-16
 slug: "ranking-vs-ai-citation"

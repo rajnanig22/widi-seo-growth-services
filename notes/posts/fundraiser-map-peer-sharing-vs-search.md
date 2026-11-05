@@ -1,6 +1,6 @@
 ---
 title: "Getting an Issue Found Isn't Always About Search"
-description: "Search finds people who know what to look for. It cannot find the people who don't. A nonprofit fundraiser built as a map shows the other route in, and why donor and campaign engagement belongs next to SEO, not apart from it."
+description: "Search only finds people who already know what to look for. A nonprofit fundraiser built as a map shows another route in, through people's own networks."
 tag: "mission-driven"
 date: 2026-07-30
 slug: "fundraiser-map-peer-sharing-vs-search"

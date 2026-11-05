@@ -1,5 +1,6 @@
 ---
 title: Grantmakers Check Your NGO Website Before Your Impact Report
+seo_title: "Grantmakers Check Your NGO Website First"
 description: Before a funder reads your proposal, they look at your website. How one canonical tag error cost a real membership network its search visibility.
 tag: "mission-driven"
 date: 2026-07-15

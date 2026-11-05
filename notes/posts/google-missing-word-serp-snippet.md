@@ -1,5 +1,6 @@
 ---
 title: "The Small Grey Text Under a Google Result That Most People Skip"
+seo_title: "The Grey Text Under a Google Result"
 description: "A page ranking #1 was still getting a below-average click rate. The reason was sitting in plain sight, in small grey text most people scroll straight past."
 tag: "practice notes"
 date: 2026-08-05

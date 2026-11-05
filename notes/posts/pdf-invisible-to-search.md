@@ -1,5 +1,6 @@
 ---
 title: "Your Impact Report is a PDF. Search Engines Barely See It."
+seo_title: "Your Impact Report PDF Is Hard to Find"
 description: "A well-designed PDF impact report can still be nearly invisible to search engines and AI. Here's why, and what a simple structure change fixes."
 tag: "mission-driven"
 date: 2026-07-19

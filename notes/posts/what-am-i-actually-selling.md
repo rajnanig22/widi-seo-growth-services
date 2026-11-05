@@ -1,5 +1,6 @@
 ---
 title: "Anyone Can Be an SEO Specialist Now. So What Am I Actually Selling?"
+seo_title: "Anyone Can Do SEO Now. What Am I Selling?"
 description: "Anyone can list what's broken on a page now. Here's what that leaves for a human SEO consultant to actually be paid for."
 tag: "practice notes"
 date: 2026-10-30

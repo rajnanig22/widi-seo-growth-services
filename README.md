@@ -5,7 +5,7 @@ Personal website of Widi Ginanjar: research, sustainability, essays, and SEO con
 The site has two parts:
 
 - **Writing** (`/writing/`): field notes and personal essays in Bahasa Indonesia.
-- **Services** (`/services/`): SEO consulting for NGOs, hospitality brands, B2B firms, and AI startups, plus technical notes in `/notes/`.
+- **Services** (`/services/`): SEO consulting for NGOs, hospitality brands, and B2B firms, plus technical notes in `/notes/`.
 
 It is a static site served by GitHub Pages on a custom domain (see `CNAME`). There is no CMS and no framework.
 

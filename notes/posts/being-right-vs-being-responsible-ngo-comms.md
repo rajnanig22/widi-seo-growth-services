@@ -1,5 +1,6 @@
 ---
 title: "Being Right About the Data Isn't the Same as Being Responsible With It"
+seo_title: "Being Right vs Being Responsible With Data"
 description: "A social post about forest fires led to a disagreement over one closing line. Sorting out why took longer than writing the post did."
 tag: "mission-driven"
 date: 2026-09-05

@@ -68,7 +68,7 @@ note: "..."            # optional footer line
 
 Inline photo: `![alt text](/writing/img/photo.jpg)` with the caption in *italics* on the next line.
 
-Note (`notes/posts/<slug>.md`): `title`, `description`, `tag` (one of the six in `writing_guide.md`), `date`, `slug`, optional `sources` list.
+Note (`notes/posts/<slug>.md`): `title`, `description` (under about 155 characters), `tag` (one of the six in `writing_guide.md`), `date`, `slug`, optional `seo_title` (title for Google results, under about 45 characters), optional `sources` list.
 
 ## Workflow
 

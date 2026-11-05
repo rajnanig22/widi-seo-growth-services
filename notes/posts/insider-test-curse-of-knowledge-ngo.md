@@ -1,6 +1,7 @@
 ---
 title: "The Insider Test: If People in Your Own Sector Can't Explain Your Work, Nobody Else Can"
-description: "At an NGO I used to work for, even people at other NGOs couldn't say what we actually did. It's called the curse of knowledge, and it explains most nonprofit jargon problems."
+seo_title: "The Insider Test for NGO Jargon"
+description: "Even people at other NGOs couldn't say what the NGO I worked for actually did. That's the curse of knowledge, and it explains most nonprofit jargon."
 tag: "mission-driven"
 date: 2026-07-28
 slug: "insider-test-curse-of-knowledge-ngo"
