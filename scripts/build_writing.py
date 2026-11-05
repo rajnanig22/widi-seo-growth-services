@@ -49,6 +49,8 @@ import urllib.parse
 import yaml
 import markdown
 
+from rss import write_feed
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 POSTS_DIR = os.path.join(ROOT, "writing", "posts")
 OUTPUT_DIR = os.path.join(ROOT, "writing")
@@ -151,6 +153,7 @@ ARTICLE_TEMPLATE = HEAD_COMMON + """
 <title>%%SEO_TITLE%% | Widi Ginanjar</title>
 <meta name="description" content="%%DESCRIPTION%%">
 <link rel="canonical" href="%%CANONICAL%%">
+<link rel="alternate" type="application/rss+xml" title="Esai Widi Ginanjar" href="/writing/feed.xml">
 
 <meta property="og:type" content="article">
 <meta property="og:title" content="%%TITLE%%">
@@ -270,6 +273,7 @@ INDEX_TEMPLATE = HEAD_COMMON + """
 <title>Esai dan Catatan Lapangan | Widi Ginanjar</title>
 <meta name="description" content="Esai pribadi dan catatan lapangan dari Widi Ginanjar, dalam Bahasa Indonesia.">
 <link rel="canonical" href="%%SITE_URL%%/writing/">
+<link rel="alternate" type="application/rss+xml" title="Esai Widi Ginanjar" href="/writing/feed.xml">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Esai dan Catatan Lapangan | Widi Ginanjar">
@@ -332,6 +336,7 @@ INDEX_TEMPLATE = HEAD_COMMON + """
   /* Type scale: body 17/16, lede 17/15.5, card title 20/18, card text 15.5/15, small 14, labels 12 */
   h1 { font-size: 36px; }
   .subhead { font-size: 17px; }
+  .feed-link { white-space: nowrap; }
   .article-card h2 { font-size: 20px; }
   .article-card .card-desc, .article-list .article-card:first-child .card-desc { font-size: 15.5px; }
   .article-card .card-meta, .article-card .tag { font-size: 12px; }
@@ -349,7 +354,7 @@ INDEX_TEMPLATE = HEAD_COMMON + """
 %%NAV%%
 <div class="wrap">
   <h1>Essays</h1>
-  <p class="subhead">Esai pribadi dan catatan lapangan tentang manusia dan komunitas, dalam Bahasa Indonesia.</p>
+  <p class="subhead">Esai pribadi dan catatan lapangan tentang manusia dan komunitas, dalam Bahasa Indonesia. <a class="feed-link" href="/writing/feed.xml">Ikuti lewat RSS</a></p>
 
   <div class="article-list">
 %%CARDS%%
@@ -581,6 +586,25 @@ def main():
         build_article(post)
     build_index(posts)
     update_homepage(posts)
+    build_feed(posts)
+
+
+def build_feed(posts):
+    """writing/feed.xml: newest essays for feed readers."""
+    items = [{
+        "title": str(p.get("title", "")),
+        "link": f"{SITE_URL}/writing/{p['slug']}.html",
+        "description": str(p.get("description", "")),
+        "date": p.get("date", ""),
+        "content_html": markdown.markdown(p["body_md"], extensions=["extra", "sane_lists"]),
+    } for p in posts]
+    write_feed(os.path.join(OUTPUT_DIR, "feed.xml"),
+               title="Esai Widi Ginanjar",
+               link=f"{SITE_URL}/writing/",
+               feed_url=f"{SITE_URL}/writing/feed.xml",
+               description="Esai pribadi dan catatan lapangan tentang manusia dan komunitas, dalam Bahasa Indonesia.",
+               language="id",
+               items=items)
 
 
 if __name__ == "__main__":

@@ -13,6 +13,7 @@ on:
       - 'scripts/build_writing.py'
       - 'scripts/build_notes.py'
       - 'scripts/build_site_index.py'
+      - 'scripts/rss.py'
 
 concurrency:
   group: build-site
@@ -47,4 +48,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto-build site from markdown"
-          file_pattern: writing/*.html notes/*.html index.html sitemap.xml llms.txt
+          file_pattern: writing/*.html notes/*.html index.html sitemap.xml llms.txt writing/feed.xml notes/feed.xml

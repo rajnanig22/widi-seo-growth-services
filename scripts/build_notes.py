@@ -36,6 +36,8 @@ import urllib.parse
 import yaml
 import markdown
 
+from rss import write_feed
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 POSTS_DIR = os.path.join(ROOT, "notes", "posts")
 OUTPUT_DIR = os.path.join(ROOT, "notes")
@@ -67,6 +69,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
 <title>{seo_title} | Widi Ginanjar</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{canonical}">
+<link rel="alternate" type="application/rss+xml" title="SEO Notes by Widi Ginanjar" href="/notes/feed.xml">
 
 <meta property="og:type" content="article">
 <meta property="og:title" content="{title}">
@@ -403,6 +406,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <title>SEO Notes | Widi Ginanjar</title>
 <meta name="description" content="Short notes on SEO, technical audits, and what real audits actually find, from Widi Ginanjar.">
 <link rel="canonical" href="{site_url}/notes/">
+<link rel="alternate" type="application/rss+xml" title="SEO Notes by Widi Ginanjar" href="/notes/feed.xml">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="SEO Notes | Widi Ginanjar">
@@ -510,6 +514,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
   /* Type scale: body 17/16, lede 17/15.5, card title 20/18, card text 15.5/15, small 14, labels 12 */
   h1 {{ font-size: 36px; }}
   .subhead {{ font-size: 17px; }}
+  .feed-link {{ white-space: nowrap; }}
   .article-card h2 {{ font-size: 20px; }}
   .article-card p:not(.card-meta) {{ font-size: 15.5px; }}
   .article-card .card-meta, .article-card .tag {{ font-size: 12px; }}
@@ -542,7 +547,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 
 <div class="wrap">
   <h1>SEO Notes</h1>
-  <p class="subhead">Short, specific write-ups drawn from real audits, not generic listicles.</p>
+  <p class="subhead">Short, specific write-ups drawn from real audits, not generic listicles. <a class="feed-link" href="/notes/feed.xml">Follow via RSS</a></p>
 {nav}
 {cards}
 </div>
@@ -774,7 +779,26 @@ def main():
     for p in posts:
         build_article(p)
     build_index(posts)
+    build_feed(posts)
     # llms.txt and sitemap.xml are now built by scripts/build_site_index.py
+
+
+def build_feed(posts):
+    """notes/feed.xml: newest SEO notes for feed readers."""
+    items = [{
+        "title": str(p.get("title", "")),
+        "link": f"{SITE_URL}/notes/{p['slug']}.html",
+        "description": str(p.get("description", "")),
+        "date": p.get("date", ""),
+        "content_html": markdown.markdown(p["body_md"], extensions=["extra", "sane_lists"]),
+    } for p in posts]
+    write_feed(os.path.join(OUTPUT_DIR, "feed.xml"),
+               title="SEO Notes by Widi Ginanjar",
+               link=f"{SITE_URL}/notes/",
+               feed_url=f"{SITE_URL}/notes/feed.xml",
+               description="Short, specific write-ups drawn from real audits, not generic listicles.",
+               language="en",
+               items=items)
 
 
 if __name__ == "__main__":
