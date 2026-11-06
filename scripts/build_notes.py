@@ -547,7 +547,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 
 <div class="wrap">
   <h1>SEO Notes</h1>
-  <p class="subhead">Short, specific write-ups drawn from real audits, not generic listicles. <a class="feed-link" href="/notes/feed.xml">Follow via RSS</a></p>
+  <p class="subhead">Short, specific write-ups drawn from real audits, not generic listicles. <a class="feed-link" href="/follow.html#notes">Follow via RSS</a></p>
 {nav}
 {cards}
 </div>

@@ -354,7 +354,7 @@ INDEX_TEMPLATE = HEAD_COMMON + """
 %%NAV%%
 <div class="wrap">
   <h1>Essays</h1>
-  <p class="subhead">Esai pribadi dan catatan lapangan tentang manusia dan komunitas, dalam Bahasa Indonesia. <a class="feed-link" href="/writing/feed.xml">Ikuti lewat RSS</a></p>
+  <p class="subhead">Esai pribadi dan catatan lapangan tentang manusia dan komunitas, dalam Bahasa Indonesia. <a class="feed-link" href="/follow.html#essays">Ikuti lewat RSS</a></p>
 
   <div class="article-list">
 %%CARDS%%
