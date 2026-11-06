@@ -38,7 +38,7 @@ SERVICE_PAGES = [
      "Technical SEO for NGOs, nonprofits, and social enterprises."),
     ("/services/b2b.html", "B2B SEO Strategy for Professional Services",
      "SEO and backlink strategy for consulting, research, and B2B firms."),
-    ("/services/hospitality.html", "Restaurant SEO for Hospitality & F&B Brands",
+    ("/services/hospitality.html", "Restaurant SEO in Bali for Hospitality & F&B Brands",
      "Local SEO and Google Business Profile optimisation for restaurants, bars, and hospitality groups."),
     ("/services/ai-search-era.html", "AI Search Optimization & Citability",
      "Helping organisations get found and accurately cited by ChatGPT, Perplexity, and Google AI summaries."),

@@ -7,7 +7,7 @@ Reference doc for keeping colors, fonts, voice, and identity consistent across t
 - **Say what I do, not what I am.** No self-given titles ("community researcher", "expert"), no slogans that try to sound deep, no bragging numbers on the homepage.
 - **Every line must be true today.** If a sentence describes writing I haven't published yet, it doesn't go on the site.
 - **Language:** the site frame (nav, homepage, services) is in English. Essays are in Bahasa Indonesia, and their titles stay in Indonesian everywhere.
-- **No hometown or location in the bio.** Location appears only in the footer or structured data.
+- **No hometown or location in the bio.** Location appears in the footer, structured data, and the SEO service pages (/services/ and /services/hospitality.html mention Bali for local search).
 
 ## 1. Colors (official, from widiginanjar.com)
 | Name | Hex | Use |
