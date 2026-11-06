@@ -39,7 +39,7 @@ If your programmes, impact reports, and about page don't link to one another, bo
 
 ## 6. Say what you do the way people would actually search for it
 
-NGOs often describe their work in the language of the mission ("empowering resilient futures") rather than the language a search engine, or a person, would type in ("clean water access rural Java"). Both can exist on the same page. Just make sure the plain version is somewhere too.
+NGOs often describe their work in the language of the mission ("empowering resilient futures") rather than the language a search engine, or a person, would type in ("clean water access rural Java"). Both can exist on the same page. Just make sure the plain version is somewhere too. That gap, between mission language and search language, is most of what I look at when I [work on SEO for NGOs](/services/ngo.html).
 
 <hr class="rule">
 
