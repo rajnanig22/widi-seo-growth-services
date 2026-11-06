@@ -319,6 +319,20 @@
     letter-spacing: 0.02em;
   }
 
+
+  /* how it works, one result, questions: plain text sections under the cards */
+  .svc-more { padding: 8px 0 12px; max-width: 760px; }
+  .svc-more section { padding: 28px 0 8px; border-top: 1px solid var(--rule); }
+  .svc-more section:first-child { border-top: none; }
+  .svc-more h2 { font-family: var(--serif); font-size: 24px; font-weight: 600; margin: 0 0 14px; color: var(--ink); }
+  .svc-more h3 { font-family: var(--sans); font-size: 17px; font-weight: 600; margin: 20px 0 6px; color: var(--ink); }
+  .svc-more p, .svc-more li { font-size: 16.5px; line-height: 1.6; color: var(--ink-soft); }
+  .svc-more p { margin: 0 0 12px; }
+  .svc-more strong { color: var(--ink); }
+  .svc-more ol { margin: 0; padding-left: 22px; }
+  .svc-more li { margin-bottom: 12px; padding-left: 4px; }
+  @media (max-width: 420px) { .svc-more h2 { font-size: 21px; } .svc-more p, .svc-more li { font-size: 15.5px; } }
+
   .band-footer { background: #16302A; }
   section.cta { padding: 28px 0; }
 
@@ -468,6 +482,39 @@
 
       </div>
     </section>
+  </div>
+
+  <div class="wrap">
+    <div class="svc-more">
+      <section aria-labelledby="how-title">
+        <h2 id="how-title">How it works</h2>
+        <ol>
+          <li><strong>A free 30-minute look.</strong> You share your site, I go through it with you, and you leave with one concrete finding, whether or not we end up working together.</li>
+          <li><strong>An audit with a priority list.</strong> I check the technical side, the content, and how people actually search for what you do. Then I sort the fixes by what matters most for your goals, not into a 200-item report.</li>
+          <li><strong>Optional ongoing support.</strong> If you want help putting the fixes in place, or growing from there, we can work month to month.</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="result-title">
+        <h2 id="result-title">One result</h2>
+        <p>For an AI software product, I helped grow the site's Domain Rating from 5 to 38 in under two months through relationship-based outreach, with zero paid links.</p>
+        <p>Each service page above has more real, anonymised examples of what I found and fixed. I also write up what audits actually turn up in <a href="/notes/">SEO Notes</a>.</p>
+      </section>
+
+      <section aria-labelledby="faq-title">
+        <h2 id="faq-title">Questions</h2>
+        <h3>How much does it cost?</h3>
+        <p>It depends on the size of the site and what you need. The free 30-minute look comes first, so you know what's worth fixing before we talk about scope.</p>
+        <h3>Do you only work with organisations in Bali?</h3>
+        <p>No. I'm based in Bali and work remotely with teams anywhere.</p>
+        <h3>We don't have a marketing team. Is this still useful?</h3>
+        <p>Yes. Many small organisations don't. I explain each fix in plain language, and many can be done by whoever updates your website. This <a href="/notes/seo-checklist-ngo-no-marketing-team.html">checklist for NGOs with no marketing team</a> is a good place to start.</p>
+        <h3>How is this different from an AI SEO tool?</h3>
+        <p>A tool can list what's broken. It can't tell you which fix matters for your audience and your goals. That judgment is the part you're paying for. <a href="/notes/what-am-i-actually-selling.html">More on that here</a>.</p>
+        <h3>What languages do you work in?</h3>
+        <p>English and Bahasa Indonesia.</p>
+      </section>
+    </div>
   </div>
 </div>
 
