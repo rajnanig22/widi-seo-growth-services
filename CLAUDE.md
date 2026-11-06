@@ -8,7 +8,7 @@ The source for **widiginanjar.com**: a static personal site served by GitHub Pag
 
 - `/` homepage: name, newest essays (filled in automatically), a small strip linking to SEO consulting, and the 3 newest SEO notes (filled in automatically)
 - `/writing/` Essays: field notes and essays, **in Bahasa Indonesia**
-- `/services/` SEO Consulting, **in English**
+- `/services/` SEO Consulting, **in English** (one exception: `/services/konsultan-seo-bali.html`, in Bahasa Indonesia, for local search in Bali)
 - `/notes/` SEO Notes, part of SEO Consulting, in English
 
 ## How the build works
