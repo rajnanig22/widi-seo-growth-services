@@ -537,7 +537,7 @@ def date_en(date_value):
         return text
 
 
-def update_homepage(posts, limit=3):
+def update_homepage(posts, limit=4):
     """Fill the block between the WRITING markers in /index.html with the newest essays."""
     path = os.path.join(ROOT, "index.html")
     if not os.path.exists(path):
