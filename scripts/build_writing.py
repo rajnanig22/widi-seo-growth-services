@@ -336,7 +336,14 @@ INDEX_TEMPLATE = HEAD_COMMON + """
   /* Type scale: body 17/16, lede 17/15.5, card title 20/18, card text 15.5/15, small 14, labels 12 */
   h1 { font-size: 36px; }
   .subhead { font-size: 17px; }
-  .feed-link { white-space: nowrap; }
+  .feed-follow { margin: -8px 0 28px; font-size: 14.5px; color: var(--ink-soft); }
+  .feed-follow summary { display: inline-block; cursor: pointer; color: var(--accent); font-weight: 600; list-style: none; }
+  .feed-follow summary::-webkit-details-marker { display: none; }
+  .feed-follow summary:hover { text-decoration: underline; }
+  .feed-follow p { margin: 8px 0 6px; }
+  .feed-url { display: flex; gap: 8px; max-width: 520px; }
+  .feed-url input { flex: 1; min-width: 0; font-family: var(--mono); font-size: 13px; color: var(--ink); background: var(--paper, #FFFFFF); border: 1px solid var(--rule); border-radius: 6px; padding: 7px 10px; }
+  .feed-url button { font: inherit; font-size: 13.5px; font-weight: 600; color: #FFFFFF; background: var(--accent); border: 0; border-radius: 6px; padding: 0 14px; cursor: pointer; }
   .article-card h2 { font-size: 20px; }
   .article-card .card-desc, .article-list .article-card:first-child .card-desc { font-size: 15.5px; }
   .article-card .card-meta, .article-card .tag { font-size: 12px; }
@@ -354,7 +361,12 @@ INDEX_TEMPLATE = HEAD_COMMON + """
 %%NAV%%
 <div class="wrap">
   <h1>Essays</h1>
-  <p class="subhead">Esai pribadi dan catatan lapangan tentang manusia dan komunitas, dalam Bahasa Indonesia. <a class="feed-link" href="/writing/feed.xml">Ikuti lewat RSS</a></p>
+  <p class="subhead">Esai pribadi dan catatan lapangan tentang manusia dan komunitas, dalam Bahasa Indonesia.</p>
+  <details class="feed-follow">
+    <summary>Ikuti lewat RSS</summary>
+    <p>Tempel alamat ini di aplikasi pembaca feed seperti Feedly, Inoreader, atau NetNewsWire.</p>
+    <div class="feed-url"><input type="text" readonly value="https://widiginanjar.com/writing/feed.xml" aria-label="RSS"><button type="button" onclick="var i=this.previousElementSibling;i.select();if(navigator.clipboard)navigator.clipboard.writeText(i.value);this.textContent='Tersalin';">Salin</button></div>
+  </details>
 
   <div class="article-list">
 %%CARDS%%
