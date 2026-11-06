@@ -16,6 +16,7 @@ import os
 import re
 import glob
 import datetime
+import subprocess
 
 import yaml
 
@@ -82,9 +83,47 @@ def url_block(loc, priority, changefreq, lastmod=""):
     return "\n".join(lines)
 
 
+def git_date(path):
+    """Date of the last commit that touched path, as YYYY-MM-DD.
+
+    Returns "" in a shallow clone (every file would get the same date) or
+    when git is not available, so the sitemap simply leaves lastmod out.
+    """
+    try:
+        shallow = subprocess.run(["git", "rev-parse", "--is-shallow-repository"], cwd=ROOT,
+                                 capture_output=True, text=True, check=True).stdout.strip()
+        if shallow == "true":
+            return ""
+        out = subprocess.run(["git", "log", "-1", "--format=%cs", "--", path], cwd=ROOT,
+                             capture_output=True, text=True, check=True).stdout.strip()
+        return out if valid_date(out) else ""
+    except (OSError, subprocess.CalledProcessError):
+        return ""
+
+
+def static_lastmod(path, essays, notes):
+    """lastmod for a static page: its last commit, or newer posts it lists."""
+    file_path = "index.html" if path == "/" else path.lstrip("/")
+    if file_path.endswith("/"):
+        file_path += "index.html"
+    dates = [git_date(file_path)]
+    newest_essay = str(essays[0]["date"]) if essays else ""
+    newest_note = str(notes[0]["date"]) if notes else ""
+    if path == "/":
+        dates += [newest_essay, newest_note]
+    elif path == "/writing/":
+        dates.append(newest_essay)
+    elif path == "/notes/":
+        dates.append(newest_note)
+    dates = [d[:10] for d in dates if d and valid_date(d[:10])]
+    return max(dates) if dates else ""
+
+
 def build_sitemap(essays, notes):
-    blocks = [url_block(SITE_URL + path, pr, cf) for path, pr, cf in STATIC_PAGES]
-    blocks += [url_block(SITE_URL + path, "0.8", "monthly") for path, _, _ in SERVICE_PAGES
+    blocks = [url_block(SITE_URL + path, pr, cf, static_lastmod(path, essays, notes))
+              for path, pr, cf in STATIC_PAGES]
+    blocks += [url_block(SITE_URL + path, "0.8", "monthly", static_lastmod(path, essays, notes))
+               for path, _, _ in SERVICE_PAGES
                if os.path.exists(os.path.join(ROOT, path.lstrip("/")))]
     blocks += [url_block(f"{SITE_URL}/writing/{p['slug']}.html", "0.7", "yearly", p["date"]) for p in essays]
     blocks += [url_block(f"{SITE_URL}/notes/{p['slug']}.html", "0.7", "yearly", p["date"]) for p in notes]
