@@ -1,7 +1,7 @@
 ---
 title: "Dulu Ada yang Meminta Air"
 subtitle: "Tentang kemarau, truk air, dan kutukan yang diwariskan"
-seo_title: "Dulu Ada yang Meminta Air: Kemarau dan Legenda Kutukan Air di Bangli"
+seo_title: "Dulu Ada yang Meminta Air: Kemarau di Bangli"
 description: "Catatan lapangan soal kekeringan di Bangli: air tangki Rp250 ribu per truk, sumur bor 80 meter tanpa air, dan legenda kutukan air dekat Danau Batur."
 tag: catatan lapangan
 date: 2026-10-31
