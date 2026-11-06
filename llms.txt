@@ -22,6 +22,7 @@
 ## Notes (technical write-ups and case studies)
 
 - [Notes index](https://widiginanjar.com/notes/): Full archive of write-ups on SEO, growth, and AI search.
+- [Domain Rating 5 to 38 in Under Two Months, With Zero Paid Links](https://widiginanjar.com/notes/dr-5-to-38-zero-paid-links.html): How relationship-based outreach moved an AI product's Domain Rating from 5 to 38 in under two months, and what that number doesn't prove.
 - [Anyone Can Be an SEO Specialist Now. So What Am I Actually Selling?](https://widiginanjar.com/notes/what-am-i-actually-selling.html): Anyone can list what's broken on a page now. Here's what that leaves for a human SEO consultant to actually be paid for.
 - [Being Right About the Data Isn't the Same as Being Responsible With It](https://widiginanjar.com/notes/being-right-vs-being-responsible-ngo-comms.html): A social post about forest fires led to a disagreement over one closing line. Sorting out why took longer than writing the post did.
 - [Google Knows My Website. It Doesn't Know Me.](https://widiginanjar.com/notes/ai-overview-domain-vs-name.html): Two searches, minutes apart. One found my site accurately. The other pulled from LinkedIn and mixed me up with someone else entirely.
