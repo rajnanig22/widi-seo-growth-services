@@ -6,7 +6,7 @@ Reference doc for keeping colors, fonts, voice, and identity consistent across t
 - **Homepage structure:** name as the headline, then two doors. 01 Writing (field notes and essays, in Bahasa Indonesia). 02 SEO & digital marketing (services, in English).
 - **Say what I do, not what I am.** No self-given titles ("community researcher", "expert"), no slogans that try to sound deep, no bragging numbers on the homepage.
 - **Every line must be true today.** If a sentence describes writing I haven't published yet, it doesn't go on the site.
-- **Language:** the site frame (nav, homepage, services) is in English. Essays are in Bahasa Indonesia, and their titles stay in Indonesian everywhere.
+- **Language:** the site frame (nav, homepage, services) is in English. Essays are in Bahasa Indonesia, and their titles stay in Indonesian everywhere. One exception: /services/konsultan-seo-bali.html is a service page in Bahasa Indonesia for local search in Bali (nav stays in English).
 - **No hometown or location in the bio.** Location appears in the footer, structured data, and the SEO service pages (/services/ and /services/hospitality.html mention Bali for local search).
 
 ## 1. Colors (official, from widiginanjar.com)

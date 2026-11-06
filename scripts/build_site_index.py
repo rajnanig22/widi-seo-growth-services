@@ -43,6 +43,8 @@ SERVICE_PAGES = [
      "Local SEO and Google Business Profile optimisation for restaurants, bars, and hospitality groups."),
     ("/services/ai-search-era.html", "AI Search Optimization & Citability",
      "Helping organisations get found and accurately cited by ChatGPT, Perplexity, and Google AI summaries."),
+    ("/services/konsultan-seo-bali.html", "Konsultan SEO di Bali untuk Hotel, Restoran, dan Yayasan",
+     "SEO services in Bahasa Indonesia for hotels, villas, restaurants, and foundations in Bali."),
 ]
 
 LLMS_HEADER = """# Widi Ginanjar
