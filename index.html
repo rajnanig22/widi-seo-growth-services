@@ -216,6 +216,25 @@
     .w-card .w-body p:not(.card-q) { font-size: 15px; }
     .w-card .w-meta, .w-card .tag { font-size: 11.5px; }
   }
+
+  /* balance pass (Nov 2026): photo beside the name, shorter featured photo, SEO strip and notes as one section */
+  @media (min-width: 821px) {
+    header.hero { grid-template-columns: 168px minmax(0, 1fr); grid-template-areas: "photo name" "photo lede"; column-gap: 40px; align-items: end; padding: 56px 0 44px; }
+    .hero-photo { align-self: center; }
+    .w-card:first-child .thumb { flex: 0 0 46%; aspect-ratio: 16 / 9; }
+    .w-card:not(:first-child) .thumb { max-height: 180px; aspect-ratio: auto; height: 180px; }
+    .w-card:first-child .w-body { padding: 28px 36px; }
+    .seo-band { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); gap: 20px; align-items: stretch; margin: 8px 0 64px; }
+    .seo-band .seo-strip { grid-template-columns: 1fr; align-content: space-between; gap: 14px; margin: 0; padding: 26px 28px; }
+    .seo-band .home-notes { margin: 0; }
+  }
+  .seo-band .seo-strip .seo-text { font-family: var(--serif); font-size: 19px; line-height: 1.4; }
+  .home-notes { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px; padding: 20px 24px 8px; }
+  .home-notes-head { margin-bottom: 8px; }
+  .home-notes-head h2 { font-family: var(--serif); font-size: 20px; font-weight: 700; letter-spacing: 0; color: var(--ink); text-transform: none; }
+  .home-notes li:last-child a { padding-bottom: 14px; }
+  @media (max-width: 820px) { .w-card .thumb { max-height: 170px; } }
+  @media (max-width: 820px) { .seo-band .seo-strip { margin: 8px 0 16px; } .home-notes { margin: 0 0 48px; padding: 16px 18px 6px; } }
 </style>
 </head>
 <body>
@@ -285,6 +304,7 @@
 </div>
 
 <div class="wrap">
+  <div class="seo-band">
   <a class="seo-strip" href="/services/" onclick="gtag('event','door_click',{'door':'seo_strip'});">
     <span class="seo-label">seo consulting</span>
     <span class="seo-text">On the side, I help organisations get found on Google and in AI answers.</span>
@@ -303,6 +323,7 @@
 <!-- NOTES:END -->
     </ul>
   </section>
+  </div>
 </div>
 
 <div class="band-footer">
