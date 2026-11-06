@@ -6,7 +6,7 @@ Guidance for Claude Code when working in this repository.
 
 The source for **widiginanjar.com**: a static personal site served by GitHub Pages (custom domain in `CNAME`). No framework, no CMS, no JavaScript build step. Plain HTML and CSS, plus Python scripts that turn Markdown into pages.
 
-- `/` homepage: name, newest essays (filled in automatically), and a small strip linking to SEO consulting
+- `/` homepage: name, newest essays (filled in automatically), a small strip linking to SEO consulting, and the 3 newest SEO notes (filled in automatically)
 - `/writing/` Essays: field notes and essays, **in Bahasa Indonesia**
 - `/services/` SEO Consulting, **in English**
 - `/notes/` SEO Notes, part of SEO Consulting, in English
@@ -16,7 +16,7 @@ The source for **widiginanjar.com**: a static personal site served by GitHub Pag
 | Source | Script | Output |
 |---|---|---|
 | `writing/posts/*.md` | `scripts/build_writing.py` | `writing/*.html`, `writing/index.html`, the cards between the `WRITING:START` and `WRITING:END` markers in `index.html` |
-| `notes/posts/*.md` | `scripts/build_notes.py` | `notes/*.html`, `notes/index.html` |
+| `notes/posts/*.md` | `scripts/build_notes.py` | `notes/*.html`, `notes/index.html`, the list between the `NOTES:START` and `NOTES:END` markers in `index.html` |
 | all of the above + static pages | `scripts/build_site_index.py` | `sitemap.xml`, `llms.txt` |
 | `notes/posts/*.md` without a cover | `scripts/make_note_covers.py` (fallback, run by hand, needs Playwright) | `notes/img/<slug>.jpg`, 1200x630 typographic cover |
 
@@ -36,7 +36,7 @@ python3 scripts/check_site.py   # same checks as on pull requests
 
 ## Rules
 
-- **Never edit generated files by hand**: `writing/*.html`, `notes/*.html`, the block between the `WRITING` markers in `index.html`, `sitemap.xml`, `llms.txt`. Change the Markdown source or the script instead, or the next build overwrites the edit.
+- **Never edit generated files by hand**: `writing/*.html`, `notes/*.html`, the blocks between the `WRITING` and `NOTES` markers in `index.html`, `sitemap.xml`, `llms.txt`. Change the Markdown source or the script instead, or the next build overwrites the edit.
 - **Never use em dashes or double hyphens** in visible text, copy, or commit messages. Use periods, commas, colons, or parentheses.
 - **Never overstate roles or claims.** Describe what Widi does, not titles. Every sentence on the site must be true today. See `BRAND_GUIDE.md` section 0.
 - **Language:** site frame, services, and notes in English. Essays in Bahasa Indonesia; keep their titles in Indonesian everywhere.

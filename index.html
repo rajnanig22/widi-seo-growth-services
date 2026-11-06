@@ -188,12 +188,23 @@
   @media (max-width: 820px) { nav.top { justify-content: space-between !important; flex-wrap: nowrap !important; } }
   @media (max-width: 420px) { .nav-home { font-size: 15px !important; } nav.top .nav-links { gap: 12px !important; } nav.top .nav-links a { font-size: 13.5px !important; } }
   .band-latest { border-top: none; background: transparent; }
-  .seo-strip { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 8px 28px; margin: 8px 0 56px; padding: 22px 26px; border: 1px solid #CFE5DA; border-radius: 12px; background: linear-gradient(160deg, #F1F7F3 0%, #E4F0EA 100%); color: var(--ink); text-decoration: none; }
+  .seo-strip { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 8px 28px; margin: 8px 0 20px; padding: 22px 26px; border: 1px solid #CFE5DA; border-radius: 12px; background: linear-gradient(160deg, #F1F7F3 0%, #E4F0EA 100%); color: var(--ink); text-decoration: none; }
   .seo-strip:hover { border-color: var(--accent); text-decoration: none; }
   .seo-label { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; color: var(--accent); }
   .seo-text { font-size: 15.5px; }
   .seo-go { font-size: 14px; font-weight: 600; color: var(--accent); }
   @media (max-width: 820px) { .seo-strip { grid-template-columns: 1fr; padding: 20px; } }
+  /* latest SEO notes under the strip: plain text links, filled by scripts/build_notes.py */
+  .home-notes { margin: 0 0 56px; padding: 0 4px; }
+  .home-notes-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 6px; }
+  .home-notes-head h2 { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: 0.06em; color: var(--accent); margin: 0; text-transform: lowercase; }
+  .home-notes-head a { font-size: 14px; font-weight: 600; color: var(--accent); }
+  .home-notes ul { list-style: none; margin: 0; padding: 0; }
+  .home-notes li { border-top: 1px solid var(--rule); }
+  .home-notes li a { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; color: var(--ink); text-decoration: none; font-size: 15.5px; }
+  .home-notes li a:hover { color: var(--accent); }
+  .home-notes .n-date { flex-shrink: 0; font-family: var(--mono); font-size: 12px; color: var(--ink-soft); padding-top: 3px; }
+  @media (max-width: 420px) { .home-notes li a { flex-direction: column; gap: 2px; font-size: 15px; } .home-notes .n-date { padding-top: 0; } }
 
   /* Type scale: body 17/16, lede 17/15.5, card title 20/18, card text 15.5/15, small 14, labels 12 */
   .w-card:not(:first-child) .w-body h3 { font-size: 20px; }
@@ -279,6 +290,19 @@
     <span class="seo-text">On the side, I help organisations get found on Google and in AI answers.</span>
     <span class="seo-go">Consulting, SEO notes, and a free 30-minute look &rarr;</span>
   </a>
+  <section class="home-notes" aria-labelledby="home-notes-title">
+    <div class="home-notes-head">
+      <h2 id="home-notes-title">Latest SEO notes</h2>
+      <a href="/notes/">All notes &rarr;</a>
+    </div>
+    <ul>
+<!-- NOTES:START (filled automatically by scripts/build_notes.py, do not edit by hand) -->
+      <li><a href="/notes/what-am-i-actually-selling.html" onclick="gtag('event','notes_click',{'location':'homepage_list'});"><span>Anyone Can Do SEO Now. What Am I Selling?</span><span class="n-date">30 Oct 2026</span></a></li>
+      <li><a href="/notes/being-right-vs-being-responsible-ngo-comms.html" onclick="gtag('event','notes_click',{'location':'homepage_list'});"><span>Being Right vs Being Responsible With Data</span><span class="n-date">5 Sep 2026</span></a></li>
+      <li><a href="/notes/ai-overview-domain-vs-name.html" onclick="gtag('event','notes_click',{'location':'homepage_list'});"><span>Google Knows My Website. It Doesn&#x27;t Know Me.</span><span class="n-date">7 Aug 2026</span></a></li>
+<!-- NOTES:END -->
+    </ul>
+  </section>
 </div>
 
 <div class="band-footer">
