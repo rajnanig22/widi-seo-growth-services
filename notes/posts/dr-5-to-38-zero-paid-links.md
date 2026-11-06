@@ -14,7 +14,7 @@ sources:
     publisher: "Ahrefs"
 ---
 
-For about a year, I worked on growth for two connected AI software products. For the newer of the two, Domain Rating went from **5 to 38** in under two months. We didn't pay for a single link.
+For about a year, I worked on growth for two connected AI software products. For one of them, Domain Rating went from **5 to 38** in under two months. We didn't pay for a single link.
 
 That number gets attention, so I want to be clear about what was behind it, and what it doesn't prove.
 
