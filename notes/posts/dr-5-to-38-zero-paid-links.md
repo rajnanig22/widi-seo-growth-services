@@ -1,7 +1,7 @@
 ---
 title: "Domain Rating 5 to 38 in Under Two Months, With Zero Paid Links"
 seo_title: "DR 5 to 38 With Zero Paid Links"
-description: "How relationship-based outreach moved two AI products' Domain Rating from 5 to 38 in under two months, and what that number doesn't prove."
+description: "How relationship-based outreach moved an AI product's Domain Rating from 5 to 38 in under two months, and what that number doesn't prove."
 tag: "ai & tech"
 date: 2026-11-06
 slug: "dr-5-to-38-zero-paid-links"
@@ -14,7 +14,7 @@ sources:
     publisher: "Ahrefs"
 ---
 
-For about a year, I worked on growth for two connected AI software products. In under two months, their Domain Rating went from **5 to 38**. We didn't pay for a single link.
+For about a year, I worked on growth for two connected AI software products. For the newer of the two, Domain Rating went from **5 to 38** in under two months. We didn't pay for a single link.
 
 That number gets attention, so I want to be clear about what was behind it, and what it doesn't prove.
 
@@ -30,7 +30,7 @@ Nothing clever. Mostly four habits, repeated every week.
 
 **Declining barter deals.** Plenty of people offered link swaps: you link to me, I link to you. It's fast, and it's exactly the kind of pattern search engines are built to discount. We said no, even when it slowed things down.
 
-By the time I handed the program over, one of the two products had **19 live placements** and **15 conversations still in progress**. Slow, one relationship at a time. But every one of those links was something I'd be comfortable explaining to anyone.
+By the time I handed the program over, that product had **19 live placements** and **15 conversations still in progress**. Slow, one relationship at a time. But every one of those links was something I'd be comfortable explaining to anyone.
 
 ## What the number doesn't prove
 
