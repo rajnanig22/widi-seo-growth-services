@@ -771,6 +771,43 @@ def build_index(posts):
     print(f"Built {out_path}")
 
 
+def short_date(date_str):
+    """'2026-07-16' -> '16 Jul 2026', the same style as the essay cards on the homepage."""
+    try:
+        d = datetime.datetime.strptime(date_str[:10], "%Y-%m-%d")
+        return f"{d.day} {d.strftime('%b %Y')}"
+    except ValueError:
+        return date_str
+
+
+HOME_NOTE_TEMPLATE = """      <li><a href="/notes/{slug}.html" onclick="gtag('event','notes_click',{{'location':'homepage_list'}});"><span>{title}</span><span class="n-date">{date}</span></a></li>"""
+
+
+def update_homepage(posts, limit=3):
+    """Fill the block between the NOTES markers in /index.html with the newest notes."""
+    path = os.path.join(ROOT, "index.html")
+    if not os.path.exists(path):
+        return
+    with open(path, "r", encoding="utf-8") as f:
+        page = f.read()
+    pattern = re.compile(r"(<!-- NOTES:START[^>]*-->\n).*?(<!-- NOTES:END -->)", re.DOTALL)
+    if not pattern.search(page):
+        print("Homepage has no NOTES markers, skipping homepage update")
+        return
+    items = "\n".join(
+        HOME_NOTE_TEMPLATE.format(
+            slug=p["slug"],
+            title=html.escape(str(p.get("seo_title") or p.get("title", "")), quote=True),
+            date=html.escape(short_date(str(p.get("date", "")))),
+        )
+        for p in posts[:limit]
+    )
+    page = pattern.sub(lambda m: m.group(1) + items + "\n" + m.group(2), page)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(page)
+    print(f"Updated {path}")
+
+
 def main():
     posts = load_posts()
     if not posts:
@@ -780,6 +817,7 @@ def main():
         build_article(p)
     build_index(posts)
     build_feed(posts)
+    update_homepage(posts)
     # llms.txt and sitemap.xml are now built by scripts/build_site_index.py
 
 
