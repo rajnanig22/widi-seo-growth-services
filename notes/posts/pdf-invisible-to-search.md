@@ -53,13 +53,13 @@ The practical effect: an organisation's single best piece of evidence, the actua
 
 ## The real cost is friction, not just visibility
 
-There's a second problem underneath the indexing one. Every time you make someone download a file before they can see what you accomplished, you're adding a step between curiosity and understanding. That gap has a name in UX research: interaction cost, [the cumulative mental and physical effort someone spends before reaching value](https://www.nngroup.com/articles/interaction-cost-definition/). A grantmaker skimming ten organisations in an afternoon is not going to open ten PDFs. They're going to read what's visible on the page in front of them, and move on.
+There's a second problem underneath the indexing one. Every time you make someone download a file before they can see what you accomplished, you're adding a step between curiosity and understanding. That gap has a name in UX research: interaction cost, [the cumulative mental and physical effort someone spends before reaching value](https://www.nngroup.com/articles/interaction-cost-definition/). A grantmaker skimming ten organisations in an afternoon, [often starting with the website](/notes/grantmakers-check-your-website-first.html), is not going to open ten PDFs. They're going to read what's visible on the page in front of them, and move on.
 
 ## What I'd actually try
 
 Not abandoning the PDF entirely, some funders still expect one, and it has real value as an archival, printable document. The fix is narrower: pull your strongest 3 to 4 findings out of the PDF and publish them as their own short HTML pages or articles. Give each one a clear heading, a specific number, and a real sentence describing what changed. Keep the full PDF linked from there for anyone who wants the complete picture.
 
-I don't know how much traffic this recovers for any specific organisation, that depends on too many variables to promise a number. What I do know is that right now, the best evidence most mission-driven orgs have is sitting in the one format that's hardest for anything automated to find.
+I don't know how much traffic this recovers for any specific organisation, that depends on too many variables to promise a number. What I do know is that right now, the best evidence most mission-driven orgs have is sitting in the one format that's hardest for anything automated to find. Moving that evidence onto pages people can actually find is a big part of [how I approach SEO for NGOs](/services/ngo.html).
 
 <hr class="rule">
 
