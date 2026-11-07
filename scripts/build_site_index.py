@@ -49,7 +49,7 @@ SERVICE_PAGES = [
 
 LLMS_HEADER = """# Widi Ginanjar
 
-> Runs community programs and the applied research around them, mostly on sustainability, in Indonesia. Also does SEO consulting for NGOs, B2B firms, hospitality brands, and organisations navigating AI search, and writes field notes and essays in Bahasa Indonesia. Background in community-based development (Delterra, YCAB, BIDUK) and in SEO and growth marketing (BetterPic, Runflow).
+> Works on community programs and the applied research around them, mostly on sustainability, in Indonesia. Also does SEO consulting for NGOs, B2B firms, hospitality brands, and organisations navigating AI search, and writes field notes and essays in Bahasa Indonesia. Background in community-based development (Delterra, YCAB, BIDUK) and in SEO and growth marketing (BetterPic, Runflow).
 """
 
 
